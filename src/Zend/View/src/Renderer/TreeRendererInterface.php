@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Renderer;
+namespace Zend\View\Renderer;
 
 interface TreeRendererInterface
 {

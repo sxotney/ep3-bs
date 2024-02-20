@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Element\MultiCheckbox as MultiCheckboxElement;
-use Laminas\Form\Exception;
-use Laminas\Form\LabelAwareInterface;
+use Zend\Form\ElementInterface;
+use Zend\Form\Element\MultiCheckbox as MultiCheckboxElement;
+use Zend\Form\Exception;
+use Zend\Form\LabelAwareInterface;
 
 class FormMultiCheckbox extends FormInput
 {
@@ -101,7 +101,7 @@ class FormMultiCheckbox extends FormInput
     {
         if (! $element instanceof MultiCheckboxElement) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s requires that the element is of type Laminas\Form\Element\MultiCheckbox',
+                '%s requires that the element is of type Zend\Form\Element\MultiCheckbox',
                 __METHOD__
             ));
         }

@@ -3,8 +3,8 @@
 namespace Base\View\Helper\Layout;
 
 use Base\Manager\ConfigManager;
-use Laminas\Uri\Http as HttpUri;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\Uri\Http as HttpUri;
+use Zend\View\Helper\AbstractHelper;
 
 class HeaderLocaleChoice extends AbstractHelper
 {

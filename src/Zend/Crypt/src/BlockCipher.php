@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt;
+namespace Zend\Crypt;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Crypt\Key\Derivation\Pbkdf2;
-use Laminas\Crypt\Symmetric\SymmetricInterface;
-use Laminas\Math\Rand;
+use Zend\Crypt\Key\Derivation\Pbkdf2;
+use Zend\Crypt\Symmetric\SymmetricInterface;
+use Zend\Math\Rand;
 
 /**
  * Encrypt using a symmetric cipher then authenticate using HMAC (SHA-256)
@@ -335,7 +335,7 @@ class BlockCipher
     {
         if (!Hash::isSupported($hash)) {
             throw new Exception\InvalidArgumentException(
-                "The specified hash algorithm '{$hash}' is not supported by Laminas\Crypt\Hash"
+                "The specified hash algorithm '{$hash}' is not supported by Zend\Crypt\Hash"
             );
         }
         $this->hash = $hash;
@@ -364,7 +364,7 @@ class BlockCipher
     {
         if (!Hash::isSupported($hash)) {
             throw new Exception\InvalidArgumentException(
-                "The specified hash algorithm '{$hash}' is not supported by Laminas\Crypt\Hash"
+                "The specified hash algorithm '{$hash}' is not supported by Zend\Crypt\Hash"
             );
         }
         $this->pbkdf2Hash = $hash;

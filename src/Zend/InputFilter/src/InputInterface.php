@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
-use Laminas\Filter\FilterChain;
-use Laminas\Validator\ValidatorChain;
+use Zend\Filter\FilterChain;
+use Zend\Validator\ValidatorChain;
 
 interface InputInterface
 {
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
      *
      * @param bool $allowEmpty
      * @return self
@@ -71,7 +71,7 @@ interface InputInterface
     public function merge(InputInterface $input);
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
      *
      * @return bool
      */

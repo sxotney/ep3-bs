@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
-use Laminas\Form\ElementInterface;
+use Zend\Form\ElementInterface;
 
 class FormDateTime extends FormInput
 {

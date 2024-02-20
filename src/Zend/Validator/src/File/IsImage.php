@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Validator which checks if the file is an image

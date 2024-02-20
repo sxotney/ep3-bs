@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager;
+namespace Zend\EventManager;
 
 /**
  * Interface providing events that can be attached, detached and triggered.

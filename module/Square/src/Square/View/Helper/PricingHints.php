@@ -7,7 +7,7 @@ use DateTime;
 use Square\Entity\Square;
 use Square\Manager\SquarePricingManager;
 use User\Manager\UserSessionManager;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class PricingHints extends AbstractHelper
 {

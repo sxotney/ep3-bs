@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 use Countable;
 use ReturnTypeWillChange;
 use Traversable;
-use Laminas\ServiceManager\ServiceManager;
-use Laminas\Stdlib\PriorityQueue;
+use Zend\ServiceManager\ServiceManager;
+use Zend\Stdlib\PriorityQueue;
 
 class FilterChain extends AbstractFilter implements Countable
 {

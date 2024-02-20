@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc;
+namespace Zend\Mvc;
 
-use Laminas\EventManager\Event;
-use Laminas\Stdlib\RequestInterface as Request;
-use Laminas\Stdlib\ResponseInterface as Response;
-use Laminas\View\Model\ModelInterface as Model;
-use Laminas\View\Model\ViewModel;
+use Zend\EventManager\Event;
+use Zend\Stdlib\RequestInterface as Request;
+use Zend\Stdlib\ResponseInterface as Response;
+use Zend\View\Model\ModelInterface as Model;
+use Zend\View\Model\ViewModel;
 
 class MvcEvent extends Event
 {

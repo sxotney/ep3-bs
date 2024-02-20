@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc;
+namespace Zend\Mvc;
 
-use Laminas\EventManager\EventManagerAwareInterface;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\ServiceManager\ServiceManager;
-use Laminas\Stdlib\RequestInterface;
-use Laminas\Stdlib\ResponseInterface;
+use Zend\EventManager\EventManagerAwareInterface;
+use Zend\EventManager\EventManagerInterface;
+use Zend\ServiceManager\ServiceManager;
+use Zend\Stdlib\RequestInterface;
+use Zend\Stdlib\ResponseInterface;
 
 /**
  * Main application class for invoking applications
@@ -33,7 +33,7 @@ use Laminas\Stdlib\ResponseInterface;
  *
  * The most common workflow is:
  * <code>
- * $services = new Laminas\ServiceManager\ServiceManager($servicesConfig);
+ * $services = new Zend\ServiceManager\ServiceManager($servicesConfig);
  * $app      = new Application($appConfig, $services);
  * $app->bootstrap();
  * $response = $app->run();
@@ -87,7 +87,7 @@ class Application implements
     protected $events;
 
     /**
-     * @var \Laminas\Stdlib\RequestInterface
+     * @var \Zend\Stdlib\RequestInterface
      */
     protected $request;
 
@@ -184,7 +184,7 @@ class Application implements
     /**
      * Get the request object
      *
-     * @return \Laminas\Stdlib\RequestInterface
+     * @return \Zend\Stdlib\RequestInterface
      */
     public function getRequest()
     {
@@ -250,7 +250,7 @@ class Application implements
      *
      * - ModuleManager
      * - SharedEventManager
-     * - EventManager & Laminas\EventManager\EventManagerInterface
+     * - EventManager & Zend\EventManager\EventManagerInterface
      *
      * All other services are configured after module loading, thus can be
      * overridden by modules.

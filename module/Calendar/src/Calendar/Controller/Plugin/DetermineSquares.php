@@ -5,7 +5,7 @@ namespace Calendar\Controller\Plugin;
 use Exception;
 use RuntimeException;
 use Square\Manager\SquareManager;
-use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
+use Zend\Mvc\Controller\Plugin\AbstractPlugin;
 
 class DetermineSquares extends AbstractPlugin
 {

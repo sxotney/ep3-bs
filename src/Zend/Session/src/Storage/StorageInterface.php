@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\Storage;
+namespace Zend\Session\Storage;
 
 use ArrayAccess;
 use Countable;

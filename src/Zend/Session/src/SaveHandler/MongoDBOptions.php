@@ -8,10 +8,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\SaveHandler;
+namespace Zend\Session\SaveHandler;
 
-use Laminas\Session\Exception\InvalidArgumentException;
-use Laminas\Stdlib\AbstractOptions;
+use Zend\Session\Exception\InvalidArgumentException;
+use Zend\Stdlib\AbstractOptions;
 
 /**
  * MongoDB session save handler Options

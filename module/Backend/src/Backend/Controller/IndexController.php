@@ -2,7 +2,7 @@
 
 namespace Backend\Controller;
 
-use Laminas\Mvc\Controller\AbstractActionController;
+use Zend\Mvc\Controller\AbstractActionController;
 
 class IndexController extends AbstractActionController
 {

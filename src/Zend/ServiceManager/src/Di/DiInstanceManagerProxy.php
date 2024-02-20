@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\ServiceManager\Di;
+namespace Zend\ServiceManager\Di;
 
-use Laminas\Di\InstanceManager as DiInstanceManager;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Di\InstanceManager as DiInstanceManager;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class DiInstanceManagerProxy extends DiInstanceManager
 {

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 class ToInt extends AbstractFilter
 {
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Returns (int) $value
      *

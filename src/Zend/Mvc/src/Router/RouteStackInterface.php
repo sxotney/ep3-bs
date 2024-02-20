@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router;
+namespace Zend\Mvc\Router;
 
 interface RouteStackInterface extends RouteInterface
 {

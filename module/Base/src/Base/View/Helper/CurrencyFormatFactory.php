@@ -2,9 +2,9 @@
 
 namespace Base\View\Helper;
 
-use Laminas\I18n\View\Helper\CurrencyFormat;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\I18n\View\Helper\CurrencyFormat;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class CurrencyFormatFactory implements FactoryInterface
 {

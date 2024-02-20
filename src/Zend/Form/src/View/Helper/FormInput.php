@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Exception;
+use Zend\Form\ElementInterface;
+use Zend\Form\Exception;
 
 class FormInput extends AbstractHelper
 {

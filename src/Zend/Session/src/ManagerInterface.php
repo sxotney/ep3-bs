@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session;
+namespace Zend\Session;
 
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Session\Config\ConfigInterface as Config;
-use Laminas\Session\SaveHandler\SaveHandlerInterface as SaveHandler;
-use Laminas\Session\Storage\StorageInterface as Storage;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Session\Config\ConfigInterface as Config;
+use Zend\Session\SaveHandler\SaveHandlerInterface as SaveHandler;
+use Zend\Session\Storage\StorageInterface as Storage;
 
 /**
  * Session manager interface

@@ -2,7 +2,7 @@
 
 namespace Base\View\Helper\Layout;
 
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class HeaderAttributes extends AbstractHelper
 {

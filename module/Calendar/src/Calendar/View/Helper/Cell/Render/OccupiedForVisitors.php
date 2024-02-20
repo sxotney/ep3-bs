@@ -3,7 +3,7 @@
 namespace Calendar\View\Helper\Cell\Render;
 
 use Square\Entity\Square;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class OccupiedForVisitors extends AbstractHelper
 {

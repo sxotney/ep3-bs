@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Filter;
+namespace Zend\I18n\Filter;
 
 use NumberFormatter;
 use Traversable;
-use Laminas\I18n\Exception;
-use Laminas\Stdlib\ErrorHandler;
+use Zend\I18n\Exception;
+use Zend\Stdlib\ErrorHandler;
 
 class NumberParse extends AbstractLocale
 {
@@ -136,9 +136,9 @@ class NumberParse extends AbstractLocale
     }
 
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
-     * @see    Laminas\Filter\FilterInterface::filter()
+     * @see    Zend\Filter\FilterInterface::filter()
      * @param  mixed $value
      * @return mixed
      */

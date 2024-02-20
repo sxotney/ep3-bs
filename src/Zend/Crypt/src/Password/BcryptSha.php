@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt\Password;
+namespace Zend\Crypt\Password;
 
-use Laminas\Crypt\Hash;
+use Zend\Crypt\Hash;
 
 /**
  * Bcrypt algorithm using crypt() function of PHP with password

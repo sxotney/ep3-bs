@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\TableGateway\Exception;
+namespace Zend\Db\TableGateway\Exception;
 
-use Laminas\Db\Exception;
+use Zend\Db\Exception;
 
 interface ExceptionInterface extends Exception\ExceptionInterface
 {

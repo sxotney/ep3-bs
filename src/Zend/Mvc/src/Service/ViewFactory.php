@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\View\Strategy\PhpRendererStrategy;
-use Laminas\View\View;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\View\Strategy\PhpRendererStrategy;
+use Zend\View\View;
 
 class ViewFactory implements FactoryInterface
 {

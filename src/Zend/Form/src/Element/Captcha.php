@@ -7,24 +7,24 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
 use Traversable;
-use Laminas\Captcha as ZendCaptcha;
-use Laminas\Form\Element;
-use Laminas\Form\Exception;
-use Laminas\InputFilter\InputProviderInterface;
+use Zend\Captcha as ZendCaptcha;
+use Zend\Form\Element;
+use Zend\Form\Exception;
+use Zend\InputFilter\InputProviderInterface;
 
 class Captcha extends Element implements InputProviderInterface
 {
     /**
-     * @var \Laminas\Captcha\AdapterInterface
+     * @var \Zend\Captcha\AdapterInterface
      */
     protected $captcha;
 
     /**
      * Accepted options for Captcha:
-     * - captcha: a valid Laminas\Captcha\AdapterInterface
+     * - captcha: a valid Zend\Captcha\AdapterInterface
      *
      * @param array|Traversable $options
      * @return Captcha
@@ -53,7 +53,7 @@ class Captcha extends Element implements InputProviderInterface
             $captcha = ZendCaptcha\Factory::factory($captcha);
         } elseif (! $captcha instanceof ZendCaptcha\AdapterInterface) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s expects either a Laminas\Captcha\AdapterInterface or specification to pass to Laminas\Captcha\Factory; '
+                '%s expects either a Zend\Captcha\AdapterInterface or specification to pass to Zend\Captcha\Factory; '
                 . 'received "%s"',
                 __METHOD__,
                 (is_object($captcha) ? get_class($captcha) : gettype($captcha))
@@ -87,7 +87,7 @@ class Captcha extends Element implements InputProviderInterface
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Laminas\Filter\StringTrim'],
+                ['name' => 'Zend\Filter\StringTrim'],
             ],
         ];
 

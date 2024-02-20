@@ -3,10 +3,10 @@
 namespace Base\Service;
 
 use RuntimeException;
-use Laminas\EventManager\EventManager;
-use Laminas\EventManager\EventManagerAwareInterface;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\I18n\Translator\TranslatorInterface;
+use Zend\EventManager\EventManager;
+use Zend\EventManager\EventManagerAwareInterface;
+use Zend\EventManager\EventManagerInterface;
+use Zend\I18n\Translator\TranslatorInterface;
 
 abstract class AbstractService implements EventManagerAwareInterface
 {

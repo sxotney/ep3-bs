@@ -1,19 +1,19 @@
 <?php
 /**
- * @link      https://github.com/laminas/laminas-modulemanager for the canonical source repository
+ * @link      https://github.com/zendframework/zend-modulemanager for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-modulemanager/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-modulemanager/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\ModuleManager\Listener;
+namespace Zend\ModuleManager\Listener;
 
 use Traversable;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\ModuleManager\ModuleEvent;
-use Laminas\ServiceManager\Config as ServiceConfig;
-use Laminas\ServiceManager\ConfigInterface as ServiceConfigInterface;
-use Laminas\ServiceManager\ServiceManager;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\EventManager\EventManagerInterface;
+use Zend\ModuleManager\ModuleEvent;
+use Zend\ServiceManager\Config as ServiceConfig;
+use Zend\ServiceManager\ConfigInterface as ServiceConfigInterface;
+use Zend\ServiceManager\ServiceManager;
+use Zend\Stdlib\ArrayUtils;
 
 class ServiceListener implements ServiceListenerInterface
 {
@@ -260,7 +260,7 @@ class ServiceListener implements ServiceListenerInterface
             return $config->toArray();
         }
 
-        // For zend-servicemanager v2, we need a Laminas\ServiceManager\Config
+        // For zend-servicemanager v2, we need a Zend\ServiceManager\Config
         // instance specifically.
         if (! $config instanceof ServiceConfig) {
             throw new Exception\RuntimeException(sprintf(

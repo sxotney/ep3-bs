@@ -2,7 +2,7 @@
 
 namespace Calendar\View\Helper;
 
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class SquareRow extends AbstractHelper
 {

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator;
+namespace Zend\Validator;
 
 final class GpsPoint extends AbstractValidator
 {

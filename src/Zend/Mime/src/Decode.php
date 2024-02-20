@@ -1,14 +1,14 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mime for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mime for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mime/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mime/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mime;
+namespace Zend\Mime;
 
-use Laminas\Mail\Headers;
-use Laminas\Stdlib\ErrorHandler;
+use Zend\Mail\Headers;
+use Zend\Stdlib\ErrorHandler;
 
 class Decode
 {
@@ -63,7 +63,7 @@ class Decode
      *
      * @param  string $message  raw message content
      * @param  string $boundary boundary as found in content-type
-     * @param  string $EOL EOL string; defaults to {@link Laminas\Mime\Mime::LINEEND}
+     * @param  string $EOL EOL string; defaults to {@link Zend\Mime\Mime::LINEEND}
      * @return void parts as array('header' => array(name => value), 'body' => content), null if no parts found
      * @throws Exception\RuntimeException
      */
@@ -95,7 +95,7 @@ class Decode
      * @param  string|Headers  $message raw message with header and optional content
      * @param  Headers         $headers output param, headers container
      * @param  string          $body    output param, content of message
-     * @param  string          $EOL EOL string; defaults to {@link Laminas\Mime\Mime::LINEEND}
+     * @param  string          $EOL EOL string; defaults to {@link Zend\Mime\Mime::LINEEND}
      * @param  bool            $strict  enable strict mode for parsing message
      * @return null
      */

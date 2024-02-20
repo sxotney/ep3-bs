@@ -1,14 +1,14 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mail for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mail\Transport;
+namespace Zend\Mail\Transport;
 
-use Laminas\Mail\Exception;
-use Laminas\Stdlib\AbstractOptions;
+use Zend\Mail\Exception;
+use Zend\Stdlib\AbstractOptions;
 
 class FileOptions extends AbstractOptions
 {
@@ -26,7 +26,7 @@ class FileOptions extends AbstractOptions
      * Set path to stored mail files
      *
      * @param  string $path
-     * @throws \Laminas\Mail\Exception\InvalidArgumentException
+     * @throws \Zend\Mail\Exception\InvalidArgumentException
      * @return FileOptions
      */
     public function setPath($path)
@@ -61,7 +61,7 @@ class FileOptions extends AbstractOptions
      * Set callback used to generate a file name
      *
      * @param  callable $callback
-     * @throws \Laminas\Mail\Exception\InvalidArgumentException
+     * @throws \Zend\Mail\Exception\InvalidArgumentException
      * @return FileOptions
      */
     public function setCallback($callback)
@@ -86,7 +86,7 @@ class FileOptions extends AbstractOptions
     {
         if (null === $this->callback) {
             $this->setCallback(function () {
-                return 'LaminasMail_' . time() . '_' . mt_rand() . '.eml';
+                return 'ZendMail_' . time() . '_' . mt_rand() . '.eml';
             });
         }
         return $this->callback;

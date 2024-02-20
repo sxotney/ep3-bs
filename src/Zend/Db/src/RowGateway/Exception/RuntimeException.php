@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\RowGateway\Exception;
+namespace Zend\Db\RowGateway\Exception;
 
-use Laminas\Db\Exception;
+use Zend\Db\Exception;
 
 class RuntimeException extends Exception\RuntimeException implements ExceptionInterface
 {

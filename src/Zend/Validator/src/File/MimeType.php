@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Stdlib\ErrorHandler;
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Exception;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Stdlib\ErrorHandler;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the mime type of a file
@@ -329,14 +329,14 @@ class MimeType extends AbstractValidator
     }
 
     /**
-     * Defined by Laminas\Validator\ValidatorInterface
+     * Defined by Zend\Validator\ValidatorInterface
      *
      * Returns true if the mimetype of the file matches the given ones. Also parts
      * of mimetypes can be checked. If you give for example "image" all image
      * mime types will be accepted like "image/gif", "image/jpeg" and so on.
      *
      * @param  string|array $value Real file to check for mimetype
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

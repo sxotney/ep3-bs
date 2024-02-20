@@ -8,10 +8,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Controller\Plugin;
+namespace Zend\Mvc\Controller\Plugin;
 
-use Laminas\Mvc\Exception\RuntimeException;
-use Laminas\Session\Container;
+use Zend\Mvc\Exception\RuntimeException;
+use Zend\Session\Container;
 
 /**
  * Plugin to help facilitate Post/Redirect/Get (http://en.wikipedia.org/wiki/Post/Redirect/Get)
@@ -39,7 +39,7 @@ class PostRedirectGet extends AbstractPlugin
      *
      * @param  null|string $redirect
      * @param  bool        $redirectToUrl
-     * @return \Laminas\Http\Response|array|\Traversable|false
+     * @return \Zend\Http\Response|array|\Traversable|false
      */
     public function __invoke($redirect = null, $redirectToUrl = false)
     {
@@ -88,8 +88,8 @@ class PostRedirectGet extends AbstractPlugin
      *
      * @param  string  $redirect
      * @param  bool    $redirectToUrl
-     * @return \Laminas\Http\Response
-     * @throws \Laminas\Mvc\Exception\RuntimeException
+     * @return \Zend\Http\Response
+     * @throws \Zend\Mvc\Exception\RuntimeException
      */
     protected function redirect($redirect, $redirectToUrl)
     {

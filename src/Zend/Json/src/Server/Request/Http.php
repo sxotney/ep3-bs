@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server\Request;
+namespace Zend\Json\Server\Request;
 
-use Laminas\Json\Server\Request as JsonRequest;
+use Zend\Json\Server\Request as JsonRequest;
 
 class Http extends JsonRequest
 {

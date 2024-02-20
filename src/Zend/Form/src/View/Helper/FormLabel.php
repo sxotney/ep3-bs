@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Exception;
-use Laminas\Form\LabelAwareInterface;
+use Zend\Form\ElementInterface;
+use Zend\Form\Exception;
+use Zend\Form\LabelAwareInterface;
 
 class FormLabel extends AbstractHelper
 {
@@ -110,7 +110,7 @@ class FormLabel extends AbstractHelper
 
         if (! $attributesOrElement instanceof ElementInterface) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s expects an array or Laminas\Form\ElementInterface instance; received "%s"',
+                '%s expects an array or Zend\Form\ElementInterface instance; received "%s"',
                 __METHOD__,
                 (is_object($attributesOrElement) ? get_class($attributesOrElement) : gettype($attributesOrElement))
             ));

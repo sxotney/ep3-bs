@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
 use ReflectionClass;
-use Laminas\EventManager\EventManager;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\EventManager\EventManager;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class EventManagerFactory implements FactoryInterface
 {

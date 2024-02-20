@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Mvc\View\Http\ViewManager as HttpViewManager;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Mvc\View\Http\ViewManager as HttpViewManager;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class HttpViewManagerFactory implements FactoryInterface
 {

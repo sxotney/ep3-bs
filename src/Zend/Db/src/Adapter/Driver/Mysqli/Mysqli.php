@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Mysqli;
+namespace Zend\Db\Adapter\Driver\Mysqli;
 
 use mysqli_stmt;
-use Laminas\Db\Adapter\Driver\DriverInterface;
-use Laminas\Db\Adapter\Exception;
-use Laminas\Db\Adapter\Profiler;
+use Zend\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\Exception;
+use Zend\Db\Adapter\Profiler;
 
 class Mysqli implements DriverInterface, Profiler\ProfilerAwareInterface
 {

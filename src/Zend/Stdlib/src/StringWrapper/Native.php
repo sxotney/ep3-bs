@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\StringWrapper;
+namespace Zend\Stdlib\StringWrapper;
 
-use Laminas\Stdlib\Exception;
-use Laminas\Stdlib\StringUtils;
+use Zend\Stdlib\Exception;
+use Zend\Stdlib\StringUtils;
 
 class Native extends AbstractStringWrapper
 {

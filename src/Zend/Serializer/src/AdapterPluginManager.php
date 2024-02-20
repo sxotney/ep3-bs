@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Serializer;
+namespace Zend\Serializer;
 
-use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\ServiceManager\Factory\InvokableFactory;
-use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Zend\ServiceManager\AbstractPluginManager;
+use Zend\ServiceManager\Factory\InvokableFactory;
+use Zend\ServiceManager\Exception\InvalidServiceException;
 
 /**
  * Plugin manager implementation for serializer adapters.
@@ -55,13 +55,13 @@ class AdapterPluginManager extends AbstractPluginManager
         // Legacy (v2) due to alias resolution; canonical form of resolved
         // alias is used to look up the factory, while the non-normalized
         // resolved alias is used as the requested name passed to the factory.
-        'laminasserializeradapterigbinary' => InvokableFactory::class,
-        'laminasserializeradapterjson' => InvokableFactory::class,
-        'laminasserializeradaptermsgpack' => InvokableFactory::class,
-        'laminasserializeradapterphpcode' => InvokableFactory::class,
-        'laminasserializeradapterphpserialize' => InvokableFactory::class,
-        'laminasserializeradapterpythonpickle' => InvokableFactory::class,
-        'laminasserializeradapterwddx' => InvokableFactory::class,
+        'zendserializeradapterigbinary' => InvokableFactory::class,
+        'zendserializeradapterjson' => InvokableFactory::class,
+        'zendserializeradaptermsgpack' => InvokableFactory::class,
+        'zendserializeradapterphpcode' => InvokableFactory::class,
+        'zendserializeradapterphpserialize' => InvokableFactory::class,
+        'zendserializeradapterpythonpickle' => InvokableFactory::class,
+        'zendserializeradapterwddx' => InvokableFactory::class,
     ];
 
     protected $instanceOf = Adapter\AdapterInterface::class;

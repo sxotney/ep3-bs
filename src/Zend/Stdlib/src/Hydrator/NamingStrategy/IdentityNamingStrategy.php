@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\NamingStrategy;
+namespace Zend\Stdlib\Hydrator\NamingStrategy;
 
-use Laminas\Hydrator\NamingStrategy\IdentityNamingStrategy as BaseIdentityNamingStrategy;
+use Zend\Hydrator\NamingStrategy\IdentityNamingStrategy as BaseIdentityNamingStrategy;
 
 /**
- * @deprecated Use Laminas\Hydrator\NamingStrategy\IdentityNamingStrategy from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\NamingStrategy\IdentityNamingStrategy from zendframework/zend-hydrator instead.
  */
 class IdentityNamingStrategy extends BaseIdentityNamingStrategy implements NamingStrategyInterface
 {

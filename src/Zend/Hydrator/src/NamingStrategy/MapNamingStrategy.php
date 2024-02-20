@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\NamingStrategy;
+namespace Zend\Hydrator\NamingStrategy;
 
-use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Zend\Hydrator\Exception\InvalidArgumentException;
 
 class MapNamingStrategy implements NamingStrategyInterface
 {

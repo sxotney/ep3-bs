@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\View\Console;
+namespace Zend\Mvc\View\Console;
 
 use ArrayAccess;
-use Laminas\Mvc\MvcEvent;
-use Laminas\Mvc\View\Http\ViewManager as BaseViewManager;
+use Zend\Mvc\MvcEvent;
+use Zend\Mvc\View\Http\ViewManager as BaseViewManager;
 
 /**
  * Prepares the view layer for console applications
@@ -25,7 +25,7 @@ class ViewManager extends BaseViewManager
      * algorithms, as well as to ensure we pick up the Console variants
      * of several listeners and strategies.
      *
-     * @param  \Laminas\Mvc\MvcEvent $event
+     * @param  \Zend\Mvc\MvcEvent $event
      * @return void
      */
     public function onBootstrap($event)
@@ -54,11 +54,11 @@ class ViewManager extends BaseViewManager
         $events->attach(MvcEvent::EVENT_RENDER_ERROR, [$injectViewModelListener, 'injectViewModel'], -100);
         $mvcRenderingStrategy->attach($events);
 
-        $sharedEvents->attach('Laminas\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$injectParamsListener,  'injectNamedParams'], 1000);
-        $sharedEvents->attach('Laminas\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$createViewModelListener, 'createViewModelFromArray'], -80);
-        $sharedEvents->attach('Laminas\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$createViewModelListener, 'createViewModelFromString'], -80);
-        $sharedEvents->attach('Laminas\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$createViewModelListener, 'createViewModelFromNull'], -80);
-        $sharedEvents->attach('Laminas\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$injectViewModelListener, 'injectViewModel'], -100);
+        $sharedEvents->attach('Zend\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$injectParamsListener,  'injectNamedParams'], 1000);
+        $sharedEvents->attach('Zend\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$createViewModelListener, 'createViewModelFromArray'], -80);
+        $sharedEvents->attach('Zend\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$createViewModelListener, 'createViewModelFromString'], -80);
+        $sharedEvents->attach('Zend\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$createViewModelListener, 'createViewModelFromNull'], -80);
+        $sharedEvents->attach('Zend\Stdlib\DispatchableInterface', MvcEvent::EVENT_DISPATCH, [$injectViewModelListener, 'injectViewModel'], -100);
     }
 
     /**

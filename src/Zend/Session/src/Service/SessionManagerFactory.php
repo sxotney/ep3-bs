@@ -7,18 +7,18 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\Service;
+namespace Zend\Session\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\Session\Config\ConfigInterface;
-use Laminas\Session\Container;
-use Laminas\Session\SaveHandler\SaveHandlerInterface;
-use Laminas\Session\SessionManager;
-use Laminas\Session\Storage\StorageInterface;
-use Laminas\Session\ManagerInterface;
+use Zend\ServiceManager\Exception\ServiceNotCreatedException;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\Session\Config\ConfigInterface;
+use Zend\Session\Container;
+use Zend\Session\SaveHandler\SaveHandlerInterface;
+use Zend\Session\SessionManager;
+use Zend\Session\Storage\StorageInterface;
+use Zend\Session\ManagerInterface;
 
 class SessionManagerFactory implements FactoryInterface
 {
@@ -37,16 +37,16 @@ class SessionManagerFactory implements FactoryInterface
      * Will consume any combination (or zero) of the following services, when
      * present, to construct the SessionManager instance:
      *
-     * - Laminas\Session\Config\ConfigInterface
-     * - Laminas\Session\Storage\StorageInterface
-     * - Laminas\Session\SaveHandler\SaveHandlerInterface
+     * - Zend\Session\Config\ConfigInterface
+     * - Zend\Session\Storage\StorageInterface
+     * - Zend\Session\SaveHandler\SaveHandlerInterface
      *
      * The first two have corresponding factories inside this namespace. The
      * last, however, does not, due to the differences in implementations, and
      * the fact that save handlers will often be written in userland. As such
      * if you wish to attach a save handler to the manager, you will need to
      * write your own factory, and assign it to the service name
-     * "Laminas\Session\SaveHandler\SaveHandlerInterface", (or alias that name
+     * "Zend\Session\SaveHandler\SaveHandlerInterface", (or alias that name
      * to your own service).
      *
      * You can configure limited behaviors via the "session_manager" key of the

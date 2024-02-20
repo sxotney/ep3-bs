@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server\Response;
+namespace Zend\Json\Server\Response;
 
-use Laminas\Json\Server\Response as JsonResponse;
+use Zend\Json\Server\Response as JsonResponse;
 
 class Http extends JsonResponse
 {

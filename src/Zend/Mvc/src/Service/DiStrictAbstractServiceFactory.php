@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Di\Di;
-use Laminas\Di\Exception\ClassNotFoundException;
-use Laminas\ServiceManager\AbstractFactoryInterface;
-use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\ServiceManager\Exception;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Di\Di;
+use Zend\Di\Exception\ClassNotFoundException;
+use Zend\ServiceManager\AbstractFactoryInterface;
+use Zend\ServiceManager\AbstractPluginManager;
+use Zend\ServiceManager\Exception;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Create and return instances from a DI container and/or the parent container.
@@ -39,7 +39,7 @@ use Laminas\ServiceManager\ServiceLocatorInterface;
  * container, e.g., to limit to known controller classes, etc.
  *
  * @deprecated Since 2.7.9. The factory is now defined in zend-servicemanager-di,
- *     and removed in 3.0.0. Use Laminas\ServiceManager\Di\DiStrictAbstractServiceFactory
+ *     and removed in 3.0.0. Use Zend\ServiceManager\Di\DiStrictAbstractServiceFactory
  *     from zend-servicemanager-di if you are using zend-servicemanager v3, and/or when
  *     ready to migrate to zend-mvc 3.0.
  */
@@ -135,7 +135,7 @@ class DiStrictAbstractServiceFactory extends Di implements AbstractFactoryInterf
     }
 
     /**
-     * Overrides Laminas\Di to allow the given container's services to be reused by Di itself
+     * Overrides Zend\Di to allow the given container's services to be reused by Di itself
      *
      * {@inheritDoc}
      *

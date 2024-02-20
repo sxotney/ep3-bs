@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
-use Laminas\I18n\Translator\LoaderPluginManager as TranslatorLoaderPluginManager;
+use Zend\I18n\Translator\LoaderPluginManager as TranslatorLoaderPluginManager;
 
 class TranslatorPluginManagerFactory extends AbstractPluginManagerFactory
 {

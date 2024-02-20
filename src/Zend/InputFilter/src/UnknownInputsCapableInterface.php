@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 /**
  * Implementors of this interface may report on the existence of unknown input,

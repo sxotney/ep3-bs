@@ -7,12 +7,12 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
 use Traversable;
-use Laminas\Form\Element;
-use Laminas\InputFilter\InputProviderInterface;
-use Laminas\Validator\InArray as InArrayValidator;
+use Zend\Form\Element;
+use Zend\InputFilter\InputProviderInterface;
+use Zend\Validator\InArray as InArrayValidator;
 
 class Checkbox extends Element implements InputProviderInterface
 {
@@ -26,7 +26,7 @@ class Checkbox extends Element implements InputProviderInterface
     ];
 
     /**
-     * @var \Laminas\Validator\ValidatorInterface
+     * @var \Zend\Validator\ValidatorInterface
      */
     protected $validator;
 
@@ -142,7 +142,7 @@ class Checkbox extends Element implements InputProviderInterface
     /**
      * Get validator
      *
-     * @return \Laminas\Validator\ValidatorInterface
+     * @return \Zend\Validator\ValidatorInterface
      */
     protected function getValidator()
     {

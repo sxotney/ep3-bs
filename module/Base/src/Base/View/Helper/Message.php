@@ -2,7 +2,7 @@
 
 namespace Base\View\Helper;
 
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class Message extends AbstractHelper
 {

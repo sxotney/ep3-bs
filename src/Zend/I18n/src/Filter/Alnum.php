@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Filter;
+namespace Zend\I18n\Filter;
 
 use Locale;
 use Traversable;
@@ -64,7 +64,7 @@ class Alnum extends AbstractLocale
     }
 
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Returns $value as string with all non-alphanumeric characters removed
      *

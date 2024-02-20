@@ -7,12 +7,12 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element;
-use Laminas\Form\ElementPrepareAwareInterface;
-use Laminas\Form\FormInterface;
-use Laminas\InputFilter\InputProviderInterface;
+use Zend\Form\Element;
+use Zend\Form\ElementPrepareAwareInterface;
+use Zend\Form\FormInterface;
+use Zend\InputFilter\InputProviderInterface;
 
 class File extends Element implements InputProviderInterface, ElementPrepareAwareInterface
 {
@@ -39,14 +39,14 @@ class File extends Element implements InputProviderInterface, ElementPrepareAwar
 
     /**
      * Should return an array specification compatible with
-     * {@link Laminas\InputFilter\Factory::createInput()}.
+     * {@link Zend\InputFilter\Factory::createInput()}.
      *
      * @return array
      */
     public function getInputSpecification()
     {
         return [
-            'type'     => 'Laminas\InputFilter\FileInput',
+            'type'     => 'Zend\InputFilter\FileInput',
             'name'     => $this->getName(),
             'required' => false,
         ];

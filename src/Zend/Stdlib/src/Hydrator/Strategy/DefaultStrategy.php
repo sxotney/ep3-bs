@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\Strategy;
+namespace Zend\Stdlib\Hydrator\Strategy;
 
-use Laminas\Hydrator\Strategy\DefaultStrategy as BaseDefaultStrategy;
+use Zend\Hydrator\Strategy\DefaultStrategy as BaseDefaultStrategy;
 
 /**
- * @deprecated Use Laminas\Hydrator\Strategy\DefaultStrategy from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Strategy\DefaultStrategy from zendframework/zend-hydrator instead.
  */
 class DefaultStrategy extends BaseDefaultStrategy implements StrategyInterface
 {

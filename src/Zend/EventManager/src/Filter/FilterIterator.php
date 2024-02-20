@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager\Filter;
+namespace Zend\EventManager\Filter;
 
 use ReturnTypeWillChange;
-use Laminas\Stdlib\CallbackHandler;
-use Laminas\Stdlib\SplPriorityQueue;
+use Zend\Stdlib\CallbackHandler;
+use Zend\Stdlib\SplPriorityQueue;
 
 /**
  * Specialized priority queue implementation for use with an intercepting

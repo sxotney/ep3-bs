@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Mysqli;
+namespace Zend\Db\Adapter\Driver\Mysqli;
 
 use Iterator;
 use ReturnTypeWillChange;
-use Laminas\Db\Adapter\Driver\ResultInterface;
-use Laminas\Db\Adapter\Exception;
+use Zend\Db\Adapter\Driver\ResultInterface;
+use Zend\Db\Adapter\Exception;
 
 class Result implements
     Iterator,

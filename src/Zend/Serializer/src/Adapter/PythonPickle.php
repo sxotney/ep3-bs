@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Serializer\Adapter;
+namespace Zend\Serializer\Adapter;
 
 use stdClass;
 use Traversable;
-use Laminas\Math\BigInteger;
-use Laminas\Serializer\Exception;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Math\BigInteger;
+use Zend\Serializer\Exception;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * @link       http://www.python.org

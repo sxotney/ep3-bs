@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server;
+namespace Zend\Json\Server;
 
-use Laminas\Json\Json;
+use Zend\Json\Json;
 
 class Response
 {
@@ -220,7 +220,7 @@ class Response
             $response['jsonrpc'] = $version;
         }
 
-        return \Laminas\Json\Json::encode($response);
+        return \Zend\Json\Json::encode($response);
     }
 
     /**

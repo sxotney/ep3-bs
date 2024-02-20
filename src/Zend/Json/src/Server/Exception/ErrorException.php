@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server\Exception;
+namespace Zend\Json\Server\Exception;
 
-use Laminas\Json\Exception;
+use Zend\Json\Exception;
 
 /**
- * Thrown by Laminas\Json\Server\Client when a JSON-RPC fault response is returned.
+ * Thrown by Zend\Json\Server\Client when a JSON-RPC fault response is returned.
  */
 class ErrorException extends Exception\BadMethodCallException implements
     ExceptionInterface

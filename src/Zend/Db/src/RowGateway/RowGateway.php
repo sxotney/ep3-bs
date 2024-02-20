@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\RowGateway;
+namespace Zend\Db\RowGateway;
 
-use Laminas\Db\Adapter\AdapterInterface;
-use Laminas\Db\Sql\Sql;
+use Zend\Db\Adapter\AdapterInterface;
+use Zend\Db\Sql\Sql;
 
 class RowGateway extends AbstractRowGateway
 {
@@ -18,7 +18,7 @@ class RowGateway extends AbstractRowGateway
      * Constructor
      *
      * @param string $primaryKeyColumn
-     * @param string|\Laminas\Db\Sql\TableIdentifier $table
+     * @param string|\Zend\Db\Sql\TableIdentifier $table
      * @param AdapterInterface|Sql $adapterOrSql
      * @throws Exception\InvalidArgumentException
      */

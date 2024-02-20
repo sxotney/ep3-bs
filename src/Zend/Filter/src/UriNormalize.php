@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
-use Laminas\Uri\Exception\ExceptionInterface as UriException;
-use Laminas\Uri\Uri;
-use Laminas\Uri\UriFactory;
+use Zend\Uri\Exception\ExceptionInterface as UriException;
+use Zend\Uri\Uri;
+use Zend\Uri\UriFactory;
 
 class UriNormalize extends AbstractFilter
 {

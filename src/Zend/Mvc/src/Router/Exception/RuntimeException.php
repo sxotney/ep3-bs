@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router\Exception;
+namespace Zend\Mvc\Router\Exception;
 
-use Laminas\Mvc\Exception;
+use Zend\Mvc\Exception;
 
 class RuntimeException extends Exception\RuntimeException implements ExceptionInterface
 {

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql;
+namespace Zend\Db\Sql;
 
 abstract class AbstractExpression implements ExpressionInterface
 {
@@ -62,8 +62,8 @@ abstract class AbstractExpression implements ExpressionInterface
             'null',
             'scalar',
             'array',
-            'Laminas\Db\Sql\ExpressionInterface',
-            'Laminas\Db\Sql\SqlInterface',
+            'Zend\Db\Sql\ExpressionInterface',
+            'Zend\Db\Sql\SqlInterface',
             is_object($argument) ? get_class($argument) : gettype($argument)
         ));
     }

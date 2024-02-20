@@ -7,26 +7,26 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
-use Laminas\Filter\FilterChain;
-use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\Validator\NotEmpty;
-use Laminas\Validator\ValidatorChain;
+use Zend\Filter\FilterChain;
+use Zend\ServiceManager\AbstractPluginManager;
+use Zend\Validator\NotEmpty;
+use Zend\Validator\ValidatorChain;
 
 class Input implements
     InputInterface,
     EmptyContextInterface
 {
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
      *
      * @var bool
      */
     protected $allowEmpty = false;
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
      *
      * @var bool
      */
@@ -53,7 +53,7 @@ class Input implements
     protected $name;
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
      *
      * @var bool
      */
@@ -97,7 +97,7 @@ class Input implements
     }
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
      *
      * @param  bool $allowEmpty
      * @return Input
@@ -119,7 +119,7 @@ class Input implements
     }
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
      *
      * @param bool $continueIfEmpty
      * @return Input
@@ -226,7 +226,7 @@ class Input implements
     }
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
      *
      * @return bool
      */
@@ -244,7 +244,7 @@ class Input implements
     }
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain. Should always return `true`.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain. Should always return `true`.
      *
      * @return bool
      */
@@ -458,7 +458,7 @@ class Input implements
     }
 
     /**
-     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
+     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
      *
      * @return void
      */

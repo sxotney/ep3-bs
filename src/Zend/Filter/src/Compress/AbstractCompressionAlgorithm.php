@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\Compress;
+namespace Zend\Filter\Compress;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Abstract compression adapter

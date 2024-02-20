@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Platform\Mysql\Ddl;
+namespace Zend\Db\Sql\Platform\Mysql\Ddl;
 
-use Laminas\Db\Adapter\Platform\PlatformInterface;
-use Laminas\Db\Sql\Ddl\AlterTable;
-use Laminas\Db\Sql\Platform\PlatformDecoratorInterface;
+use Zend\Db\Adapter\Platform\PlatformInterface;
+use Zend\Db\Sql\Ddl\AlterTable;
+use Zend\Db\Sql\Platform\PlatformDecoratorInterface;
 
 class AlterTableDecorator extends AlterTable implements PlatformDecoratorInterface
 {

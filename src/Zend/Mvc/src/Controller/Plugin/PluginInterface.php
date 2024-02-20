@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Controller\Plugin;
+namespace Zend\Mvc\Controller\Plugin;
 
-use Laminas\Stdlib\DispatchableInterface as Dispatchable;
+use Zend\Stdlib\DispatchableInterface as Dispatchable;
 
 interface PluginInterface
 {

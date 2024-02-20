@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\View\Exception;
+use Zend\View\Exception;
 
 /**
  * Helper for retrieving avatars from gravatar.com
@@ -196,7 +196,7 @@ class Gravatar extends AbstractHtmlElement
      * @param  array $attribs
      * @return Gravatar
      *
-     * @deprecated Please use Laminas\View\Helper\Gravatar::setAttributes
+     * @deprecated Please use Zend\View\Helper\Gravatar::setAttributes
      */
     public function setAttribs(array $attribs)
     {
@@ -235,7 +235,7 @@ class Gravatar extends AbstractHtmlElement
      *
      * @return array
      *
-     * @deprecated Please use Laminas\View\Helper\Gravatar::getAttributes
+     * @deprecated Please use Zend\View\Helper\Gravatar::getAttributes
      */
     public function getAttribs()
     {

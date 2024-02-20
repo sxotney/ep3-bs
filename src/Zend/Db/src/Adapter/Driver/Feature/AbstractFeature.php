@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Feature;
+namespace Zend\Db\Adapter\Driver\Feature;
 
-use Laminas\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\Driver\DriverInterface;
 
 abstract class AbstractFeature
 {

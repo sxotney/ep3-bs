@@ -1,15 +1,15 @@
 <?php
 /**
- * @link      https://github.com/laminas/laminas-modulemanager for the canonical source repository
+ * @link      https://github.com/zendframework/zend-modulemanager for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-modulemanager/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-modulemanager/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\ModuleManager\Listener;
+namespace Zend\ModuleManager\Listener;
 
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\EventManager\ListenerAggregateInterface;
-use Laminas\ModuleManager\ModuleEvent;
+use Zend\EventManager\EventManagerInterface;
+use Zend\EventManager\ListenerAggregateInterface;
+use Zend\ModuleManager\ModuleEvent;
 
 /**
  * Default listener aggregate
@@ -42,7 +42,7 @@ class DefaultListenerAggregate extends AbstractListener implements
 
         // High priority, we assume module autoloading (for FooNamespace\Module
         // classes) should be available before anything else.
-        // Register it only if use_laminas_loader config is true, however.
+        // Register it only if use_zend_loader config is true, however.
         if ($options->useZendLoader()) {
             $moduleLoaderListener = new ModuleLoaderListener($options);
             $moduleLoaderListener->attach($events);
@@ -53,7 +53,7 @@ class DefaultListenerAggregate extends AbstractListener implements
         if ($options->useZendLoader()) {
             // High priority, because most other loadModule listeners will assume
             // the module's classes are available via autoloading
-            // Register it only if use_laminas_loader config is true, however.
+            // Register it only if use_zend_loader config is true, however.
             $this->listeners[] = $events->attach(
                 ModuleEvent::EVENT_LOAD_MODULE,
                 new AutoloaderListener($options),

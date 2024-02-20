@@ -4,7 +4,7 @@ namespace Base\View\Helper;
 
 use Base\Manager\OptionManager;
 use RuntimeException;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class Option extends AbstractHelper
 {

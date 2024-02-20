@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
-use Laminas\Validator\Exception;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the md5 hash of given files
@@ -80,7 +80,7 @@ class Md5 extends Hash
      * Returns true if and only if the given file confirms the set hash
      *
      * @param  string|array $value Filename to check for hash
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

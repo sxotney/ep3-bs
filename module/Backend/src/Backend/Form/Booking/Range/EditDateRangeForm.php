@@ -3,8 +3,8 @@
 namespace Backend\Form\Booking\Range;
 
 use Booking\Entity\Booking;
-use Laminas\Form\Form;
-use Laminas\InputFilter\Factory;
+use Zend\Form\Form;
+use Zend\InputFilter\Factory;
 
 class EditDateRangeForm extends Form
 {

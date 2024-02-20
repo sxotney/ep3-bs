@@ -7,11 +7,11 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element;
-use Laminas\Form\ElementPrepareAwareInterface;
-use Laminas\Form\FormInterface;
+use Zend\Form\Element;
+use Zend\Form\ElementPrepareAwareInterface;
+use Zend\Form\FormInterface;
 
 class Password extends Element implements ElementPrepareAwareInterface
 {

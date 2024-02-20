@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Controller\Plugin;
+namespace Zend\Mvc\Controller\Plugin;
 
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
 use ReturnTypeWillChange;
-use Laminas\Session\Container;
-use Laminas\Session\ManagerInterface as Manager;
-use Laminas\Stdlib\SplQueue;
+use Zend\Session\Container;
+use Zend\Session\ManagerInterface as Manager;
+use Zend\Stdlib\SplQueue;
 
 /**
  * Flash Messenger - implement session-based messages

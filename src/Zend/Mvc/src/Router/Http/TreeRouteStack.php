@@ -7,17 +7,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router\Http;
+namespace Zend\Mvc\Router\Http;
 
 use ArrayObject;
 use Traversable;
-use Laminas\Mvc\Router\Exception;
-use Laminas\Mvc\Router\RouteInvokableFactory;
-use Laminas\Mvc\Router\SimpleRouteStack;
-use Laminas\ServiceManager\Config;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Stdlib\RequestInterface as Request;
-use Laminas\Uri\Http as HttpUri;
+use Zend\Mvc\Router\Exception;
+use Zend\Mvc\Router\RouteInvokableFactory;
+use Zend\Mvc\Router\SimpleRouteStack;
+use Zend\ServiceManager\Config;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Stdlib\RequestInterface as Request;
+use Zend\Uri\Http as HttpUri;
 
 /**
  * Tree search implementation.
@@ -51,7 +51,7 @@ class TreeRouteStack extends SimpleRouteStack
     /**
      * factory(): defined by RouteInterface interface.
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
+     * @see    \Zend\Mvc\Router\RouteInterface::factory()
      * @param  array|Traversable $options
      * @return SimpleRouteStack
      * @throws Exception\InvalidArgumentException
@@ -125,16 +125,16 @@ class TreeRouteStack extends SimpleRouteStack
 
                 // v2 normalized names
 
-                'laminasmvcrouterhttpchain'    => RouteInvokableFactory::class,
-                'laminasmvcrouterhttphostname' => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpliteral'  => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpmethod'   => RouteInvokableFactory::class,
-                'laminasmvcrouterhttppart'     => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpquery'    => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpregex'    => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpscheme'   => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpsegment'  => RouteInvokableFactory::class,
-                'laminasmvcrouterhttpwildcard' => RouteInvokableFactory::class,
+                'zendmvcrouterhttpchain'    => RouteInvokableFactory::class,
+                'zendmvcrouterhttphostname' => RouteInvokableFactory::class,
+                'zendmvcrouterhttpliteral'  => RouteInvokableFactory::class,
+                'zendmvcrouterhttpmethod'   => RouteInvokableFactory::class,
+                'zendmvcrouterhttppart'     => RouteInvokableFactory::class,
+                'zendmvcrouterhttpquery'    => RouteInvokableFactory::class,
+                'zendmvcrouterhttpregex'    => RouteInvokableFactory::class,
+                'zendmvcrouterhttpscheme'   => RouteInvokableFactory::class,
+                'zendmvcrouterhttpsegment'  => RouteInvokableFactory::class,
+                'zendmvcrouterhttpwildcard' => RouteInvokableFactory::class,
             ],
         ]))->configureServiceManager($this->routePluginManager);
     }
@@ -281,14 +281,14 @@ class TreeRouteStack extends SimpleRouteStack
     }
 
     /**
-     * match(): defined by \Laminas\Mvc\Router\RouteInterface
+     * match(): defined by \Zend\Mvc\Router\RouteInterface
      *
      * @param  Request      $request
      * @param  integer|null $pathOffset
      * @param  array        $options
      *
      * @return void
-     *@see    \Laminas\Mvc\Router\RouteInterface::match()
+     *@see    \Zend\Mvc\Router\RouteInterface::match()
      */
     public function match(Request $request, $pathOffset = null, array $options = [])
     {
@@ -337,9 +337,9 @@ class TreeRouteStack extends SimpleRouteStack
     }
 
     /**
-     * assemble(): defined by \Laminas\Mvc\Router\RouteInterface interface.
+     * assemble(): defined by \Zend\Mvc\Router\RouteInterface interface.
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
+     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

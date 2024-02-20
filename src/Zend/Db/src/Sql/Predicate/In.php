@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Predicate;
+namespace Zend\Db\Sql\Predicate;
 
-use Laminas\Db\Sql\Exception;
-use Laminas\Db\Sql\Select;
-use Laminas\Db\Sql\AbstractExpression;
+use Zend\Db\Sql\Exception;
+use Zend\Db\Sql\Select;
+use Zend\Db\Sql\AbstractExpression;
 
 class In extends AbstractExpression implements PredicateInterface
 {
@@ -72,7 +72,7 @@ class In extends AbstractExpression implements PredicateInterface
     {
         if (! is_array($valueSet) && ! $valueSet instanceof Select) {
             throw new Exception\InvalidArgumentException(
-                '$valueSet must be either an array or a Laminas\Db\Sql\Select object, ' . gettype($valueSet) . ' given'
+                '$valueSet must be either an array or a Zend\Db\Sql\Select object, ' . gettype($valueSet) . ' given'
             );
         }
         $this->valueSet = $valueSet;

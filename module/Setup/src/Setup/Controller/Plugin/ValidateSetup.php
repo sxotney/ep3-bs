@@ -2,9 +2,9 @@
 
 namespace Setup\Controller\Plugin;
 
-use Laminas\Db\Adapter\Adapter;
-use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
-use Laminas\ServiceManager\ServiceManager;
+use Zend\Db\Adapter\Adapter;
+use Zend\Mvc\Controller\Plugin\AbstractPlugin;
+use Zend\ServiceManager\ServiceManager;
 
 class ValidateSetup extends AbstractPlugin
 {

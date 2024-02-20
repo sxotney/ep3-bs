@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Translator\Loader;
+namespace Zend\I18n\Translator\Loader;
 
-use Laminas\Config\Reader\Ini as IniReader;
-use Laminas\I18n\Exception;
-use Laminas\I18n\Translator\Plural\Rule as PluralRule;
-use Laminas\I18n\Translator\TextDomain;
+use Zend\Config\Reader\Ini as IniReader;
+use Zend\I18n\Exception;
+use Zend\I18n\Translator\Plural\Rule as PluralRule;
+use Zend\I18n\Translator\TextDomain;
 
 /**
  * PHP INI format loader.

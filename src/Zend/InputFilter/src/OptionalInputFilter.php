@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 /**
  * InputFilter which only checks the containing Inputs when non-empty data is set,
  * else it reports valid
  *
- * This is analog to {@see Laminas\InputFilter\Input} with the option ->setRequired(false)
+ * This is analog to {@see Zend\InputFilter\Input} with the option ->setRequired(false)
  */
 class OptionalInputFilter extends InputFilter
 {

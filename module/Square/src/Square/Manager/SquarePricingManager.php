@@ -8,7 +8,7 @@ use InvalidArgumentException;
 use RuntimeException;
 use Square\Entity\Square;
 use Square\Table\SquarePricingTable;
-use Laminas\Db\Adapter\Adapter;
+use Zend\Db\Adapter\Adapter;
 
 class SquarePricingManager extends AbstractManager
 {

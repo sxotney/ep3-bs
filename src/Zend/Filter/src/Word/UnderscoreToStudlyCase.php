@@ -1,13 +1,13 @@
 <?php
 
-namespace Laminas\Filter\Word;
+namespace Zend\Filter\Word;
 
-use Laminas\Stdlib\StringUtils;
+use Zend\Stdlib\StringUtils;
 
 class UnderscoreToStudlyCase extends UnderscoreToCamelCase
 {
     /**
-     * Defined by Laminas\Filter\Filter
+     * Defined by Zend\Filter\Filter
      *
      * @param  string|array $value
      * @return string|array

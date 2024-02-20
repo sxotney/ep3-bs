@@ -7,20 +7,20 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Translator;
+namespace Zend\I18n\Translator;
 
 use Locale;
 use Traversable;
-use Laminas\Cache;
-use Laminas\Cache\Storage\StorageInterface as CacheStorage;
-use Laminas\EventManager\Event;
-use Laminas\EventManager\EventManager;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\I18n\Exception;
-use Laminas\I18n\Translator\Loader\FileLoaderInterface;
-use Laminas\I18n\Translator\Loader\RemoteLoaderInterface;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\ServiceManager\ServiceManager;
+use Zend\Cache;
+use Zend\Cache\Storage\StorageInterface as CacheStorage;
+use Zend\EventManager\Event;
+use Zend\EventManager\EventManager;
+use Zend\EventManager\EventManagerInterface;
+use Zend\I18n\Exception;
+use Zend\I18n\Translator\Loader\FileLoaderInterface;
+use Zend\I18n\Translator\Loader\RemoteLoaderInterface;
+use Zend\Stdlib\ArrayUtils;
+use Zend\ServiceManager\ServiceManager;
 
 /**
  * Translator.
@@ -448,7 +448,7 @@ class Translator implements TranslatorInterface
 
 
         /**
-         * issue https://github.com/laminas/laminas-i18n/issues/53
+         * issue https://github.com/zendframework/zend-i18n/issues/53
          *
          * storage: array:8 [▼
          *   "default\x04Welcome" => "Cześć"

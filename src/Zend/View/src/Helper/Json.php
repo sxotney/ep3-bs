@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\Http\Response;
-use Laminas\Json\Json as JsonFormatter;
+use Zend\Http\Response;
+use Zend\Json\Json as JsonFormatter;
 
 /**
  * Helper for simplifying JSON responses

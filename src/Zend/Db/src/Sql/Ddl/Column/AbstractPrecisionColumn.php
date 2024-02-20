@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Ddl\Column;
+namespace Zend\Db\Sql\Ddl\Column;
 
 abstract class AbstractPrecisionColumn extends AbstractLengthColumn
 {

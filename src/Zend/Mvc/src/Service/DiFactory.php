@@ -7,17 +7,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Di\Config;
-use Laminas\Di\Di;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Di\Config;
+use Zend\Di\Di;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * @deprecated Since 2.7.9. The factory is now defined in zend-servicemanager-di,
- *     and removed in 3.0.0. Use Laminas\ServiceManager\Di\DiFactory from
+ *     and removed in 3.0.0. Use Zend\ServiceManager\Di\DiFactory from
  *     from zend-servicemanager-di if you are using zend-servicemanager v3, and/or when
  *     ready to migrate to zend-mvc 3.0.
  */

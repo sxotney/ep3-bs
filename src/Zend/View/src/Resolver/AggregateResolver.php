@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Resolver;
+namespace Zend\View\Resolver;
 
 use Countable;
 use IteratorAggregate;
 use ReturnTypeWillChange;
-use Laminas\Stdlib\PriorityQueue;
-use Laminas\View\Renderer\RendererInterface as Renderer;
-use Laminas\View\Resolver\ResolverInterface as Resolver;
+use Zend\Stdlib\PriorityQueue;
+use Zend\View\Renderer\RendererInterface as Renderer;
+use Zend\View\Resolver\ResolverInterface as Resolver;
 
 class AggregateResolver implements Countable, IteratorAggregate, ResolverInterface
 {

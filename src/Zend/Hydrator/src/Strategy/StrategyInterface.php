@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Strategy;
+namespace Zend\Hydrator\Strategy;
 
 /**
  * @todo v3.0, add optional object/data to extract/hydrate.

@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Metadata\Source;
+namespace Zend\Db\Metadata\Source;
 
-use Laminas\Db\Adapter\Adapter;
+use Zend\Db\Adapter\Adapter;
 
 class PostgresqlMetadata extends AbstractSource
 {

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Compresses a given string
@@ -91,7 +91,7 @@ class Compress extends AbstractFilter
         $adapter = $this->adapter;
         $options = $this->getAdapterOptions();
         if (! class_exists($adapter)) {
-            $adapter = 'Laminas\\Filter\\Compress\\' . ucfirst($adapter);
+            $adapter = 'Zend\\Filter\\Compress\\' . ucfirst($adapter);
             if (! class_exists($adapter)) {
                 throw new Exception\RuntimeException(sprintf(
                     '%s unable to load adapter; class "%s" not found',
@@ -105,7 +105,7 @@ class Compress extends AbstractFilter
         if (! $this->adapter instanceof Compress\CompressionAlgorithmInterface) {
             throw new Exception\InvalidArgumentException(
                 "Compression adapter '" . $adapter
-                . "' does not implement Laminas\\Filter\\Compress\\CompressionAlgorithmInterface"
+                . "' does not implement Zend\\Filter\\Compress\\CompressionAlgorithmInterface"
             );
         }
         return $this->adapter;
@@ -137,7 +137,7 @@ class Compress extends AbstractFilter
         if (! is_string($adapter)) {
             throw new Exception\InvalidArgumentException(
                 'Invalid adapter provided; must be string or instance of '
-                . 'Laminas\\Filter\\Compress\\CompressionAlgorithmInterface'
+                . 'Zend\\Filter\\Compress\\CompressionAlgorithmInterface'
             );
         }
         $this->adapter = $adapter;
@@ -198,7 +198,7 @@ class Compress extends AbstractFilter
     }
 
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Compresses the content $value with the defined settings
      *

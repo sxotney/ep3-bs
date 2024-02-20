@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\View\Http;
+namespace Zend\Mvc\View\Http;
 
-use Laminas\Console\Request as ConsoleRequest;
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Http\Request as HttpRequest;
-use Laminas\Mvc\MvcEvent;
+use Zend\Console\Request as ConsoleRequest;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Http\Request as HttpRequest;
+use Zend\Mvc\MvcEvent;
 
 class InjectRoutematchParamsListener extends AbstractListenerAggregate
 {
@@ -43,7 +43,7 @@ class InjectRoutematchParamsListener extends AbstractListenerAggregate
         $routeMatchParams = $e->getRouteMatch()->getParams();
         $request = $e->getRequest();
 
-        /** @var $params \Laminas\Stdlib\Parameters */
+        /** @var $params \Zend\Stdlib\Parameters */
         if ($request instanceof ConsoleRequest) {
             $params = $request->params();
         } elseif ($request instanceof HttpRequest) {

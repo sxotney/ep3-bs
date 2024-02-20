@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Controller\Plugin\Service;
+namespace Zend\Mvc\Controller\Plugin\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Authentication\AuthenticationService;
-use Laminas\Mvc\Controller\Plugin\Identity;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Authentication\AuthenticationService;
+use Zend\Mvc\Controller\Plugin\Identity;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class IdentityFactory implements FactoryInterface
 {

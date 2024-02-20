@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib;
+namespace Zend\Stdlib;
 
 /**
  * Interface to allow objects to have initialization logic

@@ -7,17 +7,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Sitemap;
+namespace Zend\Validator\Sitemap;
 
-use Laminas\Uri;
-use Laminas\Validator\AbstractValidator;
+use Zend\Uri;
+use Zend\Validator\AbstractValidator;
 
 /**
  * Validates whether a given value is valid as a sitemap <loc> value
  *
  * @link       http://www.sitemaps.org/protocol.php Sitemaps XML format
  *
- * @see        Laminas\Uri\Uri
+ * @see        Zend\Uri\Uri
  */
 class Loc extends AbstractValidator
 {

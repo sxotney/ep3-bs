@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session;
+namespace Zend\Session;
 
 use Traversable;
-use Laminas\EventManager\Event;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\EventManager\Event;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Session ManagerInterface implementation utilizing ext/session

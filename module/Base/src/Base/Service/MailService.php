@@ -2,10 +2,10 @@
 
 namespace Base\Service;
 
-use Laminas\Mail\Message;
-use Laminas\Mime\Message as MimeMessage;
-use Laminas\Mime\Mime;
-use Laminas\Mime\Part as MimePart;
+use Zend\Mail\Message;
+use Zend\Mime\Message as MimeMessage;
+use Zend\Mime\Mime;
+use Zend\Mime\Part as MimePart;
 
 class MailService extends AbstractService
 {

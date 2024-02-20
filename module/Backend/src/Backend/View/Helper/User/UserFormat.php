@@ -3,7 +3,7 @@
 namespace Backend\View\Helper\User;
 
 use User\Entity\User;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class UserFormat extends AbstractHelper
 {

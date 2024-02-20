@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Serializer\Adapter;
+namespace Zend\Serializer\Adapter;
 
 class WddxOptions extends AdapterOptions
 {

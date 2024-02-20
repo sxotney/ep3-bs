@@ -1,20 +1,20 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-http for the canonical source repository
+ * @see       https://github.com/zendframework/zend-http for the canonical source repository
  * @copyright Copyright (c) 2005-2017 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   https://github.com/laminas/laminas-http/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-http/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Http\Client\Adapter;
+namespace Zend\Http\Client\Adapter;
 
 use Traversable;
-use Laminas\Http\Response;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Http\Response;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * A testing-purposes adapter.
  *
- * Should be used to test all components that rely on Laminas\Http\Client,
+ * Should be used to test all components that rely on Zend\Http\Client,
  * without actually performing an HTTP request. You should instantiate this
  * object manually, and then set it as the client's adapter. Then, you can
  * set the expected response using the setResponse() method.
@@ -61,7 +61,7 @@ class Test implements AdapterInterface
      * Set the nextRequestWillFail flag
      *
      * @param  bool $flag
-     * @return \Laminas\Http\Client\Adapter\Test
+     * @return \Zend\Http\Client\Adapter\Test
      */
     public function setNextRequestWillFail($flag)
     {
@@ -114,7 +114,7 @@ class Test implements AdapterInterface
      * Send request to the remote server
      *
      * @param string        $method
-     * @param \Laminas\Uri\Uri $uri
+     * @param \Zend\Uri\Uri $uri
      * @param string        $httpVer
      * @param array         $headers
      * @param string        $body
@@ -169,7 +169,7 @@ class Test implements AdapterInterface
     /**
      * Set the HTTP response(s) to be returned by this adapter
      *
-     * @param \Laminas\Http\Response|array|string $response
+     * @param \Zend\Http\Response|array|string $response
      */
     public function setResponse($response)
     {

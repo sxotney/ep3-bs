@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager\Filter;
+namespace Zend\EventManager\Filter;
 
-use Laminas\EventManager\ResponseCollection;
-use Laminas\Stdlib\CallbackHandler;
+use Zend\EventManager\ResponseCollection;
+use Zend\Stdlib\CallbackHandler;
 
 /**
  * Interface for intercepting filter chains

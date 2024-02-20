@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Strategy;
+namespace Zend\View\Strategy;
 
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\View\Renderer\PhpRenderer;
-use Laminas\View\ViewEvent;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface;
+use Zend\View\Renderer\PhpRenderer;
+use Zend\View\ViewEvent;
 
 class PhpRendererStrategy extends AbstractListenerAggregate
 {

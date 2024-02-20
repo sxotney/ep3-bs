@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\Authentication\AuthenticationServiceInterface;
-use Laminas\View\Exception;
+use Zend\Authentication\AuthenticationServiceInterface;
+use Zend\View\Exception;
 
 /**
  * View helper plugin to fetch the authenticated identity.

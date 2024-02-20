@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Predicate;
+namespace Zend\Db\Sql\Predicate;
 
 use Countable;
 use ReturnTypeWillChange;
-use Laminas\Db\Sql\Exception;
+use Zend\Db\Sql\Exception;
 
 class PredicateSet implements PredicateInterface, Countable
 {

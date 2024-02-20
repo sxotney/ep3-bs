@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 use Traversable;
 
@@ -37,7 +37,7 @@ class StringToUpper extends AbstractUnicode
     }
 
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Returns the string $value, converting characters to uppercase as necessary
      *

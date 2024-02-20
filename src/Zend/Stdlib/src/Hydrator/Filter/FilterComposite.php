@@ -6,12 +6,12 @@
  * @copyright      Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license        http://framework.zend.com/license/new-bsd New BSD License
  */
-namespace Laminas\Stdlib\Hydrator\Filter;
+namespace Zend\Stdlib\Hydrator\Filter;
 
-use Laminas\Hydrator\Filter\FilterComposite as BaseFilterComposite;
+use Zend\Hydrator\Filter\FilterComposite as BaseFilterComposite;
 
 /**
- * @deprecated Use Laminas\Hydrator\Filter\FilterComposite from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Filter\FilterComposite from zendframework/zend-hydrator instead.
  */
 class FilterComposite extends BaseFilterComposite implements FilterInterface
 {

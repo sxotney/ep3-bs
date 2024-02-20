@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Annotation;
+namespace Zend\Form\Annotation;
 
 use ReflectionClass;
-use Laminas\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\AbstractListenerAggregate;
 
 /**
  * Base annotations listener.
@@ -27,14 +27,14 @@ abstract class AbstractAnnotationsListener extends AbstractListenerAggregate
     /**
      * Attempt to discover a name set via annotation
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return false|string
      */
     public function handleNameAnnotation($e)
     {
         $annotations = $e->getParam('annotations');
 
-        if (! $annotations->hasAnnotation('Laminas\Form\Annotation\Name')) {
+        if (! $annotations->hasAnnotation('Zend\Form\Annotation\Name')) {
             return false;
         }
 
@@ -51,7 +51,7 @@ abstract class AbstractAnnotationsListener extends AbstractListenerAggregate
     /**
      * Discover the fallback name via reflection
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return string
      */
     public function discoverFallbackName($e)

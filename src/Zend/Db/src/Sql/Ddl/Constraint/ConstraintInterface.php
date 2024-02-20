@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Ddl\Constraint;
+namespace Zend\Db\Sql\Ddl\Constraint;
 
-use Laminas\Db\Sql\ExpressionInterface;
+use Zend\Db\Sql\ExpressionInterface;
 
 interface ConstraintInterface extends ExpressionInterface
 {

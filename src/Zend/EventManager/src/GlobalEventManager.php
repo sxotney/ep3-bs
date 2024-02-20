@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager;
+namespace Zend\EventManager;
 
-use Laminas\Stdlib\CallbackHandler;
-use Laminas\Stdlib\PriorityQueue;
+use Zend\Stdlib\CallbackHandler;
+use Zend\Stdlib\PriorityQueue;
 
 /**
  * Event manager: notification system
@@ -19,7 +19,7 @@ use Laminas\Stdlib\PriorityQueue;
  * system for your objects.
  *
  * @deprecated This class is deprecated with 2.6.0, and will be removed in 3.0.0.
- *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
+ *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
  *     for details.
  */
 class GlobalEventManager

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Aggregate;
+namespace Zend\Hydrator\Aggregate;
 
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Hydrator\HydratorInterface;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Hydrator\HydratorInterface;
 
 /**
  * Aggregate listener wrapping around a hydrator.

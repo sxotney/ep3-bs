@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mail for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mail\Storage;
+namespace Zend\Mail\Storage;
 
 use RecursiveIterator;
 use ReturnTypeWillChange;
@@ -13,7 +13,7 @@ use ReturnTypeWillChange;
 class Folder implements RecursiveIterator
 {
     /**
-     * subfolders of folder array(localName => \Laminas\Mail\Storage\Folder folder)
+     * subfolders of folder array(localName => \Zend\Mail\Storage\Folder folder)
      * @var array
      */
     protected $folders;
@@ -67,7 +67,7 @@ class Folder implements RecursiveIterator
     /**
      * implements RecursiveIterator::getChildren()
      *
-     * @return \Laminas\Mail\Storage\Folder same as self::current()
+     * @return \Zend\Mail\Storage\Folder same as self::current()
      */
     #[ReturnTypeWillChange] public function getChildren()
     {
@@ -105,7 +105,7 @@ class Folder implements RecursiveIterator
     /**
      * implements Iterator::current()
      *
-     * @return \Laminas\Mail\Storage\Folder current folder
+     * @return \Zend\Mail\Storage\Folder current folder
      */
     #[ReturnTypeWillChange] public function current()
     {
@@ -125,7 +125,7 @@ class Folder implements RecursiveIterator
      *
      * @param  string $name wanted subfolder
      * @throws Exception\InvalidArgumentException
-     * @return \Laminas\Mail\Storage\Folder folder named $folder
+     * @return \Zend\Mail\Storage\Folder folder named $folder
      */
     public function __get($name)
     {
@@ -140,7 +140,7 @@ class Folder implements RecursiveIterator
      * add or replace subfolder named $name
      *
      * @param string $name local name of subfolder
-     * @param \Laminas\Mail\Storage\Folder $folder instance for new subfolder
+     * @param \Zend\Mail\Storage\Folder $folder instance for new subfolder
      */
     public function __set($name, Folder $folder)
     {

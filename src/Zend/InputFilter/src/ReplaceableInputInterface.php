@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 /**
  * Mark an input as able to be replaced by another when merging input filters.

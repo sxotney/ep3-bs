@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element;
-use Laminas\InputFilter\InputProviderInterface;
-use Laminas\Validator\Regex as RegexValidator;
+use Zend\Form\Element;
+use Zend\InputFilter\InputProviderInterface;
+use Zend\Validator\Regex as RegexValidator;
 
 class Color extends Element implements InputProviderInterface
 {
@@ -25,14 +25,14 @@ class Color extends Element implements InputProviderInterface
     ];
 
     /**
-     * @var \Laminas\Validator\ValidatorInterface
+     * @var \Zend\Validator\ValidatorInterface
      */
     protected $validator;
 
     /**
      * Get validator
      *
-     * @return \Laminas\Validator\ValidatorInterface
+     * @return \Zend\Validator\ValidatorInterface
      */
     protected function getValidator()
     {
@@ -55,8 +55,8 @@ class Color extends Element implements InputProviderInterface
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Laminas\Filter\StringTrim'],
-                ['name' => 'Laminas\Filter\StringToLower'],
+                ['name' => 'Zend\Filter\StringTrim'],
+                ['name' => 'Zend\Filter\StringToLower'],
             ],
             'validators' => [
                 $this->getValidator(),

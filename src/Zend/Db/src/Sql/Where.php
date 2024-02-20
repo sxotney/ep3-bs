@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql;
+namespace Zend\Db\Sql;
 
 class Where extends Predicate\Predicate
 {

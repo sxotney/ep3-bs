@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Guard;
+namespace Zend\Stdlib\Guard;
 
 use Traversable;
 
@@ -20,7 +20,7 @@ use Traversable;
  */
 abstract class GuardUtils
 {
-    const DEFAULT_EXCEPTION_CLASS = 'Laminas\Stdlib\Exception\InvalidArgumentException';
+    const DEFAULT_EXCEPTION_CLASS = 'Zend\Stdlib\Exception\InvalidArgumentException';
 
     /**
      * Verifies that the data is an array or Traversable

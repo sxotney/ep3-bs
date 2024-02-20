@@ -2,15 +2,15 @@
 
 namespace Square\Table;
 
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class SquareProductTableFactory implements FactoryInterface
 {
 
     public function createService(ServiceLocatorInterface $sm)
     {
-        return new SquareProductTable(SquareProductTable::NAME, $sm->get('Laminas\Db\Adapter\Adapter'));
+        return new SquareProductTable(SquareProductTable::NAME, $sm->get('Zend\Db\Adapter\Adapter'));
     }
 
 }

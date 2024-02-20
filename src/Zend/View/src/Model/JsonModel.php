@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Model;
+namespace Zend\View\Model;
 
 use Traversable;
-use Laminas\Json\Json;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Json\Json;
+use Zend\Stdlib\ArrayUtils;
 
 class JsonModel extends ViewModel
 {

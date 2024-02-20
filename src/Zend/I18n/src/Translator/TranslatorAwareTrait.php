@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Translator;
+namespace Zend\I18n\Translator;
 
 trait TranslatorAwareTrait
 {

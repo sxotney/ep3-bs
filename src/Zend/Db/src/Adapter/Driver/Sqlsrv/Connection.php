@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Sqlsrv;
+namespace Zend\Db\Adapter\Driver\Sqlsrv;
 
-use Laminas\Db\Adapter\Driver\AbstractConnection;
-use Laminas\Db\Adapter\Driver\Sqlsrv\Exception\ErrorException;
-use Laminas\Db\Adapter\Exception;
+use Zend\Db\Adapter\Driver\AbstractConnection;
+use Zend\Db\Adapter\Driver\Sqlsrv\Exception\ErrorException;
+use Zend\Db\Adapter\Exception;
 
 class Connection extends AbstractConnection
 {
@@ -24,7 +24,7 @@ class Connection extends AbstractConnection
      * Constructor
      *
      * @param  array|resource                                      $connectionInfo
-     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
      */
     public function __construct($connectionInfo)
     {

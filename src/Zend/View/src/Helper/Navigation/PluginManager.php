@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper\Navigation;
+namespace Zend\View\Helper\Navigation;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\Factory\InvokableFactory;
-use Laminas\View\HelperPluginManager;
+use Zend\ServiceManager\Factory\InvokableFactory;
+use Zend\View\HelperPluginManager;
 
 /**
  * Plugin manager implementation for navigation helpers
@@ -52,10 +52,10 @@ class PluginManager extends HelperPluginManager
 
         // v2 canonical FQCNs
 
-        'laminasviewhelpernavigationbreadcrumbs' => InvokableFactory::class,
-        'laminasviewhelpernavigationlinks'       => InvokableFactory::class,
-        'laminasviewhelpernavigationmenu'        => InvokableFactory::class,
-        'laminasviewhelpernavigationsitemap'     => InvokableFactory::class,
+        'zendviewhelpernavigationbreadcrumbs' => InvokableFactory::class,
+        'zendviewhelpernavigationlinks'       => InvokableFactory::class,
+        'zendviewhelpernavigationmenu'        => InvokableFactory::class,
+        'zendviewhelpernavigationsitemap'     => InvokableFactory::class,
     ];
 
     /**

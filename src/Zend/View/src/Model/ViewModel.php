@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Model;
+namespace Zend\View\Model;
 
 use ArrayAccess;
 use ArrayIterator;
 use ReturnTypeWillChange;
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\View\Exception;
-use Laminas\View\Model;
-use Laminas\View\Variables as ViewVariables;
+use Zend\Stdlib\ArrayUtils;
+use Zend\View\Exception;
+use Zend\View\Model;
+use Zend\View\Variables as ViewVariables;
 
 class ViewModel implements ModelInterface, ClearableModelInterface, RetrievableChildrenInterface
 {
@@ -186,7 +186,7 @@ class ViewModel implements ModelInterface, ClearableModelInterface, RetrievableC
      * Set renderer options/hints en masse
      *
      * @param array|Traversable $options
-     * @throws \Laminas\View\Exception\InvalidArgumentException
+     * @throws \Zend\View\Exception\InvalidArgumentException
      * @return ViewModel
      */
     public function setOptions($options)

@@ -2,8 +2,8 @@
 
 namespace User\Manager;
 
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class UserSessionManagerFactory implements FactoryInterface
 {
@@ -13,7 +13,7 @@ class UserSessionManagerFactory implements FactoryInterface
         return new UserSessionManager(
             $sm->get('Base\Manager\ConfigManager'),
             $sm->get('User\Manager\UserManager'),
-            $sm->get('Laminas\Session\SessionManager'));
+            $sm->get('Zend\Session\SessionManager'));
     }
 
 }

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Exception;
+namespace Zend\I18n\Exception;
 
 use DomainException;
 

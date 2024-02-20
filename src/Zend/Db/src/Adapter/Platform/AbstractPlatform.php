@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Platform;
+namespace Zend\Db\Adapter\Platform;
 
 abstract class AbstractPlatform implements PlatformInterface
 {

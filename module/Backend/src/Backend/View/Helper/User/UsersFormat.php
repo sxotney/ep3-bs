@@ -2,7 +2,7 @@
 
 namespace Backend\View\Helper\User;
 
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class UsersFormat extends AbstractHelper
 {

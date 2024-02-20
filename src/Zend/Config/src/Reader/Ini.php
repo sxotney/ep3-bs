@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Reader;
+namespace Zend\Config\Reader;
 
-use Laminas\Config\Exception;
+use Zend\Config\Exception;
 
 /**
  * INI config reader.

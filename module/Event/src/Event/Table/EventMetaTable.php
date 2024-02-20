@@ -2,7 +2,7 @@
 
 namespace Event\Table;
 
-use Laminas\Db\TableGateway\TableGateway;
+use Zend\Db\TableGateway\TableGateway;
 
 class EventMetaTable extends TableGateway
 {

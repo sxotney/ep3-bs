@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
 use stdClass;
-use Laminas\View;
-use Laminas\View\Exception;
+use Zend\View;
+use Zend\View\Exception;
 
 /**
- * Laminas\View\Helper\HeadMeta
+ * Zend\View\Helper\HeadMeta
  *
  * @see http://www.w3.org/TR/xhtml1/dtds.html
  *

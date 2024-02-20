@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form;
+namespace Zend\Form;
 
 use Traversable;
-use Laminas\InputFilter\InputFilterProviderInterface;
+use Zend\InputFilter\InputFilterProviderInterface;
 
 class InputFilterProviderFieldset extends Fieldset implements InputFilterProviderInterface
 {

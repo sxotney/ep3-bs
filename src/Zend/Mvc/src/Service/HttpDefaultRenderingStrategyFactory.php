@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Mvc\View\Http\DefaultRenderingStrategy;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\View\View;
+use Zend\Mvc\View\Http\DefaultRenderingStrategy;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\View\View;
 
 class HttpDefaultRenderingStrategyFactory implements FactoryInterface
 {

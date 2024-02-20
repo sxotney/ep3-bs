@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 interface InputFilterProviderInterface
 {
     /**
      * Should return an array specification compatible with
-     * {@link Laminas\InputFilter\Factory::createInputFilter()}.
+     * {@link Zend\InputFilter\Factory::createInputFilter()}.
      *
      * @return array
      */

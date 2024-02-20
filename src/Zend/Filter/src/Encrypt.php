@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Encrypts a given string
@@ -108,8 +108,8 @@ class Encrypt extends AbstractFilter
             $options = [];
         }
 
-        if (class_exists('Laminas\Filter\Encrypt\\' . ucfirst($adapter))) {
-            $adapter = 'Laminas\Filter\Encrypt\\' . ucfirst($adapter);
+        if (class_exists('Zend\Filter\Encrypt\\' . ucfirst($adapter))) {
+            $adapter = 'Zend\Filter\Encrypt\\' . ucfirst($adapter);
         } elseif (! class_exists($adapter)) {
             throw new Exception\DomainException(
                 sprintf(
@@ -124,7 +124,7 @@ class Encrypt extends AbstractFilter
         if (! $this->adapter instanceof Encrypt\EncryptionAlgorithmInterface) {
             throw new Exception\InvalidArgumentException(
                 "Encoding adapter '" . $adapter
-                . "' does not implement Laminas\\Filter\\Encrypt\\EncryptionAlgorithmInterface"
+                . "' does not implement Zend\\Filter\\Encrypt\\EncryptionAlgorithmInterface"
             );
         }
 
@@ -150,7 +150,7 @@ class Encrypt extends AbstractFilter
     }
 
     /**
-     * Defined by Laminas\Filter\Filter
+     * Defined by Zend\Filter\Filter
      *
      * Encrypts the content $value with the defined settings
      *

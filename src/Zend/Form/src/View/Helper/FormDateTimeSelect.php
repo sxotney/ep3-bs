@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
 use DateTime;
 use IntlDateFormatter;
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Element\DateTimeSelect as DateTimeSelectElement;
-use Laminas\Form\Exception;
-use Laminas\Form\View\Helper\FormDateSelect as FormDateSelectHelper;
+use Zend\Form\ElementInterface;
+use Zend\Form\Element\DateTimeSelect as DateTimeSelectElement;
+use Zend\Form\Exception;
+use Zend\Form\View\Helper\FormDateSelect as FormDateSelectHelper;
 
 class FormDateTimeSelect extends FormDateSelectHelper
 {
@@ -72,14 +72,14 @@ class FormDateTimeSelect extends FormDateSelectHelper
      *
      * @param  ElementInterface $element
      * @return string
-     * @throws \Laminas\Form\Exception\InvalidArgumentException
-     * @throws \Laminas\Form\Exception\DomainException
+     * @throws \Zend\Form\Exception\InvalidArgumentException
+     * @throws \Zend\Form\Exception\DomainException
      */
     public function render(ElementInterface $element)
     {
         if (! $element instanceof DateTimeSelectElement) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s requires that the element is of type Laminas\Form\Element\DateTimeSelect',
+                '%s requires that the element is of type Zend\Form\Element\DateTimeSelect',
                 __METHOD__
             ));
         }

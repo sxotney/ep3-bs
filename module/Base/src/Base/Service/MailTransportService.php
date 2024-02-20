@@ -4,11 +4,11 @@ namespace Base\Service;
 
 use Base\Manager\ConfigManager;
 use RuntimeException;
-use Laminas\Mail\Transport\File;
-use Laminas\Mail\Transport\FileOptions;
-use Laminas\Mail\Transport\Sendmail;
-use Laminas\Mail\Transport\Smtp;
-use Laminas\Mail\Transport\SmtpOptions;
+use Zend\Mail\Transport\File;
+use Zend\Mail\Transport\FileOptions;
+use Zend\Mail\Transport\Sendmail;
+use Zend\Mail\Transport\Smtp;
+use Zend\Mail\Transport\SmtpOptions;
 
 class MailTransportService extends AbstractService
 {

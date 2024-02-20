@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Ddl\Index;
+namespace Zend\Db\Sql\Ddl\Index;
 
-use Laminas\Db\Sql\Ddl\Constraint\AbstractConstraint;
+use Zend\Db\Sql\Ddl\Constraint\AbstractConstraint;
 
 abstract class AbstractIndex extends AbstractConstraint
 {

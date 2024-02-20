@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\View\Console;
+namespace Zend\Mvc\View\Console;
 
-use Laminas\Console\Request as ConsoleRequest;
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface as Events;
-use Laminas\Mvc\MvcEvent;
+use Zend\Console\Request as ConsoleRequest;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface as Events;
+use Zend\Mvc\MvcEvent;
 
 class InjectNamedConsoleParamsListener extends AbstractListenerAggregate
 {

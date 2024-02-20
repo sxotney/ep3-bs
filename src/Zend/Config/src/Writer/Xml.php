@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Writer;
+namespace Zend\Config\Writer;
 
 use XMLWriter;
-use Laminas\Config\Exception;
+use Zend\Config\Exception;
 
 class Xml extends AbstractWriter
 {
@@ -28,7 +28,7 @@ class Xml extends AbstractWriter
         $writer->setIndentString(str_repeat(' ', 4));
 
         $writer->startDocument('1.0', 'UTF-8');
-        $writer->startElement('laminas-config');
+        $writer->startElement('zend-config');
 
         foreach ($config as $sectionName => $data) {
             if (!is_array($data)) {

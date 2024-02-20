@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Metadata\Source;
+namespace Zend\Db\Metadata\Source;
 
-use Laminas\Db\Adapter\Adapter;
-use Laminas\Db\Metadata\MetadataInterface;
-use Laminas\Db\Metadata\Object\TableObject;
-use Laminas\Db\Metadata\Object\ViewObject;
-use Laminas\Db\Metadata\Object\ColumnObject;
-use Laminas\Db\Metadata\Object\ConstraintObject;
-use Laminas\Db\Metadata\Object\ConstraintKeyObject;
-use Laminas\Db\Metadata\Object\TriggerObject;
+use Zend\Db\Adapter\Adapter;
+use Zend\Db\Metadata\MetadataInterface;
+use Zend\Db\Metadata\Object\TableObject;
+use Zend\Db\Metadata\Object\ViewObject;
+use Zend\Db\Metadata\Object\ColumnObject;
+use Zend\Db\Metadata\Object\ConstraintObject;
+use Zend\Db\Metadata\Object\ConstraintKeyObject;
+use Zend\Db\Metadata\Object\TriggerObject;
 
 abstract class AbstractSource implements MetadataInterface
 {

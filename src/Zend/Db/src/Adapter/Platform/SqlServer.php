@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Platform;
+namespace Zend\Db\Adapter\Platform;
 
-use Laminas\Db\Adapter\Driver\DriverInterface;
-use Laminas\Db\Adapter\Driver\Pdo;
-use Laminas\Db\Adapter\Exception;
+use Zend\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\Driver\Pdo;
+use Zend\Db\Adapter\Exception;
 
 class SqlServer extends AbstractPlatform
 {
@@ -31,7 +31,7 @@ class SqlServer extends AbstractPlatform
     protected $resource = null;
 
     /**
-     * @param null|\Laminas\Db\Adapter\Driver\Sqlsrv\Sqlsrv|\Laminas\Db\Adapter\Driver\Pdo\Pdo|resource|\PDO $driver
+     * @param null|\Zend\Db\Adapter\Driver\Sqlsrv\Sqlsrv|\Zend\Db\Adapter\Driver\Pdo\Pdo|resource|\PDO $driver
      */
     public function __construct($driver = null)
     {
@@ -41,13 +41,13 @@ class SqlServer extends AbstractPlatform
     }
 
     /**
-     * @param \Laminas\Db\Adapter\Driver\Sqlsrv\Sqlsrv|\Laminas\Db\Adapter\Driver\Pdo\Pdo|resource|\PDO $driver
+     * @param \Zend\Db\Adapter\Driver\Sqlsrv\Sqlsrv|\Zend\Db\Adapter\Driver\Pdo\Pdo|resource|\PDO $driver
      * @return self Provides a fluent interface
-     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
      */
     public function setDriver($driver)
     {
-        // handle Laminas\Db drivers
+        // handle Zend\Db drivers
         if (($driver instanceof Pdo\Pdo && in_array($driver->getDatabasePlatformName(), ['SqlServer', 'Dblib']))
             || ($driver instanceof \PDO && in_array($driver->getAttribute(\PDO::ATTR_DRIVER_NAME), ['sqlsrv', 'dblib']))
         ) {
@@ -56,7 +56,7 @@ class SqlServer extends AbstractPlatform
         }
 
         throw new Exception\InvalidArgumentException(
-            '$driver must be a Sqlsrv PDO Laminas\Db\Adapter\Driver or Sqlsrv PDO instance'
+            '$driver must be a Sqlsrv PDO Zend\Db\Adapter\Driver or Sqlsrv PDO instance'
         );
     }
 

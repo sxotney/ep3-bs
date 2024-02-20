@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib;
+namespace Zend\Stdlib;
 
 use Countable;
 use IteratorAggregate;
@@ -36,7 +36,7 @@ class PriorityQueue implements Countable, IteratorAggregate, Serializable
      * Inner queue class to use for iteration
      * @var string
      */
-    protected $queueClass = 'Laminas\Stdlib\SplPriorityQueue';
+    protected $queueClass = 'Zend\Stdlib\SplPriorityQueue';
 
     /**
      * Actual items aggregated in the priority queue. Each item is an array
@@ -182,7 +182,7 @@ class PriorityQueue implements Countable, IteratorAggregate, Serializable
     /**
      * Unserialize a string into a PriorityQueue object
      *
-     * Serialization format is compatible with {@link Laminas\Stdlib\SplPriorityQueue}
+     * Serialization format is compatible with {@link Zend\Stdlib\SplPriorityQueue}
      *
      * @param  string $data
      * @return void

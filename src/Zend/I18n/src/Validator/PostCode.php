@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Validator;
+namespace Zend\I18n\Validator;
 
 use Locale;
 use Traversable;
-use Laminas\I18n\Exception as I18nException;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Callback;
-use Laminas\Validator\Exception;
+use Zend\I18n\Exception as I18nException;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Callback;
+use Zend\Validator\Exception;
 
 class PostCode extends AbstractValidator
 {

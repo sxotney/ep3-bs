@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Filter;
+namespace Zend\I18n\Filter;
 
 use Locale;
-use Laminas\Filter\AbstractFilter;
-use Laminas\I18n\Exception;
+use Zend\Filter\AbstractFilter;
+use Zend\I18n\Exception;
 
 abstract class AbstractLocale extends AbstractFilter
 {

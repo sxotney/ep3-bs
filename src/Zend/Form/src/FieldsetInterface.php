@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form;
+namespace Zend\Form;
 
 use Countable;
 use IteratorAggregate;
-use Laminas\Hydrator\HydratorInterface;
+use Zend\Hydrator\HydratorInterface;
 
 interface FieldsetInterface extends
     Countable,

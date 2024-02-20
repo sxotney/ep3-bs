@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\TableGateway\Feature\EventFeature;
+namespace Zend\Db\TableGateway\Feature\EventFeature;
 
-use Laminas\Db\TableGateway\AbstractTableGateway;
-use Laminas\EventManager\EventInterface;
+use Zend\Db\TableGateway\AbstractTableGateway;
+use Zend\EventManager\EventInterface;
 
 class TableGatewayEvent implements EventInterface
 {

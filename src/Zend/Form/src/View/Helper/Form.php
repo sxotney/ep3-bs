@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
-use Laminas\Form\FieldsetInterface;
-use Laminas\Form\FormInterface;
-use Laminas\View\Helper\Doctype;
+use Zend\Form\FieldsetInterface;
+use Zend\Form\FormInterface;
+use Zend\View\Helper\Doctype;
 
 /**
  * View helper for rendering Form objects

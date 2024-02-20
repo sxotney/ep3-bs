@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\IbmDb2;
+namespace Zend\Db\Adapter\Driver\IbmDb2;
 
 use ReturnTypeWillChange;
-use Laminas\Db\Adapter\Driver\ResultInterface;
-use Laminas\Db\Adapter\Exception;
+use Zend\Db\Adapter\Driver\ResultInterface;
+use Zend\Db\Adapter\Exception;
 
 class Result implements ResultInterface
 {

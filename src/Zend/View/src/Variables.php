@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View;
+namespace Zend\View;
 
 use ArrayObject;
 use ReturnTypeWillChange;
 
 /**
- * Class for Laminas\View\Renderer\PhpRenderer to help enforce private constructs.
+ * Class for Zend\View\Renderer\PhpRenderer to help enforce private constructs.
  *
  * @todo       Allow specifying string names for manager, filter chain, variables
  * @todo       Move escaping into variables object

@@ -3,7 +3,7 @@
 namespace Square\View\Helper;
 
 use Square\Entity\Square;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class CapacityInfo extends AbstractHelper
 {

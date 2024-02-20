@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator;
+namespace Zend\Validator;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Stdlib\ArrayUtils;
 
 class NotEmpty extends AbstractValidator
 {

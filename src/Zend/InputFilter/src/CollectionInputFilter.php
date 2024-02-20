@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 use Traversable;
-use Laminas\Validator\NotEmpty;
+use Zend\Validator\NotEmpty;
 
 class CollectionInputFilter extends InputFilter
 {

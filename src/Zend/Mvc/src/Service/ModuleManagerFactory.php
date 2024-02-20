@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ModuleManager\Listener\DefaultListenerAggregate;
-use Laminas\ModuleManager\Listener\ListenerOptions;
-use Laminas\ModuleManager\ModuleEvent;
-use Laminas\ModuleManager\ModuleManager;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ModuleManager\Listener\DefaultListenerAggregate;
+use Zend\ModuleManager\Listener\ListenerOptions;
+use Zend\ModuleManager\ModuleEvent;
+use Zend\ModuleManager\ModuleManager;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class ModuleManagerFactory implements FactoryInterface
 {
@@ -45,86 +45,86 @@ class ModuleManagerFactory implements FactoryInterface
         $serviceListener->addServiceManager(
             $container,
             'service_manager',
-            'Laminas\ModuleManager\Feature\ServiceProviderInterface',
+            'Zend\ModuleManager\Feature\ServiceProviderInterface',
             'getServiceConfig'
         );
 
         $serviceListener->addServiceManager(
             'ControllerManager',
             'controllers',
-            'Laminas\ModuleManager\Feature\ControllerProviderInterface',
+            'Zend\ModuleManager\Feature\ControllerProviderInterface',
             'getControllerConfig'
         );
         $serviceListener->addServiceManager(
             'ControllerPluginManager',
             'controller_plugins',
-            'Laminas\ModuleManager\Feature\ControllerPluginProviderInterface',
+            'Zend\ModuleManager\Feature\ControllerPluginProviderInterface',
             'getControllerPluginConfig'
         );
         $serviceListener->addServiceManager(
             'ViewHelperManager',
             'view_helpers',
-            'Laminas\ModuleManager\Feature\ViewHelperProviderInterface',
+            'Zend\ModuleManager\Feature\ViewHelperProviderInterface',
             'getViewHelperConfig'
         );
         $serviceListener->addServiceManager(
             'ValidatorManager',
             'validators',
-            'Laminas\ModuleManager\Feature\ValidatorProviderInterface',
+            'Zend\ModuleManager\Feature\ValidatorProviderInterface',
             'getValidatorConfig'
         );
         $serviceListener->addServiceManager(
             'FilterManager',
             'filters',
-            'Laminas\ModuleManager\Feature\FilterProviderInterface',
+            'Zend\ModuleManager\Feature\FilterProviderInterface',
             'getFilterConfig'
         );
         $serviceListener->addServiceManager(
             'FormElementManager',
             'form_elements',
-            'Laminas\ModuleManager\Feature\FormElementProviderInterface',
+            'Zend\ModuleManager\Feature\FormElementProviderInterface',
             'getFormElementConfig'
         );
         $serviceListener->addServiceManager(
             'RoutePluginManager',
             'route_manager',
-            'Laminas\ModuleManager\Feature\RouteProviderInterface',
+            'Zend\ModuleManager\Feature\RouteProviderInterface',
             'getRouteConfig'
         );
         $serviceListener->addServiceManager(
             'SerializerAdapterManager',
             'serializers',
-            'Laminas\ModuleManager\Feature\SerializerProviderInterface',
+            'Zend\ModuleManager\Feature\SerializerProviderInterface',
             'getSerializerConfig'
         );
         $serviceListener->addServiceManager(
             'HydratorManager',
             'hydrators',
-            'Laminas\ModuleManager\Feature\HydratorProviderInterface',
+            'Zend\ModuleManager\Feature\HydratorProviderInterface',
             'getHydratorConfig'
         );
         $serviceListener->addServiceManager(
             'InputFilterManager',
             'input_filters',
-            'Laminas\ModuleManager\Feature\InputFilterProviderInterface',
+            'Zend\ModuleManager\Feature\InputFilterProviderInterface',
             'getInputFilterConfig'
         );
         $serviceListener->addServiceManager(
             'LogProcessorManager',
             'log_processors',
-            'Laminas\ModuleManager\Feature\LogProcessorProviderInterface',
+            'Zend\ModuleManager\Feature\LogProcessorProviderInterface',
             'getLogProcessorConfig'
         );
         $serviceListener->addServiceManager(
             'LogWriterManager',
             'log_writers',
-            'Laminas\ModuleManager\Feature\LogWriterProviderInterface',
+            'Zend\ModuleManager\Feature\LogWriterProviderInterface',
             'getLogWriterConfig'
         );
         $serviceListener->addServiceManager(
             'TranslatorPluginManager',
             'translator_plugins',
-            'Laminas\ModuleManager\Feature\TranslatorPluginProviderInterface',
+            'Zend\ModuleManager\Feature\TranslatorPluginProviderInterface',
             'getTranslatorPluginConfig'
         );
 

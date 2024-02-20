@@ -7,25 +7,25 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\View\Console;
+namespace Zend\Mvc\View\Console;
 
-use Laminas\Console\Adapter\AdapterInterface as ConsoleAdapter;
-use Laminas\Console\ColorInterface;
-use Laminas\Console\Response as ConsoleResponse;
-use Laminas\Console\Request as ConsoleRequest;
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\ModuleManager\ModuleManagerInterface;
-use Laminas\ModuleManager\Feature\ConsoleBannerProviderInterface;
-use Laminas\ModuleManager\Feature\ConsoleUsageProviderInterface;
-use Laminas\Mvc\Application;
-use Laminas\Mvc\Exception\RuntimeException;
-use Laminas\Mvc\MvcEvent;
-use Laminas\ServiceManager\Exception\ServiceNotFoundException;
-use Laminas\Stdlib\ResponseInterface as Response;
-use Laminas\Stdlib\StringUtils;
-use Laminas\Text\Table;
-use Laminas\View\Model\ConsoleModel;
+use Zend\Console\Adapter\AdapterInterface as ConsoleAdapter;
+use Zend\Console\ColorInterface;
+use Zend\Console\Response as ConsoleResponse;
+use Zend\Console\Request as ConsoleRequest;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface;
+use Zend\ModuleManager\ModuleManagerInterface;
+use Zend\ModuleManager\Feature\ConsoleBannerProviderInterface;
+use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
+use Zend\Mvc\Application;
+use Zend\Mvc\Exception\RuntimeException;
+use Zend\Mvc\MvcEvent;
+use Zend\ServiceManager\Exception\ServiceNotFoundException;
+use Zend\Stdlib\ResponseInterface as Response;
+use Zend\Stdlib\StringUtils;
+use Zend\Text\Table;
+use Zend\View\Model\ConsoleModel;
 
 class RouteNotFoundStrategy extends AbstractListenerAggregate
 {
@@ -416,7 +416,7 @@ class RouteNotFoundStrategy extends AbstractListenerAggregate
         }
 
         /*
-         * Use Laminas\Text\Table to render the table.
+         * Use Zend\Text\Table to render the table.
          * The last column will use the remaining space in console window
          * (minus 1 character to prevent double wrapping at the edge of the
          * screen).
@@ -437,7 +437,7 @@ class RouteNotFoundStrategy extends AbstractListenerAggregate
     /**
      * Report the 404 reason and/or exceptions
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return string
      */
     protected function reportNotFoundReason($e)

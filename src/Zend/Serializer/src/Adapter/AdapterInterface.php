@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Serializer\Adapter;
+namespace Zend\Serializer\Adapter;
 
 interface AdapterInterface
 {
@@ -16,7 +16,7 @@ interface AdapterInterface
      *
      * @param  mixed $value Data to serialize
      * @return string
-     * @throws \Laminas\Serializer\Exception\ExceptionInterface
+     * @throws \Zend\Serializer\Exception\ExceptionInterface
      */
     public function serialize($value);
 
@@ -25,7 +25,7 @@ interface AdapterInterface
      *
      * @param  string $serialized Serialized string
      * @return mixed
-     * @throws \Laminas\Serializer\Exception\ExceptionInterface
+     * @throws \Zend\Serializer\Exception\ExceptionInterface
      */
     public function unserialize($serialized);
 }

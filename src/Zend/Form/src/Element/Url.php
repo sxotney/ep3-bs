@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element;
-use Laminas\InputFilter\InputProviderInterface;
-use Laminas\Validator\Uri as UriValidator;
+use Zend\Form\Element;
+use Zend\InputFilter\InputProviderInterface;
+use Zend\Validator\Uri as UriValidator;
 
 class Url extends Element implements InputProviderInterface
 {
@@ -25,14 +25,14 @@ class Url extends Element implements InputProviderInterface
     ];
 
     /**
-     * @var \Laminas\Validator\ValidatorInterface
+     * @var \Zend\Validator\ValidatorInterface
      */
     protected $validator;
 
     /**
      * Get validator
      *
-     * @return \Laminas\Validator\ValidatorInterface
+     * @return \Zend\Validator\ValidatorInterface
      */
     public function getValidator()
     {
@@ -58,7 +58,7 @@ class Url extends Element implements InputProviderInterface
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Laminas\Filter\StringTrim'],
+                ['name' => 'Zend\Filter\StringTrim'],
             ],
             'validators' => [
                 $this->getValidator(),

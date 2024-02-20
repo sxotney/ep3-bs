@@ -7,7 +7,7 @@ use Base\Manager\AbstractLocaleEntityManager;
 use Event\Entity\EventFactory;
 use RuntimeException;
 use Traversable;
-use Laminas\Db\Sql\Where;
+use Zend\Db\Sql\Where;
 
 class EventManager extends AbstractLocaleEntityManager
 {

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
 use DateInterval;
 use DateTimezone;
-use Laminas\Form\Element\DateTime as DateTimeElement;
-use Laminas\Validator\DateStep as DateStepValidator;
+use Zend\Form\Element\DateTime as DateTimeElement;
+use Zend\Validator\DateStep as DateStepValidator;
 
 class Date extends DateTimeElement
 {
@@ -39,7 +39,7 @@ class Date extends DateTimeElement
     /**
      * Retrieves a DateStep Validator configured for a Date Input type
      *
-     * @return \Laminas\Validator\ValidatorInterface
+     * @return \Zend\Validator\ValidatorInterface
      */
     protected function getStepValidator()
     {

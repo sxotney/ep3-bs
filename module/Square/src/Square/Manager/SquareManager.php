@@ -10,8 +10,8 @@ use Square\Entity\Square;
 use Square\Entity\SquareFactory;
 use Square\Table\SquareMetaTable;
 use Square\Table\SquareTable;
-use Laminas\Db\Sql\Predicate\IsNull;
-use Laminas\Db\Sql\Where;
+use Zend\Db\Sql\Predicate\IsNull;
+use Zend\Db\Sql\Where;
 
 class SquareManager extends AbstractManager
 {

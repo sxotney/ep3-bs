@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
-use Laminas\Validator\Exception;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the excluding file extensions
@@ -35,7 +35,7 @@ class ExcludeExtension extends Extension
      * set extension list
      *
      * @param  string|array $value Real file to check for extension
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

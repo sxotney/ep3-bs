@@ -1,15 +1,15 @@
 <?php
 /**
- * @link      http://github.com/laminas/laminas-serializer for the canonical source repository
+ * @link      http://github.com/zendframework/zend-serializer for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Serializer;
+namespace Zend\Serializer;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class AdapterPluginManagerFactory implements FactoryInterface
 {

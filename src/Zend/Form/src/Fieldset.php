@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form;
+namespace Zend\Form;
 
 use ReturnTypeWillChange;
 use Traversable;
-use Laminas\Code\Reflection\ClassReflection;
-use Laminas\Form\Element\Collection;
-use Laminas\Hydrator;
-use Laminas\Hydrator\HydratorAwareInterface;
-use Laminas\Hydrator\HydratorInterface;
-use Laminas\Stdlib\PriorityList;
+use Zend\Code\Reflection\ClassReflection;
+use Zend\Form\Element\Collection;
+use Zend\Hydrator;
+use Zend\Hydrator\HydratorAwareInterface;
+use Zend\Hydrator\HydratorInterface;
+use Zend\Stdlib\PriorityList;
 
 class Fieldset extends Element implements FieldsetInterface
 {

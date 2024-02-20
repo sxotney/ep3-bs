@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Annotation;
+namespace Zend\Form\Annotation;
 
-use Laminas\Form\Exception;
+use Zend\Form\Exception;
 
 abstract class AbstractArrayAnnotation
 {

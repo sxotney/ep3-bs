@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
-use Laminas\Validator\ValidatorPluginManager;
+use Zend\Validator\ValidatorPluginManager;
 
 class ValidatorManagerFactory extends AbstractPluginManagerFactory
 {

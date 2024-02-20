@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Pdo;
+namespace Zend\Db\Adapter\Driver\Pdo;
 
 use PDOStatement;
-use Laminas\Db\Adapter\Driver\DriverInterface;
-use Laminas\Db\Adapter\Driver\Feature\AbstractFeature;
-use Laminas\Db\Adapter\Driver\Feature\DriverFeatureInterface;
-use Laminas\Db\Adapter\Exception;
-use Laminas\Db\Adapter\Profiler;
+use Zend\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\Driver\Feature\AbstractFeature;
+use Zend\Db\Adapter\Driver\Feature\DriverFeatureInterface;
+use Zend\Db\Adapter\Exception;
+use Zend\Db\Adapter\Profiler;
 
 class Pdo implements DriverInterface, DriverFeatureInterface, Profiler\ProfilerAwareInterface
 {

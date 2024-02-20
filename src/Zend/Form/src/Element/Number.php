@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element;
-use Laminas\InputFilter\InputProviderInterface;
-use Laminas\Validator\GreaterThan as GreaterThanValidator;
-use Laminas\Validator\LessThan as LessThanValidator;
-use Laminas\Validator\Regex as RegexValidator;
-use Laminas\Validator\Step as StepValidator;
+use Zend\Form\Element;
+use Zend\InputFilter\InputProviderInterface;
+use Zend\Validator\GreaterThan as GreaterThanValidator;
+use Zend\Validator\LessThan as LessThanValidator;
+use Zend\Validator\Regex as RegexValidator;
+use Zend\Validator\Step as StepValidator;
 
 class Number extends Element implements InputProviderInterface
 {
@@ -35,7 +35,7 @@ class Number extends Element implements InputProviderInterface
     /**
      * Get validator
      *
-     * @return \Laminas\Validator\ValidatorInterface[]
+     * @return \Zend\Validator\ValidatorInterface[]
      */
     protected function getValidators()
     {
@@ -94,7 +94,7 @@ class Number extends Element implements InputProviderInterface
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Laminas\Filter\StringTrim']
+                ['name' => 'Zend\Filter\StringTrim']
             ],
             'validators' => $this->getValidators(),
         ];

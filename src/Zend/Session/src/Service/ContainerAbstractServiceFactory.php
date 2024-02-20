@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\Service;
+namespace Zend\Session\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\AbstractFactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\Session\Container;
-use Laminas\Session\ManagerInterface;
+use Zend\ServiceManager\AbstractFactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\Session\Container;
+use Zend\Session\ManagerInterface;
 
 /**
  * Session container abstract service factory.

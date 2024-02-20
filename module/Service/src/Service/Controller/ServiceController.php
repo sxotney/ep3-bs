@@ -2,7 +2,7 @@
 
 namespace Service\Controller;
 
-use Laminas\Mvc\Controller\AbstractActionController;
+use Zend\Mvc\Controller\AbstractActionController;
 
 class ServiceController extends AbstractActionController
 {

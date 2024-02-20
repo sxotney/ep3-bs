@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router\Http;
+namespace Zend\Mvc\Router\Http;
 
 use Traversable;
-use Laminas\Mvc\Router\Exception;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Stdlib\RequestInterface as Request;
+use Zend\Mvc\Router\Exception;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Stdlib\RequestInterface as Request;
 
 /**
  * Wildcard route.
@@ -64,7 +64,7 @@ class Wildcard implements RouteInterface
     /**
      * factory(): defined by RouteInterface interface.
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
+     * @see    \Zend\Mvc\Router\RouteInterface::factory()
      * @param  array|Traversable $options
      * @return Wildcard
      * @throws Exception\InvalidArgumentException
@@ -102,7 +102,7 @@ class Wildcard implements RouteInterface
      * @param  integer|null $pathOffset
      *
      * @return void
-     *@see    \Laminas\Mvc\Router\RouteInterface::match()
+     *@see    \Zend\Mvc\Router\RouteInterface::match()
      */
     public function match(Request $request, $pathOffset = null)
     {
@@ -154,7 +154,7 @@ class Wildcard implements RouteInterface
     /**
      * assemble(): Defined by RouteInterface interface.
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
+     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

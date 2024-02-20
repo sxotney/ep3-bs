@@ -3,7 +3,7 @@
 namespace Calendar\View\Helper;
 
 use DateTime;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class ReservationsForCol extends AbstractHelper
 {

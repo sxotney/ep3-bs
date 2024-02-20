@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper\Navigation;
+namespace Zend\View\Helper\Navigation;
 
 use RecursiveIteratorIterator;
-use Laminas\Navigation\AbstractContainer;
-use Laminas\Navigation\Page\AbstractPage;
-use Laminas\View\Exception;
+use Zend\Navigation\AbstractContainer;
+use Zend\Navigation\Page\AbstractPage;
+use Zend\View\Exception;
 
 /**
  * Helper for rendering menus from navigation containers.
@@ -150,7 +150,7 @@ class Menu extends AbstractHelper
             $active['page'] = $active['page']->getParent();
         }
 
-        /* @var $escaper \Laminas\View\Helper\EscapeHtmlAttr */
+        /* @var $escaper \Zend\View\Helper\EscapeHtmlAttr */
         $escaper = $this->view->plugin('escapeHtmlAttr');
         $ulClass = $ulClass ? ' class="' . $escaper($ulClass) . '"' : '';
         $html    = $indent . '<ul' . $ulClass . '>' . PHP_EOL;
@@ -261,7 +261,7 @@ class Menu extends AbstractHelper
         // find deepest active
         $found = $this->findActive($container, $minDepth, $maxDepth);
 
-        /* @var $escaper \Laminas\View\Helper\EscapeHtmlAttr */
+        /* @var $escaper \Zend\View\Helper\EscapeHtmlAttr */
         $escaper = $this->view->plugin('escapeHtmlAttr');
 
         if ($found) {
@@ -497,7 +497,7 @@ class Menu extends AbstractHelper
         $label = $this->translate($page->getLabel(), $page->getTextDomain());
 
         if ($escapeLabel === true) {
-            /** @var \Laminas\View\Helper\EscapeHtml $escaper */
+            /** @var \Zend\View\Helper\EscapeHtml $escaper */
             $escaper = $this->view->plugin('escapeHtml');
             $html .= $escaper($label);
         } else {
@@ -764,7 +764,7 @@ class Menu extends AbstractHelper
 
         $model = array_merge($params, ['container' => $container]);
 
-        /** @var \Laminas\View\Helper\Partial $partialHelper */
+        /** @var \Zend\View\Helper\Partial $partialHelper */
         $partialHelper = $this->view->plugin('partial');
         if (is_array($partial)) {
             if (count($partial) != 2) {

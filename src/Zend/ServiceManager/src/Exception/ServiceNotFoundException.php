@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\ServiceManager\Exception;
+namespace Zend\ServiceManager\Exception;
 
 use Interop\Container\Exception\NotFoundException;
 

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\ServiceManager\Exception;
+namespace Zend\ServiceManager\Exception;
 
 use Exception as BaseException;
-use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\AbstractPluginManager;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class ServiceLocatorUsageException extends ServiceNotFoundException
 {

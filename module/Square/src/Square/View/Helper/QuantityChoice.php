@@ -4,7 +4,7 @@ namespace Square\View\Helper;
 
 use Base\Manager\OptionManager;
 use Square\Entity\Square;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class QuantityChoice extends AbstractHelper
 {

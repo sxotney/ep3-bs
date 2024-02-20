@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\TableGateway\Feature;
+namespace Zend\Db\TableGateway\Feature;
 
-use Laminas\Db\Adapter\AdapterInterface;
-use Laminas\Db\Sql\Sql;
+use Zend\Db\Adapter\AdapterInterface;
+use Zend\Db\Sql\Sql;
 
 class MasterSlaveFeature extends AbstractFeature
 {

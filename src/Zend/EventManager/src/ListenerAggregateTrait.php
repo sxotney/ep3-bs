@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager;
+namespace Zend\EventManager;
 
 /**
  * Provides logic to easily create aggregate listeners, without worrying about
@@ -16,7 +16,7 @@ namespace Laminas\EventManager;
 trait ListenerAggregateTrait
 {
     /**
-     * @var \Laminas\Stdlib\CallbackHandler[]
+     * @var \Zend\Stdlib\CallbackHandler[]
      */
     protected $listeners = [];
 

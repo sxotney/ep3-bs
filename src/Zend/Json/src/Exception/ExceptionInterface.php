@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Exception;
+namespace Zend\Json\Exception;
 
 interface ExceptionInterface
 {

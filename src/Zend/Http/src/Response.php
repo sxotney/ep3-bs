@@ -1,15 +1,15 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-http for the canonical source repository
+ * @see       https://github.com/zendframework/zend-http for the canonical source repository
  * @copyright Copyright (c) 2005-2017 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   https://github.com/laminas/laminas-http/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-http/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Http;
+namespace Zend\Http;
 
-use Laminas\Http\Exception\RuntimeException;
-use Laminas\Stdlib\ErrorHandler;
-use Laminas\Stdlib\ResponseInterface;
+use Zend\Http\Exception\RuntimeException;
+use Zend\Stdlib\ErrorHandler;
+use Zend\Stdlib\ResponseInterface;
 
 /**
  * HTTP Response

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt;
+namespace Zend\Crypt;
 
 /**
  * PHP implementation of the RFC 2104 Hash based Message Authentication Code

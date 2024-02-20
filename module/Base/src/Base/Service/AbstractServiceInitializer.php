@@ -2,8 +2,8 @@
 
 namespace Base\Service;
 
-use Laminas\ServiceManager\InitializerInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\InitializerInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class AbstractServiceInitializer implements InitializerInterface
 {

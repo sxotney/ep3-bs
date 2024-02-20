@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Guard;
+namespace Zend\Stdlib\Guard;
 
 /**
  * Provide a guard method against empty data
@@ -25,7 +25,7 @@ trait EmptyGuardTrait
     protected function guardAgainstEmpty(
         $data,
         $dataName = 'Argument',
-        $exceptionClass = 'Laminas\Stdlib\Exception\InvalidArgumentException'
+        $exceptionClass = 'Zend\Stdlib\Exception\InvalidArgumentException'
     ) {
         if (empty($data)) {
             $message = sprintf('%s cannot be empty', $dataName);

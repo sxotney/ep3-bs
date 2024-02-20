@@ -2,7 +2,7 @@
 
 namespace Backend\Controller\Plugin\User;
 
-use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
+use Zend\Mvc\Controller\Plugin\AbstractPlugin;
 
 class DetermineFilters extends AbstractPlugin
 {

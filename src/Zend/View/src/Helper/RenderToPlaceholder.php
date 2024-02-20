@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\View\Model\ModelInterface;
+use Zend\View\Model\ModelInterface;
 
 /**
  * Renders a template and stores the rendered output as a placeholder

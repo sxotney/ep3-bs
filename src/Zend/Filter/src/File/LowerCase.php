@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\File;
+namespace Zend\Filter\File;
 
-use Laminas\Filter\Exception;
-use Laminas\Filter\StringToLower;
+use Zend\Filter\Exception;
+use Zend\Filter\StringToLower;
 
 class LowerCase extends StringToLower
 {
     /**
-     * Defined by Laminas\Filter\Filter
+     * Defined by Zend\Filter\Filter
      *
      * Does a lowercase on the content of the given file
      *

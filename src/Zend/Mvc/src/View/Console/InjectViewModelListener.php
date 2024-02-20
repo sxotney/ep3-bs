@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\View\Console;
+namespace Zend\Mvc\View\Console;
 
-use Laminas\Mvc\View\Http\InjectViewModelListener as HttpInjectViewModelListener;
+use Zend\Mvc\View\Http\InjectViewModelListener as HttpInjectViewModelListener;
 
 class InjectViewModelListener extends HttpInjectViewModelListener
 {

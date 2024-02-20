@@ -1,11 +1,11 @@
 <?php
 /**
- * @link      http://github.com/laminas/laminas-form for the canonical source repository
+ * @link      http://github.com/zendframework/zend-form for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form;
+namespace Zend\Form;
 
 class Module
 {
@@ -26,7 +26,7 @@ class Module
     /**
      * Register a specification for the FormElementManager with the ServiceListener.
      *
-     * @param \Laminas\ModuleManager\ModuleManager $moduleManager
+     * @param \Zend\ModuleManager\ModuleManager $moduleManager
      * @return void
      */
     public function init($moduleManager)
@@ -38,7 +38,7 @@ class Module
         $serviceListener->addServiceManager(
             'FormElementManager',
             'form_elements',
-            'Laminas\ModuleManager\Feature\FormElementProviderInterface',
+            'Zend\ModuleManager\Feature\FormElementProviderInterface',
             'getFormElementConfig'
         );
     }

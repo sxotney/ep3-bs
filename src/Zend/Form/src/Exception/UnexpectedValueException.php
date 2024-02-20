@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Exception;
+namespace Zend\Form\Exception;
 
 class UnexpectedValueException extends \UnexpectedValueException implements
     ExceptionInterface

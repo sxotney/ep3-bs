@@ -4,7 +4,7 @@ namespace Calendar\View\Helper;
 
 use DateTime;
 use IntlDateFormatter;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class DateRow extends AbstractHelper
 {

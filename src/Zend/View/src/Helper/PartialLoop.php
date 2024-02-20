@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\View\Exception;
+use Zend\Stdlib\ArrayUtils;
+use Zend\View\Exception;
 
 /**
  * Helper for rendering a template fragment in its own variable scope; iterates

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager\Exception;
+namespace Zend\EventManager\Exception;
 
 /**
  * Invalid argument exception

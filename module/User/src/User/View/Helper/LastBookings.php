@@ -7,7 +7,7 @@ use Booking\Manager\ReservationManager;
 use DateTime;
 use Square\Manager\SquareManager;
 use User\Entity\User;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class LastBookings extends AbstractHelper
 {

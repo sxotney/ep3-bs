@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper\Escaper;
+namespace Zend\View\Helper\Escaper;
 
-use Laminas\Escaper;
-use Laminas\View\Exception;
-use Laminas\View\Helper;
+use Zend\Escaper;
+use Zend\View\Exception;
+use Zend\View\Helper;
 
 /**
  * Helper for escaping values
@@ -102,7 +102,7 @@ abstract class AbstractHelper extends Helper\AbstractHelper
         if (null !== $this->escaper) {
             throw new Exception\InvalidArgumentException(
                 'Character encoding settings cannot be changed once the Helper has been used or '
-                . ' if a Laminas\Escaper\Escaper object (with preset encoding option) is set.'
+                . ' if a Zend\Escaper\Escaper object (with preset encoding option) is set.'
             );
         }
 

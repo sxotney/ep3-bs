@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server;
+namespace Zend\Json\Server;
 
 class Error
 {
@@ -56,7 +56,7 @@ class Error
      * If the error code is 0, it will be set to -32000 (ERROR_OTHER).
      *
      * @param  int $code
-     * @return \Laminas\Json\Server\Error
+     * @return \Zend\Json\Server\Error
      */
     public function setCode($code)
     {
@@ -93,7 +93,7 @@ class Error
      * Set error message
      *
      * @param  string $message
-     * @return \Laminas\Json\Server\Error
+     * @return \Zend\Json\Server\Error
      */
     public function setMessage($message)
     {
@@ -119,7 +119,7 @@ class Error
      * Set error data
      *
      * @param  mixed $data
-     * @return \Laminas\Json\Server\Error
+     * @return \Zend\Json\Server\Error
      */
     public function setData($data)
     {
@@ -158,7 +158,7 @@ class Error
      */
     public function toJson()
     {
-        return \Laminas\Json\Json::encode($this->toArray());
+        return \Zend\Json\Json::encode($this->toArray());
     }
 
     /**

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Writer;
+namespace Zend\Config\Writer;
 
 interface WriterInterface
 {

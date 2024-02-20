@@ -6,12 +6,12 @@
  * @copyright      Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license        http://framework.zend.com/license/new-bsd New BSD License
  */
-namespace Laminas\Stdlib\Hydrator\Filter;
+namespace Zend\Stdlib\Hydrator\Filter;
 
-use Laminas\Hydrator\Filter\FilterProviderInterface as BaseFilterProviderInterface;
+use Zend\Hydrator\Filter\FilterProviderInterface as BaseFilterProviderInterface;
 
 /**
- * @deprecated Use Laminas\Hydrator\Filter\FilterProviderInterface from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Filter\FilterProviderInterface from zendframework/zend-hydrator instead.
  */
 interface FilterProviderInterface extends BaseFilterProviderInterface
 {

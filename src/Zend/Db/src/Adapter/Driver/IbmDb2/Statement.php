@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\IbmDb2;
+namespace Zend\Db\Adapter\Driver\IbmDb2;
 
 use ErrorException;
-use Laminas\Db\Adapter\Driver\StatementInterface;
-use Laminas\Db\Adapter\Exception;
-use Laminas\Db\Adapter\ParameterContainer;
-use Laminas\Db\Adapter\Profiler;
+use Zend\Db\Adapter\Driver\StatementInterface;
+use Zend\Db\Adapter\Exception;
+use Zend\Db\Adapter\ParameterContainer;
+use Zend\Db\Adapter\Profiler;
 
 class Statement implements StatementInterface, Profiler\ProfilerAwareInterface
 {
@@ -136,7 +136,7 @@ class Statement implements StatementInterface, Profiler\ProfilerAwareInterface
 
     /**
      * @param $resource
-     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
      */
     public function setResource($resource)
     {

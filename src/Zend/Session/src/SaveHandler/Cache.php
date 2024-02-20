@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\SaveHandler;
+namespace Zend\Session\SaveHandler;
 
 use ReturnTypeWillChange;
-use Laminas\Cache\Storage\ClearExpiredInterface as ClearExpiredCacheStorage;
-use Laminas\Cache\Storage\StorageInterface as CacheStorage;
+use Zend\Cache\Storage\ClearExpiredInterface as ClearExpiredCacheStorage;
+use Zend\Cache\Storage\StorageInterface as CacheStorage;
 
 /**
  * Cache session save handler

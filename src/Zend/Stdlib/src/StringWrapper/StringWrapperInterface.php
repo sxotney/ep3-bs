@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\StringWrapper;
+namespace Zend\Stdlib\StringWrapper;
 
 interface StringWrapperInterface
 {

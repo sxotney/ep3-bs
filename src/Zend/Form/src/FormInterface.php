@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form;
+namespace Zend\Form;
 
-use Laminas\InputFilter\InputFilterInterface;
+use Zend\InputFilter\InputFilterInterface;
 
 interface FormInterface extends FieldsetInterface
 {

@@ -1,13 +1,13 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-http for the canonical source repository
+ * @see       https://github.com/zendframework/zend-http for the canonical source repository
  * @copyright Copyright (c) 2005-2017 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   https://github.com/laminas/laminas-http/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-http/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Http\Header;
+namespace Zend\Http\Header;
 
-use Laminas\Http\Header\Accept\FieldValuePart;
+use Zend\Http\Header\Accept\FieldValuePart;
 
 /**
  * Accept Header
@@ -70,7 +70,7 @@ class Accept extends AbstractAccept
      *
      * @param  string $fieldValuePart
      * @return FieldValuePart\AcceptFieldValuePart
-     * @see    \Laminas\Http\Header\AbstractAccept::parseFieldValuePart()
+     * @see    \Zend\Http\Header\AbstractAccept::parseFieldValuePart()
      */
     protected function parseFieldValuePart($fieldValuePart)
     {

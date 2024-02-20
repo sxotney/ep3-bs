@@ -2,7 +2,7 @@
 
 namespace Calendar\View\Helper\Cell;
 
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class CellLogic extends AbstractHelper
 {

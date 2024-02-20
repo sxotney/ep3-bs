@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\EventManager\ListenerAggregateInterface;
-use Laminas\Form\Annotation\AnnotationBuilder;
-use Laminas\Form\FormElementManager\FormElementManagerV2Polyfill;
-use Laminas\Form\FormElementManager\FormElementManagerV3Polyfill;
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\EventManager\ListenerAggregateInterface;
+use Zend\Form\Annotation\AnnotationBuilder;
+use Zend\Form\FormElementManager\FormElementManagerV2Polyfill;
+use Zend\Form\FormElementManager\FormElementManagerV3Polyfill;
+use Zend\ServiceManager\Exception\ServiceNotCreatedException;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class FormAnnotationBuilderFactory implements FactoryInterface
 {

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator;
+namespace Zend\Stdlib\Hydrator;
 
-use Laminas\Hydrator\StrategyEnabledInterface as BaseStrategyEnabledInterface;
+use Zend\Hydrator\StrategyEnabledInterface as BaseStrategyEnabledInterface;
 
 /**
- * @deprecated Use Laminas\Hydrator\Strategy\StrategyEnabledInterface from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Strategy\StrategyEnabledInterface from zendframework/zend-hydrator instead.
  */
 interface StrategyEnabledInterface extends BaseStrategyEnabledInterface
 {

@@ -2,8 +2,8 @@
 
 namespace Backend\Controller\Plugin\Booking;
 
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class CreateFactory implements FactoryInterface
 {
@@ -17,7 +17,7 @@ class CreateFactory implements FactoryInterface
             $serviceManager->get('Booking\Manager\ReservationManager'),
             $serviceManager->get('Square\Manager\SquareManager'),
             $serviceManager->get('User\Manager\UserManager'),
-            $serviceManager->get('Laminas\Db\Adapter\Adapter')->getDriver()->getConnection());
+            $serviceManager->get('Zend\Db\Adapter\Adapter')->getDriver()->getConnection());
     }
 
 }

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router;
+namespace Zend\Mvc\Router;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Zend\ServiceManager\AbstractPluginManager;
+use Zend\ServiceManager\Exception\InvalidServiceException;
 
 /**
  * Plugin manager implementation for routes
@@ -52,7 +52,7 @@ class RoutePluginManager extends AbstractPluginManager
      * Ensure that the instance is seeded with the RouteInvokableFactory as an
      * abstract factory.
      *
-     * @param ContainerInterface|\Laminas\ServiceManager\ConfigInterface $configOrContainerInstance
+     * @param ContainerInterface|\Zend\ServiceManager\ConfigInterface $configOrContainerInstance
      * @param array $v3config
      */
     public function __construct($configOrContainerInstance, array $v3config = [])

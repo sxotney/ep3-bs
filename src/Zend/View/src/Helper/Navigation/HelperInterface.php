@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper\Navigation;
+namespace Zend\View\Helper\Navigation;
 
-use Laminas\Navigation;
-use Laminas\Permissions\Acl;
-use Laminas\View\Helper\HelperInterface as BaseHelperInterface;
+use Zend\Navigation;
+use Zend\Permissions\Acl;
+use Zend\View\Helper\HelperInterface as BaseHelperInterface;
 
 /**
  * Interface for navigational helpers
@@ -34,7 +34,7 @@ interface HelperInterface extends BaseHelperInterface
      *                                         the container returned by {@link
      *                                         getContainer()}.
      * @return string helper output
-     * @throws \Laminas\View\Exception\ExceptionInterface
+     * @throws \Zend\View\Exception\ExceptionInterface
      */
     public function render($container = null);
 
@@ -107,7 +107,7 @@ interface HelperInterface extends BaseHelperInterface
      * @param  mixed $role [optional] role to set.  Expects a string, an
      *                     instance of type {@link Acl\Role}, or null. Default
      *                     is null.
-     * @throws \Laminas\View\Exception\ExceptionInterface if $role is invalid
+     * @throws \Zend\View\Exception\ExceptionInterface if $role is invalid
      * @return HelperInterface
      */
     public function setRole($role = null);

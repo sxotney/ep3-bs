@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
 use DateTime as PhpDateTime;
 use Exception;
 use Traversable;
-use Laminas\Form\FormInterface;
-use Laminas\Form\Exception\InvalidArgumentException;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Validator\ValidatorInterface;
-use Laminas\Validator\Date as DateValidator;
+use Zend\Form\FormInterface;
+use Zend\Form\Exception\InvalidArgumentException;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Validator\ValidatorInterface;
+use Zend\Validator\Date as DateValidator;
 
 class DateTimeSelect extends DateSelect
 {
@@ -306,7 +306,7 @@ class DateTimeSelect extends DateSelect
 
     /**
      * Should return an array specification compatible with
-     * {@link Laminas\InputFilter\Factory::createInput()}.
+     * {@link Zend\InputFilter\Factory::createInput()}.
      *
      * @return array
      */

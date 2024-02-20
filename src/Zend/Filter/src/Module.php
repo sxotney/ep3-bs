@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-filter for the canonical source repository
+ * @see       https://github.com/zendframework/zend-filter for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-filter/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-filter/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 class Module
 {
@@ -24,7 +24,7 @@ class Module
     /**
      * Register a specification for the FilterManager with the ServiceListener.
      *
-     * @param \Laminas\ModuleManager\ModuleManager $moduleManager
+     * @param \Zend\ModuleManager\ModuleManager $moduleManager
      * @return void
      */
     public function init($moduleManager)

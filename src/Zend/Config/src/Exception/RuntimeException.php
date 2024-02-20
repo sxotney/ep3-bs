@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Exception;
+namespace Zend\Config\Exception;
 
 class RuntimeException extends \RuntimeException implements ExceptionInterface
 {

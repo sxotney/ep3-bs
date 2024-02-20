@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Annotation;
+namespace Zend\Form\Annotation;
 
-use Laminas\Filter\Boolean as BooleanFilter;
+use Zend\Filter\Boolean as BooleanFilter;
 
 /**
  * ContinueIfEmpty annotation
  *
  * Presence of this annotation is a hint that the associated
- * \Laminas\InputFilter\Input should enable the continueIfEmpty flag.
+ * \Zend\InputFilter\Input should enable the continueIfEmpty flag.
  *
  * @Annotation
  * @deprecated 2.4.8 Use `@Validator({"name":"NotEmpty"})` instead.

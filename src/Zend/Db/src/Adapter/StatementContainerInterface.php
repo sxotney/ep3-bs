@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter;
+namespace Zend\Db\Adapter;
 
 interface StatementContainerInterface
 {

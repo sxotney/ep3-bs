@@ -7,18 +7,18 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc;
+namespace Zend\Mvc;
 
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManager;
-use Laminas\EventManager\EventManagerAwareInterface;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Mvc\ResponseSender\ConsoleResponseSender;
-use Laminas\Mvc\ResponseSender\HttpResponseSender;
-use Laminas\Mvc\ResponseSender\PhpEnvironmentResponseSender;
-use Laminas\Mvc\ResponseSender\SendResponseEvent;
-use Laminas\Mvc\ResponseSender\SimpleStreamResponseSender;
-use Laminas\Stdlib\ResponseInterface as Response;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManager;
+use Zend\EventManager\EventManagerAwareInterface;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Mvc\ResponseSender\ConsoleResponseSender;
+use Zend\Mvc\ResponseSender\HttpResponseSender;
+use Zend\Mvc\ResponseSender\PhpEnvironmentResponseSender;
+use Zend\Mvc\ResponseSender\SendResponseEvent;
+use Zend\Mvc\ResponseSender\SimpleStreamResponseSender;
+use Zend\Stdlib\ResponseInterface as Response;
 
 class SendResponseListener extends AbstractListenerAggregate implements
     EventManagerAwareInterface

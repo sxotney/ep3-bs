@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\View\Resolver as ViewResolver;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\View\Resolver as ViewResolver;
 
 class ViewResolverFactory implements FactoryInterface
 {
     /**
      * Create the aggregate view resolver
      *
-     * Creates a Laminas\View\Resolver\AggregateResolver and attaches the template
+     * Creates a Zend\View\Resolver\AggregateResolver and attaches the template
      * map resolver and path stack resolver
      *
      * @param  ContainerInterface $container
@@ -31,11 +31,11 @@ class ViewResolverFactory implements FactoryInterface
     {
         $resolver = new ViewResolver\AggregateResolver();
 
-        /* @var $mapResolver \Laminas\View\Resolver\ResolverInterface */
+        /* @var $mapResolver \Zend\View\Resolver\ResolverInterface */
         $mapResolver             = $container->get('ViewTemplateMapResolver');
-        /* @var $pathResolver \Laminas\View\Resolver\ResolverInterface */
+        /* @var $pathResolver \Zend\View\Resolver\ResolverInterface */
         $pathResolver            = $container->get('ViewTemplatePathStack');
-        /* @var $prefixPathStackResolver \Laminas\View\Resolver\ResolverInterface */
+        /* @var $prefixPathStackResolver \Zend\View\Resolver\ResolverInterface */
         $prefixPathStackResolver = $container->get('ViewPrefixPathStackResolver');
 
         $resolver

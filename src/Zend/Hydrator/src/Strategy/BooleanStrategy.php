@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Strategy;
+namespace Zend\Hydrator\Strategy;
 
-use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Zend\Hydrator\Exception\InvalidArgumentException;
 
 /**
  * This Strategy extracts and hydrates int and string values to Boolean values

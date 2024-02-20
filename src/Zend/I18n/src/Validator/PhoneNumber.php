@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Validator;
+namespace Zend\I18n\Validator;
 
 use Locale;
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Validator\AbstractValidator;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Validator\AbstractValidator;
 
 class PhoneNumber extends AbstractValidator
 {

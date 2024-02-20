@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router\Http;
+namespace Zend\Mvc\Router\Http;
 
 use ArrayObject;
 use Traversable;
-use Laminas\Mvc\Router\Exception;
-use Laminas\Mvc\Router\PriorityList;
-use Laminas\Mvc\Router\RoutePluginManager;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Stdlib\RequestInterface as Request;
+use Zend\Mvc\Router\Exception;
+use Zend\Mvc\Router\PriorityList;
+use Zend\Mvc\Router\RoutePluginManager;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Stdlib\RequestInterface as Request;
 
 /**
  * Chain route.
@@ -58,7 +58,7 @@ class Chain extends TreeRouteStack implements RouteInterface
      *
      * @return Chain
      *@throws Exception\InvalidArgumentException
-     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
+     * @see    \Zend\Mvc\Router\RouteInterface::factory()
      */
     public static function factory($options = [])
     {
@@ -99,7 +99,7 @@ class Chain extends TreeRouteStack implements RouteInterface
      * @param  array    $options
      *
      * @return void
-     *@see    \Laminas\Mvc\Router\RouteInterface::match()
+     *@see    \Zend\Mvc\Router\RouteInterface::match()
      */
     public function match(Request $request, $pathOffset = null, array $options = [])
     {
@@ -144,7 +144,7 @@ class Chain extends TreeRouteStack implements RouteInterface
     /**
      * assemble(): Defined by RouteInterface interface.
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
+     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

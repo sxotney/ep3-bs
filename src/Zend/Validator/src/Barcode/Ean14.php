@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Barcode;
+namespace Zend\Validator\Barcode;
 
 class Ean14 extends AbstractAdapter
 {

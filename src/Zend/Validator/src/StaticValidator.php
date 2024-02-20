@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator;
+namespace Zend\Validator;
 
-use Laminas\ServiceManager\ServiceManager;
+use Zend\ServiceManager\ServiceManager;
 
 class StaticValidator
 {

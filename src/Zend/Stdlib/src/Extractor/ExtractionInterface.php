@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Extractor;
+namespace Zend\Stdlib\Extractor;
 
-use Laminas\Hydrator\ExtractionInterface as BaseExtractionInterface;
+use Zend\Hydrator\ExtractionInterface as BaseExtractionInterface;
 
 /**
- * @deprecated Use Laminas\Hydrator\ExtractionInterface from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\ExtractionInterface from zendframework/zend-hydrator instead.
  */
 interface ExtractionInterface extends BaseExtractionInterface
 {

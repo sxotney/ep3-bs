@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json;
+namespace Zend\Json;
 
 use Iterator;
 use IteratorAggregate;
 use JsonSerializable;
 use ReflectionClass;
-use Laminas\Json\Exception\InvalidArgumentException;
-use Laminas\Json\Exception\RecursionException;
+use Zend\Json\Exception\InvalidArgumentException;
+use Zend\Json\Exception\RecursionException;
 
 /**
  * Encode PHP constructs to JSON

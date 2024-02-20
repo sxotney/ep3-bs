@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\ResultSet\Exception;
+namespace Zend\Db\ResultSet\Exception;
 
-use Laminas\Db\Exception;
+use Zend\Db\Exception;
 
 interface ExceptionInterface extends Exception\ExceptionInterface
 {

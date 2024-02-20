@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt\PublicKey\Rsa;
+namespace Zend\Crypt\PublicKey\Rsa;
 
 /**
  * RSA public key

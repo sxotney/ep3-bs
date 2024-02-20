@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\EventManager;
+namespace Zend\EventManager;
 
 /**
  * Interface for self-registering event listeners.

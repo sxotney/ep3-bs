@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form;
+namespace Zend\Form;
 
 use Interop\Container\ContainerInterface;
-use Laminas\InputFilter\InputFilterInterface;
-use Laminas\ServiceManager\AbstractFactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\InputFilter\InputFilterInterface;
+use Zend\ServiceManager\AbstractFactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class FormAbstractServiceFactory implements AbstractFactoryInterface
 {

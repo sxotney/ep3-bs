@@ -7,41 +7,41 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Processor;
+namespace Zend\Config\Processor;
 
-use Laminas\Config\Config;
-use Laminas\Config\Exception;
-use Laminas\Filter\FilterInterface as LaminasFilter;
+use Zend\Config\Config;
+use Zend\Config\Exception;
+use Zend\Filter\FilterInterface as ZendFilter;
 
 class Filter implements ProcessorInterface
 {
     /**
-     * @var LaminasFilter
+     * @var ZendFilter
      */
     protected $filter;
 
     /**
-     * Filter all config values using the supplied Laminas\Filter
+     * Filter all config values using the supplied Zend\Filter
      *
-     * @param LaminasFilter $filter
+     * @param ZendFilter $filter
      */
-    public function __construct(LaminasFilter $filter)
+    public function __construct(ZendFilter $filter)
     {
         $this->setFilter($filter);
     }
 
     /**
-     * @param  LaminasFilter $filter
+     * @param  ZendFilter $filter
      * @return Filter
      */
-    public function setFilter(LaminasFilter $filter)
+    public function setFilter(ZendFilter $filter)
     {
         $this->filter = $filter;
         return $this;
     }
 
     /**
-     * @return LaminasFilter
+     * @return ZendFilter
      */
     public function getFilter()
     {

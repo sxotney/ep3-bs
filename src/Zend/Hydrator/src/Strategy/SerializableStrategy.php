@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Strategy;
+namespace Zend\Hydrator\Strategy;
 
-use Laminas\Hydrator\Exception\InvalidArgumentException;
-use Laminas\Serializer\Adapter\AdapterInterface as SerializerAdapter;
-use Laminas\Serializer\Serializer as SerializerFactory;
+use Zend\Hydrator\Exception\InvalidArgumentException;
+use Zend\Serializer\Adapter\AdapterInterface as SerializerAdapter;
+use Zend\Serializer\Serializer as SerializerFactory;
 
 class SerializableStrategy implements StrategyInterface
 {
@@ -72,7 +72,7 @@ class SerializableStrategy implements StrategyInterface
     {
         if (!is_string($serializer) && !$serializer instanceof SerializerAdapter) {
             throw new InvalidArgumentException(sprintf(
-                '%s expects either a string serializer name or Laminas\Serializer\Adapter\AdapterInterface instance; '
+                '%s expects either a string serializer name or Zend\Serializer\Adapter\AdapterInterface instance; '
                 . 'received "%s"',
                 __METHOD__,
                 (is_object($serializer) ? get_class($serializer) : gettype($serializer))

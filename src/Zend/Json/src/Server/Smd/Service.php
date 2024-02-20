@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server\Smd;
+namespace Zend\Json\Server\Smd;
 
-use Laminas\Json\Server\Exception\InvalidArgumentException;
-use Laminas\Json\Server\Smd;
+use Zend\Json\Server\Exception\InvalidArgumentException;
+use Zend\Json\Server\Smd;
 
 /**
  * Create Service Mapping Description for a method
@@ -424,7 +424,7 @@ class Service
     {
         $service = [$this->getName() => $this->toArray()];
 
-        return \Laminas\Json\Json::encode($service);
+        return \Zend\Json\Json::encode($service);
     }
 
     /**

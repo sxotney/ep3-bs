@@ -3,7 +3,7 @@
 namespace Backend\View\Helper\Square;
 
 use Square\Entity\Square;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class SquareFormat extends AbstractHelper
 {

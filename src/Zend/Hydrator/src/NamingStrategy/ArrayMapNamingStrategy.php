@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\NamingStrategy;
+namespace Zend\Hydrator\NamingStrategy;
 
 class ArrayMapNamingStrategy implements NamingStrategyInterface
 {

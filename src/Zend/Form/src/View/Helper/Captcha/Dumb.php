@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper\Captcha;
+namespace Zend\Form\View\Helper\Captcha;
 
-use Laminas\Captcha\Dumb as CaptchaAdapter;
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Exception;
+use Zend\Captcha\Dumb as CaptchaAdapter;
+use Zend\Form\ElementInterface;
+use Zend\Form\Exception;
 
 class Dumb extends AbstractWord
 {
@@ -28,7 +28,7 @@ class Dumb extends AbstractWord
 
         if ($captcha === null || ! $captcha instanceof CaptchaAdapter) {
             throw new Exception\DomainException(sprintf(
-                '%s requires that the element has a "captcha" attribute of type Laminas\Captcha\Dumb; none found',
+                '%s requires that the element has a "captcha" attribute of type Zend\Captcha\Dumb; none found',
                 __METHOD__
             ));
         }

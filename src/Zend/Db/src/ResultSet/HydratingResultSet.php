@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\ResultSet;
+namespace Zend\Db\ResultSet;
 
 use ArrayObject;
-use Laminas\Hydrator\ArraySerializable;
-use Laminas\Hydrator\ArraySerializableHydrator;
-use Laminas\Hydrator\HydratorInterface;
+use Zend\Hydrator\ArraySerializable;
+use Zend\Hydrator\ArraySerializableHydrator;
+use Zend\Hydrator\HydratorInterface;
 
 class HydratingResultSet extends AbstractResultSet
 {

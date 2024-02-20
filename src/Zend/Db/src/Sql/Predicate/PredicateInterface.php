@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Predicate;
+namespace Zend\Db\Sql\Predicate;
 
-use Laminas\Db\Sql\ExpressionInterface;
+use Zend\Db\Sql\ExpressionInterface;
 
 interface PredicateInterface extends ExpressionInterface
 {

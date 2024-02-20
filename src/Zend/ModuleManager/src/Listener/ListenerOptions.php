@@ -1,14 +1,14 @@
 <?php
 /**
- * @link      https://github.com/laminas/laminas-modulemanager for the canonical source repository
+ * @link      https://github.com/zendframework/zend-modulemanager for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-modulemanager/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-modulemanager/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\ModuleManager\Listener;
+namespace Zend\ModuleManager\Listener;
 
 use Traversable;
-use Laminas\Stdlib\AbstractOptions;
+use Zend\Stdlib\AbstractOptions;
 
 /**
  * Listener options
@@ -94,7 +94,7 @@ class ListenerOptions extends AbstractOptions
                 sprintf(
                     'Argument passed to %s::%s() must be an array, '
                     . 'implement the Traversable interface, or be an '
-                    . 'instance of Laminas\Config\Config. %s given.',
+                    . 'instance of Zend\Config\Config. %s given.',
                     __CLASS__,
                     __METHOD__,
                     gettype($modulePaths)
@@ -140,7 +140,7 @@ class ListenerOptions extends AbstractOptions
                 sprintf(
                     'Argument passed to %s::%s() must be an array, '
                     . 'implement the Traversable interface, or be an '
-                    . 'instance of Laminas\Config\Config. %s given.',
+                    . 'instance of Zend\Config\Config. %s given.',
                     __CLASS__,
                     __METHOD__,
                     gettype($configGlobPaths)
@@ -166,7 +166,7 @@ class ListenerOptions extends AbstractOptions
                 sprintf(
                     'Argument passed to %s::%s() must be an array, '
                     . 'implement the Traversable interface, or be an '
-                    . 'instance of Laminas\Config\Config. %s given.',
+                    . 'instance of Zend\Config\Config. %s given.',
                     __CLASS__,
                     __METHOD__,
                     gettype($configStaticPaths)
@@ -203,7 +203,7 @@ class ListenerOptions extends AbstractOptions
                 sprintf(
                     'Argument passed to %s::%s() must be an array, '
                     . 'implement the Traversable interface, or be an '
-                    . 'instance of Laminas\Config\Config. %s given.',
+                    . 'instance of Zend\Config\Config. %s given.',
                     __CLASS__,
                     __METHOD__,
                     gettype($extraConfig)

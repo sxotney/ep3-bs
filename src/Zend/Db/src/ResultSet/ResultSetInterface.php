@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\ResultSet;
+namespace Zend\Db\ResultSet;
 
 use Countable;
 use Traversable;

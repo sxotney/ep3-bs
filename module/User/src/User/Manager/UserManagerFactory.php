@@ -2,8 +2,8 @@
 
 namespace User\Manager;
 
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class UserManagerFactory implements FactoryInterface
 {

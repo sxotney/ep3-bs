@@ -4,7 +4,7 @@ namespace Backend\View\Helper\Booking;
 
 use Booking\Entity\Reservation;
 use Square\Manager\SquareManager;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class BookingFormat extends AbstractHelper
 {

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\Exception;
+namespace Zend\Session\Exception;
 
 /**
- * Laminas\Session\Exception
+ * Zend\Session\Exception
  */
 interface ExceptionInterface
 {

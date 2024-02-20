@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\View\Helper;
+namespace Zend\I18n\View\Helper;
 
-use Laminas\I18n\Exception;
+use Zend\I18n\Exception;
 
 /**
  * View helper for translating plural messages.

@@ -2,8 +2,8 @@
 
 namespace Base\View\Helper\Layout;
 
-use Laminas\Uri\UriFactory;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\Uri\UriFactory;
+use Zend\View\Helper\AbstractHelper;
 
 class ShortUrl extends AbstractHelper
 {

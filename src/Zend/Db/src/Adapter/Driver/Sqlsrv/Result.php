@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Sqlsrv;
+namespace Zend\Db\Adapter\Driver\Sqlsrv;
 
 use Iterator;
 use ReturnTypeWillChange;
-use Laminas\Db\Adapter\Driver\ResultInterface;
+use Zend\Db\Adapter\Driver\ResultInterface;
 
 class Result implements Iterator, ResultInterface
 {

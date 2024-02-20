@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\TableGateway\Feature;
+namespace Zend\Db\TableGateway\Feature;
 
-use Laminas\Db\Metadata\MetadataInterface;
-use Laminas\Db\TableGateway\Exception;
-use Laminas\Db\Metadata\Object\TableObject;
-use Laminas\Db\Metadata\Source\Factory as SourceFactory;
-use Laminas\Db\Sql\TableIdentifier;
+use Zend\Db\Metadata\MetadataInterface;
+use Zend\Db\TableGateway\Exception;
+use Zend\Db\Metadata\Object\TableObject;
+use Zend\Db\Metadata\Source\Factory as SourceFactory;
+use Zend\Db\Sql\TableIdentifier;
 
 class MetadataFeature extends AbstractFeature
 {
@@ -73,7 +73,7 @@ class MetadataFeature extends AbstractFeature
         $pkc = null;
 
         foreach ($m->getConstraints($table, $schema) as $constraint) {
-            /** @var $constraint \Laminas\Db\Metadata\Object\ConstraintObject */
+            /** @var $constraint \Zend\Db\Metadata\Object\ConstraintObject */
             if ($constraint->getType() == 'PRIMARY KEY') {
                 $pkc = $constraint;
                 break;

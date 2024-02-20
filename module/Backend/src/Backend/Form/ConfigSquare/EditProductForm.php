@@ -4,8 +4,8 @@ namespace Backend\Form\ConfigSquare;
 
 use Base\Manager\ConfigManager;
 use Square\Manager\SquareManager;
-use Laminas\Form\Form;
-use Laminas\InputFilter\Factory;
+use Zend\Form\Form;
+use Zend\InputFilter\Factory;
 
 class EditProductForm extends Form
 {

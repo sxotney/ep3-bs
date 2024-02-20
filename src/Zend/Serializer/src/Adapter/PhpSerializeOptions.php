@@ -1,14 +1,14 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-serializer for the canonical source repository
+ * @see       https://github.com/zendframework/zend-serializer for the canonical source repository
  * @copyright Copyright (c) 2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-serializer/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-serializer/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Serializer\Adapter;
+namespace Zend\Serializer\Adapter;
 
-use Laminas\Json\Json as ZendJson;
-use Laminas\Serializer\Exception;
+use Zend\Json\Json as ZendJson;
+use Zend\Serializer\Exception;
 
 class PhpSerializeOptions extends AdapterOptions
 {

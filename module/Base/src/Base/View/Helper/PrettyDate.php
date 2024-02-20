@@ -5,7 +5,7 @@ namespace Base\View\Helper;
 use DateTime;
 use IntlDateFormatter;
 use RuntimeException;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class PrettyDate extends AbstractHelper
 {

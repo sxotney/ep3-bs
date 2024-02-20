@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Annotation;
+namespace Zend\Form\Annotation;
 
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Stdlib\ArrayObject;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Stdlib\ArrayObject;
 
 /**
  * Default listeners for element annotations
@@ -67,7 +67,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the allow_empty flag on the input specification array.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleAllowEmptyAnnotation($e)
@@ -86,7 +86,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the attributes array of the element specification.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleAttributesAnnotation($e)
@@ -111,7 +111,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
     /**
      * Allow creating fieldsets from composed entity properties
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleComposedObjectAnnotation($e)
@@ -134,16 +134,16 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
                 //use input filter provider fieldset so we can compose the input filter into the fieldset
                 //it is assumed that if someone uses a custom fieldset, they will take care of the input
                 //filtering themselves or consume the input_filter_spec option.
-                $specification['type'] = 'Laminas\Form\InputFilterProviderFieldset';
+                $specification['type'] = 'Zend\Form\InputFilterProviderFieldset';
             }
 
             $inputFilter = $specification['input_filter'];
             if (! isset($inputFilter['type'])) {
-                $inputFilter['type'] = 'Laminas\InputFilter\InputFilter';
+                $inputFilter['type'] = 'Zend\InputFilter\InputFilter';
             }
             unset($specification['input_filter']);
 
-            $elementSpec['spec']['type'] = 'Laminas\Form\Element\Collection';
+            $elementSpec['spec']['type'] = 'Zend\Form\Element\Collection';
             $elementSpec['spec']['name'] = $name;
             $elementSpec['spec']['options'] = new ArrayObject($this->mergeOptions($elementSpec, $annotation));
             $elementSpec['spec']['options']['target_element'] = $specification;
@@ -156,14 +156,14 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
             // Compose input filter into parent input filter
             $inputFilter = $specification['input_filter'];
             if (! isset($inputFilter['type'])) {
-                $inputFilter['type'] = 'Laminas\InputFilter\InputFilter';
+                $inputFilter['type'] = 'Zend\InputFilter\InputFilter';
             }
             $e->setParam('inputSpec', $inputFilter);
             unset($specification['input_filter']);
 
             // Compose specification as a fieldset into parent form/fieldset
             if (! isset($specification['type'])) {
-                $specification['type'] = 'Laminas\Form\Fieldset';
+                $specification['type'] = 'Zend\Form\Fieldset';
             }
 
             if (isset($elementSpec['spec']['options'])) {
@@ -183,7 +183,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the continue_if_empty flag on the input specification array.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleContinueIfEmptyAnnotation($e)
@@ -202,7 +202,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the error_message of the input specification.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleErrorMessageAnnotation($e)
@@ -219,13 +219,13 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
     /**
      * Determine if the element has been marked to exclude from the definition
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return bool
      */
     public function handleExcludeAnnotation($e)
     {
         $annotations = $e->getParam('annotations');
-        if ($annotations->hasAnnotation('Laminas\Form\Annotation\Exclude')) {
+        if ($annotations->hasAnnotation('Zend\Form\Annotation\Exclude')) {
             return true;
         }
         return false;
@@ -236,7 +236,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Adds a filter to the filter chain specification for the input.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleFilterAnnotation($e)
@@ -259,7 +259,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      * Sets the element flags in the specification (used typically for setting
      * priority).
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleFlagsAnnotation($e)
@@ -278,7 +278,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the hydrator class to use in the fieldset specification.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleHydratorAnnotation($e)
@@ -298,7 +298,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      * Sets the filter specification for the current element to the specified
      * input class name.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleInputAnnotation($e)
@@ -317,7 +317,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the object to bind to the form or fieldset
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleObjectAnnotation($e)
@@ -338,7 +338,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the element options in the specification.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleOptionsAnnotation($e)
@@ -357,7 +357,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the required flag on the input based on the annotation value.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleRequiredAnnotation($e)
@@ -386,7 +386,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Sets the element class type to use in the element specification.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleTypeAnnotation($e)
@@ -405,7 +405,7 @@ class ElementAnnotationsListener extends AbstractAnnotationsListener
      *
      * Adds a validator to the validator chain of the input specification.
      *
-     * @param  \Laminas\EventManager\EventInterface $e
+     * @param  \Zend\EventManager\EventInterface $e
      * @return void
      */
     public function handleValidatorAnnotation($e)

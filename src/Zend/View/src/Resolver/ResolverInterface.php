@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Resolver;
+namespace Zend\View\Resolver;
 
-use Laminas\View\Renderer\RendererInterface as Renderer;
+use Zend\View\Renderer\RendererInterface as Renderer;
 
 interface ResolverInterface
 {

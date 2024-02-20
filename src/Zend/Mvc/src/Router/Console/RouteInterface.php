@@ -10,9 +10,9 @@
 /**
  * @namespace
  */
-namespace Laminas\Mvc\Router\Console;
+namespace Zend\Mvc\Router\Console;
 
-use Laminas\Mvc\Router\RouteInterface as BaseRoute;
+use Zend\Mvc\Router\RouteInterface as BaseRoute;
 
 /**
  * Tree specific route interface.

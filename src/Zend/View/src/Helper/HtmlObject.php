@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\View\Exception\InvalidArgumentException;
+use Zend\View\Exception\InvalidArgumentException;
 
 class HtmlObject extends AbstractHtmlElement
 {

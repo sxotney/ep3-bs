@@ -4,7 +4,7 @@ namespace Base\View\Helper;
 
 use DateTime;
 use IntlDateFormatter;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class DateRange extends AbstractHelper
 {

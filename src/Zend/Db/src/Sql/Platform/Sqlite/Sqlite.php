@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Platform\Sqlite;
+namespace Zend\Db\Sql\Platform\Sqlite;
 
-use Laminas\Db\Sql\Platform\AbstractPlatform;
+use Zend\Db\Sql\Platform\AbstractPlatform;
 
 class Sqlite extends AbstractPlatform
 {
@@ -20,6 +20,6 @@ class Sqlite extends AbstractPlatform
      */
     public function __construct()
     {
-        $this->setTypeDecorator('Laminas\Db\Sql\Select', new SelectDecorator());
+        $this->setTypeDecorator('Zend\Db\Sql\Select', new SelectDecorator());
     }
 }

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\RowGateway;
+namespace Zend\Db\RowGateway;
 
 use ArrayAccess;
 use Countable;
 use ReturnTypeWillChange;
-use Laminas\Db\Sql\Sql;
-use Laminas\Db\Sql\TableIdentifier;
+use Zend\Db\Sql\Sql;
+use Zend\Db\Sql\TableIdentifier;
 
 abstract class AbstractRowGateway implements ArrayAccess, Countable, RowGatewayInterface
 {

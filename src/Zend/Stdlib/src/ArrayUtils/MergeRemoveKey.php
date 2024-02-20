@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\ArrayUtils;
+namespace Zend\Stdlib\ArrayUtils;
 
 final class MergeRemoveKey
 {

@@ -1,21 +1,21 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-loader for the canonical source repository
+ * @see       https://github.com/zendframework/zend-loader for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-loader/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-loader/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Loader;
+namespace Zend\Loader;
 
 use Traversable;
 
-if (class_exists('Laminas\Loader\AutoloaderFactory')) {
+if (class_exists('Zend\Loader\AutoloaderFactory')) {
     return;
 }
 
 abstract class AutoloaderFactory
 {
-    const STANDARD_AUTOLOADER = 'Laminas\Loader\StandardAutoloader';
+    const STANDARD_AUTOLOADER = 'Zend\Loader\StandardAutoloader';
 
     /**
      * @var array All autoloaders registered using the factory
@@ -48,7 +48,7 @@ abstract class AutoloaderFactory
      * the Zend library, using PSR-0 rules (unless the class has already been
      * loaded).
      *
-     * @param  array|Traversable $options (optional) options to use. Defaults to Laminas\Loader\StandardAutoloader
+     * @param  array|Traversable $options (optional) options to use. Defaults to Zend\Loader\StandardAutoloader
      * @return void
      * @throws Exception\InvalidArgumentException for invalid options
      * @throws Exception\InvalidArgumentException for unloadable autoloader classes
@@ -84,10 +84,10 @@ abstract class AutoloaderFactory
                     );
                 }
 
-                if (! is_subclass_of($class, 'Laminas\Loader\SplAutoloader')) {
+                if (! is_subclass_of($class, 'Zend\Loader\SplAutoloader')) {
                     require_once 'Exception/InvalidArgumentException.php';
                     throw new Exception\InvalidArgumentException(
-                        sprintf('Autoloader class %s must implement Laminas\\Loader\\SplAutoloader', $class)
+                        sprintf('Autoloader class %s must implement Zend\\Loader\\SplAutoloader', $class)
                     );
                 }
 

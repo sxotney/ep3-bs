@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\Translator\Loader;
+namespace Zend\I18n\Translator\Loader;
 
 /**
  * File loader interface.
@@ -19,7 +19,7 @@ interface FileLoaderInterface
      *
      * @param  string $locale
      * @param  string $filename
-     * @return \Laminas\I18n\Translator\TextDomain|null
+     * @return \Zend\I18n\Translator\TextDomain|null
      */
     public function load($locale, $filename);
 }

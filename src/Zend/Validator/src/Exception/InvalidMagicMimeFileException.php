@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Exception;
+namespace Zend\Validator\Exception;
 
 class InvalidMagicMimeFileException extends InvalidArgumentException
 {

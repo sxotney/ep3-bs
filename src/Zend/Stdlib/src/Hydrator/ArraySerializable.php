@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator;
+namespace Zend\Stdlib\Hydrator;
 
-use Laminas\Hydrator\ArraySerializable as BaseArraySerializable;
+use Zend\Hydrator\ArraySerializable as BaseArraySerializable;
 
 /**
- * @deprecated Use Laminas\Hydrator\ArraySerializable from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\ArraySerializable from zendframework/zend-hydrator instead.
  */
 class ArraySerializable extends BaseArraySerializable implements HydratorInterface
 {

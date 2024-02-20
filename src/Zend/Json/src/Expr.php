@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json;
+namespace Zend\Json;
 
 /**
- * Class for Laminas\Json\Json encode method.
+ * Class for Zend\Json\Json encode method.
  *
  * This class simply holds a string with a native Javascript Expression,
- * so objects | arrays to be encoded with Laminas\Json\Json can contain native
+ * so objects | arrays to be encoded with Zend\Json\Json can contain native
  * Javascript Expressions.
  *
  * Example:
@@ -21,14 +21,14 @@ namespace Laminas\Json;
  * $foo = array(
  *     'integer'  => 9,
  *     'string'   => 'test string',
- *     'function' => Laminas\Json\Expr(
- *         'function () { window.alert("javascript function encoded by Laminas\Json\Json") }'
+ *     'function' => Zend\Json\Expr(
+ *         'function () { window.alert("javascript function encoded by Zend\Json\Json") }'
  *     ),
  * );
  *
- * Laminas\Json\Json::encode($foo, false, array('enableJsonExprFinder' => true));
+ * Zend\Json\Json::encode($foo, false, array('enableJsonExprFinder' => true));
  * // it will returns json encoded string:
- * // {"integer":9,"string":"test string","function":function () {window.alert("javascript function encoded by Laminas\Json\Json")}}
+ * // {"integer":9,"string":"test string","function":function () {window.alert("javascript function encoded by Zend\Json\Json")}}
  * </code>
  */
 class Expr

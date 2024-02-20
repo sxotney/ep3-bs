@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Controller\Plugin;
+namespace Zend\Mvc\Controller\Plugin;
 
-use Laminas\View\Model\ConsoleModel;
+use Zend\View\Model\ConsoleModel;
 
 class CreateConsoleNotFoundModel extends AbstractPlugin
 {

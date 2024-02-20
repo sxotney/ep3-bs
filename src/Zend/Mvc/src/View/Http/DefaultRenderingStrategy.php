@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\View\Http;
+namespace Zend\Mvc\View\Http;
 
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Mvc\Application;
-use Laminas\Mvc\MvcEvent;
-use Laminas\Stdlib\ResponseInterface as Response;
-use Laminas\View\Model\ModelInterface as ViewModel;
-use Laminas\View\View;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Mvc\Application;
+use Zend\Mvc\MvcEvent;
+use Zend\Stdlib\ResponseInterface as Response;
+use Zend\View\Model\ModelInterface as ViewModel;
+use Zend\View\View;
 
 class DefaultRenderingStrategy extends AbstractListenerAggregate
 {

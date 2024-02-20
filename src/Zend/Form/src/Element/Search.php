@@ -7,9 +7,9 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element;
+use Zend\Form\Element;
 
 class Search extends Element
 {

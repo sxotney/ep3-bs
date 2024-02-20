@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server;
+namespace Zend\Json\Server;
 
-use Laminas\Server\Cache as ServerCache;
-use Laminas\Stdlib\ErrorHandler;
+use Zend\Server\Cache as ServerCache;
+use Zend\Stdlib\ErrorHandler;
 
 /**
- * Laminas\Json\Server\Cache: cache Laminas\Json\Server\Server server definition and SMD
+ * Zend\Json\Server\Cache: cache Zend\Json\Server\Server server definition and SMD
  */
 class Cache extends ServerCache
 {
@@ -23,7 +23,7 @@ class Cache extends ServerCache
      * Returns true on success, false on failure
      *
      * @param  string $filename
-     * @param  \Laminas\Json\Server\Server $server
+     * @param  \Zend\Json\Server\Server $server
      * @return bool
      */
     public static function saveSmd($filename, Server $server)

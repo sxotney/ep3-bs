@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
 use DateTime;
 use IntlDateFormatter;
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Element\DateSelect as DateSelectElement;
-use Laminas\Form\Exception;
-use Laminas\Form\View\Helper\FormMonthSelect as FormMonthSelectHelper;
+use Zend\Form\ElementInterface;
+use Zend\Form\Element\DateSelect as DateSelectElement;
+use Zend\Form\Exception;
+use Zend\Form\View\Helper\FormMonthSelect as FormMonthSelectHelper;
 
 class FormDateSelect extends FormMonthSelectHelper
 {
@@ -22,15 +22,15 @@ class FormDateSelect extends FormMonthSelectHelper
      * Render a date element that is composed of three selects
      *
      * @param  ElementInterface $element
-     * @throws \Laminas\Form\Exception\InvalidArgumentException
-     * @throws \Laminas\Form\Exception\DomainException
+     * @throws \Zend\Form\Exception\InvalidArgumentException
+     * @throws \Zend\Form\Exception\DomainException
      * @return string
      */
     public function render(ElementInterface $element)
     {
         if (! $element instanceof DateSelectElement) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s requires that the element is of type Laminas\Form\Element\DateSelect',
+                '%s requires that the element is of type Zend\Form\Element\DateSelect',
                 __METHOD__
             ));
         }

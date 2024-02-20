@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Aggregate;
+namespace Zend\Hydrator\Aggregate;
 
-use Laminas\EventManager\EventManager;
-use Laminas\EventManager\EventManagerAwareInterface;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Hydrator\HydratorInterface;
+use Zend\EventManager\EventManager;
+use Zend\EventManager\EventManagerAwareInterface;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Hydrator\HydratorInterface;
 
 /**
  * Aggregate hydrator that composes multiple hydrators via events

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter;
+namespace Zend\Filter;
 
 /**
  * Decrypts a given string
@@ -15,7 +15,7 @@ namespace Laminas\Filter;
 class Decrypt extends Encrypt
 {
     /**
-     * Defined by Laminas\Filter\Filter
+     * Defined by Zend\Filter\Filter
      *
      * Decrypts the content $value with the defined settings
      *

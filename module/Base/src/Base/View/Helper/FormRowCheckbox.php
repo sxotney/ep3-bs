@@ -2,8 +2,8 @@
 
 namespace Base\View\Helper;
 
-use Laminas\Form\ElementInterface;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\Form\ElementInterface;
+use Zend\View\Helper\AbstractHelper;
 
 class FormRowCheckbox extends AbstractHelper
 {

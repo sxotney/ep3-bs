@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Serializer\Adapter;
+namespace Zend\Serializer\Adapter;
 
-use Laminas\Serializer\Exception;
-use Laminas\Stdlib\ErrorHandler;
+use Zend\Serializer\Exception;
+use Zend\Stdlib\ErrorHandler;
 
 class IgBinary extends AbstractAdapter
 {

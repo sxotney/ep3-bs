@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Translator;
+namespace Zend\Validator\Translator;
 
 interface TranslatorInterface
 {

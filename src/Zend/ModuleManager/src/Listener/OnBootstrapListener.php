@@ -1,15 +1,15 @@
 <?php
 /**
- * @link      https://github.com/laminas/laminas-modulemanager for the canonical source repository
+ * @link      https://github.com/zendframework/zend-modulemanager for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-modulemanager/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-modulemanager/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\ModuleManager\Listener;
+namespace Zend\ModuleManager\Listener;
 
-use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
-use Laminas\ModuleManager\ModuleEvent;
-use Laminas\ModuleManager\ModuleManager;
+use Zend\ModuleManager\Feature\BootstrapListenerInterface;
+use Zend\ModuleManager\ModuleEvent;
+use Zend\ModuleManager\ModuleManager;
 
 /**
  * Autoloader listener
@@ -32,6 +32,6 @@ class OnBootstrapListener extends AbstractListener
         $moduleManager = $e->getTarget();
         $events        = $moduleManager->getEventManager();
         $sharedEvents  = $events->getSharedManager();
-        $sharedEvents->attach('Laminas\Mvc\Application', ModuleManager::EVENT_BOOTSTRAP, [$module, 'onBootstrap']);
+        $sharedEvents->attach('Zend\Mvc\Application', ModuleManager::EVENT_BOOTSTRAP, [$module, 'onBootstrap']);
     }
 }

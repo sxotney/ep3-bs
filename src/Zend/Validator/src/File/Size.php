@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
-use Laminas\Stdlib\ErrorHandler;
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Exception;
+use Zend\Stdlib\ErrorHandler;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the maximum size of a file up to a max of 2GB
@@ -230,7 +230,7 @@ class Size extends AbstractValidator
      * not bigger than max (when max is not null).
      *
      * @param  string|array $value File to check for size
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

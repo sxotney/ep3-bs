@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\ServiceManager\Di;
+namespace Zend\ServiceManager\Di;
 
-use Laminas\Di\Di;
-use Laminas\ServiceManager\InitializerInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Di\Di;
+use Zend\ServiceManager\InitializerInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class DiServiceInitializer extends Di implements InitializerInterface
 {
@@ -33,8 +33,8 @@ class DiServiceInitializer extends Di implements InitializerInterface
     /**
      * Constructor
      *
-     * @param \Laminas\Di\Di $di
-     * @param \Laminas\ServiceManager\ServiceLocatorInterface $serviceLocator
+     * @param \Zend\Di\Di $di
+     * @param \Zend\ServiceManager\ServiceLocatorInterface $serviceLocator
      * @param null|DiInstanceManagerProxy $diImProxy
      */
     public function __construct(Di $di, ServiceLocatorInterface $serviceLocator, DiInstanceManagerProxy $diImProxy = null)

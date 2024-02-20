@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\Validator;
+namespace Zend\Session\Validator;
 
 class HttpUserAgent implements ValidatorInterface
 {

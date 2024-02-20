@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Ddl\Constraint;
+namespace Zend\Db\Sql\Ddl\Constraint;
 
 class ForeignKey extends AbstractConstraint
 {

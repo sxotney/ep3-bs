@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql;
+namespace Zend\Db\Sql;
 
-use Laminas\Db\Adapter\StatementContainerInterface;
-use Laminas\Db\Adapter\AdapterInterface;
-use Laminas\Db\Adapter\ParameterContainer;
+use Zend\Db\Adapter\StatementContainerInterface;
+use Zend\Db\Adapter\AdapterInterface;
+use Zend\Db\Adapter\ParameterContainer;
 
 abstract class AbstractPreparableSql extends AbstractSql implements PreparableSqlInterface
 {

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\NamingStrategy;
+namespace Zend\Stdlib\Hydrator\NamingStrategy;
 
-use Laminas\Hydrator\NamingStrategy\UnderscoreNamingStrategy as BaseUnderscoreNamingStrategy;
+use Zend\Hydrator\NamingStrategy\UnderscoreNamingStrategy as BaseUnderscoreNamingStrategy;
 
 /**
- * @deprecated Use Laminas\Hydrator\NamingStrategy\UnderscoreNamingStrategy from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\NamingStrategy\UnderscoreNamingStrategy from zendframework/zend-hydrator instead.
  */
 class UnderscoreNamingStrategy extends BaseUnderscoreNamingStrategy implements NamingStrategyInterface
 {

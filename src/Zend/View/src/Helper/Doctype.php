@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
 use ArrayObject;
-use Laminas\View\Exception;
+use Zend\View\Exception;
 
 /**
  * Helper for setting and retrieving the doctype

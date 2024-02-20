@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Console\Console;
-use Laminas\Mvc\Router\RouteStackInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Console\Console;
+use Zend\Mvc\Router\RouteStackInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class ConsoleRouterFactory implements FactoryInterface
 {
@@ -32,7 +32,7 @@ class ConsoleRouterFactory implements FactoryInterface
         $config       = $container->has('config') ? $container->get('config') : [];
 
         // Defaults
-        $class  = 'Laminas\Mvc\Router\Console\SimpleRouteStack';
+        $class  = 'Zend\Mvc\Router\Console\SimpleRouteStack';
         $config = isset($config['console']['router']) ? $config['console']['router'] : [];
 
         return $this->createRouter($class, $config, $container);

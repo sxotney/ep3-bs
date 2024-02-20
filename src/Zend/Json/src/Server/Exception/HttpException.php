@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server\Exception;
+namespace Zend\Json\Server\Exception;
 
 /**
- * Thrown by Laminas\Json\Server\Client when an HTTP error occurs during an
+ * Thrown by Zend\Json\Server\Client when an HTTP error occurs during an
  * JSON-RPC method call.
  */
 class HttpException extends RuntimeException

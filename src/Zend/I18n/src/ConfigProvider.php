@@ -1,13 +1,13 @@
 <?php
 /**
- * @link      http://github.com/laminas/laminas-i18n for the canonical source repository
+ * @link      http://github.com/zendframework/zend-i18n for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n;
+namespace Zend\I18n;
 
-use Laminas\ServiceManager\Factory\InvokableFactory;
+use Zend\ServiceManager\Factory\InvokableFactory;
 
 class ConfigProvider
 {

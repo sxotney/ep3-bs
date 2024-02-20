@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\View\Exception\InvalidArgumentException;
-use Laminas\View\Helper\Placeholder\Container;
+use Zend\View\Exception\InvalidArgumentException;
+use Zend\View\Helper\Placeholder\Container;
 
 /**
  * Helper for passing data between otherwise segregated Views. It's called
@@ -31,7 +31,7 @@ class Placeholder extends AbstractHelper
      * Default container class
      * @var string
      */
-    protected $containerClass = 'Laminas\View\Helper\Placeholder\Container';
+    protected $containerClass = 'Zend\View\Helper\Placeholder\Container';
 
     /**
      * Placeholder helper

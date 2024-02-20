@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Filter\StringTrim;
-use Laminas\Filter\StripNewlines;
-use Laminas\Form\Element;
-use Laminas\InputFilter\InputProviderInterface;
-use Laminas\Validator\Regex as RegexValidator;
-use Laminas\Validator\ValidatorInterface;
+use Zend\Filter\StringTrim;
+use Zend\Filter\StripNewlines;
+use Zend\Form\Element;
+use Zend\InputFilter\InputProviderInterface;
+use Zend\Validator\Regex as RegexValidator;
+use Zend\Validator\ValidatorInterface;
 
 class Tel extends Element implements InputProviderInterface
 {

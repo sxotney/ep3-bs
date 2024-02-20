@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Exception;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Exception;
 
 /**
  * Validator for counting all given files
@@ -200,7 +200,7 @@ class Count extends AbstractValidator
      * must give all files with the first call, otherwise you will get a false.
      *
      * @param  string|array $value Filenames to check for count
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer
      * @return bool
      */
     public function isValid($value, $file = null)

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Form\Element\Number as NumberElement;
-use Laminas\I18n\Validator\IsFloat as NumberValidator;
-use Laminas\Validator\GreaterThan as GreaterThanValidator;
-use Laminas\Validator\LessThan as LessThanValidator;
-use Laminas\Validator\Step as StepValidator;
+use Zend\Form\Element\Number as NumberElement;
+use Zend\I18n\Validator\IsFloat as NumberValidator;
+use Zend\Validator\GreaterThan as GreaterThanValidator;
+use Zend\Validator\LessThan as LessThanValidator;
+use Zend\Validator\Step as StepValidator;
 
 class Range extends NumberElement
 {
@@ -29,7 +29,7 @@ class Range extends NumberElement
     /**
      * Get validator
      *
-     * @return \Laminas\Validator\ValidatorInterface[]
+     * @return \Zend\Validator\ValidatorInterface[]
      */
     protected function getValidators()
     {

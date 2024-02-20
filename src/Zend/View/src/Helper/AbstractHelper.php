@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\View\Renderer\RendererInterface as Renderer;
+use Zend\View\Renderer\RendererInterface as Renderer;
 
 abstract class AbstractHelper implements HelperInterface
 {

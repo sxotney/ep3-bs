@@ -2,8 +2,8 @@
 
 namespace User\Form;
 
-use Laminas\Form\Form;
-use Laminas\InputFilter\Factory;
+use Zend\Form\Form;
+use Zend\InputFilter\Factory;
 
 class PasswordForm extends Form
 {

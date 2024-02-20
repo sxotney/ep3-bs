@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Aggregate;
+namespace Zend\Hydrator\Aggregate;
 
-use Laminas\EventManager\Event;
+use Zend\EventManager\Event;
 
 /**
  * Event triggered when the {@see AggregateHydrator} hydrates

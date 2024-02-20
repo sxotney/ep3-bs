@@ -7,17 +7,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
 use DateTime as PhpDateTime;
 use Traversable;
-use Laminas\Form\Element;
-use Laminas\Form\ElementPrepareAwareInterface;
-use Laminas\Form\FormInterface;
-use Laminas\InputFilter\InputProviderInterface;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Validator\Regex as RegexValidator;
-use Laminas\Validator\ValidatorInterface;
+use Zend\Form\Element;
+use Zend\Form\ElementPrepareAwareInterface;
+use Zend\Form\FormInterface;
+use Zend\InputFilter\InputProviderInterface;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Validator\Regex as RegexValidator;
+use Zend\Validator\ValidatorInterface;
 
 class MonthSelect extends Element implements InputProviderInterface, ElementPrepareAwareInterface
 {
@@ -332,7 +332,7 @@ class MonthSelect extends Element implements InputProviderInterface, ElementPrep
 
     /**
      * Should return an array specification compatible with
-     * {@link Laminas\InputFilter\Factory::createInput()}.
+     * {@link Zend\InputFilter\Factory::createInput()}.
      *
      * @return array
      */

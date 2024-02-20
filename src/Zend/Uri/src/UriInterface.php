@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-uri for the canonical source repository
+ * @see       https://github.com/zendframework/zend-uri for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-uri/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-uri/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Uri;
+namespace Zend\Uri;
 
 /**
  * Interface defining a URI
@@ -152,7 +152,7 @@ interface UriInterface
      *
      * If the scheme is not valid according to the generic scheme syntax or
      * is not acceptable by the specific URI class (e.g. 'http' or 'https' are
-     * the only acceptable schemes for the Laminas\Uri\Http class) an exception
+     * the only acceptable schemes for the Zend\Uri\Http class) an exception
      * will be thrown.
      *
      * You can check if a scheme is valid before setting it using the

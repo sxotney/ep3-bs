@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Exception;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the file extension of a file
@@ -172,7 +172,7 @@ class Extension extends AbstractValidator
      * set extension list
      *
      * @param  string|array $value Real file to check for extension
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper;
+namespace Zend\View\Helper;
 
-use Laminas\View\Exception;
-use Laminas\View\Model\ModelInterface as Model;
+use Zend\View\Exception;
+use Zend\View\Model\ModelInterface as Model;
 
 /**
  * View helper for retrieving layout object

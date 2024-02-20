@@ -3,7 +3,7 @@
 namespace Base\View\Helper;
 
 use NumberFormatter;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class PrettyTime extends AbstractHelper
 {

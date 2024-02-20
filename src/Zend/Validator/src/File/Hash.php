@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Exception;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the hash of given files
@@ -124,7 +124,7 @@ class Hash extends AbstractValidator
      * Returns true if and only if the given file confirms the set hash
      *
      * @param  string|array $value File to check for hash
-     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

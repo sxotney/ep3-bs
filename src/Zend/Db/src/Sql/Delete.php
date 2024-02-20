@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql;
+namespace Zend\Db\Sql;
 
-use Laminas\Db\Adapter\ParameterContainer;
-use Laminas\Db\Adapter\Platform\PlatformInterface;
-use Laminas\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\ParameterContainer;
+use Zend\Db\Adapter\Platform\PlatformInterface;
+use Zend\Db\Adapter\Driver\DriverInterface;
 
 /**
  *

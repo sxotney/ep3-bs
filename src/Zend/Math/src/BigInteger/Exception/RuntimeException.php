@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Math\BigInteger\Exception;
+namespace Zend\Math\BigInteger\Exception;
 
-use Laminas\Math\Exception;
+use Zend\Math\Exception;
 
 /**
  * Runtime exception

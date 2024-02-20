@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
-use Laminas\Validator\DateStep as DateStepValidator;
-use Laminas\Validator\Regex as RegexValidator;
-use Laminas\Validator\ValidatorInterface;
+use Zend\Validator\DateStep as DateStepValidator;
+use Zend\Validator\Regex as RegexValidator;
+use Zend\Validator\ValidatorInterface;
 
 class Month extends DateTime
 {

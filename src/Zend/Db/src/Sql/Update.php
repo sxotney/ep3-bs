@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql;
+namespace Zend\Db\Sql;
 
-use Laminas\Db\Adapter\ParameterContainer;
-use Laminas\Db\Adapter\Platform\PlatformInterface;
-use Laminas\Db\Adapter\Driver\DriverInterface;
-use Laminas\Db\Adapter\Driver\Pdo\Pdo;
-use Laminas\Stdlib\PriorityList;
+use Zend\Db\Adapter\ParameterContainer;
+use Zend\Db\Adapter\Platform\PlatformInterface;
+use Zend\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\Driver\Pdo\Pdo;
+use Zend\Stdlib\PriorityList;
 
 /**
  *
@@ -203,7 +203,7 @@ class Update extends AbstractPreparableSql
             $prefix .= ' = ';
             if (is_scalar($value) && $parameterContainer) {
                 // use incremental value instead of column name for PDO
-                // @see https://github.com/laminas/laminas-db/issues/35
+                // @see https://github.com/zendframework/zend-db/issues/35
                 if ($driver instanceof Pdo) {
                     $column = 'c_' . $i++;
                 }

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt\Key\Derivation;
+namespace Zend\Crypt\Key\Derivation;
 
 /**
  * Scrypt key derivation function

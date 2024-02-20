@@ -9,7 +9,7 @@ use Square\Entity\Square;
 use Square\Entity\SquareProduct;
 use Square\Entity\SquareProductFactory;
 use Square\Table\SquareProductTable;
-use Laminas\Db\Sql\Where;
+use Zend\Db\Sql\Where;
 
 class SquareProductManager extends AbstractManager
 {

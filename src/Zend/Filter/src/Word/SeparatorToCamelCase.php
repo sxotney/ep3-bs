@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\Word;
+namespace Zend\Filter\Word;
 
-use Laminas\Stdlib\StringUtils;
+use Zend\Stdlib\StringUtils;
 
 class SeparatorToCamelCase extends AbstractSeparator
 {
     /**
-     * Defined by Laminas\Filter\Filter
+     * Defined by Zend\Filter\Filter
      *
      * @param  string|array $value
      * @return string|array

@@ -1,14 +1,14 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mail for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mail\Header;
+namespace Zend\Mail\Header;
 
-use Laminas\Mail\Headers;
-use Laminas\Mime\Mime;
+use Zend\Mail\Headers;
+use Zend\Mime\Mime;
 
 /**
  * Utility class used for creating wrapped or MIME-encoded versions of header

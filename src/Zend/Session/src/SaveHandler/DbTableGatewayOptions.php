@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\SaveHandler;
+namespace Zend\Session\SaveHandler;
 
-use Laminas\Session\Exception;
-use Laminas\Stdlib\AbstractOptions;
+use Zend\Session\Exception;
+use Zend\Stdlib\AbstractOptions;
 
 /**
  * DbTableGateway Save Handler Options

@@ -6,12 +6,12 @@
  * @copyright      Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license        http://framework.zend.com/license/new-bsd New BSD License
  */
-namespace Laminas\Stdlib\Hydrator\Filter;
+namespace Zend\Stdlib\Hydrator\Filter;
 
-use Laminas\Hydrator\Filter\MethodMatchFilter as BaseMethodMatchFilter;
+use Zend\Hydrator\Filter\MethodMatchFilter as BaseMethodMatchFilter;
 
 /**
- * @deprecated Use Laminas\Hydrator\Filter\MethodMatchFilter from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Filter\MethodMatchFilter from zendframework/zend-hydrator instead.
  */
 class MethodMatchFilter extends BaseMethodMatchFilter implements FilterInterface
 {

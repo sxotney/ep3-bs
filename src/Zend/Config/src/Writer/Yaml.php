@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Writer;
+namespace Zend\Config\Writer;
 
-use Laminas\Config\Exception;
+use Zend\Config\Exception;
 
 class Yaml extends AbstractWriter
 {

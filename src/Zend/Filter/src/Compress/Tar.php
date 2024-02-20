@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\Compress;
+namespace Zend\Filter\Compress;
 
 use Archive_Tar;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use Laminas\Filter\Exception;
+use Zend\Filter\Exception;
 
 /**
  * Compression adapter for Tar

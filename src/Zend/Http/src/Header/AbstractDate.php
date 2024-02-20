@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-http for the canonical source repository
+ * @see       https://github.com/zendframework/zend-http for the canonical source repository
  * @copyright Copyright (c) 2005-2017 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   https://github.com/laminas/laminas-http/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-http/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Http\Header;
+namespace Zend\Http\Header;
 
 use DateTime;
 use DateTimeZone;
@@ -14,11 +14,11 @@ use DateTimeZone;
  * Abstract Date/Time Header
  * Supports headers that have date/time as value
  *
- * @see Laminas\Http\Header\Date
- * @see Laminas\Http\Header\Expires
- * @see Laminas\Http\Header\IfModifiedSince
- * @see Laminas\Http\Header\IfUnmodifiedSince
- * @see Laminas\Http\Header\LastModified
+ * @see Zend\Http\Header\Date
+ * @see Zend\Http\Header\Expires
+ * @see Zend\Http\Header\IfModifiedSince
+ * @see Zend\Http\Header\IfUnmodifiedSince
+ * @see Zend\Http\Header\LastModified
  *
  * Note for 'Location' header:
  * While RFC 1945 requires an absolute URI, most of the browsers also support relative URI

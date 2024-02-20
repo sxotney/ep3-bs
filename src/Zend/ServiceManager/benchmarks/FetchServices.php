@@ -3,8 +3,8 @@
 namespace ZendBench\ServiceManager;
 
 use Athletic\AthleticEvent;
-use Laminas\ServiceManager\ServiceManager;
-use Laminas\ServiceManager\Config;
+use Zend\ServiceManager\ServiceManager;
+use Zend\ServiceManager\Config;
 
 class FetchServices extends AthleticEvent
 {

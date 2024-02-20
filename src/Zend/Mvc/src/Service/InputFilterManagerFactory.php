@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
-use Laminas\InputFilter\InputFilterPluginManager;
+use Zend\InputFilter\InputFilterPluginManager;
 
 class InputFilterManagerFactory extends AbstractPluginManagerFactory
 {

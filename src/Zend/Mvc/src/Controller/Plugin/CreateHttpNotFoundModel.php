@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Controller\Plugin;
+namespace Zend\Mvc\Controller\Plugin;
 
-use Laminas\Http\Response;
-use Laminas\View\Model\ViewModel;
+use Zend\Http\Response;
+use Zend\View\Model\ViewModel;
 
 class CreateHttpNotFoundModel extends AbstractPlugin
 {

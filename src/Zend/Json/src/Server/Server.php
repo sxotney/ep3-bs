@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server;
+namespace Zend\Json\Server;
 
 use ReflectionFunction;
 use ReflectionMethod;
-use Laminas\Server\AbstractServer;
-use Laminas\Server\Definition;
-use Laminas\Server\Method;
-use Laminas\Server\Reflection;
+use Zend\Server\AbstractServer;
+use Zend\Server\Definition;
+use Zend\Server\Method;
+use Zend\Server\Reflection;
 
 class Server extends AbstractServer
 {
@@ -32,7 +32,7 @@ class Server extends AbstractServer
     protected $returnResponse = false;
 
     /**
-     * Inherited from Laminas\Server\AbstractServer
+     * Inherited from Zend\Server\AbstractServer
      *
      * @var bool Flag; allow overwriting existing methods when creating server definition
      */
@@ -479,7 +479,7 @@ class Server extends AbstractServer
     {
         if (null === $this->smdMethods) {
             $this->smdMethods = [];
-            $methods = get_class_methods('Laminas\\Json\\Server\\Smd');
+            $methods = get_class_methods('Zend\\Json\\Server\\Smd');
             foreach ($methods as $method) {
                 if (!preg_match('/^(set|get)/', $method)) {
                     continue;

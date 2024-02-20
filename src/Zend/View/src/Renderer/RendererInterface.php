@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Renderer;
+namespace Zend\View\Renderer;
 
-use Laminas\View\Model\ModelInterface;
-use Laminas\View\Resolver\ResolverInterface;
+use Zend\View\Model\ModelInterface;
+use Zend\View\Resolver\ResolverInterface;
 
 /**
- * Interface class for Laminas\View\Renderer\* compatible template engine implementations
+ * Interface class for Zend\View\Renderer\* compatible template engine implementations
  */
 interface RendererInterface
 {

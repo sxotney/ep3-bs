@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Session\Service;
+namespace Zend\Session\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\Session\Exception\ExceptionInterface as SessionException;
-use Laminas\Session\Storage\Factory;
-use Laminas\Session\Storage\StorageInterface;
+use Zend\ServiceManager\Exception\ServiceNotCreatedException;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\Session\Exception\ExceptionInterface as SessionException;
+use Zend\Session\Storage\Factory;
+use Zend\Session\Storage\StorageInterface;
 
 class StorageFactory implements FactoryInterface
 {

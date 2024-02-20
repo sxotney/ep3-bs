@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
 use Traversable;
-use Laminas\I18n\Translator\Translator;
-use Laminas\Mvc\I18n\DummyTranslator;
-use Laminas\Mvc\I18n\Translator as MvcTranslator;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\I18n\Translator\Translator;
+use Zend\Mvc\I18n\DummyTranslator;
+use Zend\Mvc\I18n\Translator as MvcTranslator;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Overrides the translator factory from the i18n component in order to
@@ -33,8 +33,8 @@ class TranslatorServiceFactory implements FactoryInterface
     {
         // Assume that if a user has registered a service for the
         // TranslatorInterface, it must be valid
-        if ($container->has('Laminas\I18n\Translator\TranslatorInterface')) {
-            return new MvcTranslator($container->get('Laminas\I18n\Translator\TranslatorInterface'));
+        if ($container->has('Zend\I18n\Translator\TranslatorInterface')) {
+            return new MvcTranslator($container->get('Zend\I18n\Translator\TranslatorInterface'));
         }
 
         // Load a translator from configuration, if possible
@@ -53,7 +53,7 @@ class TranslatorServiceFactory implements FactoryInterface
             ) {
                 $i18nTranslator = Translator::factory($config['translator']);
                 $i18nTranslator->setPluginManager($container->get('TranslatorPluginManager'));
-                $container->setService('Laminas\I18n\Translator\TranslatorInterface', $i18nTranslator);
+                $container->setService('Zend\I18n\Translator\TranslatorInterface', $i18nTranslator);
                 return new MvcTranslator($i18nTranslator);
             }
         }

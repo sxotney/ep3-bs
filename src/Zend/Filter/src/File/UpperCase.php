@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\File;
+namespace Zend\Filter\File;
 
-use Laminas\Filter\Exception;
-use Laminas\Filter\StringToUpper;
+use Zend\Filter\Exception;
+use Zend\Filter\StringToUpper;
 
 class UpperCase extends StringToUpper
 {
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Does a lowercase on the content of the given file
      *

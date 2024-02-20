@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 use Traversable;
-use Laminas\Filter\FilterChain;
-use Laminas\ServiceManager\ServiceManager;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Validator\ValidatorChain;
-use Laminas\Validator\ValidatorInterface;
+use Zend\Filter\FilterChain;
+use Zend\ServiceManager\ServiceManager;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Validator\ValidatorChain;
+use Zend\Validator\ValidatorInterface;
 
 class Factory
 {

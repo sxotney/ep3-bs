@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
-use Laminas\Mvc\Controller\ControllerManager;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Mvc\Controller\ControllerManager;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
- * @see \Laminas\Mvc\Service\ControllerManagerFactory
- * @deprecated please use Laminas\Mvc\Service\ControllerManagerFactory instead;
+ * @see \Zend\Mvc\Service\ControllerManagerFactory
+ * @deprecated please use Zend\Mvc\Service\ControllerManagerFactory instead;
  *     this class will be removed in release 3.0
  */
 class ControllerLoaderFactory implements FactoryInterface

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Barcode;
+namespace Zend\Validator\Barcode;
 
 class Codabar extends AbstractAdapter
 {
@@ -23,7 +23,7 @@ class Codabar extends AbstractAdapter
 
     /**
      * Checks for allowed characters
-     * @see Laminas\Validator\Barcode.AbstractAdapter::checkChars()
+     * @see Zend\Validator\Barcode.AbstractAdapter::checkChars()
      */
     public function hasValidCharacters($value)
     {

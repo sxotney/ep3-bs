@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Exception;
+namespace Zend\View\Exception;
 
 /**
  * Bad method call exception

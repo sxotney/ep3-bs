@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\ServiceManager;
+namespace Zend\ServiceManager;
 
 /**
  * Interface for factories that can create delegates for services

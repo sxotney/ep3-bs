@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Resolver;
+namespace Zend\View\Resolver;
 
 use SplFileInfo;
 use Traversable;
-use Laminas\Stdlib\SplStack;
-use Laminas\View\Exception;
-use Laminas\View\Renderer\RendererInterface as Renderer;
+use Zend\Stdlib\SplStack;
+use Zend\View\Exception;
+use Zend\View\Renderer\RendererInterface as Renderer;
 
 /**
  * Resolves view scripts based on a stack of paths
@@ -68,7 +68,7 @@ class TemplatePathStack implements ResolverInterface
         $this->useViewStream = (bool) ini_get('short_open_tag');
         if ($this->useViewStream) {
             if (! in_array('zend.view', stream_get_wrappers())) {
-                stream_wrapper_register('zend.view', 'Laminas\View\Stream');
+                stream_wrapper_register('zend.view', 'Zend\View\Stream');
             }
         }
 

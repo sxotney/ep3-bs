@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\NamingStrategy;
+namespace Zend\Stdlib\Hydrator\NamingStrategy;
 
-use Laminas\Hydrator\NamingStrategy\CompositeNamingStrategy as BaseCompositeNamingStrategy;
+use Zend\Hydrator\NamingStrategy\CompositeNamingStrategy as BaseCompositeNamingStrategy;
 
 /**
- * @deprecated Use Laminas\Hydrator\NamingStrategy\CompositeNamingStrategy from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\NamingStrategy\CompositeNamingStrategy from zendframework/zend-hydrator instead.
  */
 class CompositeNamingStrategy extends BaseCompositeNamingStrategy implements NamingStrategyInterface
 {

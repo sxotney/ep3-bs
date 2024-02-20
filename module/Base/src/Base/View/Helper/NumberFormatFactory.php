@@ -2,9 +2,9 @@
 
 namespace Base\View\Helper;
 
-use Laminas\I18n\View\Helper\NumberFormat;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\I18n\View\Helper\NumberFormat;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class NumberFormatFactory implements FactoryInterface
 {

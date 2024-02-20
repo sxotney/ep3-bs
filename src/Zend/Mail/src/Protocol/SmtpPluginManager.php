@@ -1,15 +1,15 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mail for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mail\Protocol;
+namespace Zend\Mail\Protocol;
 
-use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\ServiceManager\Exception\InvalidServiceException;
-use Laminas\ServiceManager\Factory\InvokableFactory;
+use Zend\ServiceManager\AbstractPluginManager;
+use Zend\ServiceManager\Exception\InvalidServiceException;
+use Zend\ServiceManager\Factory\InvokableFactory;
 
 /**
  * Plugin manager implementation for SMTP extensions.
@@ -50,10 +50,10 @@ class SmtpPluginManager extends AbstractPluginManager
 
         // v2 normalized service names
 
-        'laminasmailprotocolsmtpauthcrammd5' => InvokableFactory::class,
-        'laminasmailprotocolsmtpauthlogin'   => InvokableFactory::class,
-        'laminasmailprotocolsmtpauthplain'   => InvokableFactory::class,
-        'laminasmailprotocolsmtp'            => InvokableFactory::class,
+        'zendmailprotocolsmtpauthcrammd5' => InvokableFactory::class,
+        'zendmailprotocolsmtpauthlogin'   => InvokableFactory::class,
+        'zendmailprotocolsmtpauthplain'   => InvokableFactory::class,
+        'zendmailprotocolsmtp'            => InvokableFactory::class,
     ];
 
     /**

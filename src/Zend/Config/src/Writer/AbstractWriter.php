@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Config\Writer;
+namespace Zend\Config\Writer;
 
 use Traversable;
-use Laminas\Config\Exception;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Config\Exception;
+use Zend\Stdlib\ArrayUtils;
 
 abstract class AbstractWriter implements WriterInterface
 {

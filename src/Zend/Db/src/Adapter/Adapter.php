@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter;
+namespace Zend\Db\Adapter;
 
-use Laminas\Db\ResultSet;
+use Zend\Db\ResultSet;
 
 /**
  * @property Driver\DriverInterface $driver
@@ -84,7 +84,7 @@ class Adapter implements AdapterInterface, Profiler\ProfilerAwareInterface
             $driver = $this->createDriver($parameters);
         } elseif (! $driver instanceof Driver\DriverInterface) {
             throw new Exception\InvalidArgumentException(
-                'The supplied or instantiated driver object does not implement Laminas\Db\Adapter\Driver\DriverInterface'
+                'The supplied or instantiated driver object does not implement Zend\Db\Adapter\Driver\DriverInterface'
             );
         }
 
@@ -164,7 +164,7 @@ class Adapter implements AdapterInterface, Profiler\ProfilerAwareInterface
      *
      * @param string $sql
      * @param string|array|ParameterContainer $parametersOrQueryMode
-     * @param \Laminas\Db\ResultSet\ResultSetInterface $resultPrototype
+     * @param \Zend\Db\ResultSet\ResultSetInterface $resultPrototype
      * @throws Exception\InvalidArgumentException
      * @return Driver\StatementInterface|ResultSet\ResultSet
      */

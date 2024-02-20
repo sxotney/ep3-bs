@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Ddl\Constraint;
+namespace Zend\Db\Sql\Ddl\Constraint;
 
 class Check extends AbstractConstraint
 {
     /**
-     * @var string|\Laminas\Db\Sql\ExpressionInterface
+     * @var string|\Zend\Db\Sql\ExpressionInterface
      */
     protected $expression;
 
@@ -22,7 +22,7 @@ class Check extends AbstractConstraint
     protected $specification = 'CHECK (%s)';
 
     /**
-     * @param  string|\Laminas\Db\Sql\ExpressionInterface $expression
+     * @param  string|\Zend\Db\Sql\ExpressionInterface $expression
      * @param  null|string $name
      */
     public function __construct($expression, $name)

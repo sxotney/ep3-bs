@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\Strategy;
+namespace Zend\Stdlib\Hydrator\Strategy;
 
-use Laminas\Hydrator\Strategy\StrategyChain as BaseStrategyChain;
+use Zend\Hydrator\Strategy\StrategyChain as BaseStrategyChain;
 
 /**
- * @deprecated Use Laminas\Hydrator\Strategy\StrategyChain from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Strategy\StrategyChain from zendframework/zend-hydrator instead.
  */
 class StrategyChain extends BaseStrategyChain implements StrategyInterface
 {

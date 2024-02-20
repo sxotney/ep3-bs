@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\NamingStrategy;
+namespace Zend\Hydrator\NamingStrategy;
 
-use Laminas\Filter\FilterChain;
+use Zend\Filter\FilterChain;
 
 class UnderscoreNamingStrategy implements NamingStrategyInterface
 {

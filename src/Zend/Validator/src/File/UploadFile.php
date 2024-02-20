@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\File;
+namespace Zend\Validator\File;
 
 use Psr\Http\Message\UploadedFileInterface;
-use Laminas\Validator\AbstractValidator;
-use Laminas\Validator\Exception;
+use Zend\Validator\AbstractValidator;
+use Zend\Validator\Exception;
 
 /**
  * Validator for the maximum size of a file up to a max of 2GB

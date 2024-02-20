@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator;
+namespace Zend\Validator;
 
-use Laminas\Stdlib\StringUtils;
+use Zend\Stdlib\StringUtils;
 
 /**
  * Please note there are two standalone test scripts for testing IDN characters due to problems

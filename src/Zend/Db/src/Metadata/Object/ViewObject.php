@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Metadata\Object;
+namespace Zend\Db\Metadata\Object;
 
 class ViewObject extends AbstractTableObject
 {

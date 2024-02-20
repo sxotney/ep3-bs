@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\View\Resolver\PrefixPathStackResolver;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\View\Resolver\PrefixPathStackResolver;
 
 class ViewPrefixPathStackResolverFactory implements FactoryInterface
 {
     /**
      * Create the template prefix view resolver
      *
-     * Creates a Laminas\View\Resolver\PrefixPathStackResolver and populates it with the
+     * Creates a Zend\View\Resolver\PrefixPathStackResolver and populates it with the
      * ['view_manager']['prefix_template_path_stack']
      *
      * @param  ContainerInterface $container

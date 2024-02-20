@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Sitemap;
+namespace Zend\Validator\Sitemap;
 
-use Laminas\Stdlib\ErrorHandler;
-use Laminas\Validator\AbstractValidator;
+use Zend\Stdlib\ErrorHandler;
+use Zend\Validator\AbstractValidator;
 
 /**
  * Validates whether a given value is valid as a sitemap <lastmod> value

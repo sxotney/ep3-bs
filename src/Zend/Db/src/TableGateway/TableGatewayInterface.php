@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\TableGateway;
+namespace Zend\Db\TableGateway;
 
 interface TableGatewayInterface
 {

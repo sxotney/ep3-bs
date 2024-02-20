@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mail for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mail\Storage;
+namespace Zend\Mail\Storage;
 
 use ArrayAccess;
 use Countable;
@@ -46,7 +46,7 @@ abstract class AbstractStorage implements
      * used message class, change it in an extended class to extend the returned message class
      * @var string
      */
-    protected $messageClass = 'Laminas\Mail\Storage\Message';
+    protected $messageClass = 'Zend\Mail\Storage\Message';
 
     /**
      * Getter for has-properties. The standard has properties
@@ -215,7 +215,7 @@ abstract class AbstractStorage implements
      * ArrayAccess::offsetGet()
      *
      * @param    int $id
-     * @return   \Laminas\Mail\Storage\Message message object
+     * @return   \Zend\Mail\Storage\Message message object
      */
     #[ReturnTypeWillChange] public function offsetGet($id)
     {

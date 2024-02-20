@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\ServiceManager\Di;
+namespace Zend\ServiceManager\Di;
 
-use Laminas\Di\Di;
-use Laminas\ServiceManager\AbstractFactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\Di\Di;
+use Zend\ServiceManager\AbstractFactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class DiAbstractServiceFactory extends DiServiceFactory implements AbstractFactoryInterface
 {
     /**
      * Constructor
      *
-     * @param \Laminas\Di\Di $di
-     * @param null|string|\Laminas\Di\InstanceManager $useServiceLocator
+     * @param \Zend\Di\Di $di
+     * @param null|string|\Zend\Di\InstanceManager $useServiceLocator
      */
     public function __construct(Di $di, $useServiceLocator = self::USE_SL_NONE)
     {

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\View\Helper;
+namespace Zend\Form\View\Helper;
 
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Element\Checkbox as CheckboxElement;
-use Laminas\Form\Exception;
+use Zend\Form\ElementInterface;
+use Zend\Form\Element\Checkbox as CheckboxElement;
+use Zend\Form\Exception;
 
 class FormCheckbox extends FormInput
 {
@@ -27,7 +27,7 @@ class FormCheckbox extends FormInput
     {
         if (! $element instanceof CheckboxElement) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s requires that the element is of type Laminas\Form\Element\Checkbox',
+                '%s requires that the element is of type Zend\Form\Element\Checkbox',
                 __METHOD__
             ));
         }

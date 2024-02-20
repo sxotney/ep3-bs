@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql;
+namespace Zend\Db\Sql;
 
-use Laminas\Db\Adapter\Driver\DriverInterface;
-use Laminas\Db\Adapter\Driver\Pdo\Pdo;
-use Laminas\Db\Adapter\ParameterContainer;
-use Laminas\Db\Adapter\Platform\PlatformInterface;
+use Zend\Db\Adapter\Driver\DriverInterface;
+use Zend\Db\Adapter\Driver\Pdo\Pdo;
+use Zend\Db\Adapter\ParameterContainer;
+use Zend\Db\Adapter\Platform\PlatformInterface;
 
 class Insert extends AbstractPreparableSql
 {
@@ -95,7 +95,7 @@ class Insert extends AbstractPreparableSql
         if ($values instanceof Select) {
             if ($flag == self::VALUES_MERGE) {
                 throw new Exception\InvalidArgumentException(
-                    'A Laminas\Db\Sql\Select instance cannot be provided with the merge flag'
+                    'A Zend\Db\Sql\Select instance cannot be provided with the merge flag'
                 );
             }
             $this->select = $values;
@@ -104,13 +104,13 @@ class Insert extends AbstractPreparableSql
 
         if (! is_array($values)) {
             throw new Exception\InvalidArgumentException(
-                'values() expects an array of values or Laminas\Db\Sql\Select instance'
+                'values() expects an array of values or Zend\Db\Sql\Select instance'
             );
         }
 
         if ($this->select && $flag == self::VALUES_MERGE) {
             throw new Exception\InvalidArgumentException(
-                'An array of values cannot be provided with the merge flag when a Laminas\Db\Sql\Select instance already '
+                'An array of values cannot be provided with the merge flag when a Zend\Db\Sql\Select instance already '
                 . 'exists as the value source'
             );
         }
@@ -187,7 +187,7 @@ class Insert extends AbstractPreparableSql
             $columns[] = $platform->quoteIdentifier($column);
             if (is_scalar($value) && $parameterContainer) {
                 // use incremental value instead of column name for PDO
-                // @see https://github.com/laminas/laminas-db/issues/35
+                // @see https://github.com/zendframework/zend-db/issues/35
                 if ($driver instanceof Pdo) {
                     $column = 'c_' . $i++;
                 }

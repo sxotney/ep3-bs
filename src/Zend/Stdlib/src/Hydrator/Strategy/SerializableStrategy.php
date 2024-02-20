@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\Strategy;
+namespace Zend\Stdlib\Hydrator\Strategy;
 
-use Laminas\Hydrator\Strategy\SerializableStrategy as BaseSerializableStrategy;
+use Zend\Hydrator\Strategy\SerializableStrategy as BaseSerializableStrategy;
 
 /**
- * @deprecated Use Laminas\Hydrator\Strategy\SerializableStrategy from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\Strategy\SerializableStrategy from zendframework/zend-hydrator instead.
  */
 class SerializableStrategy extends BaseSerializableStrategy implements StrategyInterface
 {

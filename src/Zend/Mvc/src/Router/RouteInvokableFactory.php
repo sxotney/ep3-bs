@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router;
+namespace Zend\Mvc\Router;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
-use Laminas\ServiceManager\AbstractFactoryInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\Exception\ServiceNotCreatedException;
+use Zend\ServiceManager\AbstractFactoryInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Specialized invokable/abstract factory for use with RoutePluginManager.

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Router\Http;
+namespace Zend\Mvc\Router\Http;
 
-use Laminas\I18n\Translator\TranslatorInterface as Translator;
-use Laminas\I18n\Translator\TranslatorAwareInterface;
-use Laminas\Mvc\Router\Exception;
-use Laminas\Stdlib\RequestInterface as Request;
+use Zend\I18n\Translator\TranslatorInterface as Translator;
+use Zend\I18n\Translator\TranslatorAwareInterface;
+use Zend\Mvc\Router\Exception;
+use Zend\Stdlib\RequestInterface as Request;
 
 /**
  * Translator aware tree route stack.
@@ -41,9 +41,9 @@ class TranslatorAwareTreeRouteStack extends TreeRouteStack implements Translator
     protected $translatorTextDomain = 'default';
 
     /**
-     * match(): defined by \Laminas\Mvc\Router\RouteInterface
+     * match(): defined by \Zend\Mvc\Router\RouteInterface
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::match()
+     * @see    \Zend\Mvc\Router\RouteInterface::match()
      * @param  Request      $request
      * @param  integer|null $pathOffset
      * @param  array        $options
@@ -63,9 +63,9 @@ class TranslatorAwareTreeRouteStack extends TreeRouteStack implements Translator
     }
 
     /**
-     * assemble(): defined by \Laminas\Mvc\Router\RouteInterface interface.
+     * assemble(): defined by \Zend\Mvc\Router\RouteInterface interface.
      *
-     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
+     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

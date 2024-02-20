@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator\NamingStrategy;
+namespace Zend\Stdlib\Hydrator\NamingStrategy;
 
-use Laminas\Hydrator\NamingStrategy\MapNamingStrategy as BaseMapNamingStrategy;
+use Zend\Hydrator\NamingStrategy\MapNamingStrategy as BaseMapNamingStrategy;
 
 /**
- * @deprecated Use Laminas\Hydrator\NamingStrategy\MapNamingStrategy from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\NamingStrategy\MapNamingStrategy from zendframework/zend-hydrator instead.
  */
 class MapNamingStrategy extends BaseMapNamingStrategy implements NamingStrategyInterface
 {

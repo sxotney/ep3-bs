@@ -2,8 +2,8 @@
 
 namespace User;
 
-use Laminas\ModuleManager\Feature\AutoloaderProviderInterface;
-use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
+use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface
 {
@@ -11,7 +11,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
     public function getAutoloaderConfig()
     {
         return array(
-            'Laminas\Loader\StandardAutoloader' => array(
+            'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),

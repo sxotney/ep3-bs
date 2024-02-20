@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\TableGateway\Feature;
+namespace Zend\Db\TableGateway\Feature;
 
-use Laminas\Db\ResultSet\ResultSet;
-use Laminas\Db\RowGateway\RowGateway;
-use Laminas\Db\RowGateway\RowGatewayInterface;
-use Laminas\Db\TableGateway\Exception;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\RowGateway\RowGateway;
+use Zend\Db\RowGateway\RowGatewayInterface;
+use Zend\Db\TableGateway\Exception;
 
 class RowGatewayFeature extends AbstractFeature
 {
@@ -38,7 +38,7 @@ class RowGatewayFeature extends AbstractFeature
 
         if (! $this->tableGateway->resultSetPrototype instanceof ResultSet) {
             throw new Exception\RuntimeException(
-                'This feature ' . __CLASS__ . ' expects the ResultSet to be an instance of Laminas\Db\ResultSet\ResultSet'
+                'This feature ' . __CLASS__ . ' expects the ResultSet to be an instance of Zend\Db\ResultSet\ResultSet'
             );
         }
 
@@ -58,7 +58,7 @@ class RowGatewayFeature extends AbstractFeature
         } else {
             // get from metadata feature
             $metadata = $this->tableGateway->featureSet->getFeatureByClassName(
-                'Laminas\Db\TableGateway\Feature\MetadataFeature'
+                'Zend\Db\TableGateway\Feature\MetadataFeature'
             );
             if ($metadata === false || ! isset($metadata->sharedData['metadata'])) {
                 throw new Exception\RuntimeException(

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc\Service;
+namespace Zend\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class ConfigFactory implements FactoryInterface
 {
@@ -19,7 +19,7 @@ class ConfigFactory implements FactoryInterface
      * Create the application configuration service
      *
      * Retrieves the Module Manager from the service locator, and executes
-     * {@link Laminas\ModuleManager\ModuleManager::loadModules()}.
+     * {@link Zend\ModuleManager\ModuleManager::loadModules()}.
      *
      * It then retrieves the config listener from the module manager, and from
      * that the merged configuration.

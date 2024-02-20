@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Json\Server;
+namespace Zend\Json\Server;
 
-use Laminas\Http\Client as HttpClient;
-use Laminas\Server\Client as ServerClient;
+use Zend\Http\Client as HttpClient;
+use Zend\Server\Client as ServerClient;
 
 class Client implements ServerClient
 {

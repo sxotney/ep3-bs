@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Metadata\Source;
+namespace Zend\Db\Metadata\Source;
 
-use Laminas\Db\Adapter\Adapter;
-use Laminas\Db\Exception\InvalidArgumentException;
-use Laminas\Db\Metadata\MetadataInterface;
+use Zend\Db\Adapter\Adapter;
+use Zend\Db\Exception\InvalidArgumentException;
+use Zend\Db\Metadata\MetadataInterface;
 
 /**
  * Source metadata factory.

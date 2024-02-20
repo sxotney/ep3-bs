@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\I18n\View\Helper;
+namespace Zend\I18n\View\Helper;
 
-use Laminas\I18n\Exception;
-use Laminas\I18n\Translator\Plural\Rule as PluralRule;
-use Laminas\View\Helper\AbstractHelper;
+use Zend\I18n\Exception;
+use Zend\I18n\Translator\Plural\Rule as PluralRule;
+use Zend\View\Helper\AbstractHelper;
 
 /**
  * Helper for rendering text based on a count number (like the I18n plural translation helper, but when translation

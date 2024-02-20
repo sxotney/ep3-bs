@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Predicate;
+namespace Zend\Db\Sql\Predicate;
 
-use Laminas\Db\Sql\Exception\RuntimeException;
+use Zend\Db\Sql\Exception\RuntimeException;
 
 /**
  * @property Predicate $and
@@ -331,7 +331,7 @@ class Predicate extends PredicateSet
      * Utilizes In predicate
      *
      * @param  string|Expression $identifier
-     * @param  array|\Laminas\Db\Sql\Select $valueSet
+     * @param  array|\Zend\Db\Sql\Select $valueSet
      * @return self Provides a fluent interface
      */
     public function in($identifier, $valueSet = null)
@@ -351,7 +351,7 @@ class Predicate extends PredicateSet
      * Utilizes NotIn predicate
      *
      * @param  string|Expression $identifier
-     * @param  array|\Laminas\Db\Sql\Select $valueSet
+     * @param  array|\Zend\Db\Sql\Select $valueSet
      * @return self Provides a fluent interface
      */
     public function notIn($identifier, $valueSet = null)

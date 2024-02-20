@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\File;
+namespace Zend\Filter\File;
 
-use Laminas\Filter;
-use Laminas\Filter\Exception;
+use Zend\Filter;
+use Zend\Filter\Exception;
 
 /**
  * Decrypts a given file and stores the decrypted file content
@@ -47,7 +47,7 @@ class Decrypt extends Filter\Decrypt
     }
 
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Decrypts the file $value with the defined settings
      *

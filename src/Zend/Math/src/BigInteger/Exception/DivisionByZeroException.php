@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Math\BigInteger\Exception;
+namespace Zend\Math\BigInteger\Exception;
 
 /**
  * Division by zero exception

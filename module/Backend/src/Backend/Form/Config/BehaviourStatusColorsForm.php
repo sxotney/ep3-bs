@@ -2,7 +2,7 @@
 
 namespace Backend\Form\Config;
 
-use Laminas\Form\Form;
+use Zend\Form\Form;
 
 class BehaviourStatusColorsForm extends Form
 {

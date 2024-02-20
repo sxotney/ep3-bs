@@ -1,14 +1,14 @@
 <?php
 /**
- * @link      https://github.com/laminas/laminas-modulemanager for the canonical source repository
+ * @link      https://github.com/zendframework/zend-modulemanager for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-modulemanager/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-modulemanager/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\ModuleManager\Listener;
+namespace Zend\ModuleManager\Listener;
 
 use Generator;
-use Laminas\ModuleManager\ModuleEvent;
+use Zend\ModuleManager\ModuleEvent;
 
 /**
  * Module resolver listener

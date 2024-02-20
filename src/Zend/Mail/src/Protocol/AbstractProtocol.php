@@ -1,13 +1,13 @@
 <?php
 /**
- * @see       https://github.com/laminas/laminas-mail for the canonical source repository
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Laminas\Mail\Protocol;
+namespace Zend\Mail\Protocol;
 
-use Laminas\Validator;
+use Zend\Validator;
 
 /**
  * Provides low-level methods for concrete adapters to communicate with a
@@ -46,8 +46,8 @@ abstract class AbstractProtocol
     protected $port;
 
     /**
-     * Instance of Laminas\Validator\ValidatorChain to check hostnames
-     * @var \Laminas\Validator\ValidatorChain
+     * Instance of Zend\Validator\ValidatorChain to check hostnames
+     * @var \Zend\Validator\ValidatorChain
      */
     protected $validHost;
 
@@ -314,7 +314,7 @@ abstract class AbstractProtocol
      * Parse server response for successful codes
      *
      * Read the response from the stream and check for expected return code.
-     * Throws a Laminas\Mail\Protocol\Exception\ExceptionInterface if an unexpected code is returned.
+     * Throws a Zend\Mail\Protocol\Exception\ExceptionInterface if an unexpected code is returned.
      *
      * @param  string|array $code One or more codes that indicate a successful response
      * @param  int $timeout Per-request timeout value if applicable

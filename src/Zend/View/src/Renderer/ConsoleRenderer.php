@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Renderer;
+namespace Zend\View\Renderer;
 
-use Laminas\Filter\FilterChain;
-use Laminas\View\Model\ModelInterface;
-use Laminas\View\Resolver\ResolverInterface;
+use Zend\Filter\FilterChain;
+use Zend\View\Model\ModelInterface;
+use Zend\View\Resolver\ResolverInterface;
 
 /**
- * Class for Laminas\View\Model\ConsoleModel to help enforce private constructs.
+ * Class for Zend\View\Model\ConsoleModel to help enforce private constructs.
  *
  * Note: all private variables in this class are prefixed with "__". This is to
  * mark them as part of the internal implementation, and thus prevent conflict
@@ -141,7 +141,7 @@ class ConsoleRenderer implements RendererInterface, TreeRendererInterface
     }
 
     /**
-     * @see Laminas\View\Renderer\TreeRendererInterface
+     * @see Zend\View\Renderer\TreeRendererInterface
      * @return bool
      */
     public function canRenderTrees()

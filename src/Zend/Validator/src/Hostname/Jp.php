@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Validator\Hostname;
+namespace Zend\Validator\Hostname;
 
 /**
  * Resource file for japanese idn validation

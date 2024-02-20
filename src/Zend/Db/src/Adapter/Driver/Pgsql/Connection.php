@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Adapter\Driver\Pgsql;
+namespace Zend\Db\Adapter\Driver\Pgsql;
 
-use Laminas\Db\Adapter\Driver\AbstractConnection;
-use Laminas\Db\Adapter\Exception;
+use Zend\Db\Adapter\Driver\AbstractConnection;
+use Zend\Db\Adapter\Exception;
 
 class Connection extends AbstractConnection
 {
@@ -233,7 +233,7 @@ class Connection extends AbstractConnection
      * {@inheritDoc}
      *
      * @throws Exception\InvalidQueryException
-     * @return resource|\Laminas\Db\ResultSet\ResultSetInterface
+     * @return resource|\Zend\Db\ResultSet\ResultSetInterface
      */
     public function execute($sql)
     {

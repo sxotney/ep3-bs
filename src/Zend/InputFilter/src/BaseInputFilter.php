@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\InputFilter;
+namespace Zend\InputFilter;
 
 use ArrayAccess;
 use ReturnTypeWillChange;
 use Traversable;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Stdlib\InitializableInterface;
+use Zend\Stdlib\ArrayUtils;
+use Zend\Stdlib\InitializableInterface;
 
 class BaseInputFilter implements
     InputFilterInterface,

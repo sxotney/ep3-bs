@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Model;
+namespace Zend\View\Model;
 
 use Countable;
 use IteratorAggregate;

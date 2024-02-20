@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt\PublicKey;
+namespace Zend\Crypt\PublicKey;
 
-use Laminas\Crypt\PublicKey\Rsa\Exception;
-use Laminas\Stdlib\AbstractOptions;
+use Zend\Crypt\PublicKey\Rsa\Exception;
+use Zend\Stdlib\AbstractOptions;
 
 /**
  * RSA instance options

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Mvc;
+namespace Zend\Mvc;
 
 use Psr\Http\Message\ResponseInterface as PsrResponseInterface;
-use Laminas\EventManager\AbstractListenerAggregate;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\Psr7Bridge\Psr7ServerRequest as Psr7Request;
-use Laminas\Psr7Bridge\Psr7Response;
+use Zend\EventManager\AbstractListenerAggregate;
+use Zend\EventManager\EventManagerInterface;
+use Zend\Psr7Bridge\Psr7ServerRequest as Psr7Request;
+use Zend\Psr7Bridge\Psr7Response;
 
 class MiddlewareListener extends AbstractListenerAggregate
 {
@@ -59,7 +59,7 @@ class MiddlewareListener extends AbstractListenerAggregate
 
         $caughtException = null;
         try {
-            $return = $middleware(Psr7Request::fromLaminas($request), Psr7Response::fromLaminas($response));
+            $return = $middleware(Psr7Request::fromZend($request), Psr7Response::fromZend($response));
         } catch (\Throwable $ex) {
             $caughtException = $ex;
         } catch (\Exception $ex) {  // @TODO clean up once PHP 7 requirement is enforced
@@ -85,7 +85,7 @@ class MiddlewareListener extends AbstractListenerAggregate
             $event->setResult($return);
             return $return;
         }
-        $response = Psr7Response::toLaminas($return);
+        $response = Psr7Response::toZend($return);
         $event->setResult($response);
         return $response;
     }

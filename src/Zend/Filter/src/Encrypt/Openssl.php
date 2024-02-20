@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Filter\Encrypt;
+namespace Zend\Filter\Encrypt;
 
 use Traversable;
-use Laminas\Filter\Compress;
-use Laminas\Filter\Decompress;
-use Laminas\Filter\Exception;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Filter\Compress;
+use Zend\Filter\Decompress;
+use Zend\Filter\Exception;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Encryption adapter for openssl
@@ -390,7 +390,7 @@ class Openssl implements EncryptionAlgorithmInterface
     }
 
     /**
-     * Defined by Laminas\Filter\FilterInterface
+     * Defined by Zend\Filter\FilterInterface
      *
      * Decrypts $value with the defined settings
      *

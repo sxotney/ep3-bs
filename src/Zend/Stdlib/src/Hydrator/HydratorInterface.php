@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator;
+namespace Zend\Stdlib\Hydrator;
 
-use Laminas\Stdlib\Extractor\ExtractionInterface;
-use Laminas\Hydrator\HydratorInterface as BaseHydratorInterface;
+use Zend\Stdlib\Extractor\ExtractionInterface;
+use Zend\Hydrator\HydratorInterface as BaseHydratorInterface;
 
 /**
- * @deprecated Use Laminas\Hydrator\HydratorInterface from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\HydratorInterface from zendframework/zend-hydrator instead.
  */
 interface HydratorInterface extends BaseHydratorInterface, HydrationInterface, ExtractionInterface
 {

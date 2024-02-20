@@ -2,8 +2,8 @@
 
 namespace Base\Controller\Plugin;
 
-use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
-use Laminas\View\Model\ViewModel;
+use Zend\Mvc\Controller\Plugin\AbstractPlugin;
+use Zend\View\Model\ViewModel;
 
 class DefaultViewModel extends AbstractPlugin
 {

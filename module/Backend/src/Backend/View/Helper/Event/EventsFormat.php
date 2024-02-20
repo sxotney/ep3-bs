@@ -2,7 +2,7 @@
 
 namespace Backend\View\Helper\Event;
 
-use Laminas\View\Helper\AbstractHelper;
+use Zend\View\Helper\AbstractHelper;
 
 class EventsFormat extends AbstractHelper
 {

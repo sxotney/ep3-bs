@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Hydrator\Iterator;
+namespace Zend\Hydrator\Iterator;
 
 use Iterator;
-use Laminas\Hydrator\HydratorInterface;
+use Zend\Hydrator\HydratorInterface;
 
 interface HydratingIteratorInterface extends Iterator
 {

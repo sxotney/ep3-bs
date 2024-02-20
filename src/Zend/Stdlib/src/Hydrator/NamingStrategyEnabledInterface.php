@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\Hydrator;
+namespace Zend\Stdlib\Hydrator;
 
-use Laminas\Hydrator\NamingStrategyEnabledInterface as BaseNamingStrategyEnabledInterface;
+use Zend\Hydrator\NamingStrategyEnabledInterface as BaseNamingStrategyEnabledInterface;
 
 /**
- * @deprecated Use Laminas\Hydrator\NamingStrategy\NamingStrategyEnabledInterface from laminas/laminas-hydrator instead.
+ * @deprecated Use Zend\Hydrator\NamingStrategy\NamingStrategyEnabledInterface from zendframework/zend-hydrator instead.
  */
 interface NamingStrategyEnabledInterface extends BaseNamingStrategyEnabledInterface
 {

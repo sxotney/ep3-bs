@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Db\Sql\Ddl;
+namespace Zend\Db\Sql\Ddl;
 
-use Laminas\Db\Adapter\Platform\PlatformInterface;
-use Laminas\Db\Sql\AbstractSql;
-use Laminas\Db\Sql\TableIdentifier;
+use Zend\Db\Adapter\Platform\PlatformInterface;
+use Zend\Db\Sql\AbstractSql;
+use Zend\Db\Sql\TableIdentifier;
 
 class AlterTable extends AbstractSql implements SqlInterface
 {

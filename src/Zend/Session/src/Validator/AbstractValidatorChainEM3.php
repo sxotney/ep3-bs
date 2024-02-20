@@ -2,14 +2,14 @@
 /**
  * Zend Framework (http://framework.zend.com/)
  *
- * @link      http://github.com/laminas/laminas-validator for the canonical source repository
+ * @link      http://github.com/zendframework/zend-validator for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
-namespace Laminas\Session\Validator;
+namespace Zend\Session\Validator;
 
-use Laminas\EventManager\EventManager;
-use Laminas\Session\Storage\StorageInterface;
+use Zend\EventManager\EventManager;
+use Zend\Session\Storage\StorageInterface;
 
 /**
  * Abstract validator chain for validating sessions (for use with zend-eventmanager v3)
@@ -46,7 +46,7 @@ abstract class AbstractValidatorChainEM3 extends EventManager
      * @param string $eventName
      * @param callable $callback
      * @param int $priority
-     * @return \Laminas\Stdlib\CallbackHandler
+     * @return \Zend\Stdlib\CallbackHandler
      */
     public function attach($eventName, callable $callback, $priority = 1)
     {

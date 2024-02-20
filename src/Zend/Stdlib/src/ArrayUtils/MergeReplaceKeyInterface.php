@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Stdlib\ArrayUtils;
+namespace Zend\Stdlib\ArrayUtils;
 
 /**
  * Marker interface: can be used to replace keys completely in {@see ArrayUtils::merge()} operations

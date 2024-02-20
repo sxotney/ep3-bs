@@ -1,19 +1,19 @@
 <?php
 /**
- * @link      http://github.com/laminas/laminas-form for the canonical source repository
+ * @link      http://github.com/zendframework/zend-form for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Annotation;
+namespace Zend\Form\Annotation;
 
 use Interop\Container\ContainerInterface;
-use Laminas\EventManager\EventManagerInterface;
-use Laminas\EventManager\ListenerAggregateInterface;
-use Laminas\Form\Factory;
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
+use Zend\EventManager\EventManagerInterface;
+use Zend\EventManager\ListenerAggregateInterface;
+use Zend\Form\Factory;
+use Zend\ServiceManager\Exception\ServiceNotCreatedException;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class AnnotationBuilderFactory implements FactoryInterface
 {

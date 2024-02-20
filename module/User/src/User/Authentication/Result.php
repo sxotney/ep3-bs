@@ -3,7 +3,7 @@
 namespace User\Authentication;
 
 use InvalidArgumentException;
-use Laminas\Authentication\Result as ZendResult;
+use Zend\Authentication\Result as ZendResult;
 
 class Result extends ZendResult
 {

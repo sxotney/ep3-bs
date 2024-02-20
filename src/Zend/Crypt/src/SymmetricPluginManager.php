@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Crypt;
+namespace Zend\Crypt;
 
 use Interop\Container\ContainerInterface;
 

@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\View\Helper\Service;
+namespace Zend\View\Helper\Service;
 
 use Interop\Container\ContainerInterface;
-use Laminas\Authentication\AuthenticationService;
-use Laminas\Authentication\AuthenticationServiceInterface;
-use Laminas\ServiceManager\FactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-use Laminas\View\Helper\Identity;
+use Zend\Authentication\AuthenticationService;
+use Zend\Authentication\AuthenticationServiceInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\View\Helper\Identity;
 
 class IdentityFactory implements FactoryInterface
 {
@@ -24,11 +24,11 @@ class IdentityFactory implements FactoryInterface
      * @param ContainerInterface $container
      * @param string $name
      * @param null|array $options
-     * @return \Laminas\View\Helper\Identity
+     * @return \Zend\View\Helper\Identity
      */
     public function __invoke(ContainerInterface $container, $name, array $options = null)
     {
-        // test if we are using Laminas\ServiceManager v2 or v3
+        // test if we are using Zend\ServiceManager v2 or v3
         if (! method_exists($container, 'configure')) {
             $container = $container->getServiceLocator();
         }

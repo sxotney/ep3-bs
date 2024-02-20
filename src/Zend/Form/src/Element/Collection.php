@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Laminas\Form\Element;
+namespace Zend\Form\Element;
 
 use Traversable;
-use Laminas\Form\Element;
-use Laminas\Form\ElementInterface;
-use Laminas\Form\Exception;
-use Laminas\Form\Fieldset;
-use Laminas\Form\FieldsetInterface;
-use Laminas\Form\FormInterface;
-use Laminas\Stdlib\ArrayUtils;
+use Zend\Form\Element;
+use Zend\Form\ElementInterface;
+use Zend\Form\Exception;
+use Zend\Form\Fieldset;
+use Zend\Form\FieldsetInterface;
+use Zend\Form\FormInterface;
+use Zend\Stdlib\ArrayUtils;
 
 class Collection extends Fieldset
 {
@@ -181,8 +181,8 @@ class Collection extends Fieldset
      * Populate values
      *
      * @param array|Traversable $data
-     * @throws \Laminas\Form\Exception\InvalidArgumentException
-     * @throws \Laminas\Form\Exception\DomainException
+     * @throws \Zend\Form\Exception\InvalidArgumentException
+     * @throws \Zend\Form\Exception\DomainException
      * @return void
      */
     public function populateValues($data)
@@ -308,7 +308,7 @@ class Collection extends Fieldset
      *
      * @param ElementInterface|array|Traversable $elementOrFieldset
      * @return Collection
-     * @throws \Laminas\Form\Exception\InvalidArgumentException
+     * @throws \Zend\Form\Exception\InvalidArgumentException
      */
     public function setTargetElement($elementOrFieldset)
     {
@@ -497,10 +497,10 @@ class Collection extends Fieldset
 
     /**
      * @return array
-     * @throws \Laminas\Form\Exception\InvalidArgumentException
-     * @throws \Laminas\Stdlib\Exception\InvalidArgumentException
-     * @throws \Laminas\Form\Exception\DomainException
-     * @throws \Laminas\Form\Exception\InvalidElementException
+     * @throws \Zend\Form\Exception\InvalidArgumentException
+     * @throws \Zend\Stdlib\Exception\InvalidArgumentException
+     * @throws \Zend\Form\Exception\DomainException
+     * @throws \Zend\Form\Exception\InvalidElementException
      */
     public function extract()
     {
