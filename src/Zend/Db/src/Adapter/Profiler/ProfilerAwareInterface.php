@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Profiler;
+namespace Laminas\Db\Adapter\Profiler;
 
 interface ProfilerAwareInterface
 {

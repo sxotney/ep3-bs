@@ -1,13 +1,13 @@
 <?php
 /**
- * @link      http://github.com/zendframework/zend-form for the canonical source repository
+ * @link      http://github.com/laminas/laminas-form for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form;
+namespace Laminas\Form;
 
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 class ConfigProvider
 {
@@ -36,7 +36,7 @@ class ConfigProvider
                 FormAbstractServiceFactory::class,
             ],
             'aliases' => [
-                'Zend\Form\Annotation\FormAnnotationBuilder' => 'FormAnnotationBuilder',
+                'Laminas\Form\Annotation\FormAnnotationBuilder' => 'FormAnnotationBuilder',
                 Annotation\AnnotationBuilder::class => 'FormAnnotationBuilder',
                 FormElementManager::class => 'FormElementManager',
             ],
@@ -70,7 +70,7 @@ class ConfigProvider
                 'FormCaptcha'                => View\Helper\FormCaptcha::class,
                 'captchadumb'                => View\Helper\Captcha\Dumb::class,
                 'captcha_dumb'               => View\Helper\Captcha\Dumb::class,
-                // weird alias used by Zend\Captcha
+                // weird alias used by Laminas\Captcha
                 'captcha/dumb'               => View\Helper\Captcha\Dumb::class,
                 'CaptchaDumb'                => View\Helper\Captcha\Dumb::class,
                 'captchaDumb'                => View\Helper\Captcha\Dumb::class,
@@ -79,7 +79,7 @@ class ConfigProvider
                 'formCaptchaDumb'            => View\Helper\Captcha\Dumb::class,
                 'FormCaptchaDumb'            => View\Helper\Captcha\Dumb::class,
                 'captchafiglet'              => View\Helper\Captcha\Figlet::class,
-                // weird alias used by Zend\Captcha
+                // weird alias used by Laminas\Captcha
                 'captcha/figlet'             => View\Helper\Captcha\Figlet::class,
                 'captcha_figlet'             => View\Helper\Captcha\Figlet::class,
                 'captchaFiglet'              => View\Helper\Captcha\Figlet::class,
@@ -89,7 +89,7 @@ class ConfigProvider
                 'formCaptchaFiglet'          => View\Helper\Captcha\Figlet::class,
                 'FormCaptchaFiglet'          => View\Helper\Captcha\Figlet::class,
                 'captchaimage'               => View\Helper\Captcha\Image::class,
-                // weird alias used by Zend\Captcha
+                // weird alias used by Laminas\Captcha
                 'captcha/image'              => View\Helper\Captcha\Image::class,
                 'captcha_image'              => View\Helper\Captcha\Image::class,
                 'captchaImage'               => View\Helper\Captcha\Image::class,
@@ -99,7 +99,7 @@ class ConfigProvider
                 'formCaptchaImage'           => View\Helper\Captcha\Image::class,
                 'FormCaptchaImage'           => View\Helper\Captcha\Image::class,
                 'captcharecaptcha'           => View\Helper\Captcha\ReCaptcha::class,
-                // weird alias used by Zend\Captcha
+                // weird alias used by Laminas\Captcha
                 'captcha/recaptcha'          => View\Helper\Captcha\ReCaptcha::class,
                 'captcha_recaptcha'          => View\Helper\Captcha\ReCaptcha::class,
                 'captchaRecaptcha'           => View\Helper\Captcha\ReCaptcha::class,

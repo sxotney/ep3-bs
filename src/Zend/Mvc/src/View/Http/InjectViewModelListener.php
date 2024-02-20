@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\View\Http;
+namespace Laminas\Mvc\View\Http;
 
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface as Events;
-use Zend\Mvc\MvcEvent;
-use Zend\View\Model\ClearableModelInterface;
-use Zend\View\Model\ModelInterface as ViewModel;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface as Events;
+use Laminas\Mvc\MvcEvent;
+use Laminas\View\Model\ClearableModelInterface;
+use Laminas\View\Model\ModelInterface as ViewModel;
 
 class InjectViewModelListener extends AbstractListenerAggregate
 {

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\ServiceManager\Proxy;
+namespace Laminas\ServiceManager\Proxy;
 
 use ProxyManager\Factory\LazyLoadingValueHolderFactory;
 use ProxyManager\Proxy\LazyLoadingInterface;
-use Zend\ServiceManager\DelegatorFactoryInterface;
-use Zend\ServiceManager\Exception;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\DelegatorFactoryInterface;
+use Laminas\ServiceManager\Exception;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Delegator factory responsible of instantiating lazy loading value holder proxies of

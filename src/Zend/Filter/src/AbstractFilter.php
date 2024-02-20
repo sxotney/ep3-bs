@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter;
+namespace Laminas\Filter;
 
 use Traversable;
-use Zend\Stdlib\StringUtils;
+use Laminas\Stdlib\StringUtils;
 
 abstract class AbstractFilter implements FilterInterface
 {

@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
-use Zend\Hydrator\HydratorPluginManager;
+use Laminas\Hydrator\HydratorPluginManager;
 
 class HydratorManagerFactory extends AbstractPluginManagerFactory
 {

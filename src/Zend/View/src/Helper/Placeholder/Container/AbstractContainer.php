@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\View\Helper\Placeholder\Container;
+namespace Laminas\View\Helper\Placeholder\Container;
 
 use ArrayObject;
 use ReturnTypeWillChange;
-use Zend\View\Exception;
+use Laminas\View\Exception;
 
 /**
  * Abstract class representing container for placeholder values

@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Serializer\Adapter;
+namespace Laminas\Serializer\Adapter;
 
-use Zend\Stdlib\AbstractOptions;
+use Laminas\Stdlib\AbstractOptions;
 
 class AdapterOptions extends AbstractOptions
 {

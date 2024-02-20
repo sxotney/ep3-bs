@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router\Http;
+namespace Laminas\Mvc\Router\Http;
 
-use Zend\Mvc\Router\RouteMatch as BaseRouteMatch;
+use Laminas\Mvc\Router\RouteMatch as BaseRouteMatch;
 
 /**
  * Part route match.

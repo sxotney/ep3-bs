@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\InputFilter;
+namespace Laminas\InputFilter;
 
 use Interop\Container\ContainerInterface;
-use Zend\Filter\FilterPluginManager;
-use Zend\ServiceManager\AbstractFactoryInterface;
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\Validator\ValidatorPluginManager;
+use Laminas\Filter\FilterPluginManager;
+use Laminas\ServiceManager\AbstractFactoryInterface;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\Validator\ValidatorPluginManager;
 
 class InputFilterAbstractServiceFactory implements AbstractFactoryInterface
 {

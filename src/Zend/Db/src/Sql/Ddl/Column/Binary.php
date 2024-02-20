@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Ddl\Column;
+namespace Laminas\Db\Sql\Ddl\Column;
 
 class Binary extends AbstractLengthColumn
 {

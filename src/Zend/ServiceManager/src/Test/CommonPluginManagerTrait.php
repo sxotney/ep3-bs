@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\ServiceManager\Test;
+namespace Laminas\ServiceManager\Test;
 
 use ReflectionClass;
 use ReflectionProperty;
-use Zend\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
 
 /**
  * Trait for testing plugin managers for v2-v3 compatibility
@@ -98,7 +98,7 @@ trait CommonPluginManagerTrait
 
     /**
      * Returns the plugin manager to test
-     * @return \Zend\ServiceManager\AbstractPluginManager
+     * @return \Laminas\ServiceManager\AbstractPluginManager
      */
     abstract protected function getPluginManager();
 

@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Writer;
+namespace Laminas\Config\Writer;
 
-use Zend\Json\Json as JsonFormat;
+use Laminas\Json\Json as JsonFormat;
 
 class Json extends AbstractWriter
 {

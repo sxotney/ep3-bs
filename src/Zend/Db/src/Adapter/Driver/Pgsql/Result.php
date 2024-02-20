@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Pgsql;
+namespace Laminas\Db\Adapter\Driver\Pgsql;
 
 use ReturnTypeWillChange;
-use Zend\Db\Adapter\Driver\ResultInterface;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\ResultInterface;
+use Laminas\Db\Adapter\Exception;
 
 class Result implements ResultInterface
 {

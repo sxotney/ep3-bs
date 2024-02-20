@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Key\Derivation;
+namespace Laminas\Crypt\Key\Derivation;
 
-use Zend\Crypt\Hmac;
+use Laminas\Crypt\Hmac;
 
 /**
  * PKCS #5 v2.0 standard RFC 2898

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Math\Exception;
+namespace Laminas\Math\Exception;
 
 /**
  * Runtime argument exception

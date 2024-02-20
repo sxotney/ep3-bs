@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator;
+namespace Laminas\Hydrator;
 
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 /**
  * Plugin manager implementation for hydrators.
@@ -98,7 +98,7 @@ class HydratorPluginManager extends AbstractPluginManager
         }
 
         throw new InvalidServiceException(sprintf(
-            'Plugin of type %s is invalid; must implement Zend\Hydrator\HydratorInterface',
+            'Plugin of type %s is invalid; must implement Laminas\Hydrator\HydratorInterface',
             (is_object($instance) ? get_class($instance) : gettype($instance))
         ));
     }

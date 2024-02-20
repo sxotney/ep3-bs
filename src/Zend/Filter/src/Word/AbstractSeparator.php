@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter\Word;
+namespace Laminas\Filter\Word;
 
-use Zend\Filter\AbstractFilter;
-use Zend\Filter\Exception;
+use Laminas\Filter\AbstractFilter;
+use Laminas\Filter\Exception;
 
 abstract class AbstractSeparator extends AbstractFilter
 {

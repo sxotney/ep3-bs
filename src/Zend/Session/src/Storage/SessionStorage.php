@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\Storage;
+namespace Laminas\Session\Storage;
 
-use Zend\Stdlib\ArrayObject;
+use Laminas\Stdlib\ArrayObject;
 
 /**
  * Session storage in $_SESSION

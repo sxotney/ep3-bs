@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Metadata\Source;
+namespace Laminas\Db\Metadata\Source;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 /**
  * Metadata source for Oracle
@@ -27,7 +27,7 @@ class OracleMetadata extends AbstractSource
 
     /**
      * {@inheritdoc}
-     * @see \Zend\Db\Metadata\Source\AbstractSource::loadColumnData()
+     * @see \Laminas\Db\Metadata\Source\AbstractSource::loadColumnData()
      */
     protected function loadColumnData($table, $schema)
     {
@@ -95,7 +95,7 @@ class OracleMetadata extends AbstractSource
 
     /**
      * {@inheritdoc}
-     * @see \Zend\Db\Metadata\Source\AbstractSource::loadConstraintData()
+     * @see \Laminas\Db\Metadata\Source\AbstractSource::loadConstraintData()
      */
     protected function loadConstraintData($table, $schema)
     {
@@ -179,7 +179,7 @@ class OracleMetadata extends AbstractSource
 
     /**
      * {@inheritdoc}
-     * @see \Zend\Db\Metadata\Source\AbstractSource::loadSchemaData()
+     * @see \Laminas\Db\Metadata\Source\AbstractSource::loadSchemaData()
      */
     protected function loadSchemaData()
     {
@@ -201,7 +201,7 @@ class OracleMetadata extends AbstractSource
 
     /**
      * {@inheritdoc}
-     * @see \Zend\Db\Metadata\Source\AbstractSource::loadTableNameData()
+     * @see \Laminas\Db\Metadata\Source\AbstractSource::loadTableNameData()
      */
     protected function loadTableNameData($schema)
     {
@@ -245,7 +245,7 @@ class OracleMetadata extends AbstractSource
      *
      * {@inheritdoc}
      *
-     * @see \Zend\Db\Metadata\Source\AbstractSource::loadTriggerData()
+     * @see \Laminas\Db\Metadata\Source\AbstractSource::loadTriggerData()
      */
     protected function loadTriggerData($schema)
     {

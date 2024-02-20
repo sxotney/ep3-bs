@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use UConverter;
 
@@ -81,8 +81,8 @@ class EmailAddress extends AbstractValidator
      * Instantiates hostname validator for local use
      *
      * The following additional option keys are supported:
-     * 'hostnameValidator' => A hostname validator, see Zend\Validator\Hostname
-     * 'allow'             => Options for the hostname validator, see Zend\Validator\Hostname::ALLOW_*
+     * 'hostnameValidator' => A hostname validator, see Laminas\Validator\Hostname
+     * 'allow'             => Options for the hostname validator, see Laminas\Validator\Hostname::ALLOW_*
      * 'strict'            => Whether to adhere to strictest requirements in the spec
      * 'useMxCheck'        => If MX check should be enabled, boolean
      * 'useDeepMxCheck'    => If a deep MX check should be done, boolean
@@ -503,7 +503,7 @@ class EmailAddress extends AbstractValidator
     }
 
     /**
-     * Defined by Zend\Validator\ValidatorInterface
+     * Defined by Laminas\Validator\ValidatorInterface
      *
      * Returns true if and only if $value is a valid email address
      * according to RFC2822

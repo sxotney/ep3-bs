@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
 use Traversable;
-use Zend\Stdlib\CallbackHandler;
+use Laminas\Stdlib\CallbackHandler;
 
 /**
  * Interface for messengers
@@ -45,7 +45,7 @@ interface EventManagerInterface extends SharedEventManagerAwareInterface
      * - Passing event name, target, array|ArrayAccess of arguments, and callback
      *
      * @deprecated The signature of this method will change in 3.0.0.
-     *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/changed.md}
+     *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/changed.md}
      *     for details.
      * @param  string|EventInterface $event
      * @param  object|string $target
@@ -77,7 +77,7 @@ interface EventManagerInterface extends SharedEventManagerAwareInterface
      * Get a list of events for which this collection has listeners
      *
      * @deprecated This method is deprecated with 2.6.0, and will be removed in 3.0.0.
-     *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
+     *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
      *     for details.
      * @return array
      */
@@ -87,7 +87,7 @@ interface EventManagerInterface extends SharedEventManagerAwareInterface
      * Retrieve a list of listeners registered to a given event
      *
      * @deprecated This method is deprecated with 2.6.0, and will be removed in 3.0.0.
-     *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
+     *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
      *     for details.
      * @param  string $event
      * @return array|object
@@ -106,7 +106,7 @@ interface EventManagerInterface extends SharedEventManagerAwareInterface
      * Set the event class to utilize
      *
      * @deprecated This method is deprecated with 2.6.0, and will be removed in 3.0.0.
-     *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
+     *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
      *     for details.
      * @param  string $class
      * @return EventManagerInterface
@@ -140,7 +140,7 @@ interface EventManagerInterface extends SharedEventManagerAwareInterface
      * Attach a listener aggregate
      *
      * @deprecated This method is deprecated with 2.6.0, and will be removed in 3.0.0.
-     *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
+     *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
      *     for details.
      * @param  ListenerAggregateInterface $aggregate
      * @param  int $priority If provided, a suggested priority for the aggregate to use
@@ -152,7 +152,7 @@ interface EventManagerInterface extends SharedEventManagerAwareInterface
      * Detach a listener aggregate
      *
      * @deprecated This method is deprecated with 2.6.0, and will be removed in 3.0.0.
-     *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
+     *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
      *     for details.
      * @param  ListenerAggregateInterface $aggregate
      * @return mixed return value of {@link ListenerAggregateInterface::detach()}

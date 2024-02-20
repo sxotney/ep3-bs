@@ -1,16 +1,16 @@
 <?php
 /**
- * @link      http://github.com/zendframework/zend-filter for the canonical source repository
+ * @link      http://github.com/laminas/laminas-filter for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter;
+namespace Laminas\Filter;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Config;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Config;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class FilterPluginManagerFactory implements FactoryInterface
 {

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper\File;
+namespace Laminas\Form\View\Helper\File;
 
-use Zend\Form\ElementInterface;
-use Zend\Form\View\Helper\FormInput;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\View\Helper\FormInput;
 
 /**
  * A view helper to render the hidden input with a UploadProgress id

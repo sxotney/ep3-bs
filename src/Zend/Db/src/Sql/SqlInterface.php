@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
-use Zend\Db\Adapter\Platform\PlatformInterface;
+use Laminas\Db\Adapter\Platform\PlatformInterface;
 
 interface SqlInterface
 {

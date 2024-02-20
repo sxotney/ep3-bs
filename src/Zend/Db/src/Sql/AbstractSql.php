@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\ParameterContainer;
-use Zend\Db\Adapter\Platform\PlatformInterface;
-use Zend\Db\Sql\Platform\PlatformDecoratorInterface;
-use Zend\Db\Adapter\Platform\Sql92 as DefaultAdapterPlatform;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\ParameterContainer;
+use Laminas\Db\Adapter\Platform\PlatformInterface;
+use Laminas\Db\Sql\Platform\PlatformDecoratorInterface;
+use Laminas\Db\Adapter\Platform\Sql92 as DefaultAdapterPlatform;
 
 abstract class AbstractSql implements SqlInterface
 {

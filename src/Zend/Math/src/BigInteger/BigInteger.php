@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Math\BigInteger;
+namespace Laminas\Math\BigInteger;
 
 abstract class BigInteger
 {

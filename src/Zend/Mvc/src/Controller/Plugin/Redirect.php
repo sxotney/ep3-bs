@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller\Plugin;
+namespace Laminas\Mvc\Controller\Plugin;
 
-use Zend\Http\Response;
-use Zend\Mvc\Exception;
-use Zend\Mvc\InjectApplicationEventInterface;
-use Zend\Mvc\MvcEvent;
+use Laminas\Http\Response;
+use Laminas\Mvc\Exception;
+use Laminas\Mvc\InjectApplicationEventInterface;
+use Laminas\Mvc\MvcEvent;
 
 /**
  * @todo       allow specifying status code as a default, or as an option to methods

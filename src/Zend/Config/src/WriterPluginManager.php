@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config;
+namespace Laminas\Config;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 class WriterPluginManager extends AbstractPluginManager
 {
@@ -42,11 +42,11 @@ class WriterPluginManager extends AbstractPluginManager
         // Legacy (v2) due to alias resolution; canonical form of resolved
         // alias is used to look up the factory, while the non-normalized
         // resolved alias is used as the requested name passed to the factory.
-        'zendconfigwriterini'      => InvokableFactory::class,
-        'zendconfigwriterjson'     => InvokableFactory::class,
-        'zendconfigwriterphparray' => InvokableFactory::class,
-        'zendconfigwriteryaml'     => InvokableFactory::class,
-        'zendconfigwriterxml'      => InvokableFactory::class,
+        'laminasconfigwriterini'      => InvokableFactory::class,
+        'laminasconfigwriterjson'     => InvokableFactory::class,
+        'laminasconfigwriterphparray' => InvokableFactory::class,
+        'laminasconfigwriteryaml'     => InvokableFactory::class,
+        'laminasconfigwriterxml'      => InvokableFactory::class,
     ];
 
     /**

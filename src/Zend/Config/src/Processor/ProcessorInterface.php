@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Processor;
+namespace Laminas\Config\Processor;
 
-use Zend\Config\Config;
+use Laminas\Config\Config;
 
 interface ProcessorInterface
 {

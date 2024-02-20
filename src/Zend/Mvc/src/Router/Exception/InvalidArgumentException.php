@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router\Exception;
+namespace Laminas\Mvc\Router\Exception;
 
-use Zend\Mvc\Exception;
+use Laminas\Mvc\Exception;
 
 class InvalidArgumentException extends Exception\InvalidArgumentException implements ExceptionInterface
 {

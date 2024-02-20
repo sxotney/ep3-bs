@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
-use Zend\Db\Adapter\AdapterInterface;
-use Zend\Db\Adapter\Driver\StatementInterface;
-use Zend\Db\Adapter\Platform\PlatformInterface;
+use Laminas\Db\Adapter\AdapterInterface;
+use Laminas\Db\Adapter\Driver\StatementInterface;
+use Laminas\Db\Adapter\Platform\PlatformInterface;
 
 class Sql
 {
@@ -39,7 +39,7 @@ class Sql
     }
 
     /**
-     * @return null|\Zend\Db\Adapter\AdapterInterface
+     * @return null|\Laminas\Db\Adapter\AdapterInterface
      */
     public function getAdapter()
     {

@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\ResponseSender;
+namespace Laminas\Mvc\ResponseSender;
 
-use Zend\Http\Response\Stream;
+use Laminas\Http\Response\Stream;
 
 class SimpleStreamResponseSender extends AbstractResponseSender
 {

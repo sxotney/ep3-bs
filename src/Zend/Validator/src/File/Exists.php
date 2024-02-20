@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\File;
+namespace Laminas\Validator\File;
 
-use Zend\Validator\AbstractValidator;
-use Zend\Validator\Exception;
+use Laminas\Validator\AbstractValidator;
+use Laminas\Validator\Exception;
 
 /**
  * Validator which checks if the file already exists in the directory
@@ -141,7 +141,7 @@ class Exists extends AbstractValidator
      * Returns true if and only if the file already exists in the set directories
      *
      * @param  string|array $value Real file to check for existence
-     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

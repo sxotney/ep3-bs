@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config;
+namespace Laminas\Config;
 
 use ArrayAccess;
 use Countable;
@@ -124,7 +124,7 @@ class Config implements Countable, Iterator, ArrayAccess
     }
 
     /**
-     * Deep clone of this instance to ensure that nested Zend\Configs are also
+     * Deep clone of this instance to ensure that nested Laminas\Configs are also
      * cloned.
      *
      * @return void

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\ServiceManager\Di;
+namespace Laminas\ServiceManager\Di;
 
-use Zend\Di\Di;
-use Zend\Di\Exception\ClassNotFoundException as DiClassNotFoundException;
-use Zend\ServiceManager\Exception;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Di\Di;
+use Laminas\Di\Exception\ClassNotFoundException as DiClassNotFoundException;
+use Laminas\ServiceManager\Exception;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class DiServiceFactory extends Di implements FactoryInterface
 {
@@ -26,12 +26,12 @@ class DiServiceFactory extends Di implements FactoryInterface
     /**@#-*/
 
     /**
-     * @var \Zend\Di\Di
+     * @var \Laminas\Di\Di
      */
     protected $di = null;
 
     /**
-     * @var \Zend\Di\InstanceManager
+     * @var \Laminas\Di\InstanceManager
      */
     protected $name = null;
 
@@ -53,8 +53,8 @@ class DiServiceFactory extends Di implements FactoryInterface
     /**
      * Constructor
      *
-     * @param \Zend\Di\Di $di
-     * @param null|\Zend\Di\InstanceManager $name
+     * @param \Laminas\Di\Di $di
+     * @param null|\Laminas\Di\InstanceManager $name
      * @param array $parameters
      * @param string $useServiceLocator
      */

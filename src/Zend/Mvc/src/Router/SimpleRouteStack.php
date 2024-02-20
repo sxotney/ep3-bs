@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router;
+namespace Laminas\Mvc\Router;
 
 use Traversable;
-use Zend\ServiceManager\ServiceManager;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\RequestInterface as Request;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\RequestInterface as Request;
 
 /**
  * Simple route stack implementation.
@@ -61,7 +61,7 @@ class SimpleRouteStack implements RouteStackInterface
     /**
      * factory(): defined by RouteInterface interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::factory()
+     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
      * @param  array|Traversable $options
      * @return SimpleRouteStack
      * @throws Exception\InvalidArgumentException
@@ -292,7 +292,7 @@ class SimpleRouteStack implements RouteStackInterface
      * @param  Request $request
      *
      * @return void
-     *@see    \Zend\Mvc\Router\RouteInterface::match()
+     *@see    \Laminas\Mvc\Router\RouteInterface::match()
      */
     public function match(Request $request)
     {
@@ -316,7 +316,7 @@ class SimpleRouteStack implements RouteStackInterface
     /**
      * assemble(): defined by RouteInterface interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
+     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

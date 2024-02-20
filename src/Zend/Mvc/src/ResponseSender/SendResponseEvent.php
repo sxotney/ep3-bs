@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\ResponseSender;
+namespace Laminas\Mvc\ResponseSender;
 
-use Zend\EventManager\Event;
-use Zend\Stdlib\ResponseInterface;
+use Laminas\EventManager\Event;
+use Laminas\Stdlib\ResponseInterface;
 
 class SendResponseEvent extends Event
 {
@@ -52,7 +52,7 @@ class SendResponseEvent extends Event
     }
 
     /**
-     * @return \Zend\Stdlib\ResponseInterface
+     * @return \Laminas\Stdlib\ResponseInterface
      */
     public function getResponse()
     {

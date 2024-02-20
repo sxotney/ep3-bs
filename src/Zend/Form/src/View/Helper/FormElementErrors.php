@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper;
+namespace Laminas\Form\View\Helper;
 
 use Traversable;
-use Zend\Form\ElementInterface;
-use Zend\Form\Exception;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\Exception;
 
 class FormElementErrors extends AbstractHelper
 {

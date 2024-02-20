@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Platform;
+namespace Laminas\Db\Sql\Platform;
 
 interface PlatformDecoratorInterface
 {

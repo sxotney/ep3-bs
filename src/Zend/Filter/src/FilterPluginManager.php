@@ -7,16 +7,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter;
+namespace Laminas\Filter;
 
-use Zend\Filter\Exception\RuntimeException;
-use Zend\I18n\Filter\Alnum;
-use Zend\I18n\Filter\Alpha;
-use Zend\I18n\Filter\NumberFormat;
-use Zend\I18n\Filter\NumberParse;
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\Filter\Exception\RuntimeException;
+use Laminas\I18n\Filter\Alnum;
+use Laminas\I18n\Filter\Alpha;
+use Laminas\I18n\Filter\NumberFormat;
+use Laminas\I18n\Filter\NumberParse;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 /**
  * Plugin manager implementation for the filter chain.
@@ -268,61 +268,61 @@ class FilterPluginManager extends AbstractPluginManager
 
         // v2 canonical FQCNs
 
-        'zendfiltertoint'                      => InvokableFactory::class,
-        'zendfiltertofloat'                    => InvokableFactory::class,
-        'zendfiltertonull'                     => InvokableFactory::class,
-        'zendi18nfilteralnum'                  => InvokableFactory::class,
-        'zendi18nfilteralpha'                  => InvokableFactory::class,
-        'zendi18nfilternumberformat'           => InvokableFactory::class,
-        'zendi18nfilternumberparse'            => InvokableFactory::class,
-        'zendfilterbasename'                   => InvokableFactory::class,
-        'zendfilterblacklist'                  => InvokableFactory::class,
-        'zendfilterboolean'                    => InvokableFactory::class,
-        'zendfiltercallback'                   => InvokableFactory::class,
-        'zendfiltercompress'                   => InvokableFactory::class,
-        'zendfilterdataunitformatter'          => InvokableFactory::class,
-        'zendfilterdateselect'                 => InvokableFactory::class,
-        'zendfilterdatetimeformatter'          => InvokableFactory::class,
-        'zendfilterdatetimeselect'             => InvokableFactory::class,
-        'zendfilterdecompress'                 => InvokableFactory::class,
-        'zendfilterdecrypt'                    => InvokableFactory::class,
-        'zendfilterdigits'                     => InvokableFactory::class,
-        'zendfilterdir'                        => InvokableFactory::class,
-        'zendfilterencrypt'                    => InvokableFactory::class,
-        'zendfilterfiledecrypt'                => InvokableFactory::class,
-        'zendfilterfileencrypt'                => InvokableFactory::class,
-        'zendfilterfilelowercase'              => InvokableFactory::class,
-        'zendfilterfilerename'                 => InvokableFactory::class,
-        'zendfilterfilerenameupload'           => InvokableFactory::class,
-        'zendfilterfileuppercase'              => InvokableFactory::class,
-        'zendfilterhtmlentities'               => InvokableFactory::class,
-        'zendfilterinflector'                  => InvokableFactory::class,
-        'zendfiltermonthselect'                => InvokableFactory::class,
-        'zendfilterpregreplace'                => InvokableFactory::class,
-        'zendfilterrealpath'                   => InvokableFactory::class,
-        'zendfilterstringprefix'               => InvokableFactory::class,
-        'zendfilterstringsuffix'               => InvokableFactory::class,
-        'zendfilterstringtolower'              => InvokableFactory::class,
-        'zendfilterstringtoupper'              => InvokableFactory::class,
-        'zendfilterstringtrim'                 => InvokableFactory::class,
-        'zendfilterstripnewlines'              => InvokableFactory::class,
-        'zendfilterstriptags'                  => InvokableFactory::class,
-        'zendfilteruppercasewords'             => InvokableFactory::class,
-        'zendfilterurinormalize'               => InvokableFactory::class,
-        'zendfilterwhitelist'                  => InvokableFactory::class,
-        'zendfilterwordcamelcasetodash'        => InvokableFactory::class,
-        'zendfilterwordcamelcasetoseparator'   => InvokableFactory::class,
-        'zendfilterwordcamelcasetounderscore'  => InvokableFactory::class,
-        'zendfilterworddashtocamelcase'        => InvokableFactory::class,
-        'zendfilterworddashtoseparator'        => InvokableFactory::class,
-        'zendfilterworddashtounderscore'       => InvokableFactory::class,
-        'zendfilterwordseparatortocamelcase'   => InvokableFactory::class,
-        'zendfilterwordseparatortodash'        => InvokableFactory::class,
-        'zendfilterwordseparatortoseparator'   => Word\Service\SeparatorToSeparatorFactory::class,
-        'zendfilterwordunderscoretocamelcase'  => InvokableFactory::class,
-        'zendfilterwordunderscoretostudlycase' => InvokableFactory::class,
-        'zendfilterwordunderscoretodash'       => InvokableFactory::class,
-        'zendfilterwordunderscoretoseparator'  => InvokableFactory::class,
+        'laminasfiltertoint'                      => InvokableFactory::class,
+        'laminasfiltertofloat'                    => InvokableFactory::class,
+        'laminasfiltertonull'                     => InvokableFactory::class,
+        'laminasi18nfilteralnum'                  => InvokableFactory::class,
+        'laminasi18nfilteralpha'                  => InvokableFactory::class,
+        'laminasi18nfilternumberformat'           => InvokableFactory::class,
+        'laminasi18nfilternumberparse'            => InvokableFactory::class,
+        'laminasfilterbasename'                   => InvokableFactory::class,
+        'laminasfilterblacklist'                  => InvokableFactory::class,
+        'laminasfilterboolean'                    => InvokableFactory::class,
+        'laminasfiltercallback'                   => InvokableFactory::class,
+        'laminasfiltercompress'                   => InvokableFactory::class,
+        'laminasfilterdataunitformatter'          => InvokableFactory::class,
+        'laminasfilterdateselect'                 => InvokableFactory::class,
+        'laminasfilterdatetimeformatter'          => InvokableFactory::class,
+        'laminasfilterdatetimeselect'             => InvokableFactory::class,
+        'laminasfilterdecompress'                 => InvokableFactory::class,
+        'laminasfilterdecrypt'                    => InvokableFactory::class,
+        'laminasfilterdigits'                     => InvokableFactory::class,
+        'laminasfilterdir'                        => InvokableFactory::class,
+        'laminasfilterencrypt'                    => InvokableFactory::class,
+        'laminasfilterfiledecrypt'                => InvokableFactory::class,
+        'laminasfilterfileencrypt'                => InvokableFactory::class,
+        'laminasfilterfilelowercase'              => InvokableFactory::class,
+        'laminasfilterfilerename'                 => InvokableFactory::class,
+        'laminasfilterfilerenameupload'           => InvokableFactory::class,
+        'laminasfilterfileuppercase'              => InvokableFactory::class,
+        'laminasfilterhtmlentities'               => InvokableFactory::class,
+        'laminasfilterinflector'                  => InvokableFactory::class,
+        'laminasfiltermonthselect'                => InvokableFactory::class,
+        'laminasfilterpregreplace'                => InvokableFactory::class,
+        'laminasfilterrealpath'                   => InvokableFactory::class,
+        'laminasfilterstringprefix'               => InvokableFactory::class,
+        'laminasfilterstringsuffix'               => InvokableFactory::class,
+        'laminasfilterstringtolower'              => InvokableFactory::class,
+        'laminasfilterstringtoupper'              => InvokableFactory::class,
+        'laminasfilterstringtrim'                 => InvokableFactory::class,
+        'laminasfilterstripnewlines'              => InvokableFactory::class,
+        'laminasfilterstriptags'                  => InvokableFactory::class,
+        'laminasfilteruppercasewords'             => InvokableFactory::class,
+        'laminasfilterurinormalize'               => InvokableFactory::class,
+        'laminasfilterwhitelist'                  => InvokableFactory::class,
+        'laminasfilterwordcamelcasetodash'        => InvokableFactory::class,
+        'laminasfilterwordcamelcasetoseparator'   => InvokableFactory::class,
+        'laminasfilterwordcamelcasetounderscore'  => InvokableFactory::class,
+        'laminasfilterworddashtocamelcase'        => InvokableFactory::class,
+        'laminasfilterworddashtoseparator'        => InvokableFactory::class,
+        'laminasfilterworddashtounderscore'       => InvokableFactory::class,
+        'laminasfilterwordseparatortocamelcase'   => InvokableFactory::class,
+        'laminasfilterwordseparatortodash'        => InvokableFactory::class,
+        'laminasfilterwordseparatortoseparator'   => Word\Service\SeparatorToSeparatorFactory::class,
+        'laminasfilterwordunderscoretocamelcase'  => InvokableFactory::class,
+        'laminasfilterwordunderscoretostudlycase' => InvokableFactory::class,
+        'laminasfilterwordunderscoretodash'       => InvokableFactory::class,
+        'laminasfilterwordunderscoretoseparator'  => InvokableFactory::class,
     ];
 
     protected $instanceOf = FilterInterface::class;

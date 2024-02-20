@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router\Http;
+namespace Laminas\Mvc\Router\Http;
 
 use ArrayObject;
 use Traversable;
-use Zend\Mvc\Router\Exception;
-use Zend\Mvc\Router\PriorityList;
-use Zend\Mvc\Router\RoutePluginManager;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\RequestInterface as Request;
+use Laminas\Mvc\Router\Exception;
+use Laminas\Mvc\Router\PriorityList;
+use Laminas\Mvc\Router\RoutePluginManager;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\RequestInterface as Request;
 
 /**
  * Part route.
@@ -75,7 +75,7 @@ class Part extends TreeRouteStack implements RouteInterface
     /**
      * factory(): defined by RouteInterface interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::factory()
+     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
      * @param  mixed $options
      * @return Part
      * @throws Exception\InvalidArgumentException
@@ -128,8 +128,8 @@ class Part extends TreeRouteStack implements RouteInterface
      * @param  integer|null $pathOffset
      * @param  array        $options
      *
-     * @return \Zend\Mvc\Router\RouteMatch
-     *@see    \Zend\Mvc\Router\RouteInterface::match()
+     * @return \Laminas\Mvc\Router\RouteMatch
+     *@see    \Laminas\Mvc\Router\RouteInterface::match()
      */
     public function match(Request $request, $pathOffset = null, array $options = [])
     {
@@ -176,7 +176,7 @@ class Part extends TreeRouteStack implements RouteInterface
     /**
      * assemble(): Defined by RouteInterface interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
+     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

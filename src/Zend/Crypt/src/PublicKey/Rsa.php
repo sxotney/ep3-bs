@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\PublicKey;
+namespace Laminas\Crypt\PublicKey;
 
 use Traversable;
-use Zend\Crypt\PublicKey\Rsa\Exception;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Crypt\PublicKey\Rsa\Exception;
+use Laminas\Stdlib\ArrayUtils;
 
 /**
  * Implementation of the RSA public key encryption algorithm.
@@ -39,7 +39,7 @@ class Rsa
     {
         if (!extension_loaded('openssl')) {
             throw new Exception\RuntimeException(
-                'Can not create Zend\Crypt\PublicKey\Rsa; openssl extension to be loaded'
+                'Can not create Laminas\Crypt\PublicKey\Rsa; openssl extension to be loaded'
             );
         }
 
@@ -101,7 +101,7 @@ class Rsa
     {
         if (!extension_loaded('openssl')) {
             throw new Exception\RuntimeException(
-                'Zend\Crypt\PublicKey\Rsa requires openssl extension to be loaded'
+                'Laminas\Crypt\PublicKey\Rsa requires openssl extension to be loaded'
             );
         }
 

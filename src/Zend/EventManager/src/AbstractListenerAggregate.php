@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
 /**
  * Abstract aggregate listener
@@ -15,7 +15,7 @@ namespace Zend\EventManager;
 abstract class AbstractListenerAggregate implements ListenerAggregateInterface
 {
     /**
-     * @var \Zend\Stdlib\CallbackHandler[]
+     * @var \Laminas\Stdlib\CallbackHandler[]
      */
     protected $listeners = [];
 

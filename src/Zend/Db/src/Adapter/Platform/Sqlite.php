@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Platform;
+namespace Laminas\Db\Adapter\Platform;
 
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\Driver\Pdo;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\Driver\Pdo;
+use Laminas\Db\Adapter\Exception;
 
 class Sqlite extends AbstractPlatform
 {
@@ -31,7 +31,7 @@ class Sqlite extends AbstractPlatform
     protected $resource = null;
 
     /**
-     * @param null|\Zend\Db\Adapter\Driver\Pdo\Pdo||\PDO $driver
+     * @param null|\Laminas\Db\Adapter\Driver\Pdo\Pdo||\PDO $driver
      */
     public function __construct($driver = null)
     {
@@ -41,9 +41,9 @@ class Sqlite extends AbstractPlatform
     }
 
     /**
-     * @param \Zend\Db\Adapter\Driver\Pdo\Pdo|\PDO $driver
+     * @param \Laminas\Db\Adapter\Driver\Pdo\Pdo|\PDO $driver
      * @return self Provides a fluent interface
-     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
      */
     public function setDriver($driver)
     {
@@ -55,7 +55,7 @@ class Sqlite extends AbstractPlatform
         }
 
         throw new Exception\InvalidArgumentException(
-            '$driver must be a Sqlite PDO Zend\Db\Adapter\Driver, Sqlite PDO instance'
+            '$driver must be a Sqlite PDO Laminas\Db\Adapter\Driver, Sqlite PDO instance'
         );
     }
 

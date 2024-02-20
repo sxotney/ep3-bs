@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\ResponseSender;
+namespace Laminas\Mvc\ResponseSender;
 
-use Zend\Console\Response;
+use Laminas\Console\Response;
 
 class ConsoleResponseSender implements ResponseSenderInterface
 {

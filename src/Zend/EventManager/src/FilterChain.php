@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
-use Zend\Stdlib\CallbackHandler;
+use Laminas\Stdlib\CallbackHandler;
 
 /**
  * FilterChain: intercepting filter manager

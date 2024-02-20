@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\Mvc\Application;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Mvc\Application;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class ApplicationFactory implements FactoryInterface
 {
     /**
      * Create the Application service (v3)
      *
-     * Creates a Zend\Mvc\Application service, passing it the configuration
+     * Creates a Laminas\Mvc\Application service, passing it the configuration
      * service and the service manager instance.
      *
      * @param  ContainerInterface $container

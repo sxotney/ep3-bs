@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
 /**
  * Interface to automate setter injection for an EventManager instance

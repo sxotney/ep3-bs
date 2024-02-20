@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Json\Server;
+namespace Laminas\Json\Server;
 
-use Zend\Json\Server\Exception\InvalidArgumentException;
-use Zend\Json\Server\Exception\RuntimeException;
+use Laminas\Json\Server\Exception\InvalidArgumentException;
+use Laminas\Json\Server\Exception\RuntimeException;
 
 class Smd
 {
@@ -109,7 +109,7 @@ class Smd
      *
      * @param  string $transport
      * @throws Exception\InvalidArgumentException
-     * @return \Zend\Json\Server\Smd
+     * @return \Laminas\Json\Server\Smd
      */
     public function setTransport($transport)
     {
@@ -162,7 +162,7 @@ class Smd
      *
      * @param  string $type
      * @throws Exception\InvalidArgumentException
-     * @return \Zend\Json\Server\Smd
+     * @return \Laminas\Json\Server\Smd
      */
     public function setContentType($type)
     {
@@ -448,7 +448,7 @@ class Smd
      */
     public function toJson()
     {
-        return \Zend\Json\Json::encode($this->toArray());
+        return \Laminas\Json\Json::encode($this->toArray());
     }
 
     /**

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Ddl\Column;
+namespace Laminas\Db\Sql\Ddl\Column;
 
 /**
  * Class AbstractTimestampColumn
- * @package Zend\Db\Sql\Ddl\Column
+ * @package Laminas\Db\Sql\Ddl\Column
  * @see doc section http://dev.mysql.com/doc/refman/5.6/en/timestamp-initialization.html
  */
 abstract class AbstractTimestampColumn extends Column

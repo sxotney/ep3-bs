@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Form\ElementInterface;
-use Zend\Form\Exception\InvalidArgumentException;
-use Zend\Validator\Explode as ExplodeValidator;
-use Zend\Validator\InArray as InArrayValidator;
-use Zend\Validator\ValidatorInterface;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\Exception\InvalidArgumentException;
+use Laminas\Validator\Explode as ExplodeValidator;
+use Laminas\Validator\InArray as InArrayValidator;
+use Laminas\Validator\ValidatorInterface;
 
 class MultiCheckbox extends Checkbox
 {

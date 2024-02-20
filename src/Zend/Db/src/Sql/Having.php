@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
 class Having extends Predicate\Predicate
 {

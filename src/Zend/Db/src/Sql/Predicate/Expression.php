@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Predicate;
+namespace Laminas\Db\Sql\Predicate;
 
-use Zend\Db\Sql\Expression as BaseExpression;
+use Laminas\Db\Sql\Expression as BaseExpression;
 
 class Expression extends BaseExpression implements PredicateInterface
 {

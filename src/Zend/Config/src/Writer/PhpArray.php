@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Writer;
+namespace Laminas\Config\Writer;
 
-use Zend\Config\Exception;
+use Laminas\Config\Exception;
 
 class PhpArray extends AbstractWriter
 {

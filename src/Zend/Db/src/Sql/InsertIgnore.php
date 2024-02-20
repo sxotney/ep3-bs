@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-db for the canonical source repository
+ * @see       https://github.com/laminas/laminas-db for the canonical source repository
  * @copyright Copyright (c) 2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-db/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-db/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
 class InsertIgnore extends Insert
 {

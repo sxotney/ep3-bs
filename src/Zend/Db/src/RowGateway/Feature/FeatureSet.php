@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\RowGateway\Feature;
+namespace Laminas\Db\RowGateway\Feature;
 
-use Zend\Db\RowGateway\AbstractRowGateway;
+use Laminas\Db\RowGateway\AbstractRowGateway;
 
 class FeatureSet
 {

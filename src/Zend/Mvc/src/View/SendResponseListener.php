@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\View;
+namespace Laminas\Mvc\View;
 
-use Zend\Mvc\SendResponseListener as MvcSendResponseListener;
+use Laminas\Mvc\SendResponseListener as MvcSendResponseListener;
 
 /**
  * @deprecated

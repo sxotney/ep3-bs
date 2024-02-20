@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper\Captcha;
+namespace Laminas\Form\View\Helper\Captcha;
 
-use Zend\Captcha\Figlet as CaptchaAdapter;
-use Zend\Form\ElementInterface;
-use Zend\Form\Exception;
+use Laminas\Captcha\Figlet as CaptchaAdapter;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\Exception;
 
 class Figlet extends AbstractWord
 {
@@ -28,7 +28,7 @@ class Figlet extends AbstractWord
 
         if ($captcha === null || ! $captcha instanceof CaptchaAdapter) {
             throw new Exception\DomainException(sprintf(
-                '%s requires that the element has a "captcha" attribute of type Zend\Captcha\Figlet; none found',
+                '%s requires that the element has a "captcha" attribute of type Laminas\Captcha\Figlet; none found',
                 __METHOD__
             ));
         }

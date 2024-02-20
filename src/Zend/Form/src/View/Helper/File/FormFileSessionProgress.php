@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper\File;
+namespace Laminas\Form\View\Helper\File;
 
 /**
  * A view helper to render the hidden input with a Session progress id

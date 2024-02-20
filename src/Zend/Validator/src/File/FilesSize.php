@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\File;
+namespace Laminas\Validator\File;
 
 use Traversable;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\ErrorHandler;
-use Zend\Validator\Exception;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\ErrorHandler;
+use Laminas\Validator\Exception;
 
 /**
  * Validator for the size of all files which will be validated in sum
@@ -50,7 +50,7 @@ class FilesSize extends Size
      * It also accepts an array with the keys 'min' and 'max'
      *
      * @param  int|array|Traversable $options Options for this validator
-     * @throws \Zend\Validator\Exception\InvalidArgumentException
+     * @throws \Laminas\Validator\Exception\InvalidArgumentException
      */
     public function __construct($options = null)
     {
@@ -82,7 +82,7 @@ class FilesSize extends Size
      * not bigger than max (when max is not null).
      *
      * @param  string|array $value Real file to check for size
-     * @param  array        $file  File data from \Zend\File\Transfer\Transfer
+     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer
      * @return bool
      */
     public function isValid($value, $file = null)

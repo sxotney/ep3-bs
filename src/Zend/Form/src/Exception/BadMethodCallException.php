@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Exception;
+namespace Laminas\Form\Exception;
 
 class BadMethodCallException extends \BadMethodCallException implements ExceptionInterface
 {

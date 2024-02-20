@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Oci8\Feature;
+namespace Laminas\Db\Adapter\Driver\Oci8\Feature;
 
-use Zend\Db\Adapter\Driver\Feature\AbstractFeature;
-use Zend\Db\Adapter\Driver\Oci8\Statement;
+use Laminas\Db\Adapter\Driver\Feature\AbstractFeature;
+use Laminas\Db\Adapter\Driver\Oci8\Statement;
 
 /**
  * Class for count of results of a select
@@ -59,7 +59,7 @@ class RowCounter extends AbstractFeature
     }
 
     /**
-     * @param \Zend\Db\Adapter\Driver\Oci8\Statement|string $context
+     * @param \Laminas\Db\Adapter\Driver\Oci8\Statement|string $context
      * @return callable
      */
     public function getRowCountClosure($context)

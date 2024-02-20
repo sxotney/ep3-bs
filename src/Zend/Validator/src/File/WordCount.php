@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\File;
+namespace Laminas\Validator\File;
 
-use Zend\Validator\AbstractValidator;
-use Zend\Validator\Exception;
+use Laminas\Validator\AbstractValidator;
+use Laminas\Validator\Exception;
 
 /**
  * Validator for counting all words in a file
@@ -170,7 +170,7 @@ class WordCount extends AbstractValidator
      * not bigger than max (when max is not null).
      *
      * @param  string|array $value Filename to check for word count
-     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

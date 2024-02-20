@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
-trigger_error('Zend\EventManager\ProvidesEvents has been deprecated in favor of Zend\EventManager\EventManagerAwareTrait; please update your code', E_USER_DEPRECATED);
+trigger_error('Laminas\EventManager\ProvidesEvents has been deprecated in favor of Laminas\EventManager\EventManagerAwareTrait; please update your code', E_USER_DEPRECATED);
 
 /**
  * @deprecated Please use EventManagerAwareTrait instead.

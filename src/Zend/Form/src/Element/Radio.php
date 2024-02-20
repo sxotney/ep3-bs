@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Validator\InArray as InArrayValidator;
+use Laminas\Validator\InArray as InArrayValidator;
 
 class Radio extends MultiCheckbox
 {
@@ -25,7 +25,7 @@ class Radio extends MultiCheckbox
     /**
      * Get validator
      *
-     * @return \Zend\Validator\ValidatorInterface
+     * @return \Laminas\Validator\ValidatorInterface
      */
     protected function getValidator()
     {

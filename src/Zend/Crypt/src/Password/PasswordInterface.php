@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Password;
+namespace Laminas\Crypt\Password;
 
 interface PasswordInterface
 {

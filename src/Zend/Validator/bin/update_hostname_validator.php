@@ -7,8 +7,8 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-use Zend\Http\Client;
-use Zend\Validator\Hostname;
+use Laminas\Http\Client;
+use Laminas\Validator\Hostname;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -101,14 +101,14 @@ exit(0);
 /**
  * Get Official TLDs
  *
- * @return \Zend\Http\Response
+ * @return \Laminas\Http\Response
  * @throws Exception
  */
 function getOfficialTLDs()
 {
     $client = new Client();
     $client->setOptions([
-        'adapter' => 'Zend\Http\Client\Adapter\Curl',
+        'adapter' => 'Laminas\Http\Client\Adapter\Curl',
     ]);
     $client->setUri(IANA_URL);
     $client->setMethod('GET');

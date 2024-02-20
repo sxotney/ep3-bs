@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Validator\DateStep as DateStepValidator;
+use Laminas\Validator\DateStep as DateStepValidator;
 
 class DateTimeLocal extends DateTime
 {
@@ -35,7 +35,7 @@ class DateTimeLocal extends DateTime
     /**
      * Retrieves a DateStepValidator configured for a Date Input type
      *
-     * @return \Zend\Validator\ValidatorInterface
+     * @return \Laminas\Validator\ValidatorInterface
      */
     protected function getStepValidator()
     {

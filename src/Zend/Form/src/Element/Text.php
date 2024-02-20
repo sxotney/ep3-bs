@@ -7,9 +7,9 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Form\Element;
+use Laminas\Form\Element;
 
 class Text extends Element
 {

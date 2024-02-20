@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form;
+namespace Laminas\Form;
 
 use Traversable;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\InitializableInterface;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\InitializableInterface;
 
 class Element implements
     ElementAttributeRemovalInterface,

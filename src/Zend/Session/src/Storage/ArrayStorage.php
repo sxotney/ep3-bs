@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\Storage;
+namespace Laminas\Session\Storage;
 
 use ReturnTypeWillChange;
-use Zend\Stdlib\ArrayObject;
-use Zend\Session\Exception;
+use Laminas\Stdlib\ArrayObject;
+use Laminas\Session\Exception;
 
 /**
  * Array session storage

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Math;
+namespace Laminas\Math;
 
 use RandomLib;
 
@@ -80,7 +80,7 @@ abstract class Rand
         $factory = new RandomLib\Factory;
         $factory->registerSource(
             'HashTiming',
-            'Zend\Math\Source\HashTiming'
+            'Laminas\Math\Source\HashTiming'
         );
         static::$generator = $factory->getMediumStrengthGenerator();
         return static::$generator;

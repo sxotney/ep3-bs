@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Oci8;
+namespace Laminas\Db\Adapter\Driver\Oci8;
 
-use Zend\Db\Adapter\Driver\AbstractConnection;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\AbstractConnection;
+use Laminas\Db\Adapter\Exception;
 
 class Connection extends AbstractConnection
 {
@@ -23,7 +23,7 @@ class Connection extends AbstractConnection
      * Constructor
      *
      * @param  array|resource|null                                 $connectionInfo
-     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
      */
     public function __construct($connectionInfo = null)
     {

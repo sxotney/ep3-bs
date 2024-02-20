@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Oci8;
+namespace Laminas\Db\Adapter\Driver\Oci8;
 
 use Iterator;
 use ReturnTypeWillChange;
-use Zend\Db\Adapter\Driver\ResultInterface;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\ResultInterface;
+use Laminas\Db\Adapter\Exception;
 
 class Result implements Iterator, ResultInterface
 {

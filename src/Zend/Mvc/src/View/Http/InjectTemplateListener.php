@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\View\Http;
+namespace Laminas\Mvc\View\Http;
 
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface as Events;
-use Zend\Filter\Word\CamelCaseToDash as CamelCaseToDashFilter;
-use Zend\Mvc\MvcEvent;
-use Zend\Mvc\ModuleRouteListener;
-use Zend\View\Model\ModelInterface as ViewModel;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface as Events;
+use Laminas\Filter\Word\CamelCaseToDash as CamelCaseToDashFilter;
+use Laminas\Mvc\MvcEvent;
+use Laminas\Mvc\ModuleRouteListener;
+use Laminas\View\Model\ModelInterface as ViewModel;
 
 class InjectTemplateListener extends AbstractListenerAggregate
 {

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Profiler;
+namespace Laminas\Db\Adapter\Profiler;
 
 interface ProfilerInterface
 {
     /**
-     * @param string|\Zend\Db\Adapter\StatementContainerInterface $target
+     * @param string|\Laminas\Db\Adapter\StatementContainerInterface $target
      * @return mixed
      */
     public function profilerStart($target);

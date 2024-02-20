@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form;
+namespace Laminas\Form;
 
 use Traversable;
-use Zend\Form\Element\Collection;
-use Zend\Hydrator\HydratorInterface;
-use Zend\InputFilter\CollectionInputFilter;
-use Zend\InputFilter\InputFilter;
-use Zend\InputFilter\InputFilterAwareInterface;
-use Zend\InputFilter\InputFilterInterface;
-use Zend\InputFilter\InputFilterProviderInterface;
-use Zend\InputFilter\InputProviderInterface;
-use Zend\InputFilter\ReplaceableInputInterface;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Form\Element\Collection;
+use Laminas\Hydrator\HydratorInterface;
+use Laminas\InputFilter\CollectionInputFilter;
+use Laminas\InputFilter\InputFilter;
+use Laminas\InputFilter\InputFilterAwareInterface;
+use Laminas\InputFilter\InputFilterInterface;
+use Laminas\InputFilter\InputFilterProviderInterface;
+use Laminas\InputFilter\InputProviderInterface;
+use Laminas\InputFilter\ReplaceableInputInterface;
+use Laminas\Stdlib\ArrayUtils;
 
 class Form extends Fieldset implements FormInterface
 {
@@ -287,8 +287,8 @@ class Form extends Fieldset implements FormInterface
             throw new Exception\InvalidArgumentException(sprintf(
                 '%s expects the $flags argument to be one of "%s" or "%s"; received "%s"',
                 __METHOD__,
-                'Zend\Form\FormInterface::VALUES_NORMALIZED',
-                'Zend\Form\FormInterface::VALUES_RAW',
+                'Laminas\Form\FormInterface::VALUES_NORMALIZED',
+                'Laminas\Form\FormInterface::VALUES_RAW',
                 $flags
             ));
         }

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Form\Element;
-use Zend\Form\ElementPrepareAwareInterface;
-use Zend\Form\FormInterface;
-use Zend\InputFilter\InputProviderInterface;
-use Zend\Validator\Csrf as CsrfValidator;
+use Laminas\Form\Element;
+use Laminas\Form\ElementPrepareAwareInterface;
+use Laminas\Form\FormInterface;
+use Laminas\InputFilter\InputProviderInterface;
+use Laminas\Validator\Csrf as CsrfValidator;
 
 class Csrf extends Element implements InputProviderInterface, ElementPrepareAwareInterface
 {
@@ -88,7 +88,7 @@ class Csrf extends Element implements InputProviderInterface, ElementPrepareAwar
     }
 
     /**
-     * @param  \Zend\Validator\Csrf $validator
+     * @param  \Laminas\Validator\Csrf $validator
      * @return Csrf
      */
     public function setCsrfValidator(CsrfValidator $validator)
@@ -138,7 +138,7 @@ class Csrf extends Element implements InputProviderInterface, ElementPrepareAwar
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Zend\Filter\StringTrim'],
+                ['name' => 'Laminas\Filter\StringTrim'],
             ],
             'validators' => [
                 $this->getCsrfValidator(),

@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\View\Resolver as ViewResolver;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\View\Resolver as ViewResolver;
 
 class ViewTemplateMapResolverFactory implements FactoryInterface
 {
     /**
      * Create the template map view resolver
      *
-     * Creates a Zend\View\Resolver\AggregateResolver and populates it with the
+     * Creates a Laminas\View\Resolver\AggregateResolver and populates it with the
      * ['view_manager']['template_map']
      *
      * @param  ContainerInterface $container

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
-use Zend\Stdlib\StringUtils;
-use Zend\Stdlib\StringWrapper\StringWrapperInterface as StringWrapper;
+use Laminas\Stdlib\StringUtils;
+use Laminas\Stdlib\StringWrapper\StringWrapperInterface as StringWrapper;
 
 class StringLength extends AbstractValidator
 {

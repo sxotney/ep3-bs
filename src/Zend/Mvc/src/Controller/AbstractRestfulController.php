@@ -6,14 +6,14 @@
  * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
-namespace Zend\Mvc\Controller;
+namespace Laminas\Mvc\Controller;
 
-use Zend\Http\Request as HttpRequest;
-use Zend\Json\Json;
-use Zend\Mvc\Exception;
-use Zend\Mvc\MvcEvent;
-use Zend\Stdlib\RequestInterface as Request;
-use Zend\Stdlib\ResponseInterface as Response;
+use Laminas\Http\Request as HttpRequest;
+use Laminas\Json\Json;
+use Laminas\Mvc\Exception;
+use Laminas\Mvc\MvcEvent;
+use Laminas\Stdlib\RequestInterface as Request;
+use Laminas\Stdlib\ResponseInterface as Response;
 
 /**
  * Abstract RESTful controller
@@ -45,7 +45,7 @@ abstract class AbstractRestfulController extends AbstractController
     protected $identifierName = 'id';
 
     /**
-     * @var int From Zend\Json\Json
+     * @var int From Laminas\Json\Json
      */
     protected $jsonDecodeType = Json::TYPE_ARRAY;
 
@@ -467,7 +467,7 @@ abstract class AbstractRestfulController extends AbstractController
      */
     public function requestHasContentType(Request $request, $contentType = '')
     {
-        /** @var $headerContentType \Zend\Http\Header\ContentType */
+        /** @var $headerContentType \Laminas\Http\Header\ContentType */
         $headerContentType = $request->getHeaders()->get('content-type');
         if (!$headerContentType) {
             return false;
@@ -535,7 +535,7 @@ abstract class AbstractRestfulController extends AbstractController
      * Attempts to see if an identifier was passed in either the URI or the
      * query string, returning it if found. Otherwise, returns a boolean false.
      *
-     * @param  \Zend\Mvc\Router\RouteMatch $routeMatch
+     * @param  \Laminas\Mvc\Router\RouteMatch $routeMatch
      * @param  Request $request
      * @return false|mixed
      */

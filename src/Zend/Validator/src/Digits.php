@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
-use Zend\Filter\Digits as DigitsFilter;
+use Laminas\Filter\Digits as DigitsFilter;
 
 class Digits extends AbstractValidator
 {
@@ -20,7 +20,7 @@ class Digits extends AbstractValidator
     /**
      * Digits filter used for validation
      *
-     * @var \Zend\Filter\Digits
+     * @var \Laminas\Filter\Digits
      */
     protected static $filter = null;
 

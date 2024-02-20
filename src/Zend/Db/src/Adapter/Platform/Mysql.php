@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Platform;
+namespace Laminas\Db\Adapter\Platform;
 
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\Driver\Mysqli;
-use Zend\Db\Adapter\Driver\Pdo;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\Driver\Mysqli;
+use Laminas\Db\Adapter\Driver\Pdo;
+use Laminas\Db\Adapter\Exception;
 
 class Mysql extends AbstractPlatform
 {
@@ -39,7 +39,7 @@ class Mysql extends AbstractPlatform
     protected $quoteIdentifierFragmentPattern = '/([^0-9,a-z,A-Z$_\-:])/i';
 
     /**
-     * @param null|\Zend\Db\Adapter\Driver\Mysqli\Mysqli|\Zend\Db\Adapter\Driver\Pdo\Pdo|\mysqli|\PDO $driver
+     * @param null|\Laminas\Db\Adapter\Driver\Mysqli\Mysqli|\Laminas\Db\Adapter\Driver\Pdo\Pdo|\mysqli|\PDO $driver
      */
     public function __construct($driver = null)
     {
@@ -49,13 +49,13 @@ class Mysql extends AbstractPlatform
     }
 
     /**
-     * @param \Zend\Db\Adapter\Driver\Mysqli\Mysqli|\Zend\Db\Adapter\Driver\Pdo\Pdo|\mysqli|\PDO $driver
+     * @param \Laminas\Db\Adapter\Driver\Mysqli\Mysqli|\Laminas\Db\Adapter\Driver\Pdo\Pdo|\mysqli|\PDO $driver
      * @return self Provides a fluent interface
-     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
      */
     public function setDriver($driver)
     {
-        // handle Zend\Db drivers
+        // handle Laminas\Db drivers
         if ($driver instanceof Mysqli\Mysqli
             || ($driver instanceof Pdo\Pdo && $driver->getDatabasePlatformName() == 'Mysql')
             || ($driver instanceof \mysqli)
@@ -66,7 +66,7 @@ class Mysql extends AbstractPlatform
         }
 
         throw new Exception\InvalidArgumentException(
-            '$driver must be a Mysqli or Mysql PDO Zend\Db\Adapter\Driver, Mysqli instance or MySQL PDO instance'
+            '$driver must be a Mysqli or Mysql PDO Laminas\Db\Adapter\Driver, Mysqli instance or MySQL PDO instance'
         );
     }
 

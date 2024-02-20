@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver;
+namespace Laminas\Db\Adapter\Driver;
 
-use Zend\Db\Adapter\Profiler\ProfilerAwareInterface;
-use Zend\Db\Adapter\Profiler\ProfilerInterface;
+use Laminas\Db\Adapter\Profiler\ProfilerAwareInterface;
+use Laminas\Db\Adapter\Profiler\ProfilerInterface;
 
 abstract class AbstractConnection implements ConnectionInterface, ProfilerAwareInterface
 {

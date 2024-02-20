@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router\Http;
+namespace Laminas\Mvc\Router\Http;
 
-use Zend\Mvc\Router\RouteInterface as BaseRoute;
+use Laminas\Mvc\Router\RouteInterface as BaseRoute;
 
 /**
  * Tree specific route interface.

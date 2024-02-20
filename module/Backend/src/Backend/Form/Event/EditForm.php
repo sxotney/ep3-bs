@@ -3,8 +3,8 @@
 namespace Backend\Form\Event;
 
 use Square\Manager\SquareManager;
-use Zend\Form\Form;
-use Zend\InputFilter\Factory;
+use Laminas\Form\Form;
+use Laminas\InputFilter\Factory;
 
 class EditForm extends Form
 {

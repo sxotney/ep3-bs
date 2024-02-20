@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter;
+namespace Laminas\Filter;
 
 use Traversable;
 
@@ -112,7 +112,7 @@ class ToNull extends AbstractFilter
     }
 
     /**
-     * Defined by Zend\Filter\FilterInterface
+     * Defined by Laminas\Filter\FilterInterface
      *
      * Returns null representation of $value, if value is empty and matches
      * types that should be considered null.

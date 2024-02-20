@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter;
+namespace Laminas\Filter;
 
-use Zend\Filter\Exception\InvalidArgumentException;
+use Laminas\Filter\Exception\InvalidArgumentException;
 
 final class DataUnitFormatter extends AbstractFilter
 {
@@ -195,7 +195,7 @@ final class DataUnitFormatter extends AbstractFilter
     }
 
     /**
-     * Defined by Zend\Filter\FilterInterface
+     * Defined by Laminas\Filter\FilterInterface
      *
      * Returns a human readable format of the amount of bits or bytes.
      *

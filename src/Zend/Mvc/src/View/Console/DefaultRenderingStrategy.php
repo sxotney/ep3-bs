@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\View\Console;
+namespace Laminas\Mvc\View\Console;
 
-use Zend\Console\Response as ConsoleResponse;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Mvc\MvcEvent;
-use Zend\Stdlib\ResponseInterface as Response;
-use Zend\View\Model\ConsoleModel as ConsoleViewModel;
-use Zend\View\Model\ModelInterface;
+use Laminas\Console\Response as ConsoleResponse;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\Mvc\MvcEvent;
+use Laminas\Stdlib\ResponseInterface as Response;
+use Laminas\View\Model\ConsoleModel as ConsoleViewModel;
+use Laminas\View\Model\ModelInterface;
 
 class DefaultRenderingStrategy extends AbstractListenerAggregate
 {

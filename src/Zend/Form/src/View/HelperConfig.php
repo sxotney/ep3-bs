@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View;
+namespace Laminas\Form\View;
 
-use Zend\Form\ConfigProvider;
-use Zend\ServiceManager\ConfigInterface;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Form\ConfigProvider;
+use Laminas\ServiceManager\ConfigInterface;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Service manager configuration for form view helpers

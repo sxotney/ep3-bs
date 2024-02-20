@@ -1,11 +1,11 @@
 <?php
 /**
- * @link      http://github.com/zendframework/zend-validator for the canonical source repository
+ * @link      http://github.com/laminas/laminas-validator for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 class Module
 {
@@ -24,7 +24,7 @@ class Module
     /**
      * Register a specification for the ValidatorManager with the ServiceListener.
      *
-     * @param \Zend\ModuleManager\ModuleManager $moduleManager
+     * @param \Laminas\ModuleManager\ModuleManager $moduleManager
      * @return void
      */
     public function init($moduleManager)

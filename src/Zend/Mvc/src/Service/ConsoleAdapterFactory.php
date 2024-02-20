@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
 use stdClass;
-use Zend\Console\Adapter\AdapterInterface;
-use Zend\Console\Console;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Console\Adapter\AdapterInterface;
+use Laminas\Console\Console;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class ConsoleAdapterFactory implements FactoryInterface
 {
@@ -31,8 +31,8 @@ class ConsoleAdapterFactory implements FactoryInterface
      *      ),
      *      'service_manager' => array(
      *          'invokables' => array(
-     *              'MyConsoleAdapter' => 'Zend\Console\Adapter\Windows',
-     *              'MyConsoleCharset' => 'Zend\Console\Charset\DESCG',
+     *              'MyConsoleAdapter' => 'Laminas\Console\Adapter\Windows',
+     *              'MyConsoleCharset' => 'Laminas\Console\Charset\DESCG',
      *          )
      *      )
      *

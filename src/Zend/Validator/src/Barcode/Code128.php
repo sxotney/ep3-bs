@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\Barcode;
+namespace Laminas\Validator\Barcode;
 
-use Zend\Stdlib\StringUtils;
-use Zend\Stdlib\StringWrapper\StringWrapperInterface;
-use Zend\Validator\Exception;
+use Laminas\Stdlib\StringUtils;
+use Laminas\Stdlib\StringWrapper\StringWrapperInterface;
+use Laminas\Validator\Exception;
 
 class Code128 extends AbstractAdapter
 {

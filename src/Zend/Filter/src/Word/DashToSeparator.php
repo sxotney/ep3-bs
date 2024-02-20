@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter\Word;
+namespace Laminas\Filter\Word;
 
 class DashToSeparator extends AbstractSeparator
 {
     /**
-     * Defined by Zend\Filter\Filter
+     * Defined by Laminas\Filter\Filter
      *
      * @param  string|array $value
      * @return string|array

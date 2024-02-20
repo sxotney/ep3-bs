@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-inputfilter for the canonical source repository
+ * @see       https://github.com/laminas/laminas-inputfilter for the canonical source repository
  * @copyright Copyright (c) 2005-2019 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-inputfilter/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-inputfilter/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\InputFilter;
+namespace Laminas\InputFilter;
 
 class Module
 {
@@ -25,7 +25,7 @@ class Module
     /**
      * Register a specification for the InputFilterManager with the ServiceListener.
      *
-     * @param \Zend\ModuleManager\ModuleManager $moduleManager
+     * @param \Laminas\ModuleManager\ModuleManager $moduleManager
      * @return void
      */
     public function init($moduleManager)
@@ -37,7 +37,7 @@ class Module
         $serviceListener->addServiceManager(
             'InputFilterManager',
             'input_filters',
-            'Zend\ModuleManager\Feature\InputFilterProviderInterface',
+            'Laminas\ModuleManager\Feature\InputFilterProviderInterface',
             'getInputFilterConfig'
         );
     }

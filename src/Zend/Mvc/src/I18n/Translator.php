@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\I18n;
+namespace Laminas\Mvc\I18n;
 
-use Zend\I18n\Translator\TranslatorInterface as I18nTranslatorInterface;
-use Zend\Mvc\Exception;
-use Zend\Validator\Translator\TranslatorInterface as ValidatorTranslatorInterface;
+use Laminas\I18n\Translator\TranslatorInterface as I18nTranslatorInterface;
+use Laminas\Mvc\Exception;
+use Laminas\Validator\Translator\TranslatorInterface as ValidatorTranslatorInterface;
 
 class Translator implements
     I18nTranslatorInterface,

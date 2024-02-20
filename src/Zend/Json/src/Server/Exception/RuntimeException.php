@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Json\Server\Exception;
+namespace Laminas\Json\Server\Exception;
 
-use Zend\Json\Exception;
+use Laminas\Json\Exception;
 
 class RuntimeException extends Exception\RuntimeException implements
     ExceptionInterface

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use Traversable;
 
@@ -35,7 +35,7 @@ class Barcode extends AbstractValidator
     ];
 
     protected $options = [
-        'adapter'     => null,  // Barcode adapter Zend\Validator\Barcode\AbstractAdapter
+        'adapter'     => null,  // Barcode adapter Laminas\Validator\Barcode\AbstractAdapter
         'options'     => null,  // Options for this adapter
         'length'      => null,
         'useChecksum' => null,
@@ -89,7 +89,7 @@ class Barcode extends AbstractValidator
     {
         if (is_string($adapter)) {
             $adapter = ucfirst(strtolower($adapter));
-            $adapter = 'Zend\\Validator\\Barcode\\' . $adapter;
+            $adapter = 'Laminas\\Validator\\Barcode\\' . $adapter;
 
             if (! class_exists($adapter)) {
                 throw new Exception\InvalidArgumentException('Barcode adapter matching "' . $adapter . '" not found');
@@ -101,7 +101,7 @@ class Barcode extends AbstractValidator
         if (! $adapter instanceof Barcode\AdapterInterface) {
             throw new Exception\InvalidArgumentException(
                 sprintf(
-                    "Adapter %s does not implement Zend\\Validator\\Barcode\\AdapterInterface",
+                    "Adapter %s does not implement Laminas\\Validator\\Barcode\\AdapterInterface",
                     (is_object($adapter) ? get_class($adapter) : gettype($adapter))
                 )
             );
@@ -134,7 +134,7 @@ class Barcode extends AbstractValidator
     }
 
     /**
-     * Defined by Zend\Validator\ValidatorInterface
+     * Defined by Laminas\Validator\ValidatorInterface
      *
      * Returns true if and only if $value contains a valid barcode
      *

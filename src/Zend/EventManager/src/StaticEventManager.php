@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
 /**
  * Static version of EventManager
  *
  * @deprecated This class is deprecated with 2.6.0, and will be removed in 3.0.0.
- *     See {@link https://github.com/zendframework/zend-eventmanager/blob/develop/doc/book/migration/removed.md}
+ *     See {@link https://github.com/laminas/laminas-eventmanager/blob/develop/doc/book/migration/removed.md}
  *     for details.
  */
 class StaticEventManager extends SharedEventManager

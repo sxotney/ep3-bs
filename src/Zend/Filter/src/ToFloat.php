@@ -1,16 +1,16 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-filter for the canonical source repository
+ * @see       https://github.com/laminas/laminas-filter for the canonical source repository
  * @copyright Copyright (c) 2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-filter/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-filter/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Filter;
+namespace Laminas\Filter;
 
 class ToFloat extends AbstractFilter
 {
     /**
-     * Defined by Zend\Filter\FilterInterface
+     * Defined by Laminas\Filter\FilterInterface
      *
      * Returns (float) $value
      *

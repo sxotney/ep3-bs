@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller\Plugin;
+namespace Laminas\Mvc\Controller\Plugin;
 
-use Zend\Authentication\AuthenticationServiceInterface;
-use Zend\Mvc\Exception;
+use Laminas\Authentication\AuthenticationServiceInterface;
+use Laminas\Mvc\Exception;
 
 /**
  * Controller plugin to fetch the authenticated identity.

@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Pdo;
+namespace Laminas\Db\Adapter\Driver\Pdo;
 
 use Iterator;
 use PDOStatement;
 use ReturnTypeWillChange;
-use Zend\Db\Adapter\Driver\ResultInterface;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\ResultInterface;
+use Laminas\Db\Adapter\Exception;
 
 class Result implements Iterator, ResultInterface
 {

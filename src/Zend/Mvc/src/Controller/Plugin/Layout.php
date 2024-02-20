@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller\Plugin;
+namespace Laminas\Mvc\Controller\Plugin;
 
-use Zend\Mvc\Exception;
-use Zend\Mvc\InjectApplicationEventInterface;
-use Zend\Mvc\MvcEvent;
-use Zend\View\Model\ModelInterface as Model;
+use Laminas\Mvc\Exception;
+use Laminas\Mvc\InjectApplicationEventInterface;
+use Laminas\Mvc\MvcEvent;
+use Laminas\View\Model\ModelInterface as Model;
 
 class Layout extends AbstractPlugin
 {

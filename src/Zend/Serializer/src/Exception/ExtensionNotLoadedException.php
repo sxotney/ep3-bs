@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Serializer\Exception;
+namespace Laminas\Serializer\Exception;
 
 class ExtensionNotLoadedException extends RuntimeException
 {

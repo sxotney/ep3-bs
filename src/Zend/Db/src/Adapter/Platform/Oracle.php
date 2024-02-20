@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Platform;
+namespace Laminas\Db\Adapter\Platform;
 
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\Driver\Oci8\Oci8;
-use Zend\Db\Adapter\Driver\Pdo\Pdo;
-use \Zend\Db\Adapter\Exception\InvalidArgumentException;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\Driver\Oci8\Oci8;
+use Laminas\Db\Adapter\Driver\Pdo\Pdo;
+use \Laminas\Db\Adapter\Exception\InvalidArgumentException;
 
 class Oracle extends AbstractPlatform
 {
@@ -56,7 +56,7 @@ class Oracle extends AbstractPlatform
         }
 
         throw new InvalidArgumentException(
-            '$driver must be a Oci8 or Oracle PDO Zend\Db\Adapter\Driver, '
+            '$driver must be a Oci8 or Oracle PDO Laminas\Db\Adapter\Driver, '
             . 'Oci8 instance, or Oci PDO instance'
         );
     }

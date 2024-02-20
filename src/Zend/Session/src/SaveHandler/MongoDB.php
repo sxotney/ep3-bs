@@ -8,14 +8,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\SaveHandler;
+namespace Laminas\Session\SaveHandler;
 
 use MongoDB\BSON\Binary;
 use MongoDB\BSON\UTCDatetime;
 use MongoDB\Client as MongoClient;
 use MongoDB\Collection as MongoCollection;
 use ReturnTypeWillChange;
-use Zend\Session\Exception\InvalidArgumentException;
+use Laminas\Session\Exception\InvalidArgumentException;
 
 /**
  * MongoDB session save handler

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\Validator;
+namespace Laminas\Session\Validator;
 
-use Zend\Http\PhpEnvironment\RemoteAddress;
-use Zend\Session\Validator\ValidatorInterface as SessionValidator;
+use Laminas\Http\PhpEnvironment\RemoteAddress;
+use Laminas\Session\Validator\ValidatorInterface as SessionValidator;
 
 class RemoteAddr implements SessionValidator
 {

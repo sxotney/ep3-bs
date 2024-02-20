@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\Config;
+namespace Laminas\Session\Config;
 
 use Traversable;
-use Zend\Session\Exception;
-use Zend\Validator\Hostname as HostnameValidator;
+use Laminas\Session\Exception;
+use Laminas\Validator\Hostname as HostnameValidator;
 
 /**
  * Standard session configuration

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Validator\DateStep as DateStepValidator;
-use Zend\Validator\Regex as RegexValidator;
-use Zend\Validator\GreaterThan as GreaterThanValidator;
-use Zend\Validator\LessThan as LessThanValidator;
+use Laminas\Validator\DateStep as DateStepValidator;
+use Laminas\Validator\Regex as RegexValidator;
+use Laminas\Validator\GreaterThan as GreaterThanValidator;
+use Laminas\Validator\LessThan as LessThanValidator;
 
 class Week extends DateTime
 {
@@ -28,7 +28,7 @@ class Week extends DateTime
     /**
      * Retrieves a Date Validator configured for a Week Input type
      *
-     * @return \Zend\Validator\ValidatorInterface
+     * @return \Laminas\Validator\ValidatorInterface
      */
     protected function getDateValidator()
     {
@@ -38,7 +38,7 @@ class Week extends DateTime
     /**
      * Retrieves a DateStep Validator configured for a Week Input type
      *
-     * @return \Zend\Validator\ValidatorInterface
+     * @return \Laminas\Validator\ValidatorInterface
      */
     protected function getStepValidator()
     {

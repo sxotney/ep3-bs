@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Ddl;
+namespace Laminas\Db\Sql\Ddl;
 
-use Zend\Db\Sql\SqlInterface as BaseSqlInterface;
+use Laminas\Db\Sql\SqlInterface as BaseSqlInterface;
 
 interface SqlInterface extends BaseSqlInterface
 {

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller\Plugin;
+namespace Laminas\Mvc\Controller\Plugin;
 
-use Zend\Mvc\Exception\RuntimeException;
-use Zend\Mvc\InjectApplicationEventInterface;
+use Laminas\Mvc\Exception\RuntimeException;
+use Laminas\Mvc\InjectApplicationEventInterface;
 
 class Params extends AbstractPlugin
 {
@@ -50,7 +50,7 @@ class Params extends AbstractPlugin
      *
      * @param  string $header Header name to retrieve, or null to get all.
      * @param  mixed $default Default value to use when the requested header is missing.
-     * @return null|\Zend\Http\Header\HeaderInterface
+     * @return null|\Laminas\Http\Header\HeaderInterface
      */
     public function fromHeader($header = null, $default = null)
     {
@@ -107,7 +107,7 @@ class Params extends AbstractPlugin
 
         if (!$controller instanceof InjectApplicationEventInterface) {
             throw new RuntimeException(
-                'Controllers must implement Zend\Mvc\InjectApplicationEventInterface to use this plugin.'
+                'Controllers must implement Laminas\Mvc\InjectApplicationEventInterface to use this plugin.'
             );
         }
 

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use Traversable;
-use Zend\Math\Rand;
-use Zend\Session\Container as SessionContainer;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Math\Rand;
+use Laminas\Session\Container as SessionContainer;
+use Laminas\Stdlib\ArrayUtils;
 
 class Csrf extends AbstractValidator
 {

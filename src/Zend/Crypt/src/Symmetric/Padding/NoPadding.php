@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Symmetric\Padding;
+namespace Laminas\Crypt\Symmetric\Padding;
 
 /**
  * No Padding

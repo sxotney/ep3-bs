@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\Console\Console;
-use Zend\Console\Response as ConsoleResponse;
-use Zend\Http\PhpEnvironment\Response as HttpResponse;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\Stdlib\MessageInterface;
+use Laminas\Console\Console;
+use Laminas\Console\Response as ConsoleResponse;
+use Laminas\Http\PhpEnvironment\Response as HttpResponse;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\Stdlib\MessageInterface;
 
 class ResponseFactory implements FactoryInterface
 {

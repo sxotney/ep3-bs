@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\ResponseSender;
+namespace Laminas\Mvc\ResponseSender;
 
-use Zend\Http\Header\MultipleHeaderInterface;
+use Laminas\Http\Header\MultipleHeaderInterface;
 
 abstract class AbstractResponseSender implements ResponseSenderInterface
 {

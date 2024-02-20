@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator\Exception;
+namespace Laminas\Hydrator\Exception;
 
 /**
  * Domain exception

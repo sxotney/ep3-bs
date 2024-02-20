@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\TableGateway\Feature;
+namespace Laminas\Db\TableGateway\Feature;
 
-use Zend\Db\TableGateway\AbstractTableGateway;
-use Zend\Db\TableGateway\Exception;
+use Laminas\Db\TableGateway\AbstractTableGateway;
+use Laminas\Db\TableGateway\Exception;
 
 abstract class AbstractFeature extends AbstractTableGateway
 {

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form;
+namespace Laminas\Form;
 
 /**
  * Deprecated by https://github.com/zendframework/zf2/pull/5636

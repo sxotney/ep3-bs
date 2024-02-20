@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter\Compress;
+namespace Laminas\Filter\Compress;
 
-use Zend\Filter\Exception;
+use Laminas\Filter\Exception;
 
 /**
  * Compression adapter for Gzip (ZLib)

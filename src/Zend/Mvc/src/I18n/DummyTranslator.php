@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\I18n;
+namespace Laminas\Mvc\I18n;
 
-use Zend\I18n\Translator\TranslatorInterface as I18nTranslatorInterface;
+use Laminas\I18n\Translator\TranslatorInterface as I18nTranslatorInterface;
 
 class DummyTranslator implements I18nTranslatorInterface
 {

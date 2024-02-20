@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver;
+namespace Laminas\Db\Adapter\Driver;
 
-use Zend\Db\Adapter\ParameterContainer;
-use Zend\Db\Adapter\StatementContainerInterface;
+use Laminas\Db\Adapter\ParameterContainer;
+use Laminas\Db\Adapter\StatementContainerInterface;
 
 interface StatementInterface extends StatementContainerInterface
 {

@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Platform;
+namespace Laminas\Db\Sql\Platform;
 
-use Zend\Db\Adapter\AdapterInterface;
-use Zend\Db\Adapter\Platform\PlatformInterface;
-use Zend\Db\Adapter\StatementContainerInterface;
-use Zend\Db\Sql\Exception;
-use Zend\Db\Sql\PreparableSqlInterface;
-use Zend\Db\Sql\SqlInterface;
+use Laminas\Db\Adapter\AdapterInterface;
+use Laminas\Db\Adapter\Platform\PlatformInterface;
+use Laminas\Db\Adapter\StatementContainerInterface;
+use Laminas\Db\Sql\Exception;
+use Laminas\Db\Sql\PreparableSqlInterface;
+use Laminas\Db\Sql\SqlInterface;
 
 class AbstractPlatform implements PlatformDecoratorInterface, PreparableSqlInterface, SqlInterface
 {
@@ -83,7 +83,7 @@ class AbstractPlatform implements PlatformDecoratorInterface, PreparableSqlInter
     {
         if (! $this->subject instanceof PreparableSqlInterface) {
             throw new Exception\RuntimeException(
-                'The subject does not appear to implement Zend\Db\Sql\PreparableSqlInterface, thus calling '
+                'The subject does not appear to implement Laminas\Db\Sql\PreparableSqlInterface, thus calling '
                 . 'prepareStatement() has no effect'
             );
         }
@@ -102,7 +102,7 @@ class AbstractPlatform implements PlatformDecoratorInterface, PreparableSqlInter
     {
         if (! $this->subject instanceof SqlInterface) {
             throw new Exception\RuntimeException(
-                'The subject does not appear to implement Zend\Db\Sql\SqlInterface, thus calling '
+                'The subject does not appear to implement Laminas\Db\Sql\SqlInterface, thus calling '
                 . 'prepareStatement() has no effect'
             );
         }

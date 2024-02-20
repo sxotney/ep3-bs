@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt;
+namespace Laminas\Crypt;
 
-use Zend\Crypt\Key\Derivation\Pbkdf2;
-use Zend\Crypt\Symmetric\Mcrypt;
-use Zend\Crypt\Symmetric\SymmetricInterface;
-use Zend\Math\Rand;
+use Laminas\Crypt\Key\Derivation\Pbkdf2;
+use Laminas\Crypt\Symmetric\Mcrypt;
+use Laminas\Crypt\Symmetric\SymmetricInterface;
+use Laminas\Math\Rand;
 
 /**
  * Encrypt/decrypt a file using a symmetric cipher in CBC mode
@@ -171,7 +171,7 @@ class FileCipher
     {
         if (!Hash::isSupported($hash)) {
             throw new Exception\InvalidArgumentException(
-                "The specified hash algorithm '{$hash}' is not supported by Zend\Crypt\Hash"
+                "The specified hash algorithm '{$hash}' is not supported by Laminas\Crypt\Hash"
             );
         }
         $this->hash = (string) $hash;
@@ -197,7 +197,7 @@ class FileCipher
     {
         if (!Hash::isSupported($hash)) {
             throw new Exception\InvalidArgumentException(
-                "The specified hash algorithm '{$hash}' is not supported by Zend\Crypt\Hash"
+                "The specified hash algorithm '{$hash}' is not supported by Laminas\Crypt\Hash"
             );
         }
         $this->pbkdf2Hash = (string) $hash;

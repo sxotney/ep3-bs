@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\Mvc\Router\RouteStackInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Mvc\Router\RouteStackInterface;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class HttpRouterFactory implements FactoryInterface
 {
@@ -35,7 +35,7 @@ class HttpRouterFactory implements FactoryInterface
         $config       = $container->has('config') ? $container->get('config') : [];
 
         // Defaults
-        $class  = 'Zend\Mvc\Router\Http\TreeRouteStack';
+        $class  = 'Laminas\Mvc\Router\Http\TreeRouteStack';
         $config = isset($config['router']) ? $config['router'] : [];
 
         return $this->createRouter($class, $config, $container);

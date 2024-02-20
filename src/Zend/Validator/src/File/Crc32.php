@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\File;
+namespace Laminas\Validator\File;
 
-use Zend\Validator\Exception;
+use Laminas\Validator\Exception;
 
 /**
  * Validator for the crc32 hash of given files
@@ -80,7 +80,7 @@ class Crc32 extends Hash
      * Returns true if and only if the given file confirms the set hash
      *
      * @param  string|array $value Filename to check for hash
-     * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)
+     * @param  array        $file  File data from \Laminas\File\Transfer\Transfer (optional)
      * @return bool
      */
     public function isValid($value, $file = null)

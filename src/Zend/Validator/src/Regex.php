@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use Traversable;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\ErrorHandler;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\ErrorHandler;
 
 class Regex extends AbstractValidator
 {

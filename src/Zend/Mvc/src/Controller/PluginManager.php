@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-mvc for the canonical source repository
+ * @see       https://github.com/laminas/laminas-mvc for the canonical source repository
  * @copyright Copyright (c) 2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-mvc/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-mvc/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Mvc\Controller;
+namespace Laminas\Mvc\Controller;
 
 class PluginManager extends AbstractPluginManager
 {

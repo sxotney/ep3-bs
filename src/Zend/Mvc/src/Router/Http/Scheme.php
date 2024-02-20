@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router\Http;
+namespace Laminas\Mvc\Router\Http;
 
 use Traversable;
-use Zend\Mvc\Router\Exception;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\RequestInterface as Request;
+use Laminas\Mvc\Router\Exception;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\RequestInterface as Request;
 
 /**
  * Scheme route.
@@ -48,7 +48,7 @@ class Scheme implements RouteInterface
     /**
      * factory(): defined by RouteInterface interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::factory()
+     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
      * @param  array|Traversable $options
      * @return Scheme
      * @throws Exception\InvalidArgumentException
@@ -78,7 +78,7 @@ class Scheme implements RouteInterface
      * @param  Request $request
      *
      * @return void
-     *@see    \Zend\Mvc\Router\RouteInterface::match()
+     *@see    \Laminas\Mvc\Router\RouteInterface::match()
      */
     public function match(Request $request)
     {
@@ -99,7 +99,7 @@ class Scheme implements RouteInterface
     /**
      * assemble(): Defined by RouteInterface interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
+     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

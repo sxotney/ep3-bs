@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Serializer\Adapter;
+namespace Laminas\Serializer\Adapter;
 
-use Zend\Json\Json as ZendJson;
-use Zend\Serializer\Exception;
+use Laminas\Json\Json as ZendJson;
+use Laminas\Serializer\Exception;
 
 class JsonOptions extends AdapterOptions
 {

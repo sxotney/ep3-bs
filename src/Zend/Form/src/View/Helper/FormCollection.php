@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper;
+namespace Laminas\Form\View\Helper;
 
 use RuntimeException;
-use Zend\Form\Element;
-use Zend\Form\ElementInterface;
-use Zend\Form\Element\Collection as CollectionElement;
-use Zend\Form\FieldsetInterface;
-use Zend\Form\LabelAwareInterface;
-use Zend\View\Helper\HelperInterface;
+use Laminas\Form\Element;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\Element\Collection as CollectionElement;
+use Laminas\Form\FieldsetInterface;
+use Laminas\Form\LabelAwareInterface;
+use Laminas\View\Helper\HelperInterface;
 
 class FormCollection extends AbstractHelper
 {
@@ -267,7 +267,7 @@ class FormCollection extends AbstractHelper
 
         if (! $this->elementHelper instanceof HelperInterface) {
             throw new RuntimeException('Invalid element helper set in FormCollection. The helper must be an '
-                . 'instance of Zend\View\Helper\HelperInterface.');
+                . 'instance of Laminas\View\Helper\HelperInterface.');
         }
 
         return $this->elementHelper;

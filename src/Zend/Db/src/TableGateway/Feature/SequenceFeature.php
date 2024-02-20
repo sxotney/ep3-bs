@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\TableGateway\Feature;
+namespace Laminas\Db\TableGateway\Feature;
 
-use Zend\Db\Sql\Insert;
-use Zend\Db\Adapter\Driver\ResultInterface;
-use Zend\Db\Adapter\Driver\StatementInterface;
+use Laminas\Db\Sql\Insert;
+use Laminas\Db\Adapter\Driver\ResultInterface;
+use Laminas\Db\Adapter\Driver\StatementInterface;
 
 class SequenceFeature extends AbstractFeature
 {

@@ -4,7 +4,7 @@ namespace Backend\Controller;
 
 use Square\Entity\Square;
 use Square\Entity\SquareProduct;
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 
 class ConfigSquareController extends AbstractActionController
 {

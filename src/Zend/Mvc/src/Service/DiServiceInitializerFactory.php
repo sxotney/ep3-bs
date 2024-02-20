@@ -7,18 +7,18 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\Mvc\Exception;
-use Zend\ServiceManager\Di\DiServiceInitializer;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Mvc\Exception;
+use Laminas\ServiceManager\Di\DiServiceInitializer;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * @deprecated Since 2.7.9. The factory is now defined in zend-servicemanager-di,
- *     and removed in 3.0.0. Use Zend\ServiceManager\Di\DiServiceInitializerFactory
+ *     and removed in 3.0.0. Use Laminas\ServiceManager\Di\DiServiceInitializerFactory
  *     from zend-servicemanager-di if you are using zend-servicemanager v3, and/or when
  *     ready to migrate to zend-mvc 3.0.
  */
@@ -37,8 +37,8 @@ class DiServiceInitializerFactory implements FactoryInterface
         if (! class_exists(DiServiceInitializer::class)) {
             throw new Exception\RuntimeException(sprintf(
                 "%s is not compatible with zend-servicemanager v3, which you are currently using. \n"
-                . "Please run 'composer require zendframework/zend-servicemanager-di', and then update\n"
-                . "your configuration to use Zend\ServiceManager\Di\DiServiceInitializerFactory instead.",
+                . "Please run 'composer require laminas/laminas-servicemanager-di', and then update\n"
+                . "your configuration to use Laminas\ServiceManager\Di\DiServiceInitializerFactory instead.",
                 __CLASS__
             ));
         }

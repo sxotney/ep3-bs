@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator\NamingStrategy;
+namespace Laminas\Hydrator\NamingStrategy;
 
 class IdentityNamingStrategy implements NamingStrategyInterface
 {

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
-use Zend\Db\Adapter\Platform\PlatformInterface;
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\ParameterContainer;
+use Laminas\Db\Adapter\Platform\PlatformInterface;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\ParameterContainer;
 
 /**
  * Combine SQL statement - allows combining multiple select statements into one

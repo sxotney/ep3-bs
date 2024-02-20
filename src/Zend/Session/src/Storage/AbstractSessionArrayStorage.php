@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\Storage;
+namespace Laminas\Session\Storage;
 
 use ArrayIterator;
 use IteratorAggregate;
 use ReturnTypeWillChange;
-use Zend\Session\Exception;
+use Laminas\Session\Exception;
 
 /**
  * Session storage in $_SESSION

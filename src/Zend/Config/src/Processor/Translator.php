@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Processor;
+namespace Laminas\Config\Processor;
 
-use Zend\Config\Config;
-use Zend\Config\Exception;
-use Zend\I18n\Translator\Translator as ZendTranslator;
+use Laminas\Config\Config;
+use Laminas\Config\Exception;
+use Laminas\I18n\Translator\Translator as ZendTranslator;
 
 class Translator implements ProcessorInterface
 {
@@ -31,7 +31,7 @@ class Translator implements ProcessorInterface
     protected $textDomain = 'default';
 
     /**
-     * Translator uses the supplied Zend\I18n\Translator\Translator to find
+     * Translator uses the supplied Laminas\I18n\Translator\Translator to find
      * and translate language strings in config.
      *
      * @param  ZendTranslator $translator

@@ -1,14 +1,14 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-mail for the canonical source repository
+ * @see       https://github.com/laminas/laminas-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Mail\Protocol;
+namespace Laminas\Mail\Protocol;
 
 /**
- * SMTP implementation of Zend\Mail\Protocol\AbstractProtocol
+ * SMTP implementation of Laminas\Mail\Protocol\AbstractProtocol
  *
  * Minimum implementation according to RFC2821: EHLO, MAIL FROM, RCPT TO, DATA,
  * RSET, NOOP, QUIT
@@ -354,7 +354,7 @@ class Smtp extends AbstractProtocol
     /**
      * Issues the NOOP command end validates answer
      *
-     * Not used by Zend\Mail, could be used to keep a connection alive or check if it is still open.
+     * Not used by Laminas\Mail, could be used to keep a connection alive or check if it is still open.
      *
      */
     public function noop()
@@ -366,7 +366,7 @@ class Smtp extends AbstractProtocol
     /**
      * Issues the VRFY command end validates answer
      *
-     * Not used by Zend\Mail.
+     * Not used by Laminas\Mail.
      *
      * @param  string $user User Name or eMail to verify
      */

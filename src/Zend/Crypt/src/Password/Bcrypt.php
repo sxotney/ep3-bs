@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Password;
+namespace Laminas\Crypt\Password;
 
 use Traversable;
-use Zend\Crypt\Utils;
-use Zend\Math\Rand;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Crypt\Utils;
+use Laminas\Math\Rand;
+use Laminas\Stdlib\ArrayUtils;
 
 /**
  * Bcrypt algorithm using crypt() function of PHP

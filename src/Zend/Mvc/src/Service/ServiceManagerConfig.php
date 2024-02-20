@@ -7,22 +7,22 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\EventManager\EventManager;
-use Zend\EventManager\EventManagerAwareInterface;
-use Zend\EventManager\EventManagerInterface;
-use Zend\EventManager\SharedEventManager;
-use Zend\EventManager\SharedEventManagerInterface;
-use Zend\ModuleManager\Listener\ServiceListener;
-use Zend\ModuleManager\ModuleManager;
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Config;
-use Zend\ServiceManager\ServiceLocatorAwareInterface;
-use Zend\ServiceManager\ServiceManager;
-use Zend\ServiceManager\ServiceManagerAwareInterface;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\EventManager\EventManager;
+use Laminas\EventManager\EventManagerAwareInterface;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\EventManager\SharedEventManager;
+use Laminas\EventManager\SharedEventManagerInterface;
+use Laminas\ModuleManager\Listener\ServiceListener;
+use Laminas\ModuleManager\ModuleManager;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Config;
+use Laminas\ServiceManager\ServiceLocatorAwareInterface;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManagerAwareInterface;
+use Laminas\Stdlib\ArrayUtils;
 
 class ServiceManagerConfig extends Config
 {

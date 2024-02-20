@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\Db;
+namespace Laminas\Validator\Db;
 
-use Zend\Validator\Exception;
+use Laminas\Validator\Exception;
 
 /**
  * Confirms a record exists in a table.

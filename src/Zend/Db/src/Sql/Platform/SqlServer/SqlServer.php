@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Platform\SqlServer;
+namespace Laminas\Db\Sql\Platform\SqlServer;
 
-use Zend\Db\Sql\Platform\AbstractPlatform;
+use Laminas\Db\Sql\Platform\AbstractPlatform;
 
 class SqlServer extends AbstractPlatform
 {
     public function __construct(SelectDecorator $selectDecorator = null)
     {
-        $this->setTypeDecorator('Zend\Db\Sql\Select', ($selectDecorator) ?: new SelectDecorator());
-        $this->setTypeDecorator('Zend\Db\Sql\Ddl\CreateTable', new Ddl\CreateTableDecorator());
+        $this->setTypeDecorator('Laminas\Db\Sql\Select', ($selectDecorator) ?: new SelectDecorator());
+        $this->setTypeDecorator('Laminas\Db\Sql\Ddl\CreateTable', new Ddl\CreateTableDecorator());
     }
 }

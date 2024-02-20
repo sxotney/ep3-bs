@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Processor;
+namespace Laminas\Config\Processor;
 
-use Zend\Config\Config;
-use Zend\Config\Exception;
-use Zend\Stdlib\PriorityQueue;
+use Laminas\Config\Config;
+use Laminas\Config\Exception;
+use Laminas\Stdlib\PriorityQueue;
 
 class Queue extends PriorityQueue implements ProcessorInterface
 {

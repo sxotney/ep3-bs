@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form;
+namespace Laminas\Form;
 
 use Traversable;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Factory for instantiating form elements
@@ -58,7 +58,7 @@ final class ElementFactory implements FactoryInterface
         if (isset($options['name'])) {
             $name = $options['name'];
         } else {
-            // 'Zend\Form\Element' -> 'element'
+            // 'Laminas\Form\Element' -> 'element'
             $parts = explode('\\', $requestedName);
             $name = strtolower(array_pop($parts));
         }

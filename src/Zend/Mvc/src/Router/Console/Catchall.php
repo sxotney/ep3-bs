@@ -10,13 +10,13 @@
 /**
  * @namespace
  */
-namespace Zend\Mvc\Router\Console;
+namespace Laminas\Mvc\Router\Console;
 
 use Traversable;
-use Zend\Console\Request as ConsoleRequest;
-use Zend\Filter\FilterChain;
-use Zend\Stdlib\RequestInterface as Request;
-use Zend\Validator\ValidatorChain;
+use Laminas\Console\Request as ConsoleRequest;
+use Laminas\Filter\FilterChain;
+use Laminas\Stdlib\RequestInterface as Request;
+use Laminas\Validator\ValidatorChain;
 
 /**
  * Segment route.
@@ -82,7 +82,7 @@ class Catchall implements RouteInterface
      * @param  array|Traversable $options
      *
      * @return Catchall
-     *@see    \Zend\Mvc\Router\RouteInterface::factory()
+     *@see    \Laminas\Mvc\Router\RouteInterface::factory()
      */
     public static function factory($options = [])
     {
@@ -109,7 +109,7 @@ class Catchall implements RouteInterface
     /**
      * assemble(): Defined by Route interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
+     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

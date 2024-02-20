@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Math\BigInteger\Adapter;
+namespace Laminas\Math\BigInteger\Adapter;
 
 interface AdapterInterface
 {

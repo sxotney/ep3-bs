@@ -7,18 +7,18 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\Db;
+namespace Laminas\Validator\Db;
 
 use Traversable;
-use Zend\Db\Adapter\Adapter as DbAdapter;
-use Zend\Db\Adapter\AdapterAwareInterface;
-use Zend\Db\Adapter\AdapterAwareTrait;
-use Zend\Db\Sql\Select;
-use Zend\Db\Sql\Sql;
-use Zend\Db\Sql\TableIdentifier;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Validator\AbstractValidator;
-use Zend\Validator\Exception;
+use Laminas\Db\Adapter\Adapter as DbAdapter;
+use Laminas\Db\Adapter\AdapterAwareInterface;
+use Laminas\Db\Adapter\AdapterAwareTrait;
+use Laminas\Db\Sql\Select;
+use Laminas\Db\Sql\Sql;
+use Laminas\Db\Sql\TableIdentifier;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Validator\AbstractValidator;
+use Laminas\Validator\Exception;
 
 /**
  * Class for Database record validation
@@ -69,7 +69,7 @@ abstract class AbstractDb extends AbstractValidator implements AdapterAwareInter
     protected $exclude = null;
 
     /**
-     * Provides basic configuration for use with Zend\Validator\Db Validators
+     * Provides basic configuration for use with Laminas\Validator\Db Validators
      * Setting $exclude allows a single record to be excluded from matching.
      * Exclude can either be a String containing a where clause, or an array with `field` and `value` keys
      * to define the where clause added to the sql.
@@ -83,7 +83,7 @@ abstract class AbstractDb extends AbstractValidator implements AdapterAwareInter
      * 'adapter' => An optional database adapter to use
      *
      * @param array|Traversable|Select $options Options to use for this validator
-     * @throws \Zend\Validator\Exception\InvalidArgumentException
+     * @throws \Laminas\Validator\Exception\InvalidArgumentException
      */
     public function __construct($options = null)
     {
@@ -147,7 +147,7 @@ abstract class AbstractDb extends AbstractValidator implements AdapterAwareInter
     /**
      * Returns the set adapter
      *
-     * @throws \Zend\Validator\Exception\RuntimeException When no database adapter is defined
+     * @throws \Laminas\Validator\Exception\RuntimeException When no database adapter is defined
      * @return DbAdapter
      */
     public function getAdapter()

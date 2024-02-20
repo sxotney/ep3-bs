@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
-use Zend\Form\FormElementManager;
+use Laminas\Form\FormElementManager;
 
 class FormElementManagerFactory extends AbstractPluginManagerFactory
 {

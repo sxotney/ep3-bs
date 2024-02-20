@@ -7,21 +7,21 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Annotation;
+namespace Laminas\Form\Annotation;
 
 use ArrayObject;
-use Zend\Code\Annotation\AnnotationCollection;
-use Zend\Code\Annotation\AnnotationManager;
-use Zend\Code\Annotation\Parser;
-use Zend\Code\Reflection\ClassReflection;
-use Zend\EventManager\Event;
-use Zend\EventManager\EventManager;
-use Zend\EventManager\EventManagerAwareInterface;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Form\Exception;
-use Zend\Form\Factory;
-use Zend\Form\FormFactoryAwareInterface;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Code\Annotation\AnnotationCollection;
+use Laminas\Code\Annotation\AnnotationManager;
+use Laminas\Code\Annotation\Parser;
+use Laminas\Code\Reflection\ClassReflection;
+use Laminas\EventManager\Event;
+use Laminas\EventManager\EventManager;
+use Laminas\EventManager\EventManagerAwareInterface;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\Form\Exception;
+use Laminas\Form\Factory;
+use Laminas\Form\FormFactoryAwareInterface;
+use Laminas\Stdlib\ArrayUtils;
 
 /**
  * Parses the properties of a class for annotations in order to create a form
@@ -237,7 +237,7 @@ class AnnotationBuilder implements EventManagerAwareInterface, FormFactoryAwareI
      * Create a form from an object.
      *
      * @param  string|object $entity
-     * @return \Zend\Form\Form
+     * @return \Laminas\Form\Form
      */
     public function createForm($entity)
     {
@@ -290,7 +290,7 @@ class AnnotationBuilder implements EventManagerAwareInterface, FormFactoryAwareI
      * Configure an element from annotations
      *
      * @param  AnnotationCollection $annotations
-     * @param  \Zend\Code\Reflection\PropertyReflection $reflection
+     * @param  \Laminas\Code\Reflection\PropertyReflection $reflection
      * @param  ArrayObject $formSpec
      * @param  ArrayObject $filterSpec
      * @return void
@@ -344,11 +344,11 @@ class AnnotationBuilder implements EventManagerAwareInterface, FormFactoryAwareI
         $elementSpec = $params['elementSpec'];
         $type        = (isset($elementSpec['spec']['type']))
             ? $elementSpec['spec']['type']
-            : 'Zend\Form\Element';
+            : 'Laminas\Form\Element';
 
         // Compose as a fieldset or an element, based on specification type.
         // If preserve defined order is true, all elements are composed as elements to keep their ordering
-        if (! $this->preserveDefinedOrder() && is_subclass_of($type, 'Zend\Form\FieldsetInterface')) {
+        if (! $this->preserveDefinedOrder() && is_subclass_of($type, 'Laminas\Form\FieldsetInterface')) {
             if (! isset($formSpec['fieldsets'])) {
                 $formSpec['fieldsets'] = [];
             }
@@ -428,7 +428,7 @@ class AnnotationBuilder implements EventManagerAwareInterface, FormFactoryAwareI
     }
 
     /**
-     * @return \Zend\Code\Annotation\Parser\DoctrineAnnotationParser
+     * @return \Laminas\Code\Annotation\Parser\DoctrineAnnotationParser
      */
     public function getAnnotationParser()
     {

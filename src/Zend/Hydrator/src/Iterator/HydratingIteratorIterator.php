@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator\Iterator;
+namespace Laminas\Hydrator\Iterator;
 
 use Iterator;
 use IteratorIterator;
 use ReturnTypeWillChange;
-use Zend\Hydrator\Exception\InvalidArgumentException;
-use Zend\Hydrator\HydratorInterface;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Laminas\Hydrator\HydratorInterface;
 
 class HydratingIteratorIterator extends IteratorIterator implements HydratingIteratorInterface
 {

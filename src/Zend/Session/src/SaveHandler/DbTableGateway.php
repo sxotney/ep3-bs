@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\SaveHandler;
+namespace Laminas\Session\SaveHandler;
 
 use ReturnTypeWillChange;
-use Zend\Db\TableGateway\TableGateway;
+use Laminas\Db\TableGateway\TableGateway;
 
 /**
  * DB Table Gateway session save handler

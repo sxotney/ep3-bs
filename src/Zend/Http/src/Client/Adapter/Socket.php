@@ -1,22 +1,22 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-http for the canonical source repository
+ * @see       https://github.com/laminas/laminas-http for the canonical source repository
  * @copyright Copyright (c) 2005-2017 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   https://github.com/zendframework/zend-http/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-http/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Http\Client\Adapter;
+namespace Laminas\Http\Client\Adapter;
 
 use Traversable;
-use Zend\Http\Client\Adapter\AdapterInterface as HttpAdapter;
-use Zend\Http\Client\Adapter\Exception as AdapterException;
-use Zend\Http\Request;
-use Zend\Http\Response;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\ErrorHandler;
+use Laminas\Http\Client\Adapter\AdapterInterface as HttpAdapter;
+use Laminas\Http\Client\Adapter\Exception as AdapterException;
+use Laminas\Http\Request;
+use Laminas\Http\Response;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\ErrorHandler;
 
 /**
- * A sockets based (stream\socket\client) adapter class for Zend\Http\Client. Can be used
+ * A sockets based (stream\socket\client) adapter class for Laminas\Http\Client. Can be used
  * on almost every PHP environment, and does not require any special extensions.
  */
 class Socket implements HttpAdapter, StreamInterface
@@ -107,7 +107,7 @@ class Socket implements HttpAdapter, StreamInterface
         }
         if (! is_array($options)) {
             throw new AdapterException\InvalidArgumentException(
-                'Array or Zend\Config object expected, got ' . gettype($options)
+                'Array or Laminas\Config object expected, got ' . gettype($options)
             );
         }
 
@@ -359,7 +359,7 @@ class Socket implements HttpAdapter, StreamInterface
      * Send request to the remote server
      *
      * @param string        $method
-     * @param \Zend\Uri\Uri $uri
+     * @param \Laminas\Uri\Uri $uri
      * @param string        $httpVer
      * @param array         $headers
      * @param string        $body
@@ -536,7 +536,7 @@ class Socket implements HttpAdapter, StreamInterface
             }
 
             // We automatically decode chunked-messages when writing to a stream
-            // this means we have to disallow the Zend\Http\Response to do it again
+            // this means we have to disallow the Laminas\Http\Response to do it again
             if ($this->outStream) {
                 $response = str_ireplace("Transfer-Encoding: chunked\r\n", '', $response);
             }
@@ -648,7 +648,7 @@ class Socket implements HttpAdapter, StreamInterface
      * Set output stream for the response
      *
      * @param resource $stream
-     * @return \Zend\Http\Client\Adapter\Socket
+     * @return \Laminas\Http\Client\Adapter\Socket
      */
     public function setOutputStream($stream)
     {

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator\Strategy;
+namespace Laminas\Hydrator\Strategy;
 
 use DateTime;
 use DateTimeZone;

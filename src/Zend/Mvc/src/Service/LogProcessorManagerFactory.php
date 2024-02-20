@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
-use Zend\Log\ProcessorPluginManager as LogProcessorPluginManager;
+use Laminas\Log\ProcessorPluginManager as LogProcessorPluginManager;
 
 class LogProcessorManagerFactory extends AbstractPluginManagerFactory
 {

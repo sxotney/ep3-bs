@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Symmetric\Exception;
+namespace Laminas\Crypt\Symmetric\Exception;
 
-use Zend\Crypt\Exception\ExceptionInterface as Exception;
+use Laminas\Crypt\Exception\ExceptionInterface as Exception;
 
 interface ExceptionInterface extends Exception
 {

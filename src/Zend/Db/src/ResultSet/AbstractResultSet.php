@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\ResultSet;
+namespace Laminas\Db\ResultSet;
 
 use ArrayIterator;
 use Countable;
 use Iterator;
 use IteratorAggregate;
 use ReturnTypeWillChange;
-use Zend\Db\Adapter\Driver\ResultInterface;
+use Laminas\Db\Adapter\Driver\ResultInterface;
 
 abstract class AbstractResultSet implements Iterator, ResultSetInterface
 {

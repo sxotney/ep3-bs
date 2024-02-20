@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller;
+namespace Laminas\Mvc\Controller;
 
-use Zend\Console\Adapter\AdapterInterface as ConsoleAdapter;
-use Zend\Console\Request as ConsoleRequest;
-use Zend\Mvc\Exception\InvalidArgumentException;
-use Zend\Stdlib\RequestInterface;
-use Zend\Stdlib\ResponseInterface;
+use Laminas\Console\Adapter\AdapterInterface as ConsoleAdapter;
+use Laminas\Console\Request as ConsoleRequest;
+use Laminas\Mvc\Exception\InvalidArgumentException;
+use Laminas\Stdlib\RequestInterface;
+use Laminas\Stdlib\ResponseInterface;
 
 class AbstractConsoleController extends AbstractActionController
 {

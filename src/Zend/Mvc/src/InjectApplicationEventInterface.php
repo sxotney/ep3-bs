@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc;
+namespace Laminas\Mvc;
 
-use Zend\EventManager\EventInterface as Event;
+use Laminas\EventManager\EventInterface as Event;
 
 interface InjectApplicationEventInterface
 {

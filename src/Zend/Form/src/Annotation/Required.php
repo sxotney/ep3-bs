@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Annotation;
+namespace Laminas\Form\Annotation;
 
-use Zend\Filter\Boolean as BooleanFilter;
+use Laminas\Filter\Boolean as BooleanFilter;
 
 /**
  * Required annotation
@@ -17,7 +17,7 @@ use Zend\Filter\Boolean as BooleanFilter;
  * Use this annotation to specify the value of the "required" flag for a given
  * input. Since the flag defaults to "true", this will typically be used to
  * "unset" the flag (e.g., "@Annotation\Required(false)"). Any boolean value
- * understood by \Zend\Filter\Boolean is allowed as the content.
+ * understood by \Laminas\Filter\Boolean is allowed as the content.
  *
  * @Annotation
  */

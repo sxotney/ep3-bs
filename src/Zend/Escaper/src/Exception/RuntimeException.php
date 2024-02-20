@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Escaper\Exception;
+namespace Laminas\Escaper\Exception;
 
 /**
  * Invalid argument exception

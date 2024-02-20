@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\TableGateway\Feature;
+namespace Laminas\Db\TableGateway\Feature;
 
 /**
  * EventFeature event constants.

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\EventManager;
+namespace Laminas\EventManager;
 
 use Traversable;
 
@@ -19,7 +19,7 @@ use Traversable;
  * a ZF2 MVC application will automatically inject an instance of the
  * EventManager into your object when it is pulled from the ServiceManager.
  *
- * @see Zend\Mvc\Service\ServiceManagerConfig
+ * @see Laminas\Mvc\Service\ServiceManagerConfig
  */
 trait EventManagerAwareTrait
 {

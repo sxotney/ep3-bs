@@ -7,17 +7,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\ServiceManager\Proxy;
+namespace Laminas\ServiceManager\Proxy;
 
 use ProxyManager\Configuration;
 use ProxyManager\Factory\LazyLoadingValueHolderFactory;
 use ProxyManager\GeneratorStrategy\EvaluatingGeneratorStrategy;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\ServiceManager\Exception;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Exception;
 
 /**
- * Service factory responsible of instantiating {@see \Zend\ServiceManager\Proxy\LazyServiceFactory}
+ * Service factory responsible of instantiating {@see \Laminas\ServiceManager\Proxy\LazyServiceFactory}
  * and configuring it starting from application configuration
  */
 class LazyServiceFactoryFactory implements FactoryInterface
@@ -25,7 +25,7 @@ class LazyServiceFactoryFactory implements FactoryInterface
     /**
      * {@inheritDoc}
      *
-     * @return \Zend\ServiceManager\Proxy\LazyServiceFactory
+     * @return \Laminas\ServiceManager\Proxy\LazyServiceFactory
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {

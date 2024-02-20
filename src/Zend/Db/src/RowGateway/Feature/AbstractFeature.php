@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\RowGateway\Feature;
+namespace Laminas\Db\RowGateway\Feature;
 
-use Zend\Db\RowGateway\AbstractRowGateway;
-use Zend\Db\RowGateway\Exception;
+use Laminas\Db\RowGateway\AbstractRowGateway;
+use Laminas\Db\RowGateway\Exception;
 
 abstract class AbstractFeature extends AbstractRowGateway
 {
@@ -41,7 +41,7 @@ abstract class AbstractFeature extends AbstractRowGateway
     }
 
     /**
-     * @throws \Zend\Db\RowGateway\Exception\RuntimeException
+     * @throws \Laminas\Db\RowGateway\Exception\RuntimeException
      */
     public function initialize()
     {

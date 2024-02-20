@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Metadata;
+namespace Laminas\Db\Metadata;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 /**
- * @deprecated Use Zend\Db\Metadata\Source\Factory::createSourceFromAdapter($adapter)
+ * @deprecated Use Laminas\Db\Metadata\Source\Factory::createSourceFromAdapter($adapter)
  */
 class Metadata implements MetadataInterface
 {

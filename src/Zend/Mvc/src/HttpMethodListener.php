@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc;
+namespace Laminas\Mvc;
 
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Http\Request as HttpRequest;
-use Zend\Http\Response as HttpResponse;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\Http\Request as HttpRequest;
+use Laminas\Http\Response as HttpResponse;
 
 class HttpMethodListener extends AbstractListenerAggregate
 {

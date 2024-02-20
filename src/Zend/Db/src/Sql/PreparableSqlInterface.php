@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql;
+namespace Laminas\Db\Sql;
 
-use Zend\Db\Adapter\AdapterInterface;
-use Zend\Db\Adapter\StatementContainerInterface;
+use Laminas\Db\Adapter\AdapterInterface;
+use Laminas\Db\Adapter\StatementContainerInterface;
 
 interface PreparableSqlInterface
 {

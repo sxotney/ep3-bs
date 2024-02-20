@@ -7,17 +7,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller;
+namespace Laminas\Mvc\Controller;
 
 use Interop\Container\ContainerInterface;
-use Zend\EventManager\EventManagerAwareInterface;
-use Zend\EventManager\SharedEventManagerInterface;
-use Zend\Mvc\Exception;
-use Zend\ServiceManager\AbstractPluginManager as BasePluginManager;
-use Zend\ServiceManager\ConfigInterface;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\ServiceLocatorAwareInterface;
-use Zend\Stdlib\DispatchableInterface;
+use Laminas\EventManager\EventManagerAwareInterface;
+use Laminas\EventManager\SharedEventManagerInterface;
+use Laminas\Mvc\Exception;
+use Laminas\ServiceManager\AbstractPluginManager as BasePluginManager;
+use Laminas\ServiceManager\ConfigInterface;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\ServiceLocatorAwareInterface;
+use Laminas\Stdlib\DispatchableInterface;
 
 /**
  * Manager for loading controllers

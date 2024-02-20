@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\TableGateway\Feature;
+namespace Laminas\Db\TableGateway\Feature;
 
-use Zend\Db\Adapter\Adapter;
-use Zend\Db\TableGateway\Exception;
+use Laminas\Db\Adapter\Adapter;
+use Laminas\Db\TableGateway\Exception;
 
 class GlobalAdapterFeature extends AbstractFeature
 {

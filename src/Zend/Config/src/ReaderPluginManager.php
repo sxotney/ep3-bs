@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config;
+namespace Laminas\Config;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 class ReaderPluginManager extends AbstractPluginManager
 {
@@ -41,11 +41,11 @@ class ReaderPluginManager extends AbstractPluginManager
         // Legacy (v2) due to alias resolution; canonical form of resolved
         // alias is used to look up the factory, while the non-normalized
         // resolved alias is used as the requested name passed to the factory.
-        'zendconfigreaderini'            => InvokableFactory::class,
-        'zendconfigreaderjson'           => InvokableFactory::class,
-        'zendconfigreaderxml'            => InvokableFactory::class,
-        'zendconfigreaderyaml'           => InvokableFactory::class,
-        'zendconfigreaderjavaproperties' => InvokableFactory::class,
+        'laminasconfigreaderini'            => InvokableFactory::class,
+        'laminasconfigreaderjson'           => InvokableFactory::class,
+        'laminasconfigreaderxml'            => InvokableFactory::class,
+        'laminasconfigreaderyaml'           => InvokableFactory::class,
+        'laminasconfigreaderjavaproperties' => InvokableFactory::class,
     ];
 
     /**

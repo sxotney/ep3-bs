@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Metadata\Source;
+namespace Laminas\Db\Metadata\Source;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 class SqlServerMetadata extends AbstractSource
 {

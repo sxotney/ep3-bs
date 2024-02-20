@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router;
+namespace Laminas\Mvc\Router;
 
-use Zend\Stdlib\RequestInterface as Request;
+use Laminas\Stdlib\RequestInterface as Request;
 
 /**
  * RouteInterface interface.

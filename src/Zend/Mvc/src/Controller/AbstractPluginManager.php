@@ -1,24 +1,24 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-mvc for the canonical source repository
+ * @see       https://github.com/laminas/laminas-mvc for the canonical source repository
  * @copyright Copyright (c) 2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-mvc/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-mvc/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Mvc\Controller;
+namespace Laminas\Mvc\Controller;
 
-use Zend\Mvc\Exception;
-use Zend\ServiceManager\AbstractPluginManager as BasePluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
-use Zend\Stdlib\DispatchableInterface;
+use Laminas\Mvc\Exception;
+use Laminas\ServiceManager\AbstractPluginManager as BasePluginManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\Stdlib\DispatchableInterface;
 
 /**
  * Base functionality for the controller plugins plugin manager.
  *
  * Functionality is split between two concrete implementations as the signatures
  * for `get()` vary between zend-servicemanager v2 and v3. The autoloader aliases
- * `Zend\Mvc\Controller\PluginManager` to the version-appropriate class, which
+ * `Laminas\Mvc\Controller\PluginManager` to the version-appropriate class, which
  * in turn composses this trait.
  */
 abstract class AbstractPluginManager extends BasePluginManager
@@ -87,18 +87,18 @@ abstract class AbstractPluginManager extends BasePluginManager
 
         // v2 normalized names
 
-        'zendmvccontrollerpluginforward'                     => Plugin\Service\ForwardFactory::class,
-        'zendmvccontrollerpluginidentity'                    => Plugin\Service\IdentityFactory::class,
-        'zendmvccontrollerpluginacceptableviewmodelselector' => InvokableFactory::class,
-        'zendmvccontrollerpluginfilepostredirectget'         => InvokableFactory::class,
-        'zendmvccontrollerpluginflashmessenger'              => InvokableFactory::class,
-        'zendmvccontrollerpluginlayout'                      => InvokableFactory::class,
-        'zendmvccontrollerpluginparams'                      => InvokableFactory::class,
-        'zendmvccontrollerpluginpostredirectget'             => InvokableFactory::class,
-        'zendmvccontrollerpluginredirect'                    => InvokableFactory::class,
-        'zendmvccontrollerpluginurl'                         => InvokableFactory::class,
-        'zendmvccontrollerplugincreatehttpnotfoundmodel'     => InvokableFactory::class,
-        'zendmvccontrollerplugincreateconsolenotfoundmodel'  => InvokableFactory::class,
+        'laminasmvccontrollerpluginforward'                     => Plugin\Service\ForwardFactory::class,
+        'laminasmvccontrollerpluginidentity'                    => Plugin\Service\IdentityFactory::class,
+        'laminasmvccontrollerpluginacceptableviewmodelselector' => InvokableFactory::class,
+        'laminasmvccontrollerpluginfilepostredirectget'         => InvokableFactory::class,
+        'laminasmvccontrollerpluginflashmessenger'              => InvokableFactory::class,
+        'laminasmvccontrollerpluginlayout'                      => InvokableFactory::class,
+        'laminasmvccontrollerpluginparams'                      => InvokableFactory::class,
+        'laminasmvccontrollerpluginpostredirectget'             => InvokableFactory::class,
+        'laminasmvccontrollerpluginredirect'                    => InvokableFactory::class,
+        'laminasmvccontrollerpluginurl'                         => InvokableFactory::class,
+        'laminasmvccontrollerplugincreatehttpnotfoundmodel'     => InvokableFactory::class,
+        'laminasmvccontrollerplugincreateconsolenotfoundmodel'  => InvokableFactory::class,
     ];
 
     /**

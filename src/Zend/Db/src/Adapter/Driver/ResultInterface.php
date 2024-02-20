@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver;
+namespace Laminas\Db\Adapter\Driver;
 
 use Countable;
 use Iterator;

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Exception;
+namespace Laminas\Crypt\Exception;
 
 /**
  * Invalid argument exception

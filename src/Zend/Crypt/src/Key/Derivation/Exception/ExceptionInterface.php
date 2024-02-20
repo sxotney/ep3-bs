@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Key\Derivation\Exception;
+namespace Laminas\Crypt\Key\Derivation\Exception;
 
-use Zend\Crypt\Exception\ExceptionInterface as Exception;
+use Laminas\Crypt\Exception\ExceptionInterface as Exception;
 
 interface ExceptionInterface extends Exception
 {

@@ -1,7 +1,7 @@
 # zend-inputfilter
 
-[![Build Status](https://secure.travis-ci.org/zendframework/zend-inputfilter.svg?branch=master)](https://secure.travis-ci.org/zendframework/zend-inputfilter)
-[![Coverage Status](https://coveralls.io/repos/github/zendframework/zend-inputfilter/badge.svg?branch=master)](https://coveralls.io/github/zendframework/zend-inputfilter?branch=master)
+[![Build Status](https://secure.travis-ci.org/laminas/laminas-inputfilter.svg?branch=master)](https://secure.travis-ci.org/laminas/laminas-inputfilter)
+[![Coverage Status](https://coveralls.io/repos/github/laminas/laminas-inputfilter/badge.svg?branch=master)](https://coveralls.io/github/laminas/laminas-inputfilter?branch=master)
 
 The zend-inputfilter component can be used to filter and validate generic sets
 of input data. For instance, you could use it to filter `$_GET` or `$_POST`
@@ -12,7 +12,7 @@ values, CLI arguments, etc.
 Run the following to install this library:
 
 ```bash
-$ composer require zendframework/zend-inputfilter
+$ composer require laminas/laminas-inputfilter
 ```
 
 ## Documentation
@@ -21,6 +21,6 @@ Browse the documentation online at https://docs.zendframework.com/zend-inputfilt
 
 ## Support
 
-* [Issues](https://github.com/zendframework/zend-inputfilter/issues/)
+* [Issues](https://github.com/laminas/laminas-inputfilter/issues/)
 * [Chat](https://zendframework-slack.herokuapp.com/)
 * [Forum](https://discourse.zendframework.com/)

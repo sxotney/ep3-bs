@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use Countable;
 use ReturnTypeWillChange;
-use Zend\Stdlib\PriorityQueue;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Stdlib\PriorityQueue;
+use Laminas\ServiceManager\ServiceManager;
 
 class ValidatorChain implements
     Countable,

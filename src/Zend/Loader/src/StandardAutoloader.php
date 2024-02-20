@@ -1,11 +1,11 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-loader for the canonical source repository
+ * @see       https://github.com/laminas/laminas-loader for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-loader/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-loader/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Loader;
+namespace Laminas\Loader;
 
 // Grab SplAutoloader interface
 require_once __DIR__ . '/SplAutoloader.php';
@@ -88,8 +88,8 @@ class StandardAutoloader implements SplAutoloader
                     if ($pairs) {
                         $this->registerNamespace('Zend', dirname(__DIR__));
                         $this->registerNamespace(
-                            'ZendXml',
-                            dirname(dirname((__DIR__))) . DIRECTORY_SEPARATOR .  'ZendXml'
+                            'Laminas\Xml',
+                            dirname(dirname((__DIR__))) . DIRECTORY_SEPARATOR .  'Laminas\Xml'
                         );
                     }
                     break;

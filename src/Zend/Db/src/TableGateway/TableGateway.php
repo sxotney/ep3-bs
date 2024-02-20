@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\TableGateway;
+namespace Laminas\Db\TableGateway;
 
-use Zend\Db\Adapter\AdapterInterface;
-use Zend\Db\ResultSet\ResultSet;
-use Zend\Db\ResultSet\ResultSetInterface;
-use Zend\Db\Sql\Sql;
-use Zend\Db\Sql\TableIdentifier;
+use Laminas\Db\Adapter\AdapterInterface;
+use Laminas\Db\ResultSet\ResultSet;
+use Laminas\Db\ResultSet\ResultSetInterface;
+use Laminas\Db\Sql\Sql;
+use Laminas\Db\Sql\TableIdentifier;
 
 class TableGateway extends AbstractTableGateway
 {
@@ -38,7 +38,7 @@ class TableGateway extends AbstractTableGateway
         // table
         if (! (is_string($table) || $table instanceof TableIdentifier || is_array($table))) {
             throw new Exception\InvalidArgumentException(
-                'Table name must be a string or an instance of Zend\Db\Sql\TableIdentifier'
+                'Table name must be a string or an instance of Laminas\Db\Sql\TableIdentifier'
             );
         }
         $this->table = $table;

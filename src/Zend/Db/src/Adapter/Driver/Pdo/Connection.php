@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Pdo;
+namespace Laminas\Db\Adapter\Driver\Pdo;
 
-use Zend\Db\Adapter\Driver\AbstractConnection;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\AbstractConnection;
+use Laminas\Db\Adapter\Exception;
 
 class Connection extends AbstractConnection
 {
@@ -85,7 +85,7 @@ class Connection extends AbstractConnection
 
     /**
      * Get the dsn string for this connection
-     * @throws \Zend\Db\Adapter\Exception\RunTimeException
+     * @throws \Laminas\Db\Adapter\Exception\RunTimeException
      * @return string
      */
     public function getDsn()

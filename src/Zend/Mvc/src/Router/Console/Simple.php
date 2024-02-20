@@ -10,17 +10,17 @@
 /**
  * @namespace
  */
-namespace Zend\Mvc\Router\Console;
+namespace Laminas\Mvc\Router\Console;
 
 use Traversable;
-use Zend\Console\RouteMatcher\DefaultRouteMatcher;
-use Zend\Console\Request as ConsoleRequest;
-use Zend\Console\RouteMatcher\RouteMatcherInterface;
-use Zend\Filter\FilterChain;
-use Zend\Mvc\Router\Exception;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Stdlib\RequestInterface as Request;
-use Zend\Validator\ValidatorChain;
+use Laminas\Console\RouteMatcher\DefaultRouteMatcher;
+use Laminas\Console\Request as ConsoleRequest;
+use Laminas\Console\RouteMatcher\RouteMatcherInterface;
+use Laminas\Filter\FilterChain;
+use Laminas\Mvc\Router\Exception;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Stdlib\RequestInterface as Request;
+use Laminas\Validator\ValidatorChain;
 
 /**
  * Segment route.
@@ -77,7 +77,7 @@ class Simple implements RouteInterface
     /**
      * factory(): defined by Route interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::factory()
+     * @see    \Laminas\Mvc\Router\RouteInterface::factory()
      * @param  array|Traversable $options
      * @throws Exception\InvalidArgumentException
      * @return self
@@ -149,7 +149,7 @@ class Simple implements RouteInterface
     /**
      * assemble(): Defined by Route interface.
      *
-     * @see    \Zend\Mvc\Router\RouteInterface::assemble()
+     * @see    \Laminas\Mvc\Router\RouteInterface::assemble()
      * @param  array $params
      * @param  array $options
      * @return mixed

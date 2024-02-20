@@ -7,30 +7,30 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc;
+namespace Laminas\Mvc;
 
-use Zend\EventManager\EventsCapableInterface;
+use Laminas\EventManager\EventsCapableInterface;
 
 interface ApplicationInterface extends EventsCapableInterface
 {
     /**
      * Get the locator object
      *
-     * @return \Zend\ServiceManager\ServiceLocatorInterface
+     * @return \Laminas\ServiceManager\ServiceLocatorInterface
      */
     public function getServiceManager();
 
     /**
      * Get the request object
      *
-     * @return \Zend\Stdlib\RequestInterface
+     * @return \Laminas\Stdlib\RequestInterface
      */
     public function getRequest();
 
     /**
      * Get the response object
      *
-     * @return \Zend\Stdlib\ResponseInterface
+     * @return \Laminas\Stdlib\ResponseInterface
      */
     public function getResponse();
 

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Profiler;
+namespace Laminas\Db\Adapter\Profiler;
 
-use Zend\Db\Adapter\StatementContainerInterface;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\StatementContainerInterface;
+use Laminas\Db\Adapter\Exception;
 
 class Profiler implements ProfilerInterface
 {
@@ -27,7 +27,7 @@ class Profiler implements ProfilerInterface
     /**
      * @param string|StatementContainerInterface $target
      * @return self Provides a fluent interface
-     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
      */
     public function profilerStart($target)
     {

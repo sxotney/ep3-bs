@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Reader;
+namespace Laminas\Config\Reader;
 
 interface ReaderInterface
 {

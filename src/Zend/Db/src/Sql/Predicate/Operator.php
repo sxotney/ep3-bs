@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Predicate;
+namespace Laminas\Db\Sql\Predicate;
 
-use Zend\Db\Sql\Exception;
-use Zend\Db\Sql\AbstractExpression;
+use Laminas\Db\Sql\Exception;
+use Laminas\Db\Sql\AbstractExpression;
 
 class Operator extends AbstractExpression implements PredicateInterface
 {

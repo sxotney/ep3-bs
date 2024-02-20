@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Serializer;
+namespace Laminas\Serializer;
 
-use Zend\Serializer\Adapter\AdapterInterface as Adapter;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Serializer\Adapter\AdapterInterface as Adapter;
+use Laminas\ServiceManager\ServiceManager;
 
 abstract class Serializer
 {

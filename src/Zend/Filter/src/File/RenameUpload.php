@@ -1,18 +1,18 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-filter for the canonical source repository
+ * @see       https://github.com/laminas/laminas-filter for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-filter/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-filter/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Filter\File;
+namespace Laminas\Filter\File;
 
 use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UploadedFileInterface;
-use Zend\Filter\AbstractFilter;
-use Zend\Filter\Exception;
-use Zend\Stdlib\ErrorHandler;
+use Laminas\Filter\AbstractFilter;
+use Laminas\Filter\Exception;
+use Laminas\Stdlib\ErrorHandler;
 
 class RenameUpload extends AbstractFilter
 {
@@ -189,7 +189,7 @@ class RenameUpload extends AbstractFilter
     }
 
     /**
-     * Defined by Zend\Filter\Filter
+     * Defined by Laminas\Filter\Filter
      *
      * Renames the file $value to the new name set before
      * Returns the file $value, removing all but digit characters

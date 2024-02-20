@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\InputFilter;
+namespace Laminas\InputFilter;
 
 /**
- * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.
+ * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain.
  */
 interface EmptyContextInterface
 {
     /**
-     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
+     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain and set this to `true`.
      *
      * @param bool $continueIfEmpty
      * @return self
@@ -23,7 +23,7 @@ interface EmptyContextInterface
     public function setContinueIfEmpty($continueIfEmpty);
 
     /**
-     * @deprecated 2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain. Should always return `true`.
+     * @deprecated 2.4.8 Add Laminas\Validator\NotEmpty validator to the ValidatorChain. Should always return `true`.
      *
      * @return bool
      */

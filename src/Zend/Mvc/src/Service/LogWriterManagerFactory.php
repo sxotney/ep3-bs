@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
-use Zend\Log\WriterPluginManager as LogWriterPluginManager;
+use Laminas\Log\WriterPluginManager as LogWriterPluginManager;
 
 class LogWriterManagerFactory extends AbstractPluginManagerFactory
 {

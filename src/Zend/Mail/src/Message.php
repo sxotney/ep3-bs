@@ -1,16 +1,16 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-mail for the canonical source repository
+ * @see       https://github.com/laminas/laminas-mail for the canonical source repository
  * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-mail/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\Mail;
+namespace Laminas\Mail;
 
 use Traversable;
-use Zend\Mail\Header\ContentType;
-use Zend\Mail\Header\Sender;
-use Zend\Mime;
+use Laminas\Mail\Header\ContentType;
+use Laminas\Mail\Header\Sender;
+use Laminas\Mime;
 
 class Message
 {
@@ -362,7 +362,7 @@ class Message
     /**
      * Set the message body
      *
-     * @param  null|string|\Zend\Mime\Message|object $body
+     * @param  null|string|\Laminas\Mime\Message|object $body
      * @throws Exception\InvalidArgumentException
      * @return Message
      */
@@ -379,7 +379,7 @@ class Message
             if (! $body instanceof Mime\Message) {
                 if (! method_exists($body, '__toString')) {
                     throw new Exception\InvalidArgumentException(sprintf(
-                        '%s expects object arguments of type Zend\Mime\Message or implementing __toString();'
+                        '%s expects object arguments of type Laminas\Mime\Message or implementing __toString();'
                         . ' object of type "%s" received',
                         __METHOD__,
                         get_class($body)

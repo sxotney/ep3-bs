@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Serializer\Adapter;
+namespace Laminas\Serializer\Adapter;
 
-use Zend\Serializer\Exception;
+use Laminas\Serializer\Exception;
 
 class PythonPickleOptions extends AdapterOptions
 {

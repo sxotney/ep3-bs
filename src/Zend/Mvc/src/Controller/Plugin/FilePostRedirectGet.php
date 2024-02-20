@@ -8,17 +8,17 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller\Plugin;
+namespace Laminas\Mvc\Controller\Plugin;
 
-use Zend\Filter\FilterChain;
-use Zend\Form\FormInterface;
-use Zend\Http\Response;
-use Zend\InputFilter\FileInput;
-use Zend\InputFilter\InputFilterInterface;
-use Zend\Mvc\Exception\RuntimeException;
-use Zend\Session\Container;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Validator\ValidatorChain;
+use Laminas\Filter\FilterChain;
+use Laminas\Form\FormInterface;
+use Laminas\Http\Response;
+use Laminas\InputFilter\FileInput;
+use Laminas\InputFilter\InputFilterInterface;
+use Laminas\Mvc\Exception\RuntimeException;
+use Laminas\Session\Container;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Validator\ValidatorChain;
 
 /**
  * Plugin to help facilitate Post/Redirect/Get for file upload forms
@@ -294,7 +294,7 @@ class FilePostRedirectGet extends AbstractPlugin
      * @param  string  $redirect
      * @param  bool    $redirectToUrl
      * @return Response
-     * @throws \Zend\Mvc\Exception\RuntimeException
+     * @throws \Laminas\Mvc\Exception\RuntimeException
      */
     protected function redirect($redirect, $redirectToUrl)
     {

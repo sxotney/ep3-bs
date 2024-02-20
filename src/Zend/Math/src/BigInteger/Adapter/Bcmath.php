@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Math\BigInteger\Adapter;
+namespace Laminas\Math\BigInteger\Adapter;
 
-use Zend\Math\BigInteger\Exception;
+use Laminas\Math\BigInteger\Exception;
 
 /**
  * Bcmath extension adapter

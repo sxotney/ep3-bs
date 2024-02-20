@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Ddl\Index;
+namespace Laminas\Db\Sql\Ddl\Index;
 
 class Index extends AbstractIndex
 {

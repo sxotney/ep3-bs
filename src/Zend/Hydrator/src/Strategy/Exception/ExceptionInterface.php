@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator\Strategy\Exception;
+namespace Laminas\Hydrator\Strategy\Exception;
 
 interface ExceptionInterface
 {

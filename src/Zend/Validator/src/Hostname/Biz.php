@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\Hostname;
+namespace Laminas\Validator\Hostname;
 
 /**
  * Resource file for biz idn validation

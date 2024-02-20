@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Pgsql;
+namespace Laminas\Db\Adapter\Driver\Pgsql;
 
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\Exception;
-use Zend\Db\Adapter\Profiler;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Profiler;
 
 class Pgsql implements DriverInterface, Profiler\ProfilerAwareInterface
 {

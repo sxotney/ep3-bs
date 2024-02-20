@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Ddl\Column;
+namespace Laminas\Db\Sql\Ddl\Column;
 
-use Zend\Db\Sql\Ddl\Constraint\ConstraintInterface;
+use Laminas\Db\Sql\Ddl\Constraint\ConstraintInterface;
 
 class Column implements ColumnInterface
 {

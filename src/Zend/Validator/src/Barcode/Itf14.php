@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator\Barcode;
+namespace Laminas\Validator\Barcode;
 
 class Itf14 extends AbstractAdapter
 {

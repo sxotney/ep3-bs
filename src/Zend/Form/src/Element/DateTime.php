@@ -7,18 +7,18 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
 use DateInterval;
 use DateTime as PhpDateTime;
 use DateTimeInterface;
-use Zend\Form\Element;
-use Zend\Form\Exception\InvalidArgumentException;
-use Zend\InputFilter\InputProviderInterface;
-use Zend\Validator\Date as DateValidator;
-use Zend\Validator\DateStep as DateStepValidator;
-use Zend\Validator\GreaterThan as GreaterThanValidator;
-use Zend\Validator\LessThan as LessThanValidator;
+use Laminas\Form\Element;
+use Laminas\Form\Exception\InvalidArgumentException;
+use Laminas\InputFilter\InputProviderInterface;
+use Laminas\Validator\Date as DateValidator;
+use Laminas\Validator\DateStep as DateStepValidator;
+use Laminas\Validator\GreaterThan as GreaterThanValidator;
+use Laminas\Validator\LessThan as LessThanValidator;
 
 class DateTime extends Element implements InputProviderInterface
 {
@@ -211,7 +211,7 @@ class DateTime extends Element implements InputProviderInterface
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Zend\Filter\StringTrim'],
+                ['name' => 'Laminas\Filter\StringTrim'],
             ],
             'validators' => $this->getValidators(),
         ];

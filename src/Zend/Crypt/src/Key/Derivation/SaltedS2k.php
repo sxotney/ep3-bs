@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Key\Derivation;
+namespace Laminas\Crypt\Key\Derivation;
 
 /**
  * Salted S2K key generation (OpenPGP document, RFC 2440)

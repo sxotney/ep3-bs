@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router;
+namespace Laminas\Mvc\Router;
 
-use Zend\Stdlib\PriorityList as StdlibPriorityList;
+use Laminas\Stdlib\PriorityList as StdlibPriorityList;
 
 /**
  * Priority list

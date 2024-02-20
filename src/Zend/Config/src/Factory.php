@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config;
+namespace Laminas\Config;
 
-use Zend\ServiceManager\ServiceManager;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\Stdlib\ArrayUtils;
 
 class Factory
 {
@@ -161,7 +161,7 @@ class Factory
             || (!is_object($config) && !is_array($config))
         ) {
             throw new Exception\InvalidArgumentException(
-                __METHOD__." \$config should be an array or instance of Zend\\Config\\Config"
+                __METHOD__." \$config should be an array or instance of Laminas\\Config\\Config"
             );
         }
 

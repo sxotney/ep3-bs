@@ -1,16 +1,16 @@
 <?php
 /**
- * @see       https://github.com/zendframework/zend-inputfilter for the canonical source repository
+ * @see       https://github.com/laminas/laminas-inputfilter for the canonical source repository
  * @copyright Copyright (c) 2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-inputfilter/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/laminas/laminas-inputfilter/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\InputFilter\FileInput;
+namespace Laminas\InputFilter\FileInput;
 
 use Psr\Http\Message\UploadedFileInterface;
-use Zend\InputFilter\FileInput;
-use Zend\Validator\File\UploadFile as UploadValidator;
-use Zend\Validator\ValidatorChain;
+use Laminas\InputFilter\FileInput;
+use Laminas\Validator\File\UploadFile as UploadValidator;
+use Laminas\Validator\ValidatorChain;
 
 use function is_array;
 
@@ -26,7 +26,7 @@ use function is_array;
  *    rename/move/modify the file.
  *
  * 3. Instead of adding a NotEmpty validator, it will (by default) automatically add
- *    a Zend\Validator\File\Upload validator.
+ *    a Laminas\Validator\File\Upload validator.
  */
 class PsrFileInputDecorator extends FileInput implements FileInputDecoratorInterface
 {

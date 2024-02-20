@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Crypt\Password;
+namespace Laminas\Crypt\Password;
 
 use Traversable;
-use Zend\Crypt\Utils;
-use Zend\Math\Rand;
+use Laminas\Crypt\Utils;
+use Laminas\Math\Rand;
 
 /**
  * Apache password authentication

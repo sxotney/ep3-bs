@@ -7,11 +7,11 @@
  * @license        http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Hydrator\Filter;
+namespace Laminas\Hydrator\Filter;
 
 use ReflectionException;
 use ReflectionMethod;
-use Zend\Hydrator\Exception\InvalidArgumentException;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
 
 class NumberOfParameterFilter implements FilterInterface
 {

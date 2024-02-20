@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Mysqli;
+namespace Laminas\Db\Adapter\Driver\Mysqli;
 
 use Exception as GenericException;
-use Zend\Db\Adapter\Driver\AbstractConnection;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\AbstractConnection;
+use Laminas\Db\Adapter\Exception;
 
 class Connection extends AbstractConnection
 {
@@ -29,7 +29,7 @@ class Connection extends AbstractConnection
      * Constructor
      *
      * @param array|mysqli|null $connectionInfo
-     * @throws \Zend\Db\Adapter\Exception\InvalidArgumentException
+     * @throws \Laminas\Db\Adapter\Exception\InvalidArgumentException
      */
     public function __construct($connectionInfo = null)
     {

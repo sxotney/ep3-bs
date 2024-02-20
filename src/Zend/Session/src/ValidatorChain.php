@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session;
+namespace Laminas\Session;
 
-use Zend\EventManager\GlobalEventManager;
+use Laminas\EventManager\GlobalEventManager;
 
 /**
  * Polyfill for AbstractValidatorChain.

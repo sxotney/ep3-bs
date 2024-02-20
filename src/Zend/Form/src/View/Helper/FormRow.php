@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper;
+namespace Laminas\Form\View\Helper;
 
-use Zend\Form\Element\Button;
-use Zend\Form\Element\MonthSelect;
-use Zend\Form\Element\Captcha;
-use Zend\Form\ElementInterface;
-use Zend\Form\Exception;
-use Zend\Form\LabelAwareInterface;
+use Laminas\Form\Element\Button;
+use Laminas\Form\Element\MonthSelect;
+use Laminas\Form\Element\Captcha;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\Exception;
+use Laminas\Form\LabelAwareInterface;
 
 class FormRow extends AbstractHelper
 {
@@ -116,7 +116,7 @@ class FormRow extends AbstractHelper
      *
      * @param  ElementInterface $element
      * @param  null|string      $labelPosition
-     * @throws \Zend\Form\Exception\DomainException
+     * @throws \Laminas\Form\Exception\DomainException
      * @return string
      */
     public function render(ElementInterface $element, $labelPosition = null)
@@ -297,7 +297,7 @@ class FormRow extends AbstractHelper
      * Set the label position
      *
      * @param  string $labelPosition
-     * @throws \Zend\Form\Exception\InvalidArgumentException
+     * @throws \Laminas\Form\Exception\InvalidArgumentException
      * @return FormRow
      */
     public function setLabelPosition($labelPosition)

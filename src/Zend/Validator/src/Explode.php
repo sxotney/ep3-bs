@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use Traversable;
-use Zend\Stdlib\ArrayUtils;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\ServiceManager\ServiceManager;
 
 class Explode extends AbstractValidator implements ValidatorPluginManagerAwareInterface
 {
@@ -155,7 +155,7 @@ class Explode extends AbstractValidator implements ValidatorPluginManagerAwareIn
     }
 
     /**
-     * Defined by Zend\Validator\ValidatorInterface
+     * Defined by Laminas\Validator\ValidatorInterface
      *
      * Returns true if all values validate true
      *

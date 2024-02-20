@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\Element;
+namespace Laminas\Form\Element;
 
-use Zend\Form\Element;
-use Zend\InputFilter\InputProviderInterface;
-use Zend\Validator\Explode as ExplodeValidator;
-use Zend\Validator\Regex as RegexValidator;
-use Zend\Validator\ValidatorInterface;
+use Laminas\Form\Element;
+use Laminas\InputFilter\InputProviderInterface;
+use Laminas\Validator\Explode as ExplodeValidator;
+use Laminas\Validator\Regex as RegexValidator;
+use Laminas\Validator\ValidatorInterface;
 
 class Email extends Element implements InputProviderInterface
 {
@@ -88,7 +88,7 @@ class Email extends Element implements InputProviderInterface
      *
      * The default Regex validator is in use to match that of the
      * browser validation, but you are free to set a different
-     * (more strict) email validator such as Zend\Validator\Email
+     * (more strict) email validator such as Laminas\Validator\Email
      * if you wish.
      *
      * @return ValidatorInterface
@@ -129,7 +129,7 @@ class Email extends Element implements InputProviderInterface
             'name' => $this->getName(),
             'required' => true,
             'filters' => [
-                ['name' => 'Zend\Filter\StringTrim'],
+                ['name' => 'Laminas\Filter\StringTrim'],
             ],
             'validators' => [
                 $this->getValidator(),

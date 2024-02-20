@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Predicate;
+namespace Laminas\Db\Sql\Predicate;
 
-use Zend\Db\Sql\AbstractExpression;
+use Laminas\Db\Sql\AbstractExpression;
 
 class Between extends AbstractExpression implements PredicateInterface
 {

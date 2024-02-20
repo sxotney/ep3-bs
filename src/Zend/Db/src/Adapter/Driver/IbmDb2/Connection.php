@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\IbmDb2;
+namespace Laminas\Db\Adapter\Driver\IbmDb2;
 
-use Zend\Db\Adapter\Driver\AbstractConnection;
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Driver\AbstractConnection;
+use Laminas\Db\Adapter\Exception;
 
 class Connection extends AbstractConnection
 {

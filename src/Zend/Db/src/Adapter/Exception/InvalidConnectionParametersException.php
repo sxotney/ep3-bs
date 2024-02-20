@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Exception;
+namespace Laminas\Db\Adapter\Exception;
 
 class InvalidConnectionParametersException extends RuntimeException implements ExceptionInterface
 {

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter\Compress;
+namespace Laminas\Filter\Compress;
 
 /**
  * Compression interface

@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Pdo\Feature;
+namespace Laminas\Db\Adapter\Driver\Pdo\Feature;
 
-use Zend\Db\Adapter\Driver\Feature\AbstractFeature;
-use Zend\Db\Adapter\Driver\Pdo;
+use Laminas\Db\Adapter\Driver\Feature\AbstractFeature;
+use Laminas\Db\Adapter\Driver\Pdo;
 
 /**
  * SqliteRowCounter
@@ -26,7 +26,7 @@ class SqliteRowCounter extends AbstractFeature
     }
 
     /**
-     * @param \Zend\Db\Adapter\Driver\Pdo\Statement $statement
+     * @param \Laminas\Db\Adapter\Driver\Pdo\Statement $statement
      * @return int
      */
     public function getCountForStatement(Pdo\Statement $statement)

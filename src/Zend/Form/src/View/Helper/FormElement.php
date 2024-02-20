@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper;
+namespace Laminas\Form\View\Helper;
 
-use Zend\Form\ElementInterface;
-use Zend\View\Helper\AbstractHelper as BaseAbstractHelper;
+use Laminas\Form\ElementInterface;
+use Laminas\View\Helper\AbstractHelper as BaseAbstractHelper;
 
 class FormElement extends BaseAbstractHelper
 {
@@ -22,13 +22,13 @@ class FormElement extends BaseAbstractHelper
      * @var array
      */
     protected $classMap = [
-        'Zend\Form\Element\Button'         => 'formbutton',
-        'Zend\Form\Element\Captcha'        => 'formcaptcha',
-        'Zend\Form\Element\Csrf'           => 'formhidden',
-        'Zend\Form\Element\Collection'     => 'formcollection',
-        'Zend\Form\Element\DateTimeSelect' => 'formdatetimeselect',
-        'Zend\Form\Element\DateSelect'     => 'formdateselect',
-        'Zend\Form\Element\MonthSelect'    => 'formmonthselect',
+        'Laminas\Form\Element\Button'         => 'formbutton',
+        'Laminas\Form\Element\Captcha'        => 'formcaptcha',
+        'Laminas\Form\Element\Csrf'           => 'formhidden',
+        'Laminas\Form\Element\Collection'     => 'formcollection',
+        'Laminas\Form\Element\DateTimeSelect' => 'formdatetimeselect',
+        'Laminas\Form\Element\DateSelect'     => 'formdateselect',
+        'Laminas\Form\Element\MonthSelect'    => 'formmonthselect',
     ];
 
     /**

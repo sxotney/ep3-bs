@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Exception;
+namespace Laminas\Mvc\Exception;
 
 class InvalidPluginException extends \Exception implements ExceptionInterface
 {

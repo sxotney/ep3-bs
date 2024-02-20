@@ -7,19 +7,19 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Service;
+namespace Laminas\Mvc\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\View\Resolver as ViewResolver;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\View\Resolver as ViewResolver;
 
 class ViewTemplatePathStackFactory implements FactoryInterface
 {
     /**
      * Create the template path stack view resolver
      *
-     * Creates a Zend\View\Resolver\TemplatePathStack and populates it with the
+     * Creates a Laminas\View\Resolver\TemplatePathStack and populates it with the
      * ['view_manager']['template_path_stack'] and sets the default suffix with the
      * ['view_manager']['default_template_suffix']
      *

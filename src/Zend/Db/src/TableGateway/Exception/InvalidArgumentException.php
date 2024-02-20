@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\TableGateway\Exception;
+namespace Laminas\Db\TableGateway\Exception;
 
-use Zend\Db\Exception;
+use Laminas\Db\Exception;
 
 class InvalidArgumentException extends Exception\InvalidArgumentException implements ExceptionInterface
 {

@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Config\Reader;
+namespace Laminas\Config\Reader;
 
-use Zend\Config\Exception;
-use Zend\Json\Exception as JsonException;
-use Zend\Json\Json as JsonFormat;
+use Laminas\Config\Exception;
+use Laminas\Json\Exception as JsonException;
+use Laminas\Json\Json as JsonFormat;
 
 /**
  * JSON config reader.

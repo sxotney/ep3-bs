@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Platform\IbmDb2;
+namespace Laminas\Db\Sql\Platform\IbmDb2;
 
-use Zend\Db\Sql\Platform\AbstractPlatform;
+use Laminas\Db\Sql\Platform\AbstractPlatform;
 
 class IbmDb2 extends AbstractPlatform
 {
@@ -18,6 +18,6 @@ class IbmDb2 extends AbstractPlatform
      */
     public function __construct(SelectDecorator $selectDecorator = null)
     {
-        $this->setTypeDecorator('Zend\Db\Sql\Select', ($selectDecorator) ?: new SelectDecorator());
+        $this->setTypeDecorator('Laminas\Db\Sql\Select', ($selectDecorator) ?: new SelectDecorator());
     }
 }

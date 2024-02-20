@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Form\View\Helper;
+namespace Laminas\Form\View\Helper;
 
-use Zend\Form\ElementInterface;
-use Zend\Form\Exception;
-use Zend\Form\LabelAwareInterface;
+use Laminas\Form\ElementInterface;
+use Laminas\Form\Exception;
+use Laminas\Form\LabelAwareInterface;
 
 class FormButton extends FormInput
 {
@@ -126,7 +126,7 @@ class FormButton extends FormInput
 
         if (! $attributesOrElement instanceof ElementInterface) {
             throw new Exception\InvalidArgumentException(sprintf(
-                '%s expects an array or Zend\Form\ElementInterface instance; received "%s"',
+                '%s expects an array or Laminas\Form\ElementInterface instance; received "%s"',
                 __METHOD__,
                 (is_object($attributesOrElement) ? get_class($attributesOrElement) : gettype($attributesOrElement))
             ));

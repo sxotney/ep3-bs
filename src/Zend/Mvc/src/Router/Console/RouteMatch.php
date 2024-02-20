@@ -10,9 +10,9 @@
 /**
  * @namespace
  */
-namespace Zend\Mvc\Router\Console;
+namespace Laminas\Mvc\Router\Console;
 
-use Zend\Mvc\Router\RouteMatch as BaseRouteMatch;
+use Laminas\Mvc\Router\RouteMatch as BaseRouteMatch;
 
 /**
  * Part route match.

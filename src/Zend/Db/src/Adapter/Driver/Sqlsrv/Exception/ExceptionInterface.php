@@ -7,9 +7,9 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Sqlsrv\Exception;
+namespace Laminas\Db\Adapter\Driver\Sqlsrv\Exception;
 
-use Zend\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Exception;
 
 interface ExceptionInterface extends Exception\ExceptionInterface
 {

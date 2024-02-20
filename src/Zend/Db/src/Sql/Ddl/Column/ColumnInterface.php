@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Ddl\Column;
+namespace Laminas\Db\Sql\Ddl\Column;
 
-use Zend\Db\Sql\ExpressionInterface;
+use Laminas\Db\Sql\ExpressionInterface;
 
 /**
  * Interface ColumnInterface describes the protocol on how Column objects interact
  *
- * @package Zend\Db\Sql\Ddl\Column
+ * @package Laminas\Db\Sql\Ddl\Column
  */
 interface ColumnInterface extends ExpressionInterface
 {

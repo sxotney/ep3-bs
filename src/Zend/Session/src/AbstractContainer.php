@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session;
+namespace Laminas\Session;
 
 use ArrayIterator;
 use Iterator;
 use Traversable;
-use Zend\Session\ManagerInterface as Manager;
-use Zend\Session\Storage\StorageInterface as Storage;
-use Zend\Stdlib\ArrayObject;
+use Laminas\Session\ManagerInterface as Manager;
+use Laminas\Session\Storage\StorageInterface as Storage;
+use Laminas\Stdlib\ArrayObject;
 
 /**
  * Session storage container
@@ -43,7 +43,7 @@ abstract class AbstractContainer extends ArrayObject
      *
      * @var string
      */
-    protected static $managerDefaultClass = 'Zend\\Session\\SessionManager';
+    protected static $managerDefaultClass = 'Laminas\\Session\\SessionManager';
 
     /**
      * Default manager to use when instantiating a container without providing a ManagerInterface

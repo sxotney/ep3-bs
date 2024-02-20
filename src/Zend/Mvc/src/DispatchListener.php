@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc;
+namespace Laminas\Mvc;
 
 use ArrayObject;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\Stdlib\ArrayUtils;
 
 /**
  * Default dispatch listener

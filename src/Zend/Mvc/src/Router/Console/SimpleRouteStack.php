@@ -7,14 +7,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Router\Console;
+namespace Laminas\Mvc\Router\Console;
 
 use Traversable;
-use Zend\Mvc\Router\Exception;
-use Zend\Mvc\Router\RouteInvokableFactory;
-use Zend\Mvc\Router\SimpleRouteStack as BaseSimpleRouteStack;
-use Zend\ServiceManager\Config;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Mvc\Router\Exception;
+use Laminas\Mvc\Router\RouteInvokableFactory;
+use Laminas\Mvc\Router\SimpleRouteStack as BaseSimpleRouteStack;
+use Laminas\ServiceManager\Config;
+use Laminas\Stdlib\ArrayUtils;
 
 /**
  * Tree search implementation.
@@ -42,8 +42,8 @@ class SimpleRouteStack extends BaseSimpleRouteStack
                 Simple::class   => RouteInvokableFactory::class,
 
                 // v2 normalized names
-                'zendmvcrouterconsolecatchall' => RouteInvokableFactory::class,
-                'zendmvcrouterconsolesimple'   => RouteInvokableFactory::class,
+                'laminasmvcrouterconsolecatchall' => RouteInvokableFactory::class,
+                'laminasmvcrouterconsolesimple'   => RouteInvokableFactory::class,
             ],
         ]))->configureServiceManager($this->routePluginManager);
     }

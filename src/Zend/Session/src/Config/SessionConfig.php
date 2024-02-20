@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Session\Config;
+namespace Laminas\Session\Config;
 
 use SessionHandlerInterface;
-use Zend\Session\Exception;
+use Laminas\Session\Exception;
 
 /**
  * Session configuration proxying to session INI options

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Adapter\Driver\Oci8;
+namespace Laminas\Db\Adapter\Driver\Oci8;
 
-use Zend\Db\Adapter\Driver\DriverInterface;
-use Zend\Db\Adapter\Exception;
-use Zend\Db\Adapter\Profiler;
-use Zend\Db\Adapter\Driver\Feature\AbstractFeature;
+use Laminas\Db\Adapter\Driver\DriverInterface;
+use Laminas\Db\Adapter\Exception;
+use Laminas\Db\Adapter\Profiler;
+use Laminas\Db\Adapter\Driver\Feature\AbstractFeature;
 
 class Oci8 implements DriverInterface, Profiler\ProfilerAwareInterface
 {

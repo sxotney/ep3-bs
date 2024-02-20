@@ -7,11 +7,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Db\Sql\Platform\Mysql\Ddl;
+namespace Laminas\Db\Sql\Platform\Mysql\Ddl;
 
-use Zend\Db\Adapter\Platform\PlatformInterface;
-use Zend\Db\Sql\Ddl\CreateTable;
-use Zend\Db\Sql\Platform\PlatformDecoratorInterface;
+use Laminas\Db\Adapter\Platform\PlatformInterface;
+use Laminas\Db\Sql\Ddl\CreateTable;
+use Laminas\Db\Sql\Platform\PlatformDecoratorInterface;
 
 class CreateTableDecorator extends CreateTable implements PlatformDecoratorInterface
 {

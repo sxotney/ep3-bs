@@ -7,13 +7,13 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\InputFilter;
+namespace Laminas\InputFilter;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
-use Zend\Stdlib\InitializableInterface;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\Stdlib\InitializableInterface;
 
 /**
  * Plugin manager implementation for input filters.
@@ -48,9 +48,9 @@ class InputFilterPluginManager extends AbstractPluginManager
         CollectionInputFilter::class            => InvokableFactory::class,
         OptionalInputFilter::class              => InvokableFactory::class,
         // v2 canonical FQCN
-        'zendinputfilterinputfilter'            => InvokableFactory::class,
-        'zendinputfiltercollectioninputfilter'  => InvokableFactory::class,
-        'zendinputfilteroptionalinputfilter'    => InvokableFactory::class,
+        'laminasinputfilterinputfilter'            => InvokableFactory::class,
+        'laminasinputfiltercollectioninputfilter'  => InvokableFactory::class,
+        'laminasinputfilteroptionalinputfilter'    => InvokableFactory::class,
     ];
 
     /**
@@ -68,7 +68,7 @@ class InputFilterPluginManager extends AbstractPluginManager
     protected $shareByDefault = false;
 
     /**
-     * @param null|\Zend\ServiceManager\ConfigInterface|ContainerInterface $configOrContainer
+     * @param null|\Laminas\ServiceManager\ConfigInterface|ContainerInterface $configOrContainer
      *     For zend-servicemanager v2, null or a ConfigInterface instance are
      *     allowed; for v3, a ContainerInterface is expected.
      * @param array $v3config Optional configuration array (zend-servicemanager v3 only)

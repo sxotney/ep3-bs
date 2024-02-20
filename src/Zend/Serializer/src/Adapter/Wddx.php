@@ -7,10 +7,10 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Serializer\Adapter;
+namespace Laminas\Serializer\Adapter;
 
-use Zend\Serializer\Exception;
-use Zend\Stdlib\ErrorHandler;
+use Laminas\Serializer\Exception;
+use Laminas\Stdlib\ErrorHandler;
 
 /**
  * @link       http://www.infoloom.com/gcaconfs/WEB/chicago98/simeonov.HTM

@@ -7,15 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Mvc\Controller\Plugin;
+namespace Laminas\Mvc\Controller\Plugin;
 
 use Traversable;
-use Zend\EventManager\EventInterface;
-use Zend\Mvc\Exception;
-use Zend\Mvc\InjectApplicationEventInterface;
-use Zend\Mvc\ModuleRouteListener;
-use Zend\Mvc\MvcEvent;
-use Zend\Mvc\Router\RouteStackInterface;
+use Laminas\EventManager\EventInterface;
+use Laminas\Mvc\Exception;
+use Laminas\Mvc\InjectApplicationEventInterface;
+use Laminas\Mvc\ModuleRouteListener;
+use Laminas\Mvc\MvcEvent;
+use Laminas\Mvc\Router\RouteStackInterface;
 
 class Url extends AbstractPlugin
 {
@@ -28,9 +28,9 @@ class Url extends AbstractPlugin
      *                                                If boolean, and no fourth argument, used as $reuseMatchedParams.
      * @param  bool               $reuseMatchedParams Whether to reuse matched parameters
      *
-     * @throws \Zend\Mvc\Exception\RuntimeException
-     * @throws \Zend\Mvc\Exception\InvalidArgumentException
-     * @throws \Zend\Mvc\Exception\DomainException
+     * @throws \Laminas\Mvc\Exception\RuntimeException
+     * @throws \Laminas\Mvc\Exception\InvalidArgumentException
+     * @throws \Laminas\Mvc\Exception\DomainException
      * @return string
      */
     public function fromRoute($route = null, $params = [], $options = [], $reuseMatchedParams = false)

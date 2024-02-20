@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\ServiceManager\Factory;
+namespace Laminas\ServiceManager\Factory;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Factory for instantiating classes with no dependencies or which accept a single array.

@@ -7,12 +7,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Validator;
+namespace Laminas\Validator;
 
 use Traversable;
-use Zend\Uri\Exception\ExceptionInterface as UriException;
-use Zend\Uri\Uri as UriHandler;
-use Zend\Validator\Exception\InvalidArgumentException;
+use Laminas\Uri\Exception\ExceptionInterface as UriException;
+use Laminas\Uri\Uri as UriHandler;
+use Laminas\Validator\Exception\InvalidArgumentException;
 
 class Uri extends AbstractValidator
 {
@@ -92,7 +92,7 @@ class Uri extends AbstractValidator
         }
 
         if (! $this->uriHandler instanceof UriHandler) {
-            throw new InvalidArgumentException('URI handler is expected to be a Zend\Uri\Uri object');
+            throw new InvalidArgumentException('URI handler is expected to be a Laminas\Uri\Uri object');
         }
 
         return $this->uriHandler;
@@ -105,8 +105,8 @@ class Uri extends AbstractValidator
      */
     public function setUriHandler($uriHandler)
     {
-        if (! is_subclass_of($uriHandler, 'Zend\Uri\Uri')) {
-            throw new InvalidArgumentException('Expecting a subclass name or instance of Zend\Uri\Uri as $uriHandler');
+        if (! is_subclass_of($uriHandler, 'Laminas\Uri\Uri')) {
+            throw new InvalidArgumentException('Expecting a subclass name or instance of Laminas\Uri\Uri as $uriHandler');
         }
 
         $this->uriHandler = $uriHandler;

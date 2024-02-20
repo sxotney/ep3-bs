@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\Filter\Encrypt;
+namespace Laminas\Filter\Encrypt;
 
 /**
  * Encryption interface

@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Zend\InputFilter\Exception;
+namespace Laminas\InputFilter\Exception;
 
 class RuntimeException extends \RuntimeException implements ExceptionInterface
 {
