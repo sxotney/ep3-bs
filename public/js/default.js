@@ -178,8 +178,8 @@
         }
 
         $.datepicker.setDefaults({
-            "altFormat": "M d, yy",
-            "dateFormat": "M d, yy",
+            "altFormat": "d M yy",
+            "dateFormat": "d M yy",
             "onSelect": function() {
                 that = $(this);
 
