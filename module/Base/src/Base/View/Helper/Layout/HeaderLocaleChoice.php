@@ -45,7 +45,7 @@ class HeaderLocaleChoice extends AbstractHelper
                 }
             }
 
-            $html .= sprintf('<div><a href="%1$s" title="%2$s" class="unlined white"><img src="%3$s" alt="%2$s"></a></div>',
+            $html .= sprintf('<div><a href="%1$s" title="%2$s" class="unlined"><img src="%3$s" alt="%2$s"></a></div>',
                 $href, $title, $view->basePath('imgs/icons/locale/' . $locale . '.png'));
         }
 

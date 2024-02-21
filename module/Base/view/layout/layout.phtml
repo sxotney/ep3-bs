@@ -32,13 +32,13 @@
             </div>
 
             <div id="topbar">
-                <?= $this->headerLocaleChoice() ?>
+<!--                --><?php //= $this->headerLocaleChoice() ?>
 
                 <div id="topbar-contact" class="responsive-pass-1">
                     <p>
                         <span class=""><?= $this->t('Do your like our service?') ?></span><br>
                         <span class="large-text">
-                            <a href="<?= $this->option('client.website.contact') ?>" target="_blank" class="unlined white">
+                            <a href="<?= $this->option('client.website.contact') ?>" target="_blank" class="unlined">
                                 <?= $this->t('Contact & Feedback') ?>
                             </a>
                         </span>
@@ -49,7 +49,7 @@
                     <p>
                         <span class=""><?= $this->t('Our website') ?></span><br>
                         <span class="large-text">
-                            <a href="<?= $this->option('client.website') ?>" target="_blank" class="unlined white">
+                            <a href="<?= $this->option('client.website') ?>" target="_blank" class="unlined">
                                 <?= $this->shortUrl($this->option('client.website')) ?>
                             </a>
                         </span>
@@ -60,25 +60,15 @@
                     <p>
                         <span class=""><?= $this->t('Information about') ?></span><br>
                         <span class="large-text">
-                            <a href="<?= $this->url('service/info') ?>" class="unlined white">
+                            <a href="<?= $this->url('service/info') ?>" class="unlined">
                                 <?= $this->option('subject.type') ?>
                             </a>
                         </span>
                     </p>
                 </div>
 
-                <div id="topbar-phone" class="responsive-pass-4">
-<!--                    <p>-->
-<!--                        <span class="light-gray">--><?php //= $this->t('Book by phone') ?><!--</span><br>-->
-<!--                        <span class="large-text">-->
-<!--                            <a href="tel:--><?php //= $this->option('client.contact.phone') ?><!--" class="unlined white">-->
-<!--                                --><?php //= $this->option('client.contact.phone') ?>
-<!--                            </a>-->
-<!--                        </span>-->
-<!--                    </p>-->
-                </div>
 
-                <div id="topbar-separator" class="responsive-pass-4"></div>
+
             </div>
         </div>
 

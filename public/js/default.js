@@ -139,7 +139,7 @@
 
         if (that.is(".default-message, .success-message, .info-message, .error-message")) {
             if (that.closest(".messages-panel").siblings(".centered-panel").length) {
-                that.prepend('<a href="#" class="unlined white dismiss-message-link" style="float:right;">&times;</a>');
+                that.prepend('<a href="#" class="unlined dismiss-message-link" style="float:right;">&times;</a>');
             }
         }
     }

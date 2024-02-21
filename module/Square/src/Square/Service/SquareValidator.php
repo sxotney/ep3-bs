@@ -332,7 +332,7 @@ class SquareValidator extends AbstractService
 
                 if ($activeBookingsCount >= $maxActiveBookings) {
                     $bookable = false;
-                    $notBookableReason = 'Sie können derzeit nur <b>' . $maxActiveBookings . ' aktive Buchung/en</b> gleichzeitig offen haben.';
+                    $notBookableReason = 'You can only have <b>' . $maxActiveBookings . ' active booking(s)</b> at the same time.';
                 }
             }
         }
