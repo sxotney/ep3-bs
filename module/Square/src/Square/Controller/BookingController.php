@@ -137,7 +137,7 @@ class BookingController extends AbstractActionController
 
             foreach ($playerNames as $playerName) {
                 if (strlen(trim($playerName['value'])) < 5 || strpos(trim($playerName['value']), ' ') === false) {
-                    throw new \RuntimeException('Die <b>vollständigen Vor- und Nachnamen</b> der anderen Spieler sind erforderlich');
+                    throw new \RuntimeException('The names of the other players are <b>required</b>');
                 }
             }
         } else {
