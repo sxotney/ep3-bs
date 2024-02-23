@@ -91,14 +91,14 @@
 
                 // Check date
                 if (! dateStart.match(/^(0[1-9]|[1-2][0-9]|3[0-1])\.(0[1-9]|1[0-2])\.[0-9]{4}$/)) {
-                    window.alert("Hinweis: Das Datum \"" + dateStart + "\" ist ungültig - Format: 24.12.2014");
+                    window.alert("Note: The Date \"" + dateStart + "\" is invalid - Format: 24.12.2014");
 
                     event.preventDefault();
                     return;
                 }
 
                 if (! dateEnd.match(/^(0[1-9]|[1-2][0-9]|3[0-1])\.(0[1-9]|1[0-2])\.[0-9]{4}$/)) {
-                    window.alert("Hinweis: Das Datum \"" + dateEnd + "\" ist ungültig - Format: 24.12.2014");
+                    window.alert("Note: The Date \"" + dateEnd + "\" is invalid - Format: 24.12.2014");
 
                     event.preventDefault();
                     return;
@@ -109,7 +109,7 @@
                 }
 
                 if (! timeStart.match(/^[0-9]{0,1}[0-9]:[0-9][0-9]$/)) {
-                    window.alert("Hinweis: Die Uhrzeit \"" + timeStart + "\" ist ungültig - Format: 23:15");
+                    window.alert("Note: The time \"" + timeStart + "\" is invalid - Format: 23:15");
 
                     event.preventDefault();
                     return;
@@ -120,7 +120,7 @@
                 }
 
                 if (! timeEnd.match(/^[0-9]{0,1}[0-9]:[0-9][0-9]$/)) {
-                    window.alert("Hinweis: Die Uhrzeit \"" + timeEnd + "\" ist ungültig - Format: 23:15");
+                    window.alert("Note: The time \"" + timeEnd + "\" is invalid - Format: 23:15");
 
                     event.preventDefault();
                     return;
@@ -131,14 +131,14 @@
                 }
 
                 if (! price.match(/^[0-9]+,[0-9][0-9]$/)) {
-                    window.alert("Hinweis: Der Preis \"" + price + "\" ist ungültig - Format: 19,95");
+                    window.alert("Note: The price \"" + price + "\" is invalid - Format: 19,95");
 
                     event.preventDefault();
                     return;
                 }
 
                 if (! timeBlock.match(/^[1-9][0-9]*$/)) {
-                    window.alert("Hinweis: Die Minutenangabe \"" + timeBlock + "\" ist ungültig");
+                    window.alert("Note: The minutes \"" + timeBlock + "\" are invalid");
 
                     event.preventDefault();
                     return;
