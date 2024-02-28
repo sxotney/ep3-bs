@@ -287,6 +287,9 @@ class SquarePricingManager extends AbstractManager
      */
     public function getFinalPricing($date, $timeStart, $timeEnd, $square, $quantity)
     {
+        if($timeEnd == '00:00') {
+            $timeEnd = '24:00';
+        }
         $pricing = array();
 
         if (is_string($date)) {
