@@ -287,9 +287,7 @@ class SquarePricingManager extends AbstractManager
      */
     public function getFinalPricing($date, $timeStart, $timeEnd, $square, $quantity)
     {
-        if($timeEnd == '00:00') {
-            $timeEnd = '24:00';
-        }
+
         $pricing = array();
 
         if (is_string($date)) {
@@ -315,6 +313,7 @@ class SquarePricingManager extends AbstractManager
 
             $timeParts = explode(':', $timeStart);
             $dateTimeStart->setTime($timeParts[0], $timeParts[1], 0);
+
         } else if ($timeStart instanceof DateTime) {
             $dateTimeStart->setTime($timeStart->format('H'), $timeStart->format('i'), 0);
         } else {
@@ -346,7 +345,6 @@ class SquarePricingManager extends AbstractManager
 
         $timeBlockBookable = $square->get('time_block_bookable', $square->need('time_block'));
 
-        /* Check dates and start looping through the rules */
 
         if ($dateTimeStart > $dateTimeEnd) {
             throw new InvalidArgumentException('The passed time is invalid');
@@ -426,6 +424,8 @@ class SquarePricingManager extends AbstractManager
     /**
      * Determines the final calculated pricing for the passed square and datetime interval.
      *
+     * has a problem with squares that finish at midnight
+     *
      * @param DateTime $dateTimeStart
      * @param DateTime $dateTimeEnd
      * @param Square $square
@@ -450,7 +450,7 @@ class SquarePricingManager extends AbstractManager
         $walkingDateLimit->setTime(0, 0, 0);
         $walkingDateIndex = 0;
 
-        while ($walkingDate <= $walkingDateLimit) {
+        while ($walkingDate < $walkingDateLimit) {
             if ($walkingDateIndex == 0) {
                 $walkingTimeStart = $dateTimeStart->format('H:i');
             } else {
@@ -462,6 +462,7 @@ class SquarePricingManager extends AbstractManager
             } else {
                 $walkingTimeEnd = $square->need('time_end');
             }
+
 
             $finalPricing = $this->getFinalPricing($walkingDate, $walkingTimeStart, $walkingTimeEnd, $square, $quantity);
 

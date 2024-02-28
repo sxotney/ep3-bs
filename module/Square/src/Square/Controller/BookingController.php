@@ -182,7 +182,7 @@ class BookingController extends AbstractActionController
                 }
 
                 if ($square->get('allow_notes')) {
-                    $userNotes = "Anmerkungen des Benutzers:\n" . $this->params()->fromPost('bf-user-notes');
+                    $userNotes = "user comments:\n" . $this->params()->fromPost('bf-user-notes');
                 } else {
                     $userNotes = '';
                 }
