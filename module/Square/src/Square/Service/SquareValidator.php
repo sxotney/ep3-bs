@@ -131,7 +131,7 @@ class SquareValidator extends AbstractService
         if ($square->get('min_range_book')) {
             if ($timeStart < $dateMin) {
                 if (! ($this->user && $this->user->can('calendar.create-single-bookings, calendar.create-subscription-bookings'))) {
-                    throw new RuntimeException('Dieses Datum ist zu kurzfristig');
+                    throw new RuntimeException('This date is too short-term');
                 }
             }
         }
@@ -249,6 +249,7 @@ class SquareValidator extends AbstractService
      */
     public function isBookable($dateStart, $dateEnd, $timeStart, $timeEnd, $square)
     {
+
         $byproducts = $this->isValid($dateStart, $dateEnd, $timeStart, $timeEnd, $square);
 
         $dateStart = $byproducts['dateStart'];
