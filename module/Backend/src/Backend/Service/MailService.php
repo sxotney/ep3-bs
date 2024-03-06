@@ -35,10 +35,10 @@ class MailService extends AbstractService
         $text = sprintf("%s,\r\n\r\n%s\r\n\r\n%s %s\r\n\r\n%s,\r\n%s %s\r\n%s",
             $this->t('Hello'),
             $text,
-            $this->t('This was an automated message from the system.'),
+
             $addendum,
-            $this->t('Sincerely'),
-            $this->t("Your"),
+
+
             $this->optionManager->need('service.name.full'),
             $this->optionManager->need('service.website'));
 

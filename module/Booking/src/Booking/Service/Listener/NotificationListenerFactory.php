@@ -19,7 +19,9 @@ class NotificationListenerFactory implements FactoryInterface
             $sm->get('Backend\Service\MailService'),
             $sm->get('ViewHelperManager')->get('DateFormat'),
             $sm->get('ViewHelperManager')->get('DateRange'),
-            $sm->get('Translator'));
+            $sm->get('Translator'),
+            $sm->get('Booking\Manager\Booking\BillManager'),
+            $sm->get('ViewHelperManager')->get('PriceFormatPlain'));
     }
 
 }

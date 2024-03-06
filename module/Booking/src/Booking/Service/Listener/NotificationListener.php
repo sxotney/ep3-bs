@@ -5,6 +5,8 @@ namespace Booking\Service\Listener;
 use Backend\Service\MailService as BackendMailService;
 use Base\Manager\OptionManager;
 use Base\View\Helper\DateRange;
+use Base\View\Helper\PriceFormatPlain;
+use Booking\Manager\Booking\BillManager;
 use Booking\Manager\ReservationManager;
 use Square\Manager\SquareManager;
 use User\Manager\UserManager;
@@ -22,15 +24,17 @@ class NotificationListener extends AbstractListenerAggregate
     protected $reservationManager;
     protected $squareManager;
     protected $userManager;
+    protected $bookingBillManager;
     protected $userMailService;
 	protected $backendMailService;
     protected $dateFormatHelper;
     protected $dateRangeHelper;
     protected $translator;
+    protected $priceFormatHelper;
 
     public function __construct(OptionManager $optionManager, ReservationManager $reservationManager, SquareManager $squareManager,
 	    UserManager $userManager, UserMailService $userMailService, BackendMailService $backendMailService,
-	    DateFormat $dateFormatHelper, DateRange $dateRangeHelper, TranslatorInterface $translator)
+	    DateFormat $dateFormatHelper, DateRange $dateRangeHelper, TranslatorInterface $translator,  BillManager $bookingBillManager, PriceFormatPlain $priceFormatHelper)
     {
         $this->optionManager = $optionManager;
         $this->reservationManager = $reservationManager;
@@ -38,10 +42,11 @@ class NotificationListener extends AbstractListenerAggregate
         $this->userManager = $userManager;
         $this->userMailService = $userMailService;
 	    $this->backendMailService = $backendMailService;
-
+        $this->bookingBillManager = $bookingBillManager;
         $this->dateFormatHelper = $dateFormatHelper;
         $this->dateRangeHelper = $dateRangeHelper;
         $this->translator = $translator;
+        $this->priceFormatHelper = $priceFormatHelper;
     }
 
     public function attach(EventManagerInterface $events)
@@ -59,6 +64,7 @@ class NotificationListener extends AbstractListenerAggregate
 
         $dateFormatHelper = $this->dateFormatHelper;
         $dateRangerHelper = $this->dateRangeHelper;
+        $priceFormatHelper = $this->priceFormatHelper;
 
 	    $reservationTimeStart = explode(':', $reservation->need('time_start'));
         $reservationTimeEnd = explode(':', $reservation->need('time_end'));
@@ -77,6 +83,7 @@ class NotificationListener extends AbstractListenerAggregate
             $this->optionManager->get('subject.square.type'),
             $square->need('name'),
             $dateRangerHelper($reservationStart, $reservationEnd));
+        $message .= "\n\nEnjoy your snooker.";
 
         $playerNames = $booking->getMeta('player-names');
 
@@ -84,7 +91,7 @@ class NotificationListener extends AbstractListenerAggregate
             $playerNamesUnserialized = @unserialize($playerNames);
 
             if (is_iterable($playerNamesUnserialized)) {
-                $message .= "\n\nAngegebene Mitspieler:";
+                $message .= "\n\nSpecified Players:";
 
                 foreach ($playerNamesUnserialized as $i => $playerName) {
                     $message .= sprintf("\n%s. %s",
@@ -93,8 +100,46 @@ class NotificationListener extends AbstractListenerAggregate
             }
         }
 
-        if ($square->get('allow_notes') && $booking->getMeta('notes')) {
-            $message .= "\n\nAnmerkungen:";
+        $bills = $this->bookingBillManager->getBy(array('bid' => $booking->get('bid')), 'bbid ASC');
+        if(count($bills) > 0) {
+            $message .= "\n\n" . $this->t('Bill'). ":\n";
+
+            $total = 0;
+
+
+            foreach ($bills as $bill) {
+                $total += $bill->get('price');
+                $items = 'x';
+                $squareUnit = '';
+
+                if ($bill->get('quantity') == 1) {
+                    $squareUnit = $this->optionManager->get('subject.square.unit');
+                } else {
+                    $squareUnit = $this->optionManager->get('subject.square.unit.plural');
+                }
+
+                if ($bill->get('time')) {
+                    $items = $squareUnit;
+                }
+
+                $message .= "\n";
+                $message .= $bill->get('description') . " (" . $bill->get('quantity') . " " . $items . ")";
+                $message .= " -> ";
+                $message .= $priceFormatHelper($bill->get('price'), $bill->get('rate'), $bill->get('gross'));
+            }
+            $message .= "\n\n";
+            $message .= $this->t('Total');
+            $message .= " -> ";
+            $message .= $priceFormatHelper($total);
+
+            $message .= "\n\n";
+        }
+
+
+
+
+        if ($square->get('allow_notes') && $booking->getMeta('notes') && strlen($booking->getMeta('notes')) > 0) {
+            $message .= "\n\nNotes:";
             $message .= "\n" . $booking->getMeta('notes');
         }
 
@@ -108,8 +153,7 @@ class NotificationListener extends AbstractListenerAggregate
 		        $user->need('alias'), $this->optionManager->get('subject.square.type'),
 			    $dateFormatHelper($reservationStart, \IntlDateFormatter::MEDIUM, \IntlDateFormatter::SHORT));
 
-		    $addendum = sprintf($this->t('Originally sent to %s (%s).'),
-	            $user->need('alias'), $user->need('email'));
+		    $addendum = "";
 
 	        $this->backendMailService->send($backendSubject, $message, array(), $addendum);
         }

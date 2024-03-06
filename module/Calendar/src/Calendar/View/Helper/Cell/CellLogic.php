@@ -48,7 +48,7 @@ class CellLogic extends AbstractHelper
 
             if ($walkingDate < $minBookingRangeDate) {
                 if (! ($user && $user->can('calendar.see-past'))) {
-                    return $view->calendarCell('Zu kurzfristig', 'cc-over');
+                    return $view->calendarCell('More notice reqd.', 'cc-over');
                 }
             }
         }
