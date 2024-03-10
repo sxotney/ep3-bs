@@ -32,13 +32,10 @@ class MailService extends AbstractService
         $toAddress = $this->optionManager->need('client.contact.email');
         $toName = $this->optionManager->need('client.name.full');
 
-        $text = sprintf("%s,\r\n\r\n%s\r\n\r\n%s %s\r\n\r\n%s,\r\n%s %s\r\n%s",
-            $this->t('Hello'),
+        $text = sprintf("%s,\r\n\r\n%s\r\n\r\n %s\r\n\r\n%s,\r\n\r\n%s",
+            $toName,
             $text,
-
             $addendum,
-
-
             $this->optionManager->need('service.name.full'),
             $this->optionManager->need('service.website'));
 

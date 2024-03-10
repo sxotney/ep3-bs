@@ -63,11 +63,12 @@ class MailService extends AbstractService
             $mimePart->type = $attachment['type'];
             $mimePart->encoding = Mime::ENCODING_BASE64;
 
-            if (isset($attachment['disposition'])) {
-                $mimePart->disposition = $attachment['disposition'];
-            } else {
-                $mimePart->disposition = 'attachment';
-            }
+//            if (isset($attachment['disposition'])) {
+//                $mimePart->disposition = $attachment['disposition'];
+//            } else {
+//                $mimePart->disposition = 'attachment';
+//            }
+            $mimePart->disposition = 'attachment';
 
             $mimePart->filename = $attachment['name'];
 
